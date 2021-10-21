@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using UnityEngine.UI;
 using System.IO;
 using System;
+using TMPro;
 
 public class SistemaDialogos : MonoBehaviour
 {
@@ -16,26 +18,21 @@ public class SistemaDialogos : MonoBehaviour
 	//CSV de los dialogos
 	public TextAsset ficheroDialogos;
 	//Texto de la ui que se modificara
-	public TextMesh textoUI;
+	public TextMeshProUGUI textoUI;
+	//Boton para pasar dialogo
+
+	int indiceDialogoNPC, indiceDialogoJugador;
+
+	bool hablaNPC=true;
 	
 	List<string> dialogosNPC = new List<string>();
 	List<string> dialogosPersonaje = new List<string>();
 	
-	//Obtiene la lista de dialogos usada durante la conversacion
-
     // Start is called before the first frame update
     void Start()
-    {
-		//string direccion = "C:\Users\al394516\Documents\GitHub\Una-semana-solitaria\Assets\Dialogos\dialogos prueba.csv";
-
-		ObtenerListaDeDialogos();
-		
-		for(int i = 0; i< Math.Max(dialogosNPC.Count,dialogosPersonaje.Count) && (dialogosNPC[i]!="" || dialogosPersonaje[i] != ""); i++){
-			if(dialogosNPC[i]!="")
-				Debug.Log("Conchi: " + dialogosNPC[i]);
-			if(dialogosPersonaje[i] != "")
-				Debug.Log("F: " + dialogosPersonaje[i]);
-		}
+    {	
+ObtenerListaDeDialogos();
+AvanzarDialogo();
     }
 
     // Update is called once per frame
@@ -44,7 +41,11 @@ public class SistemaDialogos : MonoBehaviour
         
     }
 	
+	//Obtiene la lista de dialogos usada durante la conversacion
 	void ObtenerListaDeDialogos(){
+		indiceDialogoNPC = 0;
+		indiceDialogoJugador = 0;
+		
 		using(var reader = new StreamReader(@AssetDatabase.GetAssetPath(ficheroDialogos)))
 		{
 			var line = reader.ReadLine();
@@ -76,5 +77,34 @@ public class SistemaDialogos : MonoBehaviour
 				}
 			}
 		}
+	}
+	
+	//Avanza en el dialogo
+	public void AvanzarDialogo(){
+		if((indiceDialogoNPC < dialogosNPC.Count && dialogosNPC[indiceDialogoNPC]!="") || (indiceDialogoJugador < dialogosPersonaje.Count && dialogosPersonaje[indiceDialogoJugador] != "")){
+			if(dialogosNPC[indiceDialogoNPC]==""){
+				textoUI.text = dialogosPersonaje[indiceDialogoJugador];
+				indiceDialogoJugador++;
+				indiceDialogoNPC++;
+				hablaNPC = false;
+			}else if(dialogosPersonaje[indiceDialogoJugador]==""){
+				textoUI.text = dialogosNPC[indiceDialogoNPC];
+				indiceDialogoJugador++;
+				indiceDialogoNPC++;
+				hablaNPC = true;
+			}else{
+				if(hablaNPC){
+					textoUI.text = dialogosNPC[indiceDialogoNPC];
+					hablaNPC = false;
+				}else{
+					textoUI.text = dialogosPersonaje[indiceDialogoJugador];
+					indiceDialogoJugador++;
+					indiceDialogoNPC++; 
+					hablaNPC = true;
+				}
+			}
+		}
+		//desactivar HUD
+		//this.SetActive(true);
 	}
 }

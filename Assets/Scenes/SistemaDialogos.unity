@@ -363,9 +363,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   personaje: 1
-  idiomaActual: 2
+  idiomaActual: 0
   ficheroDialogos: {fileID: 4900000, guid: 9264d7c1d6c7ca54da6b78b4e70aa1d3, type: 3}
-  textoUI: {fileID: 0}
+  textoUI: {fileID: 821659094}
 --- !u!4 &892256428
 Transform:
   m_ObjectHideFlags: 0
@@ -570,7 +570,7 @@ GameObject:
   - component: {fileID: 1277384752}
   - component: {fileID: 1277384751}
   m_Layer: 0
-  m_Name: Button
+  m_Name: PasarDialogo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -638,7 +638,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1277384752}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 892256427}
+        m_TargetAssemblyTypeName: SistemaDialogos, Assembly-CSharp
+        m_MethodName: AvanzarDialogo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1277384752
 MonoBehaviour:
   m_ObjectHideFlags: 0
