@@ -5,6 +5,7 @@ using UnityEditor;
 using UnityEngine.UI;
 using System.IO;
 using System;
+using UnityEngine.Events;
 using TMPro;
 
 public class SistemaDialogos : MonoBehaviour
@@ -19,7 +20,8 @@ public class SistemaDialogos : MonoBehaviour
 	public TextAsset ficheroDialogos;
 	//Texto de la ui que se modificara
 	public TextMeshProUGUI textoUI;
-	//Boton para pasar dialogo
+	//Evento a llamar
+	public UnityEvent eventoAlTerminarDialogo;
 
 	int indiceDialogoNPC, indiceDialogoJugador;
 
@@ -103,8 +105,12 @@ AvanzarDialogo();
 					hablaNPC = true;
 				}
 			}
+		}else{
+			//desactivar el sistema
+			if(eventoAlTerminarDialogo == null){
+				eventoAlTerminarDialogo.Invoke();
+			}
+			gameObject.SetActive(false);
 		}
-		//desactivar HUD
-		//this.SetActive(true);
 	}
 }
