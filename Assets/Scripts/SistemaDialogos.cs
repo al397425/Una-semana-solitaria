@@ -11,9 +11,6 @@ using TMPro;
 public class SistemaDialogos : MonoBehaviour
 {
 	public enum Idioma {Espaniol, Ingles, Valenciano};
-	
-	//Personaje con el que se dialogara
-	public int personaje = 0;
 	//Idiomas
 	public Idioma idiomaActual = Idioma.Espaniol;
 	//CSV de los dialogos
@@ -22,6 +19,8 @@ public class SistemaDialogos : MonoBehaviour
 	public TextMeshProUGUI textoUI;
 	//Evento a llamar
 	public UnityEvent eventoAlTerminarDialogo;
+	//Tecla de interaccion
+	public KeyCode teclaDeInteraccion;
 
 	int indiceDialogoNPC, indiceDialogoJugador;
 
@@ -30,21 +29,8 @@ public class SistemaDialogos : MonoBehaviour
 	List<string> dialogosNPC = new List<string>();
 	List<string> dialogosPersonaje = new List<string>();
 	
-    // Start is called before the first frame update
-    void Start()
-    {	
-ObtenerListaDeDialogos();
-AvanzarDialogo();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-	
 	//Obtiene la lista de dialogos usada durante la conversacion
-	void ObtenerListaDeDialogos(){
+	public void ObtenerListaDeDialogos(int personaje){
 		indiceDialogoNPC = 0;
 		indiceDialogoJugador = 0;
 		
@@ -79,6 +65,8 @@ AvanzarDialogo();
 				}
 			}
 		}
+		//Lo llama una vez para iniciar el dialogo
+		AvanzarDialogo();
 	}
 	
 	//Avanza en el dialogo
@@ -110,6 +98,8 @@ AvanzarDialogo();
 			if(eventoAlTerminarDialogo == null){
 				eventoAlTerminarDialogo.Invoke();
 			}
+			dialogosNPC.Clear();
+			dialogosPersonaje.Clear();
 			gameObject.SetActive(false);
 		}
 	}
