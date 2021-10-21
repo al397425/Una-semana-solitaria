@@ -21,19 +21,21 @@ public class SistemaDialogos : MonoBehaviour
 			{
 				line = reader.ReadLine();
 				var values = line.Split(';');
-				if(espaniol){
-					dialogosNPC.Add(values[(personaje*4+1) + 1]);
-					dialogosPersonaje.Add(values[(personaje*4+1) + 3]);
-				}else{
-					dialogosNPC.Add(values[(personaje*4+1)]);
-					dialogosPersonaje.Add(values[(personaje*4+1) + 2]);
+				if(espaniol && (values[(personaje*4)] !="" || values[(personaje*4) + 2] != "")){
+					dialogosNPC.Add(values[(personaje*4)]);
+					dialogosPersonaje.Add(values[(personaje*4) + 2]);
+				}else if(values[(personaje*4) + 1] !="" || values[(personaje*4) + 3] != ""){
+					dialogosNPC.Add(values[(personaje*4) + 1]);
+					dialogosPersonaje.Add(values[(personaje*4) + 3]);
 				}
 			}
 		}
 		
-		for(int i = 0; i< Math.Max(dialogosNPC.Count,dialogosPersonaje.Count); i++){
-			Debug.Log("Conchi: " + dialogosNPC[i]);
-			Debug.Log("F: " + dialogosPersonaje[i]);
+		for(int i = 0; i< Math.Max(dialogosNPC.Count,dialogosPersonaje.Count) && (dialogosNPC[i]!="" || dialogosPersonaje[i] != ""); i++){
+			if(dialogosNPC[i]!="")
+				Debug.Log("Conchi: " + dialogosNPC[i]);
+			if(dialogosPersonaje[i] != "")
+				Debug.Log("F: " + dialogosPersonaje[i]);
 		}
     }
 
