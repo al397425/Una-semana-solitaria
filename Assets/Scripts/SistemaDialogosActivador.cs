@@ -7,23 +7,23 @@ public class SistemaDialogosActivador : MonoBehaviour
 	//Referencia al sistema de dialogos empleado
 	public SistemaDialogos sistemaDialogos;
 	public int numeroDialgoParaActivar;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	//Tras acabar la primera conversacion se puede mostrar una conversacciónOpcional
+	public bool conversacciónOpcional = false; 
+	[ConditionalField("conversacciónOpcional")] public int numeroDialgoOpcionalParaActivar;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 	
 	void OnTriggerStay2D(Collider2D other){
-		if (Input.GetKeyDown(sistemaDialogos.teclaDeInteraccion) && sistemaDialogos.gameObject.active == false)
+		if (Input.GetKeyDown(sistemaDialogos.teclaDeInteraccion) && sistemaDialogos.GetfinConversacion() == false)
         {
-			sistemaDialogos.gameObject.SetActive(true);
-			sistemaDialogos.ObtenerListaDeDialogos(numeroDialgoParaActivar);
+			if(conversacionPrincipalAcabada == false){
+				sistemaDialogos.gameObject.SetActive(true);
+				sistemaDialogos.ObtenerListaDeDialogos(numeroDialgoParaActivar);
+			}else if(conversacciónOpcional == true){
+				sistemaDialogos.gameObject.SetActive(true);
+				sistemaDialogos.ObtenerListaDeDialogos(numeroDialgoOpcionalParaActivar);
+			}
 		}
 	}
 }
+
+
