@@ -21,6 +21,8 @@ public class SistemaDialogos : MonoBehaviour
 	public UnityEvent eventoAlTerminarDialogo;
 	//Tecla de interaccion
 	public KeyCode teclaDeInteraccion;
+	//Tiempo de animacion
+	public float tiempoPorCaracter = 0.02f;
 
 	int indiceDialogoNPC, indiceDialogoJugador;
 
@@ -29,6 +31,8 @@ public class SistemaDialogos : MonoBehaviour
 	
 	List<string> dialogosNPC = new List<string>();
 	List<string> dialogosPersonaje = new List<string>();
+	
+	IEnumerator corrutinaActual;
 	
 	//Obtiene la lista de dialogos usada durante la conversacion
 	public void ObtenerListaDeDialogos(int personaje){
@@ -75,21 +79,33 @@ public class SistemaDialogos : MonoBehaviour
 	public void AvanzarDialogo(){
 		if((indiceDialogoNPC < dialogosNPC.Count && dialogosNPC[indiceDialogoNPC]!="") || (indiceDialogoJugador < dialogosPersonaje.Count && dialogosPersonaje[indiceDialogoJugador] != "")){
 			if(dialogosNPC[indiceDialogoNPC]==""){
-				textoUI.text = dialogosPersonaje[indiceDialogoJugador];
+				if(corrutinaActual != null)
+					StopCoroutine(corrutinaActual);
+				corrutinaActual = escribirAnimacion(dialogosPersonaje[indiceDialogoJugador]);
+				StartCoroutine(corrutinaActual);
 				indiceDialogoJugador++;
 				indiceDialogoNPC++;
 				hablaNPC = false;
 			}else if(dialogosPersonaje[indiceDialogoJugador]==""){
-				textoUI.text = dialogosNPC[indiceDialogoNPC];
+				if(corrutinaActual != null)
+					StopCoroutine(corrutinaActual);
+				corrutinaActual = escribirAnimacion(dialogosNPC[indiceDialogoNPC]);
+				StartCoroutine(corrutinaActual);
 				indiceDialogoJugador++;
 				indiceDialogoNPC++;
 				hablaNPC = true;
 			}else{
 				if(hablaNPC){
-					textoUI.text = dialogosNPC[indiceDialogoNPC];
+					if(corrutinaActual != null)
+						StopCoroutine(corrutinaActual);
+					corrutinaActual = escribirAnimacion(dialogosNPC[indiceDialogoNPC]);
+					StartCoroutine(corrutinaActual);
 					hablaNPC = false;
 				}else{
-					textoUI.text = dialogosPersonaje[indiceDialogoJugador];
+					if(corrutinaActual != null)
+						StopCoroutine(corrutinaActual);
+					corrutinaActual = escribirAnimacion(dialogosPersonaje[indiceDialogoJugador]);
+					StartCoroutine(corrutinaActual);
 					indiceDialogoJugador++;
 					indiceDialogoNPC++; 
 					hablaNPC = true;
@@ -113,5 +129,16 @@ public class SistemaDialogos : MonoBehaviour
 	
 	public void SetcomenzarConversacion(bool valor){
 		comenzarConversacion = valor;
+	}
+	
+	IEnumerator escribirAnimacion(string texto){
+		string textoActual="";
+		
+		for(int i =0; i<texto.Length; i++){
+			textoActual += texto[i];
+			textoUI.text = textoActual;
+			yield return new WaitForSeconds(tiempoPorCaracter);
+		}
+		
 	}
 }

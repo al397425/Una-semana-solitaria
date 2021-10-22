@@ -672,6 +672,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2743842663252036171, guid: 6738af0b12939894fbaae1f9f8eb5a6a, type: 3}
+      propertyPath: tiempoPorCaracter
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743842663252036171, guid: 6738af0b12939894fbaae1f9f8eb5a6a, type: 3}
       propertyPath: teclaDeInteraccion
       value: 32
       objectReference: {fileID: 0}
