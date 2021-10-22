@@ -23,22 +23,31 @@ public class SistemaDialogos : MonoBehaviour
 	public KeyCode teclaDeInteraccion;
 	//Tiempo de animacion
 	public float tiempoPorCaracter = 0.02f;
+	//Referencia a los retratos
+	public Image referenciaRetratoDialogoNPC;
+	public Image referenciaRetratoDialogoJugador;
 
 	int indiceDialogoNPC, indiceDialogoJugador;
 
 	bool hablaNPC=true;
 	bool comenzarConversacion = true;
 	
+	Sprite referenciaSpriteNPC;
+	
 	List<string> dialogosNPC = new List<string>();
 	List<string> dialogosPersonaje = new List<string>();
 	
 	IEnumerator corrutinaActual;
 	
+	Color32 colorBlanco = new Color32(255,255,255,255);
+	Color32 colorGris = new Color32(100,100,100,255);
+	
 	//Obtiene la lista de dialogos usada durante la conversacion
-	public void ObtenerListaDeDialogos(int personaje){
+	public void ObtenerListaDeDialogos(int personaje, Sprite retratoNPC){
 		comenzarConversacion = false;
 		indiceDialogoNPC = 0;
 		indiceDialogoJugador = 0;
+		referenciaSpriteNPC= retratoNPC;
 		
 		using(var reader = new StreamReader(@AssetDatabase.GetAssetPath(ficheroDialogos)))
 		{
@@ -79,6 +88,8 @@ public class SistemaDialogos : MonoBehaviour
 	public void AvanzarDialogo(){
 		if((indiceDialogoNPC < dialogosNPC.Count && dialogosNPC[indiceDialogoNPC]!="") || (indiceDialogoJugador < dialogosPersonaje.Count && dialogosPersonaje[indiceDialogoJugador] != "")){
 			if(dialogosNPC[indiceDialogoNPC]==""){
+				referenciaRetratoDialogoJugador.color = colorBlanco;
+				referenciaRetratoDialogoNPC.color = colorGris;
 				if(corrutinaActual != null)
 					StopCoroutine(corrutinaActual);
 				corrutinaActual = escribirAnimacion(dialogosPersonaje[indiceDialogoJugador]);
@@ -87,6 +98,8 @@ public class SistemaDialogos : MonoBehaviour
 				indiceDialogoNPC++;
 				hablaNPC = false;
 			}else if(dialogosPersonaje[indiceDialogoJugador]==""){
+				referenciaRetratoDialogoJugador.color = colorGris;
+				referenciaRetratoDialogoNPC.color = colorBlanco;
 				if(corrutinaActual != null)
 					StopCoroutine(corrutinaActual);
 				corrutinaActual = escribirAnimacion(dialogosNPC[indiceDialogoNPC]);
@@ -96,12 +109,16 @@ public class SistemaDialogos : MonoBehaviour
 				hablaNPC = true;
 			}else{
 				if(hablaNPC){
+					referenciaRetratoDialogoJugador.color = colorGris;
+					referenciaRetratoDialogoNPC.color = colorBlanco;
 					if(corrutinaActual != null)
 						StopCoroutine(corrutinaActual);
 					corrutinaActual = escribirAnimacion(dialogosNPC[indiceDialogoNPC]);
 					StartCoroutine(corrutinaActual);
 					hablaNPC = false;
 				}else{
+					referenciaRetratoDialogoJugador.color = colorBlanco;
+					referenciaRetratoDialogoNPC.color = colorGris;
 					if(corrutinaActual != null)
 						StopCoroutine(corrutinaActual);
 					corrutinaActual = escribirAnimacion(dialogosPersonaje[indiceDialogoJugador]);

@@ -6,6 +6,7 @@ using UnityEditor;
 public class SistemaDialogosActivador : MonoBehaviour
 {
 	//Referencia al sistema de dialogos empleado
+	public Sprite retratorDelDialogo;
 	public SistemaDialogos sistemaDialogos;
 	public int numeroDialgoParaActivar;
 	//Tras acabar la primera conversacion se puede mostrar una conversacciónOpcional
@@ -21,11 +22,11 @@ public class SistemaDialogosActivador : MonoBehaviour
         {
 			if(conversacionPrincipalAcabada == false){
 				sistemaDialogos.gameObject.SetActive(true);
-				sistemaDialogos.ObtenerListaDeDialogos(numeroDialgoParaActivar);
+				sistemaDialogos.ObtenerListaDeDialogos(numeroDialgoParaActivar,retratorDelDialogo);
 				conversacionPrincipalAcabada = true;
 			}else if(conversaccionOpcional == true && conversacionOpcionalAcabada == false){
 				sistemaDialogos.gameObject.SetActive(true);
-				sistemaDialogos.ObtenerListaDeDialogos(numeroDialgoOpcionalParaActivar);
+				sistemaDialogos.ObtenerListaDeDialogos(numeroDialgoOpcionalParaActivar,retratorDelDialogo);
 				conversacionOpcionalAcabada = true;
 			}
 			
