@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class SistemaDialogosActivador : MonoBehaviour
 {
@@ -8,22 +9,29 @@ public class SistemaDialogosActivador : MonoBehaviour
 	public SistemaDialogos sistemaDialogos;
 	public int numeroDialgoParaActivar;
 	//Tras acabar la primera conversacion se puede mostrar una conversacciónOpcional
-	public bool conversacciónOpcional = false; 
-	[ConditionalField("conversacciónOpcional")] public int numeroDialgoOpcionalParaActivar;
+	public bool conversaccionOpcional = true;
+	public bool conversaccionOpcionalSeRepite = false; 	
+	public int numeroDialgoOpcionalParaActivar;
 
+	bool conversacionPrincipalAcabada = false; 
+	bool conversacionOpcionalAcabada = false; 
 	
 	void OnTriggerStay2D(Collider2D other){
-		if (Input.GetKeyDown(sistemaDialogos.teclaDeInteraccion) && sistemaDialogos.GetfinConversacion() == false)
+		if (Input.GetKeyDown(sistemaDialogos.teclaDeInteraccion) && sistemaDialogos.GetcomenzarConversacion() == true)
         {
 			if(conversacionPrincipalAcabada == false){
 				sistemaDialogos.gameObject.SetActive(true);
 				sistemaDialogos.ObtenerListaDeDialogos(numeroDialgoParaActivar);
-			}else if(conversacciónOpcional == true){
+				conversacionPrincipalAcabada = true;
+			}else if(conversaccionOpcional == true && conversacionOpcionalAcabada == false){
 				sistemaDialogos.gameObject.SetActive(true);
 				sistemaDialogos.ObtenerListaDeDialogos(numeroDialgoOpcionalParaActivar);
+				conversacionOpcionalAcabada = true;
 			}
+			
+			if(conversaccionOpcionalSeRepite == true)
+				conversacionOpcionalAcabada = false;
+			
 		}
 	}
 }
-
-

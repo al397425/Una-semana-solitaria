@@ -25,14 +25,14 @@ public class SistemaDialogos : MonoBehaviour
 	int indiceDialogoNPC, indiceDialogoJugador;
 
 	bool hablaNPC=true;
-	bool finConversacion = false;
+	bool comenzarConversacion = true;
 	
 	List<string> dialogosNPC = new List<string>();
 	List<string> dialogosPersonaje = new List<string>();
 	
 	//Obtiene la lista de dialogos usada durante la conversacion
 	public void ObtenerListaDeDialogos(int personaje){
-		finConversacion = false;
+		comenzarConversacion = false;
 		indiceDialogoNPC = 0;
 		indiceDialogoJugador = 0;
 		
@@ -102,16 +102,16 @@ public class SistemaDialogos : MonoBehaviour
 			}
 			dialogosNPC.Clear();
 			dialogosPersonaje.Clear();
-			finConversacion = true;
+			comenzarConversacion = true;
 			gameObject.SetActive(false);
 		}
 	}
 	
-	public bool GetfinConversacion(){
-		return finConversacion;
+	public bool GetcomenzarConversacion(){
+		return comenzarConversacion;
 	}
 	
-	public void SetfinConversacion(bool valor){
-		finConversacion = valor;
+	public void SetcomenzarConversacion(bool valor){
+		comenzarConversacion = valor;
 	}
 }
