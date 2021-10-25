@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using UnityEngine.Events;
 
 public class SistemaDialogosActivador : MonoBehaviour
 {
@@ -13,13 +14,19 @@ public class SistemaDialogosActivador : MonoBehaviour
 	public bool conversaccionOpcional = true;
 	public bool conversaccionOpcionalSeRepite = false; 	
 	public int numeroDialgoOpcionalParaActivar;
-
+	//Evento a llamar
+	public UnityEvent eventoAlEmpezarDialogo;
+	
 	bool conversacionPrincipalAcabada = false; 
 	bool conversacionOpcionalAcabada = false; 
 	
 	void OnTriggerStay2D(Collider2D other){
 		if (Input.GetKeyDown(sistemaDialogos.teclaDeInteraccion) && sistemaDialogos.GetcomenzarConversacion() == true)
         {
+			if(eventoAlEmpezarDialogo != null){
+				eventoAlEmpezarDialogo.Invoke();
+			}
+			
 			if(conversacionPrincipalAcabada == false){
 				sistemaDialogos.gameObject.SetActive(true);
 				sistemaDialogos.ObtenerListaDeDialogos(numeroDialgoParaActivar,retratorDelDialogo);

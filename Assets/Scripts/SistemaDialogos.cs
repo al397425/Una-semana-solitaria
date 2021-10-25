@@ -130,7 +130,7 @@ public class SistemaDialogos : MonoBehaviour
 			}
 		}else{
 			//desactivar el sistema
-			if(eventoAlTerminarDialogo == null){
+			if(eventoAlTerminarDialogo != null){
 				eventoAlTerminarDialogo.Invoke();
 			}
 			dialogosNPC.Clear();

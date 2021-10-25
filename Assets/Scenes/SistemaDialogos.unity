@@ -259,6 +259,9 @@ MonoBehaviour:
   conversaccionOpcional: 1
   conversaccionOpcionalSeRepite: 1
   numeroDialgoOpcionalParaActivar: 1
+  eventoAlEmpezarDialogo:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &83995396
 Transform:
   m_ObjectHideFlags: 0
