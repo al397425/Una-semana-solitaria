@@ -16,6 +16,8 @@ public class SistemaDialogosActivador : MonoBehaviour
 	public int numeroDialgoOpcionalParaActivar;
 	//Evento a llamar
 	public UnityEvent eventoAlEmpezarDialogo;
+	//Evento a llamar
+	public UnityEvent eventoAlTerminarDialogo;
 	
 	bool conversacionPrincipalAcabada = false; 
 	bool conversacionOpcionalAcabada = false; 
@@ -29,11 +31,11 @@ public class SistemaDialogosActivador : MonoBehaviour
 			
 			if(conversacionPrincipalAcabada == false){
 				sistemaDialogos.gameObject.SetActive(true);
-				sistemaDialogos.ObtenerListaDeDialogos(numeroDialgoParaActivar,retratorDelDialogo);
+				sistemaDialogos.ObtenerListaDeDialogos(numeroDialgoParaActivar,retratorDelDialogo,eventoAlTerminarDialogo);
 				conversacionPrincipalAcabada = true;
 			}else if(conversaccionOpcional == true && conversacionOpcionalAcabada == false){
 				sistemaDialogos.gameObject.SetActive(true);
-				sistemaDialogos.ObtenerListaDeDialogos(numeroDialgoOpcionalParaActivar,retratorDelDialogo);
+				sistemaDialogos.ObtenerListaDeDialogos(numeroDialgoOpcionalParaActivar,retratorDelDialogo,eventoAlTerminarDialogo);
 				conversacionOpcionalAcabada = true;
 			}
 			

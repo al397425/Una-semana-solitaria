@@ -262,6 +262,9 @@ MonoBehaviour:
   eventoAlEmpezarDialogo:
     m_PersistentCalls:
       m_Calls: []
+  eventoAlTerminarDialogo:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &83995396
 Transform:
   m_ObjectHideFlags: 0
@@ -667,6 +670,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2743842662330045135, guid: 6738af0b12939894fbaae1f9f8eb5a6a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 892256427}
+    - target: {fileID: 2743842662330045135, guid: 6738af0b12939894fbaae1f9f8eb5a6a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AvanzarDialogo
+      objectReference: {fileID: 0}
     - target: {fileID: 2743842663252036170, guid: 6738af0b12939894fbaae1f9f8eb5a6a, type: 3}
       propertyPath: m_Name
       value: SistemaDialogos

@@ -17,8 +17,6 @@ public class SistemaDialogos : MonoBehaviour
 	public TextAsset ficheroDialogos;
 	//Texto de la ui que se modificara
 	public TextMeshProUGUI textoUI;
-	//Evento a llamar
-	public UnityEvent eventoAlTerminarDialogo;
 	//Tecla de interaccion
 	public KeyCode teclaDeInteraccion;
 	//Tiempo de animacion
@@ -39,11 +37,13 @@ public class SistemaDialogos : MonoBehaviour
 	
 	IEnumerator corrutinaActual;
 	
+	UnityEvent eventoTerminarDialogo;
+	
 	Color32 colorBlanco = new Color32(255,255,255,255);
 	Color32 colorGris = new Color32(100,100,100,255);
 	
 	//Obtiene la lista de dialogos usada durante la conversacion
-	public void ObtenerListaDeDialogos(int personaje, Sprite retratoNPC){
+	public void ObtenerListaDeDialogos(int personaje, Sprite retratoNPC, UnityEvent eventoAlTerminarDialogo){
 		comenzarConversacion = false;
 		indiceDialogoNPC = 0;
 		indiceDialogoJugador = 0;
@@ -80,6 +80,9 @@ public class SistemaDialogos : MonoBehaviour
 				}
 			}
 		}
+		
+		eventoTerminarDialogo = eventoAlTerminarDialogo;
+		
 		//Lo llama una vez para iniciar el dialogo
 		AvanzarDialogo();
 	}
@@ -130,8 +133,8 @@ public class SistemaDialogos : MonoBehaviour
 			}
 		}else{
 			//desactivar el sistema
-			if(eventoAlTerminarDialogo != null){
-				eventoAlTerminarDialogo.Invoke();
+			if(eventoTerminarDialogo != null){
+				eventoTerminarDialogo.Invoke();
 			}
 			dialogosNPC.Clear();
 			dialogosPersonaje.Clear();
