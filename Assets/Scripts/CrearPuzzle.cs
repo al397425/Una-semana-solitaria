@@ -18,7 +18,7 @@ public class CrearPuzzle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-		iniciarMinijuego(5);
+		iniciarMinijuego(27,13);
         
     }
 
@@ -28,13 +28,13 @@ public class CrearPuzzle : MonoBehaviour
         
     }
 	
-	public void iniciarMinijuego(int tamanio){
-		GenerarSlots(5);
-		GenerarTuberias(5);
+	public void iniciarMinijuego(int ancho, int alto){
+		GenerarSlots(ancho,alto);
+		GenerarTuberias(ancho,alto);
 	}
 	
-	void GenerarSlots(int tamanio){
-		matrizSlots = new GameObject [tamanio,tamanio];
+	void GenerarSlots(int ancho, int alto){
+		matrizSlots = new GameObject [ancho,alto];
 		
 		float posx=0,posy=0;
 		
@@ -42,12 +42,15 @@ public class CrearPuzzle : MonoBehaviour
 		float anchoImagen=imagen.sprite.rect.width;
 		float altoImagen=imagen.sprite.rect.height;
 		
-		for (int y=0; y < tamanio; y++)
+		posy = altoImagen;
+		
+		for (int y=0; y < alto; y++)
        {
-           for (int x=0; x < tamanio; x++)
+           for (int x=0; x < ancho; x++)
            {
-               matrizSlots[x,y] = Instantiate(SlotTuberia, new Vector3(posx,posy,0), Quaternion.identity);
+               matrizSlots[x,y] = Instantiate(SlotTuberia, new Vector2(0,0), Quaternion.identity);
 			   matrizSlots[x,y].transform.SetParent(canvas.transform);
+			   matrizSlots[x,y].GetComponent<RectTransform>().anchoredPosition = new Vector2(posx, -posy);
 			   posx += anchoImagen;
            }
 		   posy += altoImagen;
@@ -55,7 +58,7 @@ public class CrearPuzzle : MonoBehaviour
        }  
 	}
 	
-	void GenerarTuberias(int tamanio){
+	void GenerarTuberias(int ancho, int alto){
 		
 	}
 }
