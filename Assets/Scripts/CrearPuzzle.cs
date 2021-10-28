@@ -6,15 +6,20 @@ using UnityEngine.UI;
 public class CrearPuzzle : MonoBehaviour
 {
 	
-	//Imagen del slot vacio donde ira la tuberia
-	public Image spriteSlotTuberia;
-	
-	Image [,]matrizSlots;
+	//Huecos de las tuberias
+	public GameObject SlotTuberia;
+	//Tuberias
+	public GameObject Tuberia;
+	//Referencia al canvas
+	public Canvas canvas;
+	GameObject [,]matrizSlots;
+	GameObject [,]matrizTuberias;
 	
     // Start is called before the first frame update
     void Start()
     {
-        
+		
+        GenerarSlots(5);
     }
 
     // Update is called once per frame
@@ -23,7 +28,25 @@ public class CrearPuzzle : MonoBehaviour
         
     }
 	
-	void GenerarSlots(int x, int y){
+	void GenerarSlots(int tamanio){
+		matrizSlots = new GameObject [tamanio,tamanio];
 		
+		float posx=0,posy=0;
+		
+		Image imagen = SlotTuberia.GetComponent<Image> ();
+		float anchoImagen=imagen.sprite.rect.width;
+		float altoImagen=imagen.sprite.rect.height;
+		
+		for (int y=0; y < tamanio; y++)
+       {
+           for (int x=0; x < tamanio; x++)
+           {
+               matrizSlots[x,y] = Instantiate(SlotTuberia, new Vector3(posx,posy,0), Quaternion.identity);
+			   matrizSlots[x,y].transform.SetParent(canvas.transform);
+			   posx += anchoImagen;
+           }
+		   posy += altoImagen;
+		   posx = 0;
+       }  
 	}
 }
