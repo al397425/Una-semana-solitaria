@@ -30,11 +30,11 @@ public class CrearPuzzle : MonoBehaviour
 	
 	public void iniciarMinijuego(int ancho, int alto){
 		GenerarSlots(ancho,alto);
-		GenerarTuberias(ancho,alto);
 	}
 	
 	void GenerarSlots(int ancho, int alto){
 		matrizSlots = new GameObject [ancho,alto];
+		matrizTuberias = new GameObject [ancho,alto];
 		
 		float posx=0,posy=0;
 		
@@ -48,17 +48,20 @@ public class CrearPuzzle : MonoBehaviour
        {
            for (int x=0; x < ancho; x++)
            {
+			   //Crea slot
                matrizSlots[x,y] = Instantiate(SlotTuberia, new Vector2(0,0), Quaternion.identity);
 			   matrizSlots[x,y].transform.SetParent(canvas.transform);
 			   matrizSlots[x,y].GetComponent<RectTransform>().anchoredPosition = new Vector2(posx, -posy);
+			   //Crea tuberia
+			   matrizTuberias[x,y] = Instantiate(Tuberia, new Vector2(0,0), Quaternion.identity);
+			   matrizTuberias[x,y].transform.SetParent(matrizSlots[x,y].transform);
+			   matrizTuberias[x,y].GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
+			   //Pasa a la siguiente posicion
 			   posx += anchoImagen;
            }
 		   posy += altoImagen;
 		   posx = 0;
        }  
 	}
-	
-	void GenerarTuberias(int ancho, int alto){
-		
-	}
+
 }
