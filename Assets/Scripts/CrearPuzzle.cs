@@ -18,8 +18,8 @@ public class CrearPuzzle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-		
-        GenerarSlots(5);
+		iniciarMinijuego(5);
+        
     }
 
     // Update is called once per frame
@@ -27,6 +27,11 @@ public class CrearPuzzle : MonoBehaviour
     {
         
     }
+	
+	public void iniciarMinijuego(int tamanio){
+		GenerarSlots(5);
+		GenerarTuberias(5);
+	}
 	
 	void GenerarSlots(int tamanio){
 		matrizSlots = new GameObject [tamanio,tamanio];
@@ -48,5 +53,9 @@ public class CrearPuzzle : MonoBehaviour
 		   posy += altoImagen;
 		   posx = 0;
        }  
+	}
+	
+	void GenerarTuberias(int tamanio){
+		
 	}
 }
