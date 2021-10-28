@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8999647327893605423}
   - component: {fileID: 3412452509116477676}
   - component: {fileID: 8623028310761179489}
-  - component: {fileID: 8468352873608536011}
+  - component: {fileID: 2965185406968011098}
   m_Layer: 0
   m_Name: Tuberia
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8468352873608536011
+--- !u!114 &2965185406968011098
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,6 +85,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 8384340352060404542}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b571be8fe5a294348a8073f3b9a68e45, type: 3}
+  m_Script: {fileID: 11500000, guid: 26026e018823c5947ad2b3423c984e7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

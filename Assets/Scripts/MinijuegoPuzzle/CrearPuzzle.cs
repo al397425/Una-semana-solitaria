@@ -12,13 +12,14 @@ public class CrearPuzzle : MonoBehaviour
 	public GameObject Tuberia;
 	//Referencia al canvas
 	public Canvas canvas;
+	
+	//Matriz de los huecos donde iran las tuberias y por consecuente esta es la matriz de las tuberias
 	GameObject [,]matrizSlots;
-	GameObject [,]matrizTuberias;
 	
     // Start is called before the first frame update
     void Start()
     {
-		iniciarMinijuego(27,13);
+		iniciarMinijuego(15,13);
         
     }
 
@@ -34,7 +35,6 @@ public class CrearPuzzle : MonoBehaviour
 	
 	void GenerarSlots(int ancho, int alto){
 		matrizSlots = new GameObject [ancho,alto];
-		matrizTuberias = new GameObject [ancho,alto];
 		
 		float posx=0,posy=0;
 		
@@ -43,6 +43,8 @@ public class CrearPuzzle : MonoBehaviour
 		float altoImagen=imagen.sprite.rect.height;
 		
 		posy = altoImagen;
+		
+		GameObject tuberia;
 		
 		for (int y=0; y < alto; y++)
        {
@@ -53,9 +55,9 @@ public class CrearPuzzle : MonoBehaviour
 			   matrizSlots[x,y].transform.SetParent(canvas.transform);
 			   matrizSlots[x,y].GetComponent<RectTransform>().anchoredPosition = new Vector2(posx, -posy);
 			   //Crea tuberia
-			   matrizTuberias[x,y] = Instantiate(Tuberia, new Vector2(0,0), Quaternion.identity);
-			   matrizTuberias[x,y].transform.SetParent(matrizSlots[x,y].transform);
-			   matrizTuberias[x,y].GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
+			   tuberia = Instantiate(Tuberia, new Vector2(0,0), Quaternion.identity);
+			   tuberia.transform.SetParent(matrizSlots[x,y].transform);
+			   tuberia.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
 			   //Pasa a la siguiente posicion
 			   posx += anchoImagen;
            }
