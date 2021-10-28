@@ -24,6 +24,8 @@ public class SistemaDialogos : MonoBehaviour
 	//Referencia a los retratos
 	public Image referenciaRetratoDialogoNPC;
 	public Image referenciaRetratoDialogoJugador;
+	//
+	public AudioSource sonidoDelTexto;
 
 	int indiceDialogoNPC, indiceDialogoJugador;
 
@@ -39,16 +41,19 @@ public class SistemaDialogos : MonoBehaviour
 	
 	UnityEvent eventoTerminarDialogo;
 	
+
+	
 	Color32 colorBlanco = new Color32(255,255,255,255);
 	Color32 colorGris = new Color32(100,100,100,255);
 	
-	//Obtiene la lista de dialogos usada durante la conversacion
+	//Obtiene la lista de dialogos usada durante la conversacion y hace las asignaciones de los parametro del NPC
 	public void ObtenerListaDeDialogos(int personaje, Sprite retratoNPC, UnityEvent eventoAlTerminarDialogo){
 		comenzarConversacion = false;
 		indiceDialogoNPC = 0;
 		indiceDialogoJugador = 0;
 		referenciaSpriteNPC= retratoNPC;
-		
+		eventoTerminarDialogo = eventoAlTerminarDialogo;
+			
 		using(var reader = new StreamReader(@AssetDatabase.GetAssetPath(ficheroDialogos)))
 		{
 			var line = reader.ReadLine();
@@ -81,7 +86,7 @@ public class SistemaDialogos : MonoBehaviour
 			}
 		}
 		
-		eventoTerminarDialogo = eventoAlTerminarDialogo;
+
 		
 		//Lo llama una vez para iniciar el dialogo
 		AvanzarDialogo();
@@ -151,14 +156,17 @@ public class SistemaDialogos : MonoBehaviour
 		comenzarConversacion = valor;
 	}
 	
+	//Escribe un caracter hasta completar el texto dado
 	IEnumerator escribirAnimacion(string texto){
 		string textoActual="";
 		
 		for(int i =0; i<texto.Length; i++){
 			textoActual += texto[i];
 			textoUI.text = textoActual;
+			if(sonidoDelTexto != null && !sonidoDelTexto.isPlaying)
+				sonidoDelTexto.Play(0);
 			yield return new WaitForSeconds(tiempoPorCaracter);
 		}
-		
+		sonidoDelTexto.Stop();
 	}
 }
