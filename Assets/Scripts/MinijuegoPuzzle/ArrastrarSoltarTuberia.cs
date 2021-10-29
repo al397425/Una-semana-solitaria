@@ -23,9 +23,26 @@ public class ArrastrarSoltarTuberia : MonoBehaviour, IDragHandler, IEndDragHandl
 	}
 	
 	public void OnEndDrag(PointerEventData eventData){
-			GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
+		if(obejtoColisionado != null){
+			Transform padre = transform.parent.transform;
+			transform.SetParent(obejtoColisionado.transform.parent.transform);
+			obejtoColisionado.transform.SetParent(padre);
+			
+			obejtoColisionado.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
+		}
+		
+		colision.isTrigger = false;
+		GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
 	}
 
-
+	void OnTriggerEnter2D(Collider2D other){
+		if(colision.isTrigger == true)
+			obejtoColisionado = other;
+	}
+	
+	void OnTriggerExit2D(Collider2D other){
+		if(colision.isTrigger == true)
+			obejtoColisionado = null;
+	}
 
 }
