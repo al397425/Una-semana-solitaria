@@ -29,6 +29,8 @@ public class TipoTuberia : MonoBehaviour
 	public List<TiposTuberiasEditor> tiposTuberia;
 	//-----------------------------------------------------------------------------------------------
 	
+	bool puedeArrastrar = true;
+	
     // Start is called before the first frame update
     void Awake()
     {
@@ -57,4 +59,18 @@ public class TipoTuberia : MonoBehaviour
 			}
 		}
 	}	
+	
+	/**
+	 * Establece el valor si puede arrastrar 
+	**/
+	public void SetpuedeArrastrar(bool valor){
+		puedeArrastrar = valor;
+	}
+	
+	/**
+	 * Obtiene el valor si puede arrastrar 
+	**/
+	public bool GetpuedeArrastrar(){
+		return puedeArrastrar;
+	}
 }

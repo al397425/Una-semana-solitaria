@@ -60,6 +60,7 @@ public class CrearPuzzle : MonoBehaviour
 		tuberia.transform.SetParent(matrizSlots[filaPuntoInicio,0].transform);
 		tuberia.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
 		tuberia.GetComponent<TipoTuberia>().EstablecerTipoTuberia(EnumDireccion.Direccion.ninguno, EnumDireccion.Direccion.derecha);
+		tuberia.GetComponent<TipoTuberia>().SetpuedeArrastrar(false);
 		posy = altoImagen;
 		posx = anchoImagen;
 		
@@ -93,6 +94,7 @@ public class CrearPuzzle : MonoBehaviour
 		tuberia.transform.SetParent(matrizSlots[filaPuntoFinal, alto+1].transform);
 		tuberia.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
 		tuberia.GetComponent<TipoTuberia>().EstablecerTipoTuberia(EnumDireccion.Direccion.izquierda, EnumDireccion.Direccion.ninguno);
+		tuberia.GetComponent<TipoTuberia>().SetpuedeArrastrar(false);
 		posy = altoImagen;
 		posx = anchoImagen;
 	}

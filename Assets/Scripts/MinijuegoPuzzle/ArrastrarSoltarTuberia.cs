@@ -15,11 +15,12 @@ public class ArrastrarSoltarTuberia : MonoBehaviour, IDragHandler, IEndDragHandl
 	}
 
 	public void OnDrag(PointerEventData eventData){
-		transform.position = Input.mousePosition;
-		//Coge el padre y lo pone como ultima prioridad para ser renderizado el ultimo y asi la tuberia no queda detras del fondo
-		transform.parent.transform.SetAsLastSibling();
-		colision.isTrigger = true;
-		
+		if(GetComponent<TipoTuberia>().GetpuedeArrastrar() == true){
+			transform.position = Input.mousePosition;
+			//Coge el padre y lo pone como ultima prioridad para ser renderizado el ultimo y asi la tuberia no queda detras del fondo
+			transform.parent.transform.SetAsLastSibling();
+			colision.isTrigger = true;
+		}
 	}
 	
 	public void OnEndDrag(PointerEventData eventData){
