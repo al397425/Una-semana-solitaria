@@ -5,7 +5,6 @@ using UnityEngine;
 public class EnumTuberias : MonoBehaviour
 {
 	public enum Tuberia {vertical, horizontal, izquierdaAbajo, izquierdaArriba, derechaAbajo, derechaArriba, inicio, fin};
-	
     // Start is called before the first frame update
     void Start()
     {

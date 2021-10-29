@@ -56,15 +56,18 @@ public class TipoTuberia : MonoBehaviour
 	/**
 	 * Activa la tuberia y despues de un tiempo comprueba la siguiente direccion a tomar
 	**/
-	public IEnumerator ActivarTuberia(GameObject tuberia){
+	public IEnumerator ActivarTuberia(GameObject [,]matrizSlots, int fila, int columna){
 		yield return new WaitForSeconds(delayFlujo);
-		/*if(tipoDireccion.direccion2 == EnumDireccion.Direccion.derecha && tuberia.GetComponent<TipoTuberia>().tipoDireccion.direccion1 == EnumDireccion.Direccion.izquierda){
+		
+		GameObject tuberia = matrizSlots[fila,columna].transform.GetChild(0).gameObject;
+		
+		if(tuberiasCompatibles.Contains(tuberia.GetComponent<TipoTuberia>().tipoTuberia)){
 			Debug.Log("Muy bien!");
 		}else{
 			Debug.Log("nope");
-		}*/
-
+		}
 	}
+	
 	
 	/**
 	 * Establece el valor si puede arrastrar 

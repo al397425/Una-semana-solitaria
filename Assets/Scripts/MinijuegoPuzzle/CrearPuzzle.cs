@@ -14,7 +14,7 @@ public class CrearPuzzle : MonoBehaviour
 	public Canvas canvas;
 	
 	//Matriz de los huecos donde iran las tuberias y por consecuente esta es la matriz de las tuberias
-	GameObject [,]matrizSlots;
+	protected GameObject [,]matrizSlots;
 	
     // Start is called before the first frame update
     void Start()
@@ -97,7 +97,7 @@ public class CrearPuzzle : MonoBehaviour
 		posx = anchoImagen;
 		
 		//Activa la tuberia inicial
-		StartCoroutine(matrizSlots[0,filaPuntoInicio-1].transform.GetChild(0).GetComponent<TipoTuberia>().ActivarTuberia(matrizSlots[1,filaPuntoInicio-1].transform.GetChild(0).gameObject));
+		StartCoroutine(matrizSlots[0,filaPuntoInicio-1].transform.GetChild(0).GetComponent<TipoTuberia>().ActivarTuberia(matrizSlots, 1, filaPuntoInicio-1));
 	}
 
 }
