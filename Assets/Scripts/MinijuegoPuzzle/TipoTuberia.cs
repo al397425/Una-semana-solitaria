@@ -29,8 +29,10 @@ public class TipoTuberia : MonoBehaviour
 	public List<TiposTuberiasEditor> tiposTuberia;
 	//-----------------------------------------------------------------------------------------------
 	
+	Direcciones tipoDireccion;
+	
 	bool puedeArrastrar = true;
-	float delayFlujo;
+	float delayFlujo =5.0f;
 	
     // Start is called before the first frame update
     void Awake()
@@ -56,6 +58,7 @@ public class TipoTuberia : MonoBehaviour
 		for(int i = 0; i < tiposTuberia.Count; i++){
 			if(d1 == tiposTuberia[i].tiposDireccionTuberia.direccion1 && d2 == tiposTuberia[i].tiposDireccionTuberia.direccion2){
 				GetComponent<Image> ().sprite = tiposTuberia[i].imagenTuberia;
+				tipoDireccion = tiposTuberia[i].tiposDireccionTuberia;
 				return;
 			}
 		}
@@ -64,8 +67,14 @@ public class TipoTuberia : MonoBehaviour
 	/**
 	 * Activa la tuberia y despues de un tiempo comprueba la siguiente direccion a tomar
 	**/
-	public void ActivarTuberia(){
-		
+	public IEnumerator ActivarTuberia(GameObject tuberia){
+		yield return new WaitForSeconds(delayFlujo);
+		if(tipoDireccion.direccion1 == EnumDireccion.Direccion.derecha && tuberia.GetComponent<TipoTuberia>().tipoDireccion.direccion2 == EnumDireccion.Direccion.izquierda){
+			Debug.Log("Muy bien!");
+		}else{
+			Debug.Log("nope");
+		}
+
 	}
 	
 	/**
