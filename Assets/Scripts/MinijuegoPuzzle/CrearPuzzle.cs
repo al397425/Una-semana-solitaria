@@ -53,7 +53,7 @@ public class CrearPuzzle : MonoBehaviour
 		tuberia = (GameObject)Instantiate(Tuberia, new Vector2(0,0), Quaternion.identity);
 		tuberia.transform.SetParent(matrizSlots[0,filaPuntoInicio-1].transform);
 		tuberia.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
-		tuberia.GetComponent<TipoTuberia>().EstablecerTipoTuberia(EnumDireccion.Direccion.ninguno, EnumDireccion.Direccion.derecha);
+		tuberia.GetComponent<TipoTuberia>().EstablecerTipoTuberia(EnumTuberias.Tuberia.inicio);
 		tuberia.GetComponent<TipoTuberia>().SetpuedeArrastrar(false);
 		tuberia.GetComponent<TipoTuberia>().SetdelayFlujo(delayFlujoTuberia);
 		posy = altoImagen;
@@ -90,14 +90,14 @@ public class CrearPuzzle : MonoBehaviour
 		tuberia = (GameObject)Instantiate(Tuberia, new Vector2(0,0), Quaternion.identity);
 		tuberia.transform.SetParent(matrizSlots[alto+1, filaPuntoFinal-1].transform);
 		tuberia.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
-		tuberia.GetComponent<TipoTuberia>().EstablecerTipoTuberia(EnumDireccion.Direccion.izquierda, EnumDireccion.Direccion.ninguno);
+		tuberia.GetComponent<TipoTuberia>().EstablecerTipoTuberia(EnumTuberias.Tuberia.fin);
 		tuberia.GetComponent<TipoTuberia>().SetpuedeArrastrar(false);
 		tuberia.GetComponent<TipoTuberia>().SetdelayFlujo(delayFlujoTuberia);
 		posy = altoImagen;
 		posx = anchoImagen;
 		
 		//Activa la tuberia inicial
-		StartCoroutine(matrizSlots[filaPuntoInicio-1,0].transform.GetChild(0).GetComponent<TipoTuberia>().ActivarTuberia(matrizSlots[filaPuntoInicio-1,1].transform.GetChild(0).gameObject));
+		StartCoroutine(matrizSlots[0,filaPuntoInicio-1].transform.GetChild(0).GetComponent<TipoTuberia>().ActivarTuberia(matrizSlots[1,filaPuntoInicio-1].transform.GetChild(0).gameObject));
 	}
 
 }

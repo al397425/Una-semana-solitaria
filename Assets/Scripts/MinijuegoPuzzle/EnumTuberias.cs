@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnumDireccion : MonoBehaviour
+public class EnumTuberias : MonoBehaviour
 {
-	public enum Direccion {ninguno,arriba,abajo,izquierda,derecha};
+	public enum Tuberia {vertical, horizontal, izquierdaAbajo, izquierdaArriba, derechaAbajo, derechaArriba, inicio, fin};
 	
     // Start is called before the first frame update
     void Start()
