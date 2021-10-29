@@ -12,6 +12,10 @@ public class TipoTuberia : MonoBehaviour
 		public List<EnumTuberias.Tuberia> tuberiasCompatibles;
 		public EnumTuberias.Tuberia tipoDeTuberia;
 		public Sprite imagenTuberia;
+		//El sentido principal con la logica de que el agua va de izquierda a derecha
+		public EnumTuberias.Sentido sentidoPrincipal;
+		//El sentido opuesto cuando el agua cambia de direcion y se tiene que hacer una lectirura de derecha a izquierda
+		public EnumTuberias.Sentido sentidoSecundario;
 	}
 	public List<TiposTuberiasEditor> tiposTuberia;
 
@@ -20,6 +24,8 @@ public class TipoTuberia : MonoBehaviour
 	EnumTuberias.Tuberia tipoTuberia;
 	
 	bool puedeArrastrar = true;
+	bool llenaDeAgua = false;
+	
 	float delayFlujo =5.0f;
 	
     // Start is called before the first frame update
@@ -56,8 +62,9 @@ public class TipoTuberia : MonoBehaviour
 	/**
 	 * Activa la tuberia y despues de un tiempo comprueba la siguiente direccion a tomar
 	**/
-	public IEnumerator ActivarTuberia(GameObject [,]matrizSlots, int fila, int columna){
+	public IEnumerator ActivarTuberia(GameObject [,]matrizSlots, int fila, int columna, bool modificacionHorizontal){
 		yield return new WaitForSeconds(delayFlujo);
+		llenaDeAgua = true;
 		
 		GameObject tuberia = matrizSlots[fila,columna].transform.GetChild(0).gameObject;
 		

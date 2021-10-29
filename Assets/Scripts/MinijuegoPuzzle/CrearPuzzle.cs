@@ -97,7 +97,7 @@ public class CrearPuzzle : MonoBehaviour
 		posx = anchoImagen;
 		
 		//Activa la tuberia inicial
-		StartCoroutine(matrizSlots[0,filaPuntoInicio-1].transform.GetChild(0).GetComponent<TipoTuberia>().ActivarTuberia(matrizSlots, 1, filaPuntoInicio-1));
+		StartCoroutine(matrizSlots[0,filaPuntoInicio-1].transform.GetChild(0).GetComponent<TipoTuberia>().ActivarTuberia(matrizSlots, 1, filaPuntoInicio-1, true));
 	}
 
 }
