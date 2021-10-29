@@ -35,7 +35,7 @@ public class ArrastrarSoltarTuberia : MonoBehaviour, IDragHandler, IEndDragHandl
 		GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
 	}
 
-	void OnTriggerEnter2D(Collider2D other){
+	void OnTriggerStay2D(Collider2D other){
 		if(colision.isTrigger == true)
 			obejtoColisionado = other;
 	}

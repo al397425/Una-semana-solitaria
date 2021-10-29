@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2965185406968011098}
   - component: {fileID: 6732797182559256241}
   - component: {fileID: 2666948384948301471}
+  - component: {fileID: 7952906421660434677}
   m_Layer: 0
   m_Name: Tuberia
   m_TagString: Untagged
@@ -68,7 +69,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bff03c6d557dac049884edbc32abf9ff, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -114,7 +115,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 20, y: 20}
+  m_Size: {x: 35, y: 35}
   m_EdgeRadius: 0
 --- !u!50 &2666948384948301471
 Rigidbody2D:
@@ -134,6 +135,43 @@ Rigidbody2D:
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &7952906421660434677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8384340352060404542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb3351f11b76d00458cf13d751a25710, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiposTuberia:
+  - tiposDireccionTuberia:
+      direccion1: 2
+      direccion2: 1
+    imagenTuberia: {fileID: 21300000, guid: 134171102ad21774cb62b1cc2647348d, type: 3}
+  - tiposDireccionTuberia:
+      direccion1: 3
+      direccion2: 1
+    imagenTuberia: {fileID: 21300000, guid: b4c03705ecfaee1479b996331e38bf50, type: 3}
+  - tiposDireccionTuberia:
+      direccion1: 0
+      direccion2: 2
+    imagenTuberia: {fileID: 21300000, guid: 5f90f406a90bf0140ae3173762407fe0, type: 3}
+  - tiposDireccionTuberia:
+      direccion1: 0
+      direccion2: 3
+    imagenTuberia: {fileID: 21300000, guid: 4f07e8977826b4a4ab62f063d827b7a0, type: 3}
+  - tiposDireccionTuberia:
+      direccion1: 2
+      direccion2: 3
+    imagenTuberia: {fileID: 21300000, guid: bd8b320f09253414e99659025f027458, type: 3}
+  - tiposDireccionTuberia:
+      direccion1: 0
+      direccion2: 1
+    imagenTuberia: {fileID: 21300000, guid: bff03c6d557dac049884edbc32abf9ff, type: 3}
