@@ -151,27 +151,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tiposTuberia:
-  - tuberiasCompatibles: 
+  - tuberiasCompatibles: 0200000003000000040000000500000000000000
     tipoDeTuberia: 0
     imagenTuberia: {fileID: 21300000, guid: bff03c6d557dac049884edbc32abf9ff, type: 3}
-  - tuberiasCompatibles: 
+    sentidoPrincipal: 0
+    sentidoSecundario: 1
+  - tuberiasCompatibles: 0200000003000000040000000500000001000000
     tipoDeTuberia: 1
     imagenTuberia: {fileID: 21300000, guid: bd8b320f09253414e99659025f027458, type: 3}
-  - tuberiasCompatibles: 
+    sentidoPrincipal: 3
+    sentidoSecundario: 2
+  - tuberiasCompatibles: 0300000004000000050000000000000001000000
     tipoDeTuberia: 2
     imagenTuberia: {fileID: 21300000, guid: 134171102ad21774cb62b1cc2647348d, type: 3}
-  - tuberiasCompatibles: 
+    sentidoPrincipal: 1
+    sentidoSecundario: 2
+  - tuberiasCompatibles: 0200000005000000040000000000000001000000
     tipoDeTuberia: 3
     imagenTuberia: {fileID: 21300000, guid: 5f90f406a90bf0140ae3173762407fe0, type: 3}
-  - tuberiasCompatibles: 
+    sentidoPrincipal: 0
+    sentidoSecundario: 1
+  - tuberiasCompatibles: 0300000002000000050000000000000001000000
     tipoDeTuberia: 4
     imagenTuberia: {fileID: 21300000, guid: b4c03705ecfaee1479b996331e38bf50, type: 3}
-  - tuberiasCompatibles: 
+    sentidoPrincipal: 3
+    sentidoSecundario: 1
+  - tuberiasCompatibles: 0300000004000000020000000000000001000000
     tipoDeTuberia: 5
     imagenTuberia: {fileID: 21300000, guid: 4f07e8977826b4a4ab62f063d827b7a0, type: 3}
+    sentidoPrincipal: 3
+    sentidoSecundario: 0
   - tuberiasCompatibles: 010000000200000003000000
     tipoDeTuberia: 6
     imagenTuberia: {fileID: 21300000, guid: 144a4bd14627084439556c655877be78, type: 3}
+    sentidoPrincipal: 3
+    sentidoSecundario: 3
   - tuberiasCompatibles: 
     tipoDeTuberia: 7
     imagenTuberia: {fileID: 21300000, guid: 5100b0e2f0410664a9c94c6b51e86829, type: 3}
+    sentidoPrincipal: 3
+    sentidoSecundario: 3

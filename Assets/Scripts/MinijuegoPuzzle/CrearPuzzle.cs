@@ -19,7 +19,7 @@ public class CrearPuzzle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-		iniciarMinijuego(15, 13, 13, 1, 5.0f);
+		iniciarMinijuego(15, 13, 13, 1, 30.0f);
         
     }
 	
@@ -97,7 +97,7 @@ public class CrearPuzzle : MonoBehaviour
 		posx = anchoImagen;
 		
 		//Activa la tuberia inicial
-		StartCoroutine(matrizSlots[0,filaPuntoInicio-1].transform.GetChild(0).GetComponent<TipoTuberia>().ActivarTuberia(matrizSlots, 1, filaPuntoInicio-1, true));
+		//StartCoroutine(matrizSlots[0,filaPuntoInicio-1].transform.GetChild(0).GetComponent<TipoTuberia>().ActivarTuberia(matrizSlots, 1, filaPuntoInicio-1, 1, 0));
 	}
 
 }
