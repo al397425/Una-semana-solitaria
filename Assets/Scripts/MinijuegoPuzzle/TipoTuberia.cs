@@ -30,6 +30,7 @@ public class TipoTuberia : MonoBehaviour
 	//-----------------------------------------------------------------------------------------------
 	
 	bool puedeArrastrar = true;
+	float delayFlujo;
 	
     // Start is called before the first frame update
     void Awake()
@@ -61,6 +62,13 @@ public class TipoTuberia : MonoBehaviour
 	}	
 	
 	/**
+	 * Activa la tuberia y despues de un tiempo comprueba la siguiente direccion a tomar
+	**/
+	public void ActivarTuberia(){
+		
+	}
+	
+	/**
 	 * Establece el valor si puede arrastrar 
 	**/
 	public void SetpuedeArrastrar(bool valor){
@@ -72,5 +80,19 @@ public class TipoTuberia : MonoBehaviour
 	**/
 	public bool GetpuedeArrastrar(){
 		return puedeArrastrar;
+	}
+	
+	/**
+	 * Establece el valor del delay del flujo
+	**/
+	public void SetdelayFlujo(float valor){
+		delayFlujo = valor;
+	}
+	
+	/**
+	 * Obtiene el valor del delay del flujo
+	**/
+	public float GetdelayFlujo(){
+		return delayFlujo;
 	}
 }
