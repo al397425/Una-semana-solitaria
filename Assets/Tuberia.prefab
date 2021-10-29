@@ -115,7 +115,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 35, y: 35}
+  m_Size: {x: 20, y: 20}
   m_EdgeRadius: 0
 --- !u!50 &2666948384948301471
 Rigidbody2D:
@@ -152,26 +152,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tiposTuberia:
   - tiposDireccionTuberia:
-      direccion1: 2
-      direccion2: 1
+      direccion1: 3
+      direccion2: 2
     imagenTuberia: {fileID: 21300000, guid: 134171102ad21774cb62b1cc2647348d, type: 3}
   - tiposDireccionTuberia:
-      direccion1: 3
-      direccion2: 1
+      direccion1: 4
+      direccion2: 2
     imagenTuberia: {fileID: 21300000, guid: b4c03705ecfaee1479b996331e38bf50, type: 3}
   - tiposDireccionTuberia:
-      direccion1: 0
-      direccion2: 2
+      direccion1: 1
+      direccion2: 3
     imagenTuberia: {fileID: 21300000, guid: 5f90f406a90bf0140ae3173762407fe0, type: 3}
   - tiposDireccionTuberia:
-      direccion1: 0
-      direccion2: 3
+      direccion1: 1
+      direccion2: 4
     imagenTuberia: {fileID: 21300000, guid: 4f07e8977826b4a4ab62f063d827b7a0, type: 3}
   - tiposDireccionTuberia:
-      direccion1: 2
-      direccion2: 3
+      direccion1: 3
+      direccion2: 4
     imagenTuberia: {fileID: 21300000, guid: bd8b320f09253414e99659025f027458, type: 3}
   - tiposDireccionTuberia:
-      direccion1: 0
-      direccion2: 1
+      direccion1: 1
+      direccion2: 2
     imagenTuberia: {fileID: 21300000, guid: bff03c6d557dac049884edbc32abf9ff, type: 3}
+  - tiposDireccionTuberia:
+      direccion1: 0
+      direccion2: 4
+    imagenTuberia: {fileID: 21300000, guid: 144a4bd14627084439556c655877be78, type: 3}
+  - tiposDireccionTuberia:
+      direccion1: 3
+      direccion2: 0
+    imagenTuberia: {fileID: 21300000, guid: 5100b0e2f0410664a9c94c6b51e86829, type: 3}
