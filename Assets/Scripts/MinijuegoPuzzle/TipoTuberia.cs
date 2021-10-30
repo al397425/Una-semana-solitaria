@@ -72,13 +72,14 @@ public class TipoTuberia : MonoBehaviour
 		GetComponent<Image> ().color = new Color32(100,0,0,255);
 		llenoAgua = true;
 		puedeMoverse = false;
+		
 		yield return new WaitForSeconds(delayFlujo);
+		
 		GetComponent<Image> ().color = new Color32(0,0,100,255);
 	
 		int x = 0;
 		int y = 0;
 		bool final = false;
-		bool cambiado = false;
 		
 		//orientacion del flujo horizontal
 		if(orientacion == EnumTuberias.Tuberia.horizontal){	
@@ -89,7 +90,7 @@ public class TipoTuberia : MonoBehaviour
 				desplazamientoHorizontal = -1;
 				desplazamientoVertical = 0;
 			}else if(sentidoHorizontal != EnumTuberias.Sentido.bidireccional){
-				Debug.Log(sentidoHorizontal+" "+EnumTuberias.Sentido.derecha);
+				Debug.Log(sentidoHorizontal);
 				Debug.Log("FIN DEL JUEGO HAS PERDIDO H");
 				final = true;
 			}//sentido bidireccional no cambia nada
@@ -103,17 +104,18 @@ public class TipoTuberia : MonoBehaviour
 			
 			if(matrizSlots[columnaActual+desplazamientoHorizontal+x,filaActual].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().llenoAgua == true){
 				orientacion = EnumTuberias.Tuberia.vertical;
-				cambiado = true;
 			}
-		}else if(orientacion == EnumTuberias.Tuberia.vertical){//orientacion del flujo vertical
+			
+		}else if(orientacion == EnumTuberias.Tuberia.vertical){
+			//orientacion del flujo vertical
 			if(sentidoVertical == EnumTuberias.Sentido.arriba){
 				desplazamientoVertical = -1;
 				desplazamientoHorizontal = 0;
 			}else if(sentidoVertical == EnumTuberias.Sentido.abajo){
 				desplazamientoVertical = 1;
 				desplazamientoHorizontal = 0;
-			}if(sentidoVertical != EnumTuberias.Sentido.bidireccional){
-				Debug.Log(sentidoHorizontal+" "+EnumTuberias.Sentido.derecha);
+			}else if(sentidoVertical != EnumTuberias.Sentido.bidireccional){
+				Debug.Log(sentidoVertical);
 				Debug.Log("FIN DEL JUEGO HAS PERDIDO V");
 				final = true;
 			}//sentido bidireccional no cambia nada
@@ -125,14 +127,14 @@ public class TipoTuberia : MonoBehaviour
 				y = -1;
 			}
 			
-			if(columnaActual > 0 && matrizSlots[columnaActual,filaActual+y+desplazamientoVertical].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().llenoAgua == true){
+			if(matrizSlots[columnaActual,filaActual+y+desplazamientoVertical].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().llenoAgua == true){
 				orientacion = EnumTuberias.Tuberia.horizontal;
 				
 			}
 		}
-	
+
 		if(final == false)
-			StartCoroutine(ActivarTuberia(matrizSlots, columnaActual+desplazamientoHorizontal, filaActual+desplazamientoVertical, desplazamientoHorizontal, desplazamientoVertical, orientacion));
+			StartCoroutine(matrizSlots[columnaActual+desplazamientoHorizontal,filaActual+desplazamientoVertical].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().ActivarTuberia(matrizSlots, columnaActual+desplazamientoHorizontal, filaActual+desplazamientoVertical, desplazamientoHorizontal, desplazamientoVertical, orientacion));
 	}
 	
 	/**
