@@ -37,7 +37,7 @@ public class ArrastrarSoltarTuberia : MonoBehaviour, IDragHandler, IEndDragHandl
 	}
 
 	void OnTriggerStay2D(Collider2D other){
-		if(colision.isTrigger == true && other.GetComponent<TipoTuberia>().GetpuedeMoverse() == true)
+		if(tag == other.tag && colision.isTrigger == true && other.GetComponent<TipoTuberia>().GetpuedeMoverse() == true)
 			obejtoColisionado = other;
 	}
 	

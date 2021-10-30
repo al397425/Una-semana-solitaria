@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 7952906421660434677}
   m_Layer: 0
   m_Name: Tuberia
-  m_TagString: Untagged
+  m_TagString: tuberias
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,43 +151,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tiposTuberia:
-  - tuberiasCompatibles: 0200000003000000040000000500000000000000
+  - tuberiasCompatiblesSentido1: 030000000500000000000000
+    tuberiasCompatiblesSentido2: 020000000400000000000000
     tipoDeTuberia: 0
     imagenTuberia: {fileID: 21300000, guid: bff03c6d557dac049884edbc32abf9ff, type: 3}
-    sentidoPrincipal: 0
-    sentidoSecundario: 1
-  - tuberiasCompatibles: 0200000003000000040000000500000001000000
+    sentido1: 0
+    sentido2: 1
+  - tuberiasCompatiblesSentido1: 010000000400000005000000
+    tuberiasCompatiblesSentido2: 030000000200000001000000
     tipoDeTuberia: 1
     imagenTuberia: {fileID: 21300000, guid: bd8b320f09253414e99659025f027458, type: 3}
-    sentidoPrincipal: 3
-    sentidoSecundario: 2
-  - tuberiasCompatibles: 0300000004000000050000000000000001000000
+    sentido1: 3
+    sentido2: 2
+  - tuberiasCompatiblesSentido1: 030000000500000000000000
+    tuberiasCompatiblesSentido2: 040000000500000001000000
     tipoDeTuberia: 2
     imagenTuberia: {fileID: 21300000, guid: 134171102ad21774cb62b1cc2647348d, type: 3}
-    sentidoPrincipal: 1
-    sentidoSecundario: 2
-  - tuberiasCompatibles: 0200000005000000040000000000000001000000
+    sentido1: 1
+    sentido2: 2
+  - tuberiasCompatiblesSentido1: 000000000400000002000000
+    tuberiasCompatiblesSentido2: 010000000400000005000000
     tipoDeTuberia: 3
     imagenTuberia: {fileID: 21300000, guid: 5f90f406a90bf0140ae3173762407fe0, type: 3}
-    sentidoPrincipal: 0
-    sentidoSecundario: 2
-  - tuberiasCompatibles: 0300000002000000050000000000000001000000
+    sentido1: 0
+    sentido2: 2
+  - tuberiasCompatiblesSentido1: 010000000300000002000000
+    tuberiasCompatiblesSentido2: 030000000500000000000000
     tipoDeTuberia: 4
     imagenTuberia: {fileID: 21300000, guid: b4c03705ecfaee1479b996331e38bf50, type: 3}
-    sentidoPrincipal: 3
-    sentidoSecundario: 1
-  - tuberiasCompatibles: 0300000004000000020000000000000001000000
+    sentido1: 3
+    sentido2: 1
+  - tuberiasCompatiblesSentido1: 010000000300000002000000
+    tuberiasCompatiblesSentido2: 000000000200000004000000
     tipoDeTuberia: 5
     imagenTuberia: {fileID: 21300000, guid: 4f07e8977826b4a4ab62f063d827b7a0, type: 3}
-    sentidoPrincipal: 3
-    sentidoSecundario: 0
-  - tuberiasCompatibles: 010000000200000003000000
+    sentido1: 3
+    sentido2: 0
+  - tuberiasCompatiblesSentido1: 010000000300000002000000
+    tuberiasCompatiblesSentido2: 010000000300000002000000
     tipoDeTuberia: 6
     imagenTuberia: {fileID: 21300000, guid: 144a4bd14627084439556c655877be78, type: 3}
-    sentidoPrincipal: 3
-    sentidoSecundario: 3
-  - tuberiasCompatibles: 
+    sentido1: 3
+    sentido2: 3
+  - tuberiasCompatiblesSentido1: 010000000400000005000000
+    tuberiasCompatiblesSentido2: 010000000400000005000000
     tipoDeTuberia: 7
     imagenTuberia: {fileID: 21300000, guid: 5100b0e2f0410664a9c94c6b51e86829, type: 3}
-    sentidoPrincipal: 3
-    sentidoSecundario: 3
+    sentido1: 3
+    sentido2: 3

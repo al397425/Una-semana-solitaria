@@ -9,21 +9,23 @@ public class TipoTuberia : MonoBehaviour
 		
 	//Tipos de tuberias
 	[System.Serializable] public struct TiposTuberiasEditor{
-		public List<EnumTuberias.Tuberia> tuberiasCompatibles;
+		public List<EnumTuberias.Tuberia> tuberiasCompatiblesSentido1;
+		public List<EnumTuberias.Tuberia> tuberiasCompatiblesSentido2;
 		public EnumTuberias.Tuberia tipoDeTuberia;
 		public Sprite imagenTuberia;
 		//El sentido principal con la logica de que el agua va de izquierda a derecha
-		public EnumTuberias.Sentido sentidoPrincipal;
+		public EnumTuberias.Sentido sentido1;
 		//El sentido opuesto cuando el agua cambia de direcion y se tiene que hacer una lectirura de derecha a izquierda
-		public EnumTuberias.Sentido sentidoSecundario;
+		public EnumTuberias.Sentido sentido2;
 	}
 	public List<TiposTuberiasEditor> tiposTuberia;
 
-	List<EnumTuberias.Tuberia> tuberiasCompatibles;
+	List<EnumTuberias.Tuberia> tuberiasCompatiblesSentido1;
+	List<EnumTuberias.Tuberia> tuberiasCompatiblesSentido2;
 	
 	EnumTuberias.Tuberia tipoTuberia;
-	EnumTuberias.Sentido sentidoPrincipal;
-	EnumTuberias.Sentido sentidoSecundario;
+	EnumTuberias.Sentido sentido1;
+	EnumTuberias.Sentido sentido2;
 
 	bool puedeMoverse = true;
 	
@@ -54,9 +56,10 @@ public class TipoTuberia : MonoBehaviour
 			if(tuberia == tiposTuberia[i].tipoDeTuberia){
 				GetComponent<Image> ().sprite = tiposTuberia[i].imagenTuberia;
 				tipoTuberia = tiposTuberia[i].tipoDeTuberia;
-				tuberiasCompatibles= tiposTuberia[i].tuberiasCompatibles;
-				sentidoPrincipal = tiposTuberia[i].sentidoPrincipal;
-				sentidoSecundario = tiposTuberia[i].sentidoSecundario;
+				tuberiasCompatiblesSentido1= tiposTuberia[i].tuberiasCompatiblesSentido1;
+				tuberiasCompatiblesSentido2= tiposTuberia[i].tuberiasCompatiblesSentido2;
+				sentido1 = tiposTuberia[i].sentido1;
+				sentido2 = tiposTuberia[i].sentido2;
 				return;
 			}
 		}
@@ -67,7 +70,10 @@ public class TipoTuberia : MonoBehaviour
 	**/
 	public IEnumerator ActivarTuberia(GameObject [,]matrizSlots, int fila, int columna, int modificacionHorizontal, int modificacionVertical){
 		yield return new WaitForSeconds(delayFlujo);
-		int x=0,y=0;
+		
+		
+		
+		/*int x=0,y=0;
 		puedeMoverse = false;
 		
 		GameObject tuberia = matrizSlots[fila,columna].transform.GetChild(0).gameObject;
@@ -94,7 +100,7 @@ public class TipoTuberia : MonoBehaviour
 			Debug.Log("Muy bien!");
 		}else{
 			Debug.Log("nope");
-		}
+		}*/
 	}
 	
 	/**
