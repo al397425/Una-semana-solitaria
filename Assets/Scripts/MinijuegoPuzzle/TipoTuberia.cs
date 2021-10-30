@@ -22,7 +22,6 @@ public class TipoTuberia : MonoBehaviour
 
 	List<EnumTuberias.Tuberia> tuberiasCompatiblesSentido1;
 	List<EnumTuberias.Tuberia> tuberiasCompatiblesSentido2;
-	
 	EnumTuberias.Tuberia tipoTuberia;
 	EnumTuberias.Sentido sentido1;
 	EnumTuberias.Sentido sentido2;
@@ -56,8 +55,8 @@ public class TipoTuberia : MonoBehaviour
 			if(tuberia == tiposTuberia[i].tipoDeTuberia){
 				GetComponent<Image> ().sprite = tiposTuberia[i].imagenTuberia;
 				tipoTuberia = tiposTuberia[i].tipoDeTuberia;
-				tuberiasCompatiblesSentido1= tiposTuberia[i].tuberiasCompatiblesSentido1;
-				tuberiasCompatiblesSentido2= tiposTuberia[i].tuberiasCompatiblesSentido2;
+				tuberiasCompatiblesSentido1 = tiposTuberia[i].tuberiasCompatiblesSentido1;
+				tuberiasCompatiblesSentido2 = tiposTuberia[i].tuberiasCompatiblesSentido2;
 				sentido1 = tiposTuberia[i].sentido1;
 				sentido2 = tiposTuberia[i].sentido2;
 				return;
@@ -68,10 +67,60 @@ public class TipoTuberia : MonoBehaviour
 	/**
 	 * Activa la tuberia y despues de un tiempo comprueba la siguiente direccion a tomar
 	**/
-	public IEnumerator ActivarTuberia(GameObject [,]matrizSlots, int fila, int columna, int modificacionHorizontal, int modificacionVertical){
+	public IEnumerator ActivarTuberia(GameObject [,]matrizSlots, int filaActual, int columnaActual, int desplazamientoHorizontal, int desplazamientoVertical){
+		GetComponent<Image> ().color = new Color32(100,0,0,255);
+		puedeMoverse = false;
 		yield return new WaitForSeconds(delayFlujo);
+		GetComponent<Image> ().color = new Color32(0,0,100,255);
+	
+		//Actualiza las nuevas filas y columnas
+		filaActual += desplazamientoHorizontal;
+		columnaActual += desplazamientoVertical;
+	
+		GameObject tuberia = matrizSlots[filaActual, columnaActual].transform.GetChild(0).gameObject;
 		
-		
+		Debug.Log(matrizSlots[filaActual, columnaActual].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().tipoTuberia);
+		if((desplazamientoHorizontal == 1 || desplazamientoVertical == -1) && tuberia.GetComponent<TipoTuberia>().puedeMoverse == true){
+			if(tuberiasCompatiblesSentido1.Contains(tuberia.GetComponent<TipoTuberia>().tipoTuberia)){			
+				switch(tuberia.GetComponent<TipoTuberia>().sentido1){
+					case EnumTuberias.Sentido.derecha: 
+						desplazamientoHorizontal = 1; 
+						desplazamientoVertical = 0; 
+						break;
+						
+					case EnumTuberias.Sentido.arriba: 
+						desplazamientoVertical = -1; 
+						desplazamientoHorizontal = 0; 
+						break;
+						
+					case EnumTuberias.Sentido.abajo: 
+						desplazamientoVertical = 1; 
+						desplazamientoHorizontal = 0; 
+						break;
+				}
+				StartCoroutine(tuberia.GetComponent<TipoTuberia>().ActivarTuberia(matrizSlots, filaActual, columnaActual, desplazamientoHorizontal, desplazamientoVertical));
+			}
+		}else{
+			if(tuberiasCompatiblesSentido2.Contains(tuberia.GetComponent<TipoTuberia>().tipoTuberia)){			
+				switch(tuberia.GetComponent<TipoTuberia>().sentido2){
+					case EnumTuberias.Sentido.izquierda: 
+						desplazamientoHorizontal = -1; 
+						desplazamientoVertical = 0; 
+						break;
+						
+					case EnumTuberias.Sentido.arriba: 
+						desplazamientoVertical = -1; 
+						desplazamientoHorizontal = 0; 
+						break;
+						
+					case EnumTuberias.Sentido.abajo: 
+						desplazamientoVertical = 1; 
+						desplazamientoHorizontal = 0; 
+						break;
+				}
+				StartCoroutine(tuberia.GetComponent<TipoTuberia>().ActivarTuberia(matrizSlots, filaActual, columnaActual, desplazamientoHorizontal, desplazamientoVertical));
+			}
+		}
 		
 		/*int x=0,y=0;
 		puedeMoverse = false;
