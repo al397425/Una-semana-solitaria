@@ -15,7 +15,7 @@ public class ArrastrarSoltarTuberia : MonoBehaviour, IDragHandler, IEndDragHandl
 	}
 
 	public void OnDrag(PointerEventData eventData){
-		if(GetComponent<TipoTuberia>().GetpuedeArrastrar() == true){
+		if(GetComponent<TipoTuberia>().GetpuedeMoverse() == true){
 			transform.position = Input.mousePosition;
 			//Coge el padre y lo pone como ultima prioridad para ser renderizado el ultimo y asi la tuberia no queda detras del fondo
 			transform.parent.transform.SetAsLastSibling();
@@ -37,7 +37,7 @@ public class ArrastrarSoltarTuberia : MonoBehaviour, IDragHandler, IEndDragHandl
 	}
 
 	void OnTriggerStay2D(Collider2D other){
-		if(colision.isTrigger == true)
+		if(colision.isTrigger == true && other.GetComponent<TipoTuberia>().GetpuedeMoverse() == true)
 			obejtoColisionado = other;
 	}
 	

@@ -170,7 +170,7 @@ MonoBehaviour:
     tipoDeTuberia: 3
     imagenTuberia: {fileID: 21300000, guid: 5f90f406a90bf0140ae3173762407fe0, type: 3}
     sentidoPrincipal: 0
-    sentidoSecundario: 1
+    sentidoSecundario: 2
   - tuberiasCompatibles: 0300000002000000050000000000000001000000
     tipoDeTuberia: 4
     imagenTuberia: {fileID: 21300000, guid: b4c03705ecfaee1479b996331e38bf50, type: 3}

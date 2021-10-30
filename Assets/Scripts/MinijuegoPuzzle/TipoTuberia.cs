@@ -24,9 +24,8 @@ public class TipoTuberia : MonoBehaviour
 	EnumTuberias.Tuberia tipoTuberia;
 	EnumTuberias.Sentido sentidoPrincipal;
 	EnumTuberias.Sentido sentidoSecundario;
-	
-	bool puedeArrastrar = true;
-	bool llenaDeAgua = false;
+
+	bool puedeMoverse = true;
 	
 	float delayFlujo =5.0f;
 	
@@ -67,17 +66,15 @@ public class TipoTuberia : MonoBehaviour
 	 * Activa la tuberia y despues de un tiempo comprueba la siguiente direccion a tomar
 	**/
 	public IEnumerator ActivarTuberia(GameObject [,]matrizSlots, int fila, int columna, int modificacionHorizontal, int modificacionVertical){
-		
 		yield return new WaitForSeconds(delayFlujo);
 		int x=0,y=0;
-		llenaDeAgua = true;
+		puedeMoverse = false;
 		
 		GameObject tuberia = matrizSlots[fila,columna].transform.GetChild(0).gameObject;
-		tuberia.GetComponent<Image> ().color = new Color32(100,0,0,100);
+		
 		if(tuberiasCompatibles.Contains(tuberia.GetComponent<TipoTuberia>().tipoTuberia)){
-			GetComponent<Image> ().color = new Color32(0,100,0,100);
 			tuberia = matrizSlots[fila-modificacionHorizontal,columna-modificacionVertical].transform.GetChild(0).gameObject;
-			if(tuberia.GetComponent<TipoTuberia>().GetllenaDeAgua() == false){
+			if(tuberia.GetComponent<TipoTuberia>().GetpuedeMoverse() == false){
 				switch(sentidoPrincipal){
 					case EnumTuberias.Sentido.arriba: y=-1;Debug.Log("arriba");break;
 					case EnumTuberias.Sentido.abajo: y=1;Debug.Log("abajo");break;
@@ -93,40 +90,25 @@ public class TipoTuberia : MonoBehaviour
 				}
 			}
 			
-			StartCoroutine(ActivarTuberia(matrizSlots,fila+x,columna+y,x,y));
+			StartCoroutine(ActivarTuberia(matrizSlots, fila+x, columna+y, x, y));
 			Debug.Log("Muy bien!");
 		}else{
 			Debug.Log("nope");
 		}
 	}
 	
-	
-	/**
-	 * Establece el valor si puede arrastrar 
-	**/
-	public void SetpuedeArrastrar(bool valor){
-		puedeArrastrar = valor;
-	}
-	
-	/**
-	 * Obtiene el valor si puede arrastrar 
-	**/
-	public bool GetpuedeArrastrar(){
-		return puedeArrastrar;
-	}
-	
 	/**
 	 * Establece el valor si esta lleno de agua 
 	**/
-	public void SetllenaDeAgua(bool valor){
-		llenaDeAgua = valor;
+	public void SetpuedeMoverse(bool valor){
+		puedeMoverse = valor;
 	}
 	
 	/**
 	 * Obtiene el valor si esta lleno de agua 
 	**/
-	public bool GetllenaDeAgua(){
-		return llenaDeAgua;
+	public bool GetpuedeMoverse(){
+		return puedeMoverse;
 	}
 	
 	/**
