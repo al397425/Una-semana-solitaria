@@ -9,8 +9,6 @@ public class TipoTuberia : MonoBehaviour
 		
 	//Tipos de tuberias
 	[System.Serializable] public struct TiposTuberiasEditor{
-		public List<EnumTuberias.Tuberia> tuberiasCompatiblesSentido1;
-		public List<EnumTuberias.Tuberia> tuberiasCompatiblesSentido2;
 		public EnumTuberias.Tuberia tipoDeTuberia;
 		public Sprite imagenTuberia;
 		//El sentido principal con la logica de que el agua va de izquierda a derecha
@@ -20,8 +18,6 @@ public class TipoTuberia : MonoBehaviour
 	}
 	public List<TiposTuberiasEditor> tiposTuberia;
 
-	List<EnumTuberias.Tuberia> tuberiasCompatiblesSentido1;
-	List<EnumTuberias.Tuberia> tuberiasCompatiblesSentido2;
 	EnumTuberias.Tuberia tipoTuberia;
 	EnumTuberias.Sentido sentidoHorizontal;
 	EnumTuberias.Sentido sentidoVertical;
@@ -56,8 +52,6 @@ public class TipoTuberia : MonoBehaviour
 			if(tuberia == tiposTuberia[i].tipoDeTuberia){
 				GetComponent<Image> ().sprite = tiposTuberia[i].imagenTuberia;
 				tipoTuberia = tiposTuberia[i].tipoDeTuberia;
-				tuberiasCompatiblesSentido1 = tiposTuberia[i].tuberiasCompatiblesSentido1;
-				tuberiasCompatiblesSentido2 = tiposTuberia[i].tuberiasCompatiblesSentido2;
 				sentidoHorizontal = tiposTuberia[i].sentidoHorizontal;
 				sentidoVertical = tiposTuberia[i].sentidoVertical;
 				return;
@@ -67,20 +61,27 @@ public class TipoTuberia : MonoBehaviour
 	
 	/**
 	 * Activa la tuberia y despues de un tiempo comprueba la siguiente direccion a tomar
+	 * @note El algortimo funciona de forma que obtiene la direccion horizontal y vertical de la tuberia, comprueba la orientacion del fluido, y comprueba la orientacion de la tuberia actual por donde saldrá dicho fluido
+	 * dependiendo del sentido de la tuberia se establecera que el fluido fluya por la misma direccion que la tuberia
+	 * despues obtiene el sentido de la siguiente tuberia a la que se dirije el fluido(en este punto implica que la tuberia tiene algun sentido de direccion) si tiene una orientacion hacia el contrario de donde se dirige el fluido se cambia la orientacion de este a vertical.
+	 * en el caso de las tuberias bidireccionales no se realiza ninguna comprobacion simplemente se deja los indices como estan.
 	**/
 	public IEnumerator ActivarTuberia(GameObject [,]matrizSlots, int columnaActual, int filaActual, int desplazamientoHorizontal, int desplazamientoVertical, EnumTuberias.Tuberia orientacion){
 		GetComponent<Image> ().color = new Color32(100,0,0,255);
 		llenoAgua = true;
 		puedeMoverse = false;
 		
-		yield return new WaitForSeconds(delayFlujo);
+		bool final = false;
+
+	
 		
-		GetComponent<Image> ().color = new Color32(0,0,100,255);
+		//Dirige el flujo del fluido
+		
+
 	
 		int x = 0;
 		int y = 0;
-		bool final = false;
-		
+
 		//orientacion del flujo horizontal
 		if(orientacion == EnumTuberias.Tuberia.horizontal){	
 			if(sentidoHorizontal == EnumTuberias.Sentido.derecha){
@@ -95,6 +96,8 @@ public class TipoTuberia : MonoBehaviour
 				final = true;
 			}//sentido bidireccional no cambia nada
 			//no coincide los sentidos
+			
+				yield return new WaitForSeconds(delayFlujo);
 			
 			if(matrizSlots[columnaActual+desplazamientoHorizontal,filaActual].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().sentidoHorizontal == EnumTuberias.Sentido.izquierda){
 				x = -1;
@@ -121,6 +124,8 @@ public class TipoTuberia : MonoBehaviour
 			}//sentido bidireccional no cambia nada
 			//no coincide los sentidos
 			
+				yield return new WaitForSeconds(delayFlujo);
+			
 			if(matrizSlots[columnaActual,filaActual+desplazamientoVertical].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().sentidoVertical == EnumTuberias.Sentido.abajo){
 				y = 1;
 			}else if(matrizSlots[columnaActual,filaActual+desplazamientoVertical].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().sentidoVertical != EnumTuberias.Sentido.bidireccional){// distinto de bidireccional
@@ -132,6 +137,8 @@ public class TipoTuberia : MonoBehaviour
 				
 			}
 		}
+
+		GetComponent<Image> ().color = new Color32(0,0,100,255);
 
 		if(final == false)
 			StartCoroutine(matrizSlots[columnaActual+desplazamientoHorizontal,filaActual+desplazamientoVertical].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().ActivarTuberia(matrizSlots, columnaActual+desplazamientoHorizontal, filaActual+desplazamientoVertical, desplazamientoHorizontal, desplazamientoVertical, orientacion));
