@@ -24,7 +24,7 @@ public class ArrastrarSoltarTuberia : MonoBehaviour, IDragHandler, IEndDragHandl
 	}
 	
 	public void OnEndDrag(PointerEventData eventData){
-		if(obejtoColisionado != null){
+		if(obejtoColisionado != null && GetComponent<TipoTuberia>().GetpuedeMoverse() == true){
 			Transform padre = transform.parent.transform;
 			transform.SetParent(obejtoColisionado.transform.parent.transform);
 			obejtoColisionado.transform.SetParent(padre);
