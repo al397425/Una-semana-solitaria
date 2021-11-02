@@ -19,7 +19,7 @@ public class CrearPuzzle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-		iniciarMinijuego(4, 3, 3, 1, 10.0f);
+		iniciarMinijuego(8, 8, 8, 1, 10.0f);
         
     }
 	
