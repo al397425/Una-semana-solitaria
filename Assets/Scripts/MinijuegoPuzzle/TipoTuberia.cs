@@ -105,10 +105,17 @@ public class TipoTuberia : MonoBehaviour
 	 * en el caso de las tuberias bidireccionales no se realiza ninguna comprobacion simplemente se deja los indices como estan.
 	**/
 	public IEnumerator ActivarTuberia(GameObject [,]matrizSlots, int columnaActual, int filaActual, int desplazamientoHorizontal, int desplazamientoVertical, EnumTuberias.Tuberia orientacion){
+		bool final = false;
+		
+		if(tipoTuberia == EnumTuberias.Tuberia.fin){
+			Debug.Log("Ganastes");
+			final = true;
+			yield break;
+		}
 		llenoAgua = true;
 		puedeMoverse = false;
 		
-		bool final = false;
+		
 
 		//Dirige el flujo del fluido
 		int x = 0;
