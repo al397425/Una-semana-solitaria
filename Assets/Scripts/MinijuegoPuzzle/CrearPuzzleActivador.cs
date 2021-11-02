@@ -25,17 +25,26 @@ public class CrearPuzzleActivador : MonoBehaviour
 	
 	GameObject puzzle;
 	bool puzzleActivado = false; 
+	bool resuelto = false;
 	
 	void OnTriggerStay2D(Collider2D other){
 		if (Input.GetKeyDown(teclaDeInteraccion) && puzzleActivado == false)
         {
-			puzzleActivado = false;
+			puzzleActivado = true;
 			if(eventoAlEmpezarElMinijuego != null){
 				eventoAlEmpezarElMinijuego.Invoke();
 			}
 			
 			puzzle = (GameObject)Instantiate(puzzleTuberia, new Vector2(0,0), Quaternion.identity);
-			puzzle.GetComponent<CrearPuzzle>().iniciarMinijuego(ancho, alto, filaPuntoInicio, filaPuntoFinal, delayFlujoTuberia);
+			puzzle.GetComponent<CrearPuzzle>().iniciarMinijuego(ancho, alto, filaPuntoInicio, filaPuntoFinal, delayFlujoTuberia, gameObject);
 		}
+	}
+	
+	public bool Getresuelto(){
+		return resuelto;
+	}
+	
+	public void Setresuelto(bool valor){
+		resuelto = valor;
 	}
 }

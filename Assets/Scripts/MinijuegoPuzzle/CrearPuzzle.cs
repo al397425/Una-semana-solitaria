@@ -25,15 +25,15 @@ public class CrearPuzzle : MonoBehaviour
         
     }
 	
-	public void iniciarMinijuego(int ancho, int alto, int filaPuntoInicio, int filaPuntoFinal, float delayFlujoTuberia){
-		StartCoroutine(GenerarSlots(ancho,alto, filaPuntoInicio, filaPuntoFinal, delayFlujoTuberia));
+	public void iniciarMinijuego(int ancho, int alto, int filaPuntoInicio, int filaPuntoFinal, float delayFlujoTuberia, GameObject refPuzzle){
+		StartCoroutine(GenerarSlots(ancho,alto, filaPuntoInicio, filaPuntoFinal, delayFlujoTuberia, refPuzzle));
 	}
 	
 	
 	/**
 	 * Genera los slots del tablero ademas de las tuberias
 	**/
-	IEnumerator GenerarSlots(int ancho, int alto, int filaPuntoInicio, int filaPuntoFinal, float delayFlujoTuberia){
+	IEnumerator GenerarSlots(int ancho, int alto, int filaPuntoInicio, int filaPuntoFinal, float delayFlujoTuberia, GameObject refPuzzle){
 		matrizSlots = new GameObject [ancho+2,alto];
 		
 		float posx=0,posy=0;
@@ -85,12 +85,12 @@ public class CrearPuzzle : MonoBehaviour
 		//Crea slots
 		posy = altoImagen;
 		posx = anchoImagen;
-		matrizSlots[alto+1, filaPuntoFinal-1] = Instantiate(SlotTuberia, new Vector2(0,0), Quaternion.identity);
-		matrizSlots[alto+1, filaPuntoFinal-1].transform.SetParent(canvas.transform);
-		matrizSlots[alto+1, filaPuntoFinal-1].GetComponent<RectTransform>().anchoredPosition = new Vector2(posx*(ancho+1), -posy*filaPuntoFinal);//multiplica la posicion del vector en x por las coordenadas en y
+		matrizSlots[ancho+1, filaPuntoFinal-1] = Instantiate(SlotTuberia, new Vector2(0,0), Quaternion.identity);
+		matrizSlots[ancho+1, filaPuntoFinal-1].transform.SetParent(canvas.transform);
+		matrizSlots[ancho+1, filaPuntoFinal-1].GetComponent<RectTransform>().anchoredPosition = new Vector2(posx*(ancho+1), -posy*filaPuntoFinal);//multiplica la posicion del vector en x por las coordenadas en y
 		//Crea tuberia
 		tuberia = (GameObject)Instantiate(Tuberia, new Vector2(0,0), Quaternion.identity);
-		tuberia.transform.SetParent(matrizSlots[alto+1, filaPuntoFinal-1].transform);
+		tuberia.transform.SetParent(matrizSlots[ancho+1, filaPuntoFinal-1].transform);
 		tuberia.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
 		tuberia.GetComponent<TipoTuberia>().EstablecerTipoTuberia(EnumTuberias.Tuberia.fin);
 		tuberia.GetComponent<TipoTuberia>().SetpuedeMoverse(false);
@@ -100,7 +100,7 @@ public class CrearPuzzle : MonoBehaviour
 		
 		//Activa la tuberia inicial
 		yield return new WaitForSeconds(DelayAntesEmpezarPuzzle);
-		StartCoroutine(matrizSlots[0,filaPuntoInicio-1].transform.GetChild(0).GetComponent<TipoTuberia>().ActivarTuberia(matrizSlots, 0, filaPuntoInicio-1, 0, 0, EnumTuberias.Tuberia.horizontal));
+		StartCoroutine(matrizSlots[0,filaPuntoInicio-1].transform.GetChild(0).GetComponent<TipoTuberia>().ActivarTuberia(matrizSlots, 0, filaPuntoInicio-1, 0, 0, EnumTuberias.Tuberia.horizontal, refPuzzle));
 		yield break;
 	}
 

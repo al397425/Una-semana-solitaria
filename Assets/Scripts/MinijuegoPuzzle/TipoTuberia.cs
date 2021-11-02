@@ -104,12 +104,13 @@ public class TipoTuberia : MonoBehaviour
 	 * despues obtiene el sentido de la siguiente tuberia a la que se dirije el fluido(en este punto implica que la tuberia tiene algun sentido de direccion) si tiene una orientacion hacia el contrario de donde se dirige el fluido se cambia la orientacion de este a vertical.
 	 * en el caso de las tuberias bidireccionales no se realiza ninguna comprobacion simplemente se deja los indices como estan.
 	**/
-	public IEnumerator ActivarTuberia(GameObject [,]matrizSlots, int columnaActual, int filaActual, int desplazamientoHorizontal, int desplazamientoVertical, EnumTuberias.Tuberia orientacion){
+	public IEnumerator ActivarTuberia(GameObject [,]matrizSlots, int columnaActual, int filaActual, int desplazamientoHorizontal, int desplazamientoVertical, EnumTuberias.Tuberia orientacion, GameObject refPuzzle){
 		bool final = false;
-		
+		Debug.Log(tipoTuberia);
 		if(tipoTuberia == EnumTuberias.Tuberia.fin){
 			Debug.Log("Ganastes");
 			final = true;
+			refPuzzle.GetComponent<CrearPuzzleActivador>().Setresuelto(true);
 			yield break;
 		}
 		llenoAgua = true;
@@ -276,7 +277,7 @@ public class TipoTuberia : MonoBehaviour
 		}
 
 		if(final == false){
-			StartCoroutine(matrizSlots[columnaActual+desplazamientoHorizontal,filaActual+desplazamientoVertical].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().ActivarTuberia(matrizSlots, columnaActual+desplazamientoHorizontal, filaActual+desplazamientoVertical, desplazamientoHorizontal, desplazamientoVertical, orientacion));
+			StartCoroutine(matrizSlots[columnaActual+desplazamientoHorizontal,filaActual+desplazamientoVertical].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().ActivarTuberia(matrizSlots, columnaActual+desplazamientoHorizontal, filaActual+desplazamientoVertical, desplazamientoHorizontal, desplazamientoVertical, orientacion, refPuzzle));
 		}
 	}
 	
