@@ -275,8 +275,9 @@ public class TipoTuberia : MonoBehaviour
 			}
 		}
 
-		if(final == false)
+		if(final == false){
 			StartCoroutine(matrizSlots[columnaActual+desplazamientoHorizontal,filaActual+desplazamientoVertical].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().ActivarTuberia(matrizSlots, columnaActual+desplazamientoHorizontal, filaActual+desplazamientoVertical, desplazamientoHorizontal, desplazamientoVertical, orientacion));
+		}
 	}
 	
 	/**

@@ -13,25 +13,27 @@ public class CrearPuzzle : MonoBehaviour
 	//Referencia al canvas
 	public Canvas canvas;
 	
+	//Delay antes de que empiece a fluir el agua
+	public float DelayAntesEmpezarPuzzle = 3.0f;
+	
 	//Matriz de los huecos donde iran las tuberias y por consecuente esta es la matriz de las tuberias
 	protected GameObject [,]matrizSlots;
 	
     // Start is called before the first frame update
     void Start()
     {
-		iniciarMinijuego(8, 8, 8, 1, 10.0f);
         
     }
 	
 	public void iniciarMinijuego(int ancho, int alto, int filaPuntoInicio, int filaPuntoFinal, float delayFlujoTuberia){
-		GenerarSlots(ancho,alto, filaPuntoInicio, filaPuntoFinal, delayFlujoTuberia);
+		StartCoroutine(GenerarSlots(ancho,alto, filaPuntoInicio, filaPuntoFinal, delayFlujoTuberia));
 	}
 	
 	
 	/**
 	 * Genera los slots del tablero ademas de las tuberias
 	**/
-	void GenerarSlots(int ancho, int alto, int filaPuntoInicio, int filaPuntoFinal, float delayFlujoTuberia){
+	IEnumerator GenerarSlots(int ancho, int alto, int filaPuntoInicio, int filaPuntoFinal, float delayFlujoTuberia){
 		matrizSlots = new GameObject [ancho+2,alto];
 		
 		float posx=0,posy=0;
@@ -97,7 +99,9 @@ public class CrearPuzzle : MonoBehaviour
 		posx = anchoImagen;
 		
 		//Activa la tuberia inicial
+		yield return new WaitForSeconds(DelayAntesEmpezarPuzzle);
 		StartCoroutine(matrizSlots[0,filaPuntoInicio-1].transform.GetChild(0).GetComponent<TipoTuberia>().ActivarTuberia(matrizSlots, 0, filaPuntoInicio-1, 0, 0, EnumTuberias.Tuberia.horizontal));
+		yield break;
 	}
 
 }
