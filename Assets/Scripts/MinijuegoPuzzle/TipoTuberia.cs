@@ -107,7 +107,6 @@ public class TipoTuberia : MonoBehaviour
 	public IEnumerator ActivarTuberia(GameObject [,]matrizSlots, int columnaActual, int filaActual, int desplazamientoHorizontal, int desplazamientoVertical, EnumTuberias.Tuberia orientacion){
 		llenoAgua = true;
 		puedeMoverse = false;
-		empezarAnimacion = true;
 		
 		bool final = false;
 
@@ -130,6 +129,7 @@ public class TipoTuberia : MonoBehaviour
 			}//sentido bidireccional no cambia nada
 			//no coincide los sentidos
 			
+					
 			//Establece la orientacion de la imagen del flujo
 			if(desplazamientoHorizontal == -1){
 				switch(gameObject.transform.GetChild(0).GetComponent<Image> ().fillMethod){
@@ -138,7 +138,11 @@ public class TipoTuberia : MonoBehaviour
 					break;
 
 					case Image.FillMethod.Radial90:
-						gameObject.transform.GetChild(0).GetComponent<Image> ().fillClockwise = false;
+						if(tipoTuberia == EnumTuberias.Tuberia.izquierdaArriba){
+							gameObject.transform.GetChild(0).GetComponent<Image> ().fillClockwise = true;
+						}else{
+							gameObject.transform.GetChild(0).GetComponent<Image> ().fillClockwise = false;
+						}
 					break;
 
 				}
@@ -149,11 +153,20 @@ public class TipoTuberia : MonoBehaviour
 					break;
 
 					case Image.FillMethod.Radial90:
-						gameObject.transform.GetChild(0).GetComponent<Image> ().fillClockwise = true;
+						if(tipoTuberia == EnumTuberias.Tuberia.izquierdaArriba || tipoTuberia == EnumTuberias.Tuberia.izquierdaAbajo || tipoTuberia == EnumTuberias.Tuberia.derechaArriba){
+							gameObject.transform.GetChild(0).GetComponent<Image> ().fillClockwise = false;
+						}else{
+							gameObject.transform.GetChild(0).GetComponent<Image> ().fillClockwise = true;
+						}
 					break;
 
 				}
+				
 			}
+			
+			Debug.Log("Orientacion: "+orientacion+ "  Tipo: "+tipoTuberia+"  Origen: "+gameObject.transform.GetChild(0).GetComponent<Image> ().fillOrigin +"  Desplazamiento: "+desplazamientoHorizontal);
+			
+			empezarAnimacion = true;
 
 			yield return new WaitForSeconds(delayFlujo);
 
@@ -192,7 +205,7 @@ public class TipoTuberia : MonoBehaviour
 				final = true;
 			}//sentido bidireccional no cambia nada
 			//no coincide los sentidos
-
+			
 						//Establece la orientacion de la imagen del flujo
 			if(desplazamientoVertical == -1){
 				switch(gameObject.transform.GetChild(0).GetComponent<Image> ().fillMethod){
@@ -201,7 +214,11 @@ public class TipoTuberia : MonoBehaviour
 					break;
 
 					case Image.FillMethod.Radial90:
-						gameObject.transform.GetChild(0).GetComponent<Image> ().fillClockwise = false;
+						if(tipoTuberia == EnumTuberias.Tuberia.izquierdaArriba){
+							gameObject.transform.GetChild(0).GetComponent<Image> ().fillClockwise = false;
+						}else{
+							gameObject.transform.GetChild(0).GetComponent<Image> ().fillClockwise = true;
+						}
 					break;
 
 				}
@@ -212,11 +229,19 @@ public class TipoTuberia : MonoBehaviour
 					break;
 
 					case Image.FillMethod.Radial90:
-						gameObject.transform.GetChild(0).GetComponent<Image> ().fillClockwise = true;
+						if(tipoTuberia == EnumTuberias.Tuberia.izquierdaArriba || tipoTuberia == EnumTuberias.Tuberia.izquierdaAbajo){
+							gameObject.transform.GetChild(0).GetComponent<Image> ().fillClockwise = true;
+						}else{
+							gameObject.transform.GetChild(0).GetComponent<Image> ().fillClockwise = false;
+						}
 					break;
 
 				}
 			}
+			
+			Debug.Log("Orientacion: "+orientacion+ "  Tipo: "+tipoTuberia+"  Origen: "+gameObject.transform.GetChild(0).GetComponent<Image> ().fillOrigin +"  Desplazamiento: "+desplazamientoVertical);
+			
+			empezarAnimacion = true;
 			
 			yield return new WaitForSeconds(delayFlujo);
 
