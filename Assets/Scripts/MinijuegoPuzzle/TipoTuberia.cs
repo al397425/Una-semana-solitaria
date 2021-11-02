@@ -111,6 +111,7 @@ public class TipoTuberia : MonoBehaviour
 			Debug.Log("Ganastes");
 			final = true;
 			refPuzzle.GetComponent<CrearPuzzleActivador>().Setresuelto(true);
+			refPuzzle.GetComponent<CrearPuzzleActivador>().eventoAlGanarElMinijuego.Invoke();
 			yield break;
 		}
 		llenoAgua = true;
@@ -184,6 +185,7 @@ public class TipoTuberia : MonoBehaviour
 			//Tambien detecta si el flujo a salido del tablero,
 			if(matrizSlots[columnaActual+desplazamientoHorizontal,filaActual] == null || (desplazamientoHorizontal == 1 && (sentidoHorizontal == EnumTuberias.Sentido.derecha || sentidoHorizontal == EnumTuberias.Sentido.bidireccional) && matrizSlots[columnaActual+desplazamientoHorizontal,filaActual].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().sentidoHorizontal == EnumTuberias.Sentido.derecha) || (desplazamientoHorizontal == -1 && (sentidoHorizontal == EnumTuberias.Sentido.izquierda || sentidoHorizontal == EnumTuberias.Sentido.bidireccional) && matrizSlots[columnaActual+desplazamientoHorizontal,filaActual].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().sentidoHorizontal == EnumTuberias.Sentido.izquierda)){
                 Debug.Log("FIN DEL JUEGO HAS PERDIDO H");
+				refPuzzle.GetComponent<CrearPuzzleActivador>().eventoAlPerderElMinijuego.Invoke();
                 final = true;
             }
 			
@@ -259,6 +261,7 @@ public class TipoTuberia : MonoBehaviour
 			//Tambien detecta si el flujo a salido del tablero
 			if(filaActual+desplazamientoVertical < 0 || filaActual+desplazamientoVertical >= matrizSlots.GetLength(1) || (desplazamientoVertical == -1 && (sentidoVertical == EnumTuberias.Sentido.arriba || sentidoVertical == EnumTuberias.Sentido.bidireccional) && matrizSlots[columnaActual,filaActual+desplazamientoVertical].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().sentidoVertical == EnumTuberias.Sentido.arriba) || (desplazamientoVertical == 1 && (sentidoVertical == EnumTuberias.Sentido.abajo || sentidoVertical == EnumTuberias.Sentido.bidireccional) && matrizSlots[columnaActual,filaActual+desplazamientoVertical].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().sentidoVertical == EnumTuberias.Sentido.abajo)){
                 Debug.Log("FIN DEL JUEGO HAS PERDIDO V");
+				refPuzzle.GetComponent<CrearPuzzleActivador>().eventoAlPerderElMinijuego.Invoke();
                 final = true;
             }
 

@@ -21,7 +21,9 @@ public class CrearPuzzleActivador : MonoBehaviour
 	//Evento a llamar
 	public UnityEvent eventoAlEmpezarElMinijuego;
 	//Evento a llamar
-	public UnityEvent eventoAlTerminarElMinijuego;
+	public UnityEvent eventoAlGanarElMinijuego;
+		//Evento a llamar
+	public UnityEvent eventoAlPerderElMinijuego;
 	
 	GameObject puzzle;
 	bool puzzleActivado = false; 
