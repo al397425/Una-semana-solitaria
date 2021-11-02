@@ -10,6 +10,10 @@ public class CrearPuzzle : MonoBehaviour
 	public GameObject SlotTuberia;
 	//Tuberias
 	public GameObject Tuberia;
+	//Pantalla victoria
+	public GameObject pantallaVictoria;
+	//Pantalla derrota
+	public GameObject pantallaDerrota;
 	//Referencia al canvas
 	public Canvas canvas;
 	
