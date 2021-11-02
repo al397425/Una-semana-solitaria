@@ -4,14 +4,25 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class ArrastrarSoltarTuberia : MonoBehaviour, IDragHandler, IEndDragHandler
+public class ArrastrarSoltarTuberia : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerDownHandler, IPointerUpHandler 
 {
 	BoxCollider2D colision;
 	Collider2D obejtoColisionado;
 	
+	GameObject referenciaPuzzle;
 	
 	void Start(){
 		colision = GetComponent<BoxCollider2D>();
+	}
+
+	public void OnPointerDown (PointerEventData eventData){
+        referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().clip = referenciaPuzzle.GetComponent<CrearPuzzle>().sonidoCogerTuberia;
+		referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().Play(0);
+    }
+
+	public void OnPointerUp(PointerEventData eventData){
+		referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().clip = referenciaPuzzle.GetComponent<CrearPuzzle>().sonidoSoltarTuberia;
+		referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().Play(0);
 	}
 
 	public void OnDrag(PointerEventData eventData){
@@ -46,4 +57,10 @@ public class ArrastrarSoltarTuberia : MonoBehaviour, IDragHandler, IEndDragHandl
 			obejtoColisionado = null;
 	}
 
+	/**
+	 * Establece la referencia a el puzzle para ejecutar los audios
+	**/
+	public void SetreferenciaPuzzle(GameObject refPuzzle){
+		referenciaPuzzle = refPuzzle;
+	}
 }

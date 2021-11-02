@@ -16,13 +16,19 @@ public class CrearPuzzle : MonoBehaviour
 	//Delay antes de que empiece a fluir el agua
 	public float DelayAntesEmpezarPuzzle = 3.0f;
 	
+	//Clips de audio
+	public AudioClip sonidoCogerTuberia;
+	public AudioClip sonidoSoltarTuberia;
+	
+	AudioSource fuenteAudio;
+	
 	//Matriz de los huecos donde iran las tuberias y por consecuente esta es la matriz de las tuberias
 	protected GameObject [,]matrizSlots;
 	
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        fuenteAudio = GetComponent<AudioSource>();
     }
 	
 	public void iniciarMinijuego(int ancho, int alto, int filaPuntoInicio, int filaPuntoFinal, float delayFlujoTuberia, GameObject refPuzzle){
@@ -58,6 +64,7 @@ public class CrearPuzzle : MonoBehaviour
 		tuberia.GetComponent<TipoTuberia>().EstablecerTipoTuberia(EnumTuberias.Tuberia.inicio);
 		tuberia.GetComponent<TipoTuberia>().SetpuedeMoverse(false);
 		tuberia.GetComponent<TipoTuberia>().SetdelayFlujo(delayFlujoTuberia);
+		tuberia.GetComponent<ArrastrarSoltarTuberia>().SetreferenciaPuzzle(gameObject);
 		posy = altoImagen;
 		posx = anchoImagen;
 		
@@ -74,6 +81,7 @@ public class CrearPuzzle : MonoBehaviour
 			   tuberia.transform.SetParent(matrizSlots[x,y].transform);
 			   tuberia.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
 			   tuberia.GetComponent<TipoTuberia>().SetdelayFlujo(delayFlujoTuberia);
+			   tuberia.GetComponent<ArrastrarSoltarTuberia>().SetreferenciaPuzzle(gameObject);
 			   //Pasa a la siguiente posicion
 			   posx += anchoImagen;
            }
@@ -95,6 +103,7 @@ public class CrearPuzzle : MonoBehaviour
 		tuberia.GetComponent<TipoTuberia>().EstablecerTipoTuberia(EnumTuberias.Tuberia.fin);
 		tuberia.GetComponent<TipoTuberia>().SetpuedeMoverse(false);
 		tuberia.GetComponent<TipoTuberia>().SetdelayFlujo(delayFlujoTuberia);
+		tuberia.GetComponent<ArrastrarSoltarTuberia>().SetreferenciaPuzzle(gameObject);
 		posy = altoImagen;
 		posx = anchoImagen;
 		
@@ -104,4 +113,11 @@ public class CrearPuzzle : MonoBehaviour
 		yield break;
 	}
 
+
+	/**
+	 * Retorna el componente AudioSource
+	**/
+	public AudioSource GetfuenteAudio(){
+		return fuenteAudio;
+	}
 }
