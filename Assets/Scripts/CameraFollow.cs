@@ -5,41 +5,49 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
    
-    public Transform target;
     public Vector3 velocidad;
-    public Vector3 auxiliar;
+    float velocidad_inicial;
     bool abajo=false;
-    public bool terminado=false;
-    public double contador = 0;
+    public float contador = 0;
+    bool terminado=false;
 
-
+    private void Start()
+    {
+        velocidad_inicial = velocidad.y;
+    }
 
     private void FixedUpdate()
     {
         if (transform.position.y < -18 && contador <3)                  //Abajo del todo
         {
             abajo = true;
-            velocidad = Vector3.zero;
-            contador += 0.025;
+            velocidad.y = 0;
+            contador += 0.025f;
             
         }
         
+        if (terminado == false)
+        {
+            if (abajo && contador >= 3)
+            {
+                velocidad.y = velocidad_inicial;
+                transform.position += velocidad;            //subiendo
+            }
+            else if (abajo == false && contador < 3)
+            {
+                transform.position -= velocidad;            //bajando
+            }
 
-        if (abajo && contador >=3)
-        {
-            velocidad = auxiliar;
-            transform.position += velocidad;            //subiendo
+            if (transform.position.y > 0 && abajo)                  //FIN
+            {
+                terminado = true;
+            }
         }
-        else if(abajo == false && contador<3)
+        else
         {
-            transform.position -= velocidad;            //bajando
+            velocidad.y = 0;
         }
-
-        if (transform.position.y > 0 && abajo)                  //FIN
-        {
-            velocidad = Vector3.zero;
-            terminado = true;
-        }
+            
         
 
 
