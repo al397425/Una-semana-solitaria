@@ -73,18 +73,18 @@ public class MinijuegoObstaculos : MonoBehaviour
         if(currentHealth >= 0)
             {
             //gana puntos   
-            if(Coll.gameObject.tag=="Coin")
+            if(Coll.gameObject.tag=="GameController")
             {
                 points = points+1;
             }
             //evitar saltar en el aire
-            if(Coll.gameObject.tag=="Suelo")
+            if(Coll.gameObject.tag=="tuberias")
             {
                 IJ = false;
             
             }
 
-            if(Coll.gameObject.tag=="Obstacle")
+            if(Coll.gameObject.tag=="Finish")
             {
                 IJ = false;
                 //muere
