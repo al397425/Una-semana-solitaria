@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(Input.mousePosition);
+        // Debug.Log(Input.mousePosition);
         lastClickedPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         float step = speed * Time.deltaTime;
         transform.position = Vector2.MoveTowards(transform.position, lastClickedPos, step);
