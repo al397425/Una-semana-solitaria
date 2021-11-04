@@ -5,12 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - tuberias
-  - Undefined
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Tuberia
   - Water
   - UI
   - 
@@ -42,4 +41,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: tubos
+    uniqueID: 243859157
     locked: 0
