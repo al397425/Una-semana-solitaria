@@ -68,6 +68,9 @@ public class CrearPuzzle : MonoBehaviour
 		tuberia.GetComponent<TipoTuberia>().EstablecerTipoTuberia(EnumTuberias.Tuberia.inicio);
 		tuberia.GetComponent<TipoTuberia>().SetpuedeMoverse(false);
 		tuberia.GetComponent<TipoTuberia>().SetdelayFlujo(delayFlujoTuberia);
+			//Quita la losa a la tuberia de inicio
+		tuberia.transform.GetChild(2).gameObject.active = false;
+		
 		tuberia.GetComponent<ArrastrarSoltarTuberia>().SetreferenciaPuzzle(gameObject);
 		posy = altoImagen;
 		posx = anchoImagen;
@@ -108,6 +111,9 @@ public class CrearPuzzle : MonoBehaviour
 		tuberia.GetComponent<TipoTuberia>().SetpuedeMoverse(false);
 		tuberia.GetComponent<TipoTuberia>().SetdelayFlujo(delayFlujoTuberia);
 		tuberia.GetComponent<ArrastrarSoltarTuberia>().SetreferenciaPuzzle(gameObject);
+			//Quita la losa a la tuberia de inicio
+		tuberia.transform.GetChild(2).gameObject.active = false;
+		
 		posy = altoImagen;
 		posx = anchoImagen;
 		
