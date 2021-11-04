@@ -7,7 +7,7 @@ public class MinijuegoObstaculos : MonoBehaviour
 
     public float speed = 3.0f;
     public float jumpforce = 5.0f;
-    
+    public GameObject CanvasObject;
     public int maxHealth = 5;
     public float timeInvincible = 2.0f;
     
@@ -29,6 +29,7 @@ public class MinijuegoObstaculos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        transform.position += new Vector3 ((speed-1.5f)*Time.deltaTime,0,0);
         /*float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
         float jump = Input.GetAxis("Jump");*/
@@ -55,33 +56,44 @@ public class MinijuegoObstaculos : MonoBehaviour
 
         if(Input.GetKey(KeyCode.Space) && IJ==false)
         {
-            GetComponent<Rigidbody2D> ().velocity = new Vector3 (10,35,0);
+            GetComponent<Rigidbody2D> ().velocity = new Vector3 (speed,jumpforce,0);
             IJ = true;
-            Debug.Log(IJ);
+            
         }
     }
 
     void OnCollisionEnter2D(Collision2D Coll)
     {
-        Debug.Log("pipo");
-        if(Coll.gameObject.tag=="Suelo")
-        {
-            IJ = false;
-            Debug.Log(IJ);
-        }
+        if(currentHealth >= 0)
+            {
+                
+            
+            if(Coll.gameObject.tag=="Suelo")
+            {
+                IJ = false;
+            
+            }
 
-        if(Coll.gameObject.tag=="Obstacle")
-        {
-            IJ = false;
-            Debug.Log(IJ);
+            if(Coll.gameObject.tag=="Obstacle")
+            {
+                IJ = false;
+            
+                currentHealth = currentHealth-1;
+                Debug.Log(currentHealth);
+                if(currentHealth <= 0)
+                {
+                    CanvasObject.SetActive(true);
+                }
         }
 
    /*if(Coll.gameObject.tag=="Respawn")
         {
             Application.LoadLevel ("MinijuegoObstaculos");
         }*/
+    }else{
+        IJ = true;
     }
-    
+}
     public void ChangeHealth(int amount)
     {
         if (amount < 0)
