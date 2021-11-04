@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Obstacle
   - Suelo
+  - Coin
   layers:
   - Default
   - TransparentFX

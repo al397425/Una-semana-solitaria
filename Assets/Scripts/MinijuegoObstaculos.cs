@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MinijuegoObstaculos : MonoBehaviour
 {
@@ -8,10 +9,11 @@ public class MinijuegoObstaculos : MonoBehaviour
     public float speed = 3.0f;
     public float jumpforce = 5.0f;
     public GameObject CanvasObject;
-    public int maxHealth = 5;
+    public int maxHealth = 7;
+    public int points = 0;
     public float timeInvincible = 2.0f;
     
-    public int health {  get { return currentHealth; }}
+    //public int health {  get { return currentHealth; }}
     int currentHealth;
     bool isInvincible;
     float invincibleTimer;
@@ -30,6 +32,10 @@ public class MinijuegoObstaculos : MonoBehaviour
     void Update()
     {
         transform.position += new Vector3 ((speed-1.5f)*Time.deltaTime,0,0);
+        if(points>=10)
+        {
+            SceneManager.LoadScene("Level1");
+        }
         /*float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
         float jump = Input.GetAxis("Jump");*/
@@ -66,8 +72,12 @@ public class MinijuegoObstaculos : MonoBehaviour
     {
         if(currentHealth >= 0)
             {
-                
-            
+            //gana puntos   
+            if(Coll.gameObject.tag=="Coin")
+            {
+                points = points+1;
+            }
+            //evitar saltar en el aire
             if(Coll.gameObject.tag=="Suelo")
             {
                 IJ = false;
@@ -77,7 +87,7 @@ public class MinijuegoObstaculos : MonoBehaviour
             if(Coll.gameObject.tag=="Obstacle")
             {
                 IJ = false;
-            
+                //muere
                 currentHealth = currentHealth-1;
                 Debug.Log(currentHealth);
                 if(currentHealth <= 0)

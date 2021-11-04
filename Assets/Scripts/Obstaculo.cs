@@ -11,25 +11,10 @@ public class Obstaculo : MonoBehaviour
     void Start()
     {
     }
-
     // Update is called once per frame
     void Update()
     {
         transform.position -= new Vector3 (speed*random*Time.deltaTime,0,0);
     }
-
-    /*void OnCollisionENter2D(Collision2D Coll)
-    {
-        if(Coll.gameObject.tag=="Obstacle")
-        {
-            IJ = false;
-        }
-
-   /*if(Coll.gameObject.tag=="Respawn")
-        {
-            Application.LoadLevel ("MinijuegoObstaculos");
-        }
-    }*/
-
 
 }
