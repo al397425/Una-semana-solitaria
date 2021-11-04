@@ -111,7 +111,7 @@ public class TipoTuberia : MonoBehaviour
 			final = true;
 			refPuzzle.GetComponent<CrearPuzzleActivador>().Setresuelto(true);
 			refPuzzle.GetComponent<CrearPuzzleActivador>().eventoAlGanarElMinijuego.Invoke();
-			if(refPuzzle.GetComponent<CrearPuzzle>().pantallaVictoria){
+			if(refPuzzle.GetComponent<CrearPuzzle>().pantallaVictoria != null){
 				Instantiate(refPuzzle.GetComponent<CrearPuzzle>().pantallaVictoria, new Vector2(0,0), Quaternion.identity);
 			}
 			yield break;
@@ -188,7 +188,7 @@ public class TipoTuberia : MonoBehaviour
 				refPuzzle.GetComponent<CrearPuzzleActivador>().eventoAlPerderElMinijuego.Invoke();
 				empezarAnimacion = false;
 				gameObject.transform.GetChild(0).GetComponent<Image> ().fillAmount = 0;
-				if(refPuzzle.GetComponent<CrearPuzzle>().pantallaDerrota){
+				if(refPuzzle.GetComponent<CrearPuzzle>().pantallaDerrota != null){
 					Instantiate(refPuzzle.GetComponent<CrearPuzzle>().pantallaDerrota, new Vector2(0,0), Quaternion.identity);
 				}
                 final = true;
@@ -269,7 +269,7 @@ public class TipoTuberia : MonoBehaviour
 				refPuzzle.GetComponent<CrearPuzzleActivador>().eventoAlPerderElMinijuego.Invoke();
 				empezarAnimacion = false;
 				gameObject.transform.GetChild(0).GetComponent<Image> ().fillAmount = 0;
-				if(refPuzzle.GetComponent<CrearPuzzle>().pantallaDerrota){
+				if(refPuzzle.GetComponent<CrearPuzzle>().pantallaDerrota != null){
 					Instantiate(refPuzzle.GetComponent<CrearPuzzle>().pantallaDerrota, new Vector2(0,0), Quaternion.identity);
 				}
                 final = true;

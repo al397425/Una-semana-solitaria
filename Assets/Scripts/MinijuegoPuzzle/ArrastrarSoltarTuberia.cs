@@ -11,25 +11,34 @@ public class ArrastrarSoltarTuberia : MonoBehaviour, IDragHandler, IEndDragHandl
 	
 	GameObject referenciaPuzzle;
 	
+	float escalaAlCogerTuberia = 1.25f;
+	
 	void Start(){
 		colision = GetComponent<BoxCollider2D>();
 	}
 
 	public void OnPointerDown (PointerEventData eventData){
-        referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().clip = referenciaPuzzle.GetComponent<CrearPuzzle>().sonidoCogerTuberia;
-		referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().Play(0);
+		if(GetComponent<TipoTuberia>().GetpuedeMoverse() == true){
+			//Coge el padre y lo pone como ultima prioridad para ser renderizado el ultimo y asi la tuberia no queda detras del fondo
+			transform.parent.transform.SetAsLastSibling();
+			
+			referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().clip = referenciaPuzzle.GetComponent<CrearPuzzle>().sonidoCogerTuberia;
+			referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().Play(0);
+			transform.GetChild(1).GetComponent<Image> ().rectTransform.localScale = new Vector2(escalaAlCogerTuberia, escalaAlCogerTuberia);
+		}
     }
 
 	public void OnPointerUp(PointerEventData eventData){
-		referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().clip = referenciaPuzzle.GetComponent<CrearPuzzle>().sonidoSoltarTuberia;
-		referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().Play(0);
+		if(GetComponent<TipoTuberia>().GetpuedeMoverse() == true){
+			referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().clip = referenciaPuzzle.GetComponent<CrearPuzzle>().sonidoSoltarTuberia;
+			referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().Play(0);
+			transform.GetChild(1).GetComponent<Image> ().rectTransform.localScale = new Vector2(1.0f, 1.0f);
+		}
 	}
 
 	public void OnDrag(PointerEventData eventData){
 		if(GetComponent<TipoTuberia>().GetpuedeMoverse() == true){
 			transform.position = Input.mousePosition;
-			//Coge el padre y lo pone como ultima prioridad para ser renderizado el ultimo y asi la tuberia no queda detras del fondo
-			transform.parent.transform.SetAsLastSibling();
 			colision.isTrigger = true;
 		}
 	}
