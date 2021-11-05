@@ -59,7 +59,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -239,6 +239,7 @@ GameObject:
   - component: {fileID: 6732797182559256241}
   - component: {fileID: 2666948384948301471}
   - component: {fileID: 7952906421660434677}
+  - component: {fileID: 7209163277276229181}
   m_Layer: 0
   m_Name: Tuberia
   m_TagString: tuberias
@@ -396,3 +397,22 @@ MonoBehaviour:
     sentidoHorizontal: 3
     sentidoVertical: 0
     metodoRellenoImagenFluido: 0
+--- !u!95 &7209163277276229181
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8384340352060404542}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 967f9091d4072c345839c31b0177b654, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

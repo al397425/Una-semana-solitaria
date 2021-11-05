@@ -23,7 +23,8 @@ public class CrearPuzzle : MonoBehaviour
 	//Clips de audio
 	public AudioClip sonidoCogerTuberia;
 	public AudioClip sonidoSoltarTuberia;
-	
+	public AudioClip sonidoDestaparTuberia;
+
 	AudioSource fuenteAudio;
 	
 	//Matriz de los huecos donde iran las tuberias y por consecuente esta es la matriz de las tuberias
