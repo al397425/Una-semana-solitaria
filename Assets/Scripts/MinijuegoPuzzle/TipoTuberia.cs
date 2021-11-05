@@ -119,7 +119,10 @@ public class TipoTuberia : MonoBehaviour
 		llenoAgua = true;
 		puedeMoverse = false;
 		
-		
+		if(gameObject.transform.GetChild(2).gameObject.active == true){
+			mostrarPantallaDerrota(refPuzzle);
+			final = true;
+		}
 
 		//Dirige el flujo del fluido
 		int x = 0;
@@ -183,15 +186,9 @@ public class TipoTuberia : MonoBehaviour
             // teniendo en cuenta el desplazamiento realizado para distinguir entre un sentido del flujo hacia la izquierda o derecha ya que si no se comprueba siempre se metera en una de las dos condiciones
 			//cuando sea una tuberia bidireccional
 			//Tambien detecta si el flujo a salido del tablero,
-			if(transform.GetChild(2).gameObject.active != true || matrizSlots[columnaActual+desplazamientoHorizontal,filaActual] == null || (desplazamientoHorizontal == 1 && (sentidoHorizontal == EnumTuberias.Sentido.derecha || sentidoHorizontal == EnumTuberias.Sentido.bidireccional) && matrizSlots[columnaActual+desplazamientoHorizontal,filaActual].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().sentidoHorizontal == EnumTuberias.Sentido.derecha) || (desplazamientoHorizontal == -1 && (sentidoHorizontal == EnumTuberias.Sentido.izquierda || sentidoHorizontal == EnumTuberias.Sentido.bidireccional) && matrizSlots[columnaActual+desplazamientoHorizontal,filaActual].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().sentidoHorizontal == EnumTuberias.Sentido.izquierda)){
-                Debug.Log("FIN DEL JUEGO HAS PERDIDO H");
-				refPuzzle.GetComponent<CrearPuzzleActivador>().eventoAlPerderElMinijuego.Invoke();
-				empezarAnimacion = false;
-				gameObject.transform.GetChild(0).GetComponent<Image> ().fillAmount = 0;
-				if(refPuzzle.GetComponent<CrearPuzzle>().pantallaDerrota != null){
-					Instantiate(refPuzzle.GetComponent<CrearPuzzle>().pantallaDerrota, new Vector2(0,0), Quaternion.identity);
-				}
-                final = true;
+			if(matrizSlots[columnaActual+desplazamientoHorizontal,filaActual] == null || (desplazamientoHorizontal == 1 && (sentidoHorizontal == EnumTuberias.Sentido.derecha || sentidoHorizontal == EnumTuberias.Sentido.bidireccional) && matrizSlots[columnaActual+desplazamientoHorizontal,filaActual].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().sentidoHorizontal == EnumTuberias.Sentido.derecha) || (desplazamientoHorizontal == -1 && (sentidoHorizontal == EnumTuberias.Sentido.izquierda || sentidoHorizontal == EnumTuberias.Sentido.bidireccional) && matrizSlots[columnaActual+desplazamientoHorizontal,filaActual].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().sentidoHorizontal == EnumTuberias.Sentido.izquierda)){
+                mostrarPantallaDerrota(refPuzzle);
+				final = true;
             }
 			
 			if(final == false){
@@ -264,15 +261,9 @@ public class TipoTuberia : MonoBehaviour
             // teniendo en cuenta el desplazamiento realizado para distinguir entre un sentido del flujo hacia arriba o abajo ya que si no se comprueba siempre se metera en una de las dos condiciones
 			//cuando sea una tuberia bidireccional
 			//Tambien detecta si el flujo a salido del tablero
-			if(transform.GetChild(2).gameObject.active != true || filaActual+desplazamientoVertical < 0 || filaActual+desplazamientoVertical >= matrizSlots.GetLength(1) || (desplazamientoVertical == -1 && (sentidoVertical == EnumTuberias.Sentido.arriba || sentidoVertical == EnumTuberias.Sentido.bidireccional) && matrizSlots[columnaActual,filaActual+desplazamientoVertical].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().sentidoVertical == EnumTuberias.Sentido.arriba) || (desplazamientoVertical == 1 && (sentidoVertical == EnumTuberias.Sentido.abajo || sentidoVertical == EnumTuberias.Sentido.bidireccional) && matrizSlots[columnaActual,filaActual+desplazamientoVertical].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().sentidoVertical == EnumTuberias.Sentido.abajo)){
-                Debug.Log("FIN DEL JUEGO HAS PERDIDO V");
-				refPuzzle.GetComponent<CrearPuzzleActivador>().eventoAlPerderElMinijuego.Invoke();
-				empezarAnimacion = false;
-				gameObject.transform.GetChild(0).GetComponent<Image> ().fillAmount = 0;
-				if(refPuzzle.GetComponent<CrearPuzzle>().pantallaDerrota != null){
-					Instantiate(refPuzzle.GetComponent<CrearPuzzle>().pantallaDerrota, new Vector2(0,0), Quaternion.identity);
-				}
-                final = true;
+			if(filaActual+desplazamientoVertical < 0 || filaActual+desplazamientoVertical >= matrizSlots.GetLength(1) || (desplazamientoVertical == -1 && (sentidoVertical == EnumTuberias.Sentido.arriba || sentidoVertical == EnumTuberias.Sentido.bidireccional) && matrizSlots[columnaActual,filaActual+desplazamientoVertical].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().sentidoVertical == EnumTuberias.Sentido.arriba) || (desplazamientoVertical == 1 && (sentidoVertical == EnumTuberias.Sentido.abajo || sentidoVertical == EnumTuberias.Sentido.bidireccional) && matrizSlots[columnaActual,filaActual+desplazamientoVertical].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().sentidoVertical == EnumTuberias.Sentido.abajo)){
+               mostrarPantallaDerrota(refPuzzle);
+			   final = true;
             }
 
 			if(final == false){
@@ -291,6 +282,16 @@ public class TipoTuberia : MonoBehaviour
 
 		if(final == false){
 			StartCoroutine(matrizSlots[columnaActual+desplazamientoHorizontal,filaActual+desplazamientoVertical].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().ActivarTuberia(matrizSlots, columnaActual+desplazamientoHorizontal, filaActual+desplazamientoVertical, desplazamientoHorizontal, desplazamientoVertical, orientacion, refPuzzle));
+		}
+	}
+
+	void mostrarPantallaDerrota(GameObject refPuzzle){
+ 		Debug.Log("FIN DEL JUEGO HAS PERDIDO V");
+		refPuzzle.GetComponent<CrearPuzzleActivador>().eventoAlPerderElMinijuego.Invoke();
+		empezarAnimacion = false;
+		gameObject.transform.GetChild(0).GetComponent<Image> ().fillAmount = 0;
+		if(refPuzzle.GetComponent<CrearPuzzle>().pantallaDerrota != null){
+			Instantiate(refPuzzle.GetComponent<CrearPuzzle>().pantallaDerrota, new Vector2(0,0), Quaternion.identity);
 		}
 	}
 	
