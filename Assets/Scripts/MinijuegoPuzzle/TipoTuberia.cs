@@ -120,9 +120,11 @@ public class TipoTuberia : MonoBehaviour
 		llenoAgua = true;
 		puedeMoverse = false;
 		
-		if(gameObject.transform.GetChild(2).gameObject.active == true){
+		//Si choca con una tuberia tapada o un hueco en el tablero
+		if(gameObject.transform.GetChild(2).gameObject.active == true || tipoTuberia == EnumTuberias.Tuberia.hueco){
 			mostrarPantallaDerrota(refPuzzle);
 			final = true;
+			yield break;
 		}
 
 		//Dirige el flujo del fluido
@@ -190,6 +192,7 @@ public class TipoTuberia : MonoBehaviour
 			if(matrizSlots[columnaActual+desplazamientoHorizontal,filaActual] == null || (desplazamientoHorizontal == 1 && (sentidoHorizontal == EnumTuberias.Sentido.derecha || sentidoHorizontal == EnumTuberias.Sentido.bidireccional) && matrizSlots[columnaActual+desplazamientoHorizontal,filaActual].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().sentidoHorizontal == EnumTuberias.Sentido.derecha) || (desplazamientoHorizontal == -1 && (sentidoHorizontal == EnumTuberias.Sentido.izquierda || sentidoHorizontal == EnumTuberias.Sentido.bidireccional) && matrizSlots[columnaActual+desplazamientoHorizontal,filaActual].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().sentidoHorizontal == EnumTuberias.Sentido.izquierda)){
                 mostrarPantallaDerrota(refPuzzle);
 				final = true;
+				yield break;
             }
 			
 			if(final == false){
@@ -265,6 +268,7 @@ public class TipoTuberia : MonoBehaviour
 			if(filaActual+desplazamientoVertical < 0 || filaActual+desplazamientoVertical >= matrizSlots.GetLength(1) || (desplazamientoVertical == -1 && (sentidoVertical == EnumTuberias.Sentido.arriba || sentidoVertical == EnumTuberias.Sentido.bidireccional) && matrizSlots[columnaActual,filaActual+desplazamientoVertical].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().sentidoVertical == EnumTuberias.Sentido.arriba) || (desplazamientoVertical == 1 && (sentidoVertical == EnumTuberias.Sentido.abajo || sentidoVertical == EnumTuberias.Sentido.bidireccional) && matrizSlots[columnaActual,filaActual+desplazamientoVertical].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().sentidoVertical == EnumTuberias.Sentido.abajo)){
                mostrarPantallaDerrota(refPuzzle);
 			   final = true;
+			   yield break;
             }
 
 			if(final == false){

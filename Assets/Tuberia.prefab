@@ -397,6 +397,12 @@ MonoBehaviour:
     sentidoHorizontal: 3
     sentidoVertical: 0
     metodoRellenoImagenFluido: 0
+  - tipoDeTuberia: 8
+    imagenTuberia: {fileID: 21300000, guid: 19a8184d7c1c1ec458744fb9e81aed3d, type: 3}
+    imagenFluidoTuberia: {fileID: 21300000, guid: 19a8184d7c1c1ec458744fb9e81aed3d, type: 3}
+    sentidoHorizontal: 0
+    sentidoVertical: 0
+    metodoRellenoImagenFluido: 0
 --- !u!95 &7209163277276229181
 Animator:
   serializedVersion: 3

@@ -19,6 +19,9 @@ public class CrearPuzzle : MonoBehaviour
 	
 	//Delay antes de que empiece a fluir el agua
 	public float DelayAntesEmpezarPuzzle = 3.0f;
+
+	//Numero de huecos en el mapa
+	public int numeroDeHuecos = 0;
 	
 	//Clips de audio
 	public AudioClip sonidoCogerTuberia;
@@ -98,6 +101,15 @@ public class CrearPuzzle : MonoBehaviour
 		   posy += altoImagen;
 		   posx = anchoImagen;
        }
+
+	   //Establece aleatoriamente los huecos en el tablero
+	   for(int i = 0; i < numeroDeHuecos; i++){
+		   //Genera un numero aleatorio de la fila y columna dentro del rango del tablero y que no tape la entrada y salida del flujo
+			int x = Random.Range(2, ancho-1);
+			int y = Random.Range(0, alto);
+		   //Obtiene el hijo del slot que es la tuberia y llama a la funcion establecerTipo y pone tipo hueco
+		   matrizSlots[x,y].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().EstablecerTipoTuberia(EnumTuberias.Tuberia.hueco);
+	   }
 	   
 	    //Crea el punto final
 		//Crea slots
