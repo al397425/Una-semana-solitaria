@@ -328,6 +328,13 @@ public class TipoTuberia : MonoBehaviour
 	public float GetdelayFlujo(){
 		return delayFlujo;
 	}
+
+	/**
+	 * Obtiene el tipo de tuberia
+	**/
+	public EnumTuberias.Tuberia GettipoTuberia(){
+		return tipoTuberia;
+	}
 }
 
 

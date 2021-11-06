@@ -111,6 +111,21 @@ public class CrearPuzzle : MonoBehaviour
 		   matrizSlots[x,y].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().EstablecerTipoTuberia(EnumTuberias.Tuberia.hueco);
 	   }
 	   
+		//Genera una solucion aleatoria
+		List<EnumTuberias.Tuberia> caminoGenerado = generarSolucion(ancho, alto, filaPuntoInicio, filaPuntoFinal);
+
+		//Cambia el tipo de tuberias aleatoriamente si no es un hueco
+		for(int i = 0; i < caminoGenerado.Count; ){
+			//Genera un numero aleatorio de la fila y columna dentro del rango del tablero y que no tape la entrada y salida del flujo
+			int x = Random.Range(1, ancho);
+			int y = Random.Range(0, alto);
+
+			if(matrizSlots[x,y].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().GettipoTuberia() != EnumTuberias.Tuberia.hueco){
+				 matrizSlots[x,y].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().EstablecerTipoTuberia(caminoGenerado[i]);
+				 i++;
+			}
+		}
+
 	    //Crea el punto final
 		//Crea slots
 		posy = altoImagen;
@@ -138,6 +153,28 @@ public class CrearPuzzle : MonoBehaviour
 		yield break;
 	}
 
+	List<EnumTuberias.Tuberia> generarSolucion(int ancho, int alto, int filaPuntoInicio, int filaPuntoFinal){
+		//Comprueba si el objetivo esta por encima o abajo o a la misma altura del inicio
+		int alturaVertical = 0;
+
+			//Si esta por debajo del final, es decir el camino tiene que subir
+		if(filaPuntoInicio > filaPuntoFinal){
+			alturaVertical = -1;
+		}else if(filaPuntoInicio < filaPuntoFinal){
+			alturaVertical = 1;
+		}
+
+		//Elige un camino aleatorio mientras que sea valido
+		for (int y=0; y < alto; y++){
+           for (int x=1; x <= ancho; x++){
+			   //Crea slot
+              // matrizSlots[x,y] 
+           }
+       }
+		//Elige la tuberia acorde a el flujo
+
+		return null;
+	}
 
 	/**
 	 * Retorna el componente AudioSource
