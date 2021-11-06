@@ -29,6 +29,8 @@ public class CrearPuzzle : MonoBehaviour
 	
 	//Matriz de los huecos donde iran las tuberias y por consecuente esta es la matriz de las tuberias
 	protected GameObject [,]matrizSlots;
+
+	bool puzzleInteractuable = true;
 	
     // Start is called before the first frame update
     void Awake()
@@ -130,5 +132,19 @@ public class CrearPuzzle : MonoBehaviour
 	**/
 	public AudioSource GetfuenteAudio(){
 		return fuenteAudio;
+	}
+
+	/**
+	 * Retorna el valor de puzzleInteractuable
+	**/
+	public bool GetpuzzleInteractuable(){
+		return puzzleInteractuable;
+	}
+
+	/**
+	 * Establece el valor de puzzleInteractuable
+	**/
+	public void SetpuzzleInteractuable(bool valor){
+		puzzleInteractuable = valor;
 	}
 }

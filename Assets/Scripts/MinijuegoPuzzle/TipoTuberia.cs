@@ -114,6 +114,7 @@ public class TipoTuberia : MonoBehaviour
 			if(refPuzzle.GetComponent<CrearPuzzle>().pantallaVictoria != null){
 				Instantiate(refPuzzle.GetComponent<CrearPuzzle>().pantallaVictoria, new Vector2(0,0), Quaternion.identity);
 			}
+			Time.timeScale = 1.0f;
 			yield break;
 		}
 		llenoAgua = true;
@@ -293,6 +294,7 @@ public class TipoTuberia : MonoBehaviour
 		if(refPuzzle.GetComponent<CrearPuzzle>().pantallaDerrota != null){
 			Instantiate(refPuzzle.GetComponent<CrearPuzzle>().pantallaDerrota, new Vector2(0,0), Quaternion.identity);
 		}
+		Time.timeScale = 1.0f;
 	}
 	
 	/**

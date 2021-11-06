@@ -18,19 +18,21 @@ public class ArrastrarSoltarTuberia : MonoBehaviour, IDragHandler, IEndDragHandl
 	}
 
 	public void OnPointerDown (PointerEventData eventData){
-		//Coge el padre y lo pone como ultima prioridad para ser renderizado el ultimo y asi la tuberia no queda detras del fondo
-		transform.parent.transform.SetAsLastSibling();
-		if(GetComponent<TipoTuberia>().GetpuedeMoverse() == true){
-			referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().clip = referenciaPuzzle.GetComponent<CrearPuzzle>().sonidoCogerTuberia;
-			referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().Play(0);
-			transform.GetChild(1).GetComponent<Image> ().rectTransform.localScale = new Vector2(escalaAlCogerTuberia, escalaAlCogerTuberia);
-		}else if(transform.GetChild(2).gameObject.active == true){//No entra la tuberia del inicio ni la de final porque por defecto la losa esta desactivada
-			//Ejecuta el sonido una vez 
-			if(GetComponent<Animator>().enabled == false){
-				referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().clip = referenciaPuzzle.GetComponent<CrearPuzzle>().sonidoDestaparTuberia;
+		if(referenciaPuzzle.GetComponent<CrearPuzzle>().GetpuzzleInteractuable() == true){
+			//Coge el padre y lo pone como ultima prioridad para ser renderizado el ultimo y asi la tuberia no queda detras del fondo
+			transform.parent.transform.SetAsLastSibling();
+			if(GetComponent<TipoTuberia>().GetpuedeMoverse() == true){
+				referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().clip = referenciaPuzzle.GetComponent<CrearPuzzle>().sonidoCogerTuberia;
 				referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().Play(0);
+				transform.GetChild(1).GetComponent<Image> ().rectTransform.localScale = new Vector2(escalaAlCogerTuberia, escalaAlCogerTuberia);
+			}else if(transform.GetChild(2).gameObject.active == true){//No entra la tuberia del inicio ni la de final porque por defecto la losa esta desactivada
+				//Ejecuta el sonido una vez 
+				if(GetComponent<Animator>().enabled == false){
+					referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().clip = referenciaPuzzle.GetComponent<CrearPuzzle>().sonidoDestaparTuberia;
+					referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().Play(0);
+				}
+				GetComponent<Animator>().enabled = true;
 			}
-			GetComponent<Animator>().enabled = true;
 		}
     }
 
@@ -43,7 +45,7 @@ public class ArrastrarSoltarTuberia : MonoBehaviour, IDragHandler, IEndDragHandl
 	}
 
 	public void OnDrag(PointerEventData eventData){
-		if(GetComponent<TipoTuberia>().GetpuedeMoverse() == true){
+		if(GetComponent<TipoTuberia>().GetpuedeMoverse() == true && referenciaPuzzle.GetComponent<CrearPuzzle>().GetpuzzleInteractuable() == true){
 			transform.position = Input.mousePosition;
 			//Coge el padre y lo pone como ultima prioridad para ser renderizado el ultimo y asi la tuberia no queda detras del fondo
 			transform.parent.transform.SetAsLastSibling();
