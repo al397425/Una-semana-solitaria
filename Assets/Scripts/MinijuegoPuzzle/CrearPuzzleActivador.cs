@@ -34,7 +34,7 @@ public class CrearPuzzleActivador : MonoBehaviour
 	bool resuelto = false;
 	
 	void OnTriggerStay2D(Collider2D other){
-		if (Input.GetKeyDown(teclaDeInteraccion) && puzzleActivado == false)
+		if (Input.GetKeyDown(teclaDeInteraccion) && puzzleActivado == false && resuelto == false)
         {
 			puzzleActivado = true;
 			if(eventoAlEmpezarElMinijuego != null){

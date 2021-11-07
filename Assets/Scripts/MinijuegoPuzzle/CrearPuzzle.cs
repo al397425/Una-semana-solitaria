@@ -31,6 +31,7 @@ public class CrearPuzzle : MonoBehaviour
 	protected GameObject [,]matrizSlots;
 
 	bool puzzleInteractuable = true;
+
 	
     // Start is called before the first frame update
     void Awake()
@@ -106,6 +107,8 @@ public class CrearPuzzle : MonoBehaviour
 			int y = Random.Range(0, alto);
 		   //Obtiene el hijo del slot que es la tuberia y llama a la funcion establecerTipo y pone tipo hueco
 		   matrizSlots[x,y].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().EstablecerTipoTuberia(EnumTuberias.Tuberia.hueco);
+		   matrizSlots[x,y].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().SetpuedeMoverse(false);
+		   Debug.Log( matrizSlots[x,y].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().GetpuedeMoverse());
 	   }
 	   
 		//Genera una solucion aleatoria
@@ -146,7 +149,7 @@ public class CrearPuzzle : MonoBehaviour
 		
 		//Activa la tuberia inicial
 		yield return new WaitForSeconds(DelayAntesEmpezarPuzzle);
-		StartCoroutine(matrizSlots[0,filaPuntoInicio-1].transform.GetChild(0).GetComponent<TipoTuberia>().ActivarTuberia(matrizSlots, 0, filaPuntoInicio-1, 0, 0, EnumTuberias.Tuberia.horizontal, refPuzzle));
+		StartCoroutine(matrizSlots[0,filaPuntoInicio-1].transform.GetChild(0).GetComponent<TipoTuberia>().ActivarTuberia(matrizSlots, 0, filaPuntoInicio-1, 0, 0, EnumTuberias.Tuberia.horizontal, refPuzzle, gameObject));
 		yield break;
 	}
 

@@ -37,7 +37,7 @@ public class ArrastrarSoltarTuberia : MonoBehaviour, IDragHandler, IEndDragHandl
     }
 
 	public void OnPointerUp(PointerEventData eventData){
-		if(GetComponent<TipoTuberia>().GetpuedeMoverse() == true){
+		if(GetComponent<TipoTuberia>().GetpuedeMoverse() == true && referenciaPuzzle.GetComponent<CrearPuzzle>().GetpuzzleInteractuable() == true){
 			referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().clip = referenciaPuzzle.GetComponent<CrearPuzzle>().sonidoSoltarTuberia;
 			referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().Play(0);
 			transform.GetChild(1).GetComponent<Image> ().rectTransform.localScale = new Vector2(1.0f, 1.0f);
@@ -78,7 +78,9 @@ public class ArrastrarSoltarTuberia : MonoBehaviour, IDragHandler, IEndDragHandl
 
 	public void EstableceTuberiaDestapada(){
 		transform.GetChild(2).gameObject.active = false;
-		GetComponent<TipoTuberia>().SetpuedeMoverse(true);
+		if(GetComponent<TipoTuberia>().GettipoTuberia() != EnumTuberias.Tuberia.hueco){//Para evitar que los huecos se muevan
+			GetComponent<TipoTuberia>().SetpuedeMoverse(true);
+		}
 		GetComponent<Animator>().enabled = false;
 	}
 
