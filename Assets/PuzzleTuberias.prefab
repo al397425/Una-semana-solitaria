@@ -153,7 +153,7 @@ MonoBehaviour:
   pantallaDerrota: {fileID: 0}
   canvas: {fileID: 1976822935189948549}
   DelayAntesEmpezarPuzzle: 3
-  numeroDeHuecos: 5
+  numeroDeHuecos: 0
   sonidoCogerTuberia: {fileID: 8300000, guid: ed87b3482fd881b47b61b0d194245424, type: 3}
   sonidoSoltarTuberia: {fileID: 8300000, guid: f0e740c331d389f4b936496940080752, type: 3}
   sonidoDestaparTuberia: {fileID: 8300000, guid: 4011891935afa7a4798c4a88546127bc, type: 3}

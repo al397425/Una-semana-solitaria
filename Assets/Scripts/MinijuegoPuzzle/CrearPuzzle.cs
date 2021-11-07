@@ -19,9 +19,6 @@ public class CrearPuzzle : MonoBehaviour
 	
 	//Delay antes de que empiece a fluir el agua
 	public float DelayAntesEmpezarPuzzle = 3.0f;
-
-	//Numero de huecos en el mapa
-	public int numeroDeHuecos = 0;
 	
 	//Clips de audio
 	public AudioClip sonidoCogerTuberia;
@@ -41,15 +38,15 @@ public class CrearPuzzle : MonoBehaviour
         fuenteAudio = GetComponent<AudioSource>();
     }
 	
-	public void iniciarMinijuego(int ancho, int alto, int filaPuntoInicio, int filaPuntoFinal, float delayFlujoTuberia, GameObject refPuzzle){
-		StartCoroutine(GenerarSlots(ancho,alto, filaPuntoInicio, filaPuntoFinal, delayFlujoTuberia, refPuzzle));
+	public void iniciarMinijuego(int ancho, int alto, int filaPuntoInicio, int filaPuntoFinal, float delayFlujoTuberia, GameObject refPuzzle, int numHuecos){
+		StartCoroutine(GenerarSlots(ancho,alto, filaPuntoInicio, filaPuntoFinal, delayFlujoTuberia, refPuzzle, numHuecos));
 	}
 	
 	
 	/**
 	 * Genera los slots del tablero ademas de las tuberias
 	**/
-	IEnumerator GenerarSlots(int ancho, int alto, int filaPuntoInicio, int filaPuntoFinal, float delayFlujoTuberia, GameObject refPuzzle){
+	IEnumerator GenerarSlots(int ancho, int alto, int filaPuntoInicio, int filaPuntoFinal, float delayFlujoTuberia, GameObject refPuzzle, int numHuecos){
 		matrizSlots = new GameObject [ancho+2,alto];
 		
 		float posx=0,posy=0;
@@ -103,7 +100,7 @@ public class CrearPuzzle : MonoBehaviour
        }
 
 	   //Establece aleatoriamente los huecos en el tablero
-	   for(int i = 0; i < numeroDeHuecos; i++){
+	   for(int i = 0; i < numHuecos; i++){
 		   //Genera un numero aleatorio de la fila y columna dentro del rango del tablero y que no tape la entrada y salida del flujo
 			int x = Random.Range(2, ancho-1);
 			int y = Random.Range(0, alto);
@@ -154,7 +151,11 @@ public class CrearPuzzle : MonoBehaviour
 	}
 
 	List<EnumTuberias.Tuberia> generarSolucion(int ancho, int alto, int filaPuntoInicio, int filaPuntoFinal){
-		//Comprueba si el objetivo esta por encima o abajo o a la misma altura del inicio
+
+		EnumTuberias.Tuberia orientacionTuberia;
+		List<EnumTuberias.Tuberia> camino = new List<EnumTuberias.Tuberia>();
+
+		//Comprueba si el objetivo esta por encima o abajo o a la misma altura del inicio para saber si tiene que construir el camino subiendo o bajando
 		int alturaVertical = 0;
 
 			//Si esta por debajo del final, es decir el camino tiene que subir
@@ -163,17 +164,59 @@ public class CrearPuzzle : MonoBehaviour
 		}else if(filaPuntoInicio < filaPuntoFinal){
 			alturaVertical = 1;
 		}
+		
+		int diferenciaAltura = Mathf.Abs(filaPuntoInicio - filaPuntoFinal);
+		
+		//Crea el camino horizontal hasta el final exceptuando uno que se encarga de indicar si crea otra orizontal o una que suba u otra que baje
+		for(int x = 1; x < ancho; x++){
+			if(matrizSlots[x+1,filaPuntoInicio-1].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().GettipoTuberia() != EnumTuberias.Tuberia.hueco){
+				camino.Add(EnumTuberias.Tuberia.horizontal);
+			}else{
+				if(alturaVertical == -1){
+					camino.Add(EnumTuberias.Tuberia.izquierdaArriba);
+					//Si al subir tiene un hueco contiguo al de abajo
+					int indiceSubida = 1;
+					while(matrizSlots[x+1,filaPuntoInicio-1 - indiceSubida].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().GettipoTuberia() == EnumTuberias.Tuberia.hueco){
+						camino.Add(EnumTuberias.Tuberia.vertical);
+						diferenciaAltura--;
+						indiceSubida++;
+					}
+					camino.Add(EnumTuberias.Tuberia.derechaAbajo);
+					camino.Add(EnumTuberias.Tuberia.horizontal);
+				}else{
+					camino.Add(EnumTuberias.Tuberia.izquierdaAbajo);
+					//Si al subir tiene un hueco contiguo al de abajo
+					int indiceSubida = 1;
+					while(matrizSlots[x+1,filaPuntoInicio-1 + indiceSubida].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().GettipoTuberia() == EnumTuberias.Tuberia.hueco){
+						camino.Add(EnumTuberias.Tuberia.vertical);
+						diferenciaAltura--;
+						indiceSubida++;
+					}
+					camino.Add(EnumTuberias.Tuberia.derechaArriba);
+					camino.Add(EnumTuberias.Tuberia.horizontal);
+				}
+			}
+		}
 
-		//Elige un camino aleatorio mientras que sea valido
-		for (int y=0; y < alto; y++){
-           for (int x=1; x <= ancho; x++){
-			   //Crea slot
-              // matrizSlots[x,y] 
-           }
-       }
-		//Elige la tuberia acorde a el flujo
 
-		return null;
+			//Crea tuberia hacia arriba o abajo dependiendo de si la altura es positiva o negativa y añade las tuberas finales que conectara con el final
+		if(alturaVertical == -1){
+			camino.Add(EnumTuberias.Tuberia.izquierdaArriba);
+			camino.Add(EnumTuberias.Tuberia.derechaAbajo);
+		}else if(alturaVertical == 1){
+			camino.Add(EnumTuberias.Tuberia.izquierdaAbajo);
+			camino.Add(EnumTuberias.Tuberia.derechaArriba);
+		}else{
+			camino.Add(EnumTuberias.Tuberia.horizontal);
+		}
+
+		for(int i = 0; i < diferenciaAltura-1;){
+			camino.Add(EnumTuberias.Tuberia.vertical);
+			diferenciaAltura--;
+		}
+		
+
+		return camino;
 	}
 
 	/**
