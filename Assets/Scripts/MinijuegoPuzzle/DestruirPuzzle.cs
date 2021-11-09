@@ -15,6 +15,7 @@ public class DestruirPuzzle : MonoBehaviour
 		if(eventoAlDestruirElMinijuego != null){
 			eventoAlDestruirElMinijuego.Invoke();
 		}
+		
 		DestroyImmediate(pantallaFinal, true);
 		DestroyImmediate(refTablero, true);
 	}

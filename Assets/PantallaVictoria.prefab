@@ -200,8 +200,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9123206362847016739, guid: d3cff1440c89e444daf80c1dfc8a5c95, type: 3}
-        m_TargetAssemblyTypeName: DestruirPuzzle, Assembly-CSharp
+      - m_Target: {fileID: 3465022778116536087}
+        m_TargetAssemblyTypeName: ReferenciaPuzzle, Assembly-CSharp
         m_MethodName: DestruirElPuzzle
         m_Mode: 2
         m_Arguments:
