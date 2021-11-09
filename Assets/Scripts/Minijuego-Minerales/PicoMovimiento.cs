@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PicoMovimiento : MonoBehaviour{
-    public float speed = 20f;
+    public float speed = 200f;
     Vector2 lastClickedPos;
     bool moving;
 
