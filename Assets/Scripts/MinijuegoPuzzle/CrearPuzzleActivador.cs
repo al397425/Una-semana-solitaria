@@ -53,4 +53,8 @@ public class CrearPuzzleActivador : MonoBehaviour
 	public void Setresuelto(bool valor){
 		resuelto = valor;
 	}
+	
+	public void SetpuzzleActivado(bool valor){
+		puzzleActivado = valor;
+	}
 }

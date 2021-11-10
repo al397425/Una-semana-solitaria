@@ -151,7 +151,7 @@ MonoBehaviour:
   SlotTuberia: {fileID: 3241633047268995389, guid: d056c8b859fa7464ca1f56a75037e669, type: 3}
   Tuberia: {fileID: 8384340352060404542, guid: 0045cdac563dca241990c0f778208dd1, type: 3}
   pantallaVictoria: {fileID: 5587369410229825271, guid: e19d0cd08a1e4ba439481cd823a26d10, type: 3}
-  pantallaDerrota: {fileID: 0}
+  pantallaDerrota: {fileID: 5394577420619120242, guid: 862629b1210d21a48a8eadc9fd5e516d, type: 3}
   canvas: {fileID: 1976822935189948549}
   DelayAntesEmpezarPuzzle: 3
   sonidoCogerTuberia: {fileID: 8300000, guid: ed87b3482fd881b47b61b0d194245424, type: 3}
@@ -265,6 +265,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 883154717935ebd4282d389e2d91f054, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventoAlDestruirElMinijuego:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1976822935103032471
 GameObject:
   m_ObjectHideFlags: 0

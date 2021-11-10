@@ -23,4 +23,8 @@ public class DestruirPuzzle : MonoBehaviour
 	public void SetrefTablero(GameObject tablero){
 		refTablero = tablero;
 	}
+	
+	public GameObject GetrefTablero(){
+		return refTablero;
+	}
 }

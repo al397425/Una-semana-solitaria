@@ -31,8 +31,7 @@ public class CrearPuzzle : MonoBehaviour
 	protected GameObject [,]matrizSlots;
 
 	bool puzzleInteractuable = true;
-
-	
+		
     // Start is called before the first frame update
     void Awake()
     {

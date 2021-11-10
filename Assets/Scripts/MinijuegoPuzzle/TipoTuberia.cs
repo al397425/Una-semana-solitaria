@@ -33,14 +33,15 @@ public class TipoTuberia : MonoBehaviour
 	bool empezarAnimacion = false;
 	
 	float delayFlujo =5.0f;
+	
+
 
     // Start is called before the first frame update
     void Awake()
     {
-        //!!!!!!!! PROVISIONAL !!!!!!!!!!!!!!!!!!!
+        //Genera la tuberia
 			int indice = Random.Range(0, 6);
 			EstablecerTipoTuberia(tiposTuberia[indice].tipoDeTuberia);
-		//-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!
     }
 
     // Update is called once per frame
@@ -123,7 +124,7 @@ public class TipoTuberia : MonoBehaviour
 		
 		//Si choca con una tuberia tapada o un hueco en el tablero
 		if(gameObject.transform.GetChild(2).gameObject.active == true || tipoTuberia == EnumTuberias.Tuberia.hueco){
-			mostrarPantallaDerrota(refPuzzle);
+			mostrarPantallaDerrota(refPuzzle, tablero);
 			final = true;
 			yield break;
 		}
@@ -191,7 +192,7 @@ public class TipoTuberia : MonoBehaviour
 			//cuando sea una tuberia bidireccional
 			//Tambien detecta si el flujo a salido del tablero,
 			if(matrizSlots[columnaActual+desplazamientoHorizontal,filaActual] == null || (desplazamientoHorizontal == 1 && (sentidoHorizontal == EnumTuberias.Sentido.derecha || sentidoHorizontal == EnumTuberias.Sentido.bidireccional) && matrizSlots[columnaActual+desplazamientoHorizontal,filaActual].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().sentidoHorizontal == EnumTuberias.Sentido.derecha) || (desplazamientoHorizontal == -1 && (sentidoHorizontal == EnumTuberias.Sentido.izquierda || sentidoHorizontal == EnumTuberias.Sentido.bidireccional) && matrizSlots[columnaActual+desplazamientoHorizontal,filaActual].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().sentidoHorizontal == EnumTuberias.Sentido.izquierda)){
-                mostrarPantallaDerrota(refPuzzle);
+                mostrarPantallaDerrota(refPuzzle, tablero);
 				final = true;
 				yield break;
             }
@@ -267,7 +268,7 @@ public class TipoTuberia : MonoBehaviour
 			//cuando sea una tuberia bidireccional
 			//Tambien detecta si el flujo a salido del tablero
 			if(filaActual+desplazamientoVertical < 0 || filaActual+desplazamientoVertical >= matrizSlots.GetLength(1) || (desplazamientoVertical == -1 && (sentidoVertical == EnumTuberias.Sentido.arriba || sentidoVertical == EnumTuberias.Sentido.bidireccional) && matrizSlots[columnaActual,filaActual+desplazamientoVertical].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().sentidoVertical == EnumTuberias.Sentido.arriba) || (desplazamientoVertical == 1 && (sentidoVertical == EnumTuberias.Sentido.abajo || sentidoVertical == EnumTuberias.Sentido.bidireccional) && matrizSlots[columnaActual,filaActual+desplazamientoVertical].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().sentidoVertical == EnumTuberias.Sentido.abajo)){
-               mostrarPantallaDerrota(refPuzzle);
+               mostrarPantallaDerrota(refPuzzle, tablero);
 			   final = true;
 			   yield break;
             }
@@ -291,13 +292,16 @@ public class TipoTuberia : MonoBehaviour
 		}
 	}
 
-	void mostrarPantallaDerrota(GameObject refPuzzle){
+	void mostrarPantallaDerrota(GameObject refPuzzle, GameObject tablero){
  		Debug.Log("FIN DEL JUEGO HAS PERDIDO V");
 		refPuzzle.GetComponent<CrearPuzzleActivador>().eventoAlPerderElMinijuego.Invoke();
 		empezarAnimacion = false;
 		gameObject.transform.GetChild(0).GetComponent<Image> ().fillAmount = 0;
-		if(refPuzzle.GetComponent<CrearPuzzle>().pantallaDerrota != null){
-			Instantiate(refPuzzle.GetComponent<CrearPuzzle>().pantallaDerrota, new Vector2(0,0), Quaternion.identity);
+		
+		if(refPuzzle.GetComponent<CrearPuzzleActivador>().puzzleTuberia.GetComponent<CrearPuzzle>().pantallaDerrota != null){
+			GameObject pantallaDerrota = Instantiate(refPuzzle.GetComponent<CrearPuzzleActivador>().puzzleTuberia.GetComponent<CrearPuzzle>().pantallaDerrota, new Vector2(0,0), Quaternion.identity);
+			pantallaDerrota.GetComponent<ReferenciaPuzzle>().SetRefTablero(tablero);
+			pantallaDerrota.GetComponent<ReferenciaPuzzle>().SetRefActivador(refPuzzle);
 		}
 		Time.timeScale = 1.0f;
 	}
