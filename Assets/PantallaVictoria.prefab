@@ -301,6 +301,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5587369410229825272}
   - component: {fileID: 3465022778116536087}
+  - component: {fileID: 7367646428547480510}
   m_Layer: 0
   m_Name: PantallaVictoria
   m_TagString: Untagged
@@ -335,6 +336,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b40c6b09fcf3594a9f07464ad62bf6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &7367646428547480510
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5587369410229825271}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dd7c83b7e31ebf54fbf0ebce898c0bb9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5587369411362524360
 GameObject:
   m_ObjectHideFlags: 0
