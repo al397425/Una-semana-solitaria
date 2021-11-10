@@ -1,6 +1,8 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.14f1 (d0d1bb862f9d) revision 13685179'; Using compiler version '192528614'; Build Type 'Release'
+
 OS: 'Windows 10 Education; OS build 19042.1288; Version 2009; 64bit' Language: 'ca' Physical Memory: 8085 MB
+
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -11,6 +13,7 @@ C:\Program Files\Unity\Hub\Editor\2020.3.14f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
+
 C:/Users/al394516/Documents/GitHub/Una-semana-solitaria
 -logFile
 Logs/AssetImportWorker0.log
@@ -21,6 +24,7 @@ Successfully changed project path to: C:/Users/carlo/OneDrive/Documentos/GitHub/
 C:/Users/carlo/OneDrive/Documentos/GitHub/Una-semana-solitaria
 Using Asset Import Pipeline V2.
 Refreshing native plugins compatible for Editor in 45.05 ms, found 2 plugins.
+
 
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.14f1 (d0d1bb862f9d)
@@ -33,10 +37,12 @@ Direct3D:
     Vendor:   
     VRAM:     4042 MB
     Driver:   26.20.100.7871
+
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/MonoBleedingEdge/etc'
+
 
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56280
 
@@ -84,17 +90,6 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
 
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.27 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1432 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 66.0 MB.
-System memory in use after: 66.1 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 1866.
-Total: 2.001900 ms (FindLiveObjects: 0.123000 ms CreateObjectMapping: 0.036200 ms MarkObjects: 1.753900 ms  DeleteObjects: 0.087800 ms)
-=======
 Registered in 0.008694 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -182,6 +177,7 @@ Start importing Assets/Prefabs/Obstaculo-pescar.prefab using Guid(3beea12d1a9fae
 Received Prepare
 Registering precompiled user dll's ...
 
+
 Registered in 0.011884 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -225,8 +221,10 @@ Unloading 1421 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 68.7 MB.
 System memory in use after: 68.8 MB.
 
+
 Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1873.
 Total: 1.826600 ms (FindLiveObjects: 0.142700 ms CreateObjectMapping: 0.049000 ms MarkObjects: 1.617400 ms  DeleteObjects: 0.016400 ms)
+
 
 
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -241,6 +239,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+
 
   Time since last request: 578.109574 seconds.
   path: Assets/Scripts/NewBehaviourScript.cs
@@ -422,8 +421,10 @@ Unloading 1421 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 68.8 MB.
 System memory in use after: 68.9 MB.
 
+
 Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1882.
 Total: 3.466700 ms (FindLiveObjects: 0.430900 ms CreateObjectMapping: 0.732100 ms MarkObjects: 2.279600 ms  DeleteObjects: 0.022200 ms)
+
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -489,6 +490,7 @@ Domain Reload Profiling:
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (9ms)
 
+
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.27 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
@@ -553,6 +555,7 @@ Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1421 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 68.8 MB.
 System memory in use after: 68.9 MB.
+
 
 Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1888.
 Total: 2.549800 ms (FindLiveObjects: 0.199700 ms CreateObjectMapping: 0.103200 ms MarkObjects: 2.226600 ms  DeleteObjects: 0.019300 ms)
@@ -659,6 +662,7 @@ Domain Reload Profiling:
 				ProcessInitializeOnLoadAttributes (478ms)
 				ProcessInitializeOnLoadMethodAttributes (4ms)
 				AfterProcessingInitializeOnLoad (13ms)
+
 
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -1385,3 +1389,4 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+
