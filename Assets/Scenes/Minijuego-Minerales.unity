@@ -2024,6 +2024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puntos: 0
+  TXTpuntos: {fileID: 640134729}
 --- !u!1 &415704563 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7348658453036452612, guid: 6a720f40e8933df409ee7ba02fad5357, type: 3}
@@ -2807,10 +2808,10 @@ RectTransform:
   m_Father: {fileID: 414622402}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -294.32794, y: 167.72504}
-  m_SizeDelta: {x: 104.6971, y: 29.1403}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -14.57}
+  m_SizeDelta: {x: 104.6971, y: 29.140305}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &640134729
 MonoBehaviour:
