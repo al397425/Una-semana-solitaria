@@ -15,6 +15,8 @@ public class CrearPuzzleActivador : MonoBehaviour
 	public int filaPuntoInicio;
 	[Min(1)]
 	public int filaPuntoFinal;
+	//Numero de huecos en el mapa
+	public int numeroDeHuecos = 0;
 	//Especificado en segundos
 	public float delayFlujoTuberia;
 	
@@ -22,15 +24,17 @@ public class CrearPuzzleActivador : MonoBehaviour
 	public UnityEvent eventoAlEmpezarElMinijuego;
 	//Evento a llamar
 	public UnityEvent eventoAlGanarElMinijuego;
-		//Evento a llamar
+	//Evento a llamar
 	public UnityEvent eventoAlPerderElMinijuego;
+
+
 	
 	GameObject puzzle;
 	bool puzzleActivado = false; 
 	bool resuelto = false;
 	
 	void OnTriggerStay2D(Collider2D other){
-		if (Input.GetKeyDown(teclaDeInteraccion) && puzzleActivado == false)
+		if (Input.GetKeyDown(teclaDeInteraccion) && puzzleActivado == false && resuelto == false)
         {
 			puzzleActivado = true;
 			if(eventoAlEmpezarElMinijuego != null){
@@ -38,7 +42,7 @@ public class CrearPuzzleActivador : MonoBehaviour
 			}
 			
 			puzzle = (GameObject)Instantiate(puzzleTuberia, new Vector2(0,0), Quaternion.identity);
-			puzzle.GetComponent<CrearPuzzle>().iniciarMinijuego(ancho, alto, filaPuntoInicio, filaPuntoFinal, delayFlujoTuberia, gameObject);
+			puzzle.GetComponent<CrearPuzzle>().iniciarMinijuego(ancho, alto, filaPuntoInicio, filaPuntoFinal, delayFlujoTuberia, gameObject, numeroDeHuecos);
 		}
 	}
 	
@@ -48,5 +52,9 @@ public class CrearPuzzleActivador : MonoBehaviour
 	
 	public void Setresuelto(bool valor){
 		resuelto = valor;
+	}
+	
+	public void SetpuzzleActivado(bool valor){
+		puzzleActivado = valor;
 	}
 }

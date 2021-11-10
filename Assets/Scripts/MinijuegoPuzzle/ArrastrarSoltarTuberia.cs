@@ -11,22 +11,41 @@ public class ArrastrarSoltarTuberia : MonoBehaviour, IDragHandler, IEndDragHandl
 	
 	GameObject referenciaPuzzle;
 	
+	float escalaAlCogerTuberia = 1.25f;
+	
 	void Start(){
 		colision = GetComponent<BoxCollider2D>();
 	}
 
 	public void OnPointerDown (PointerEventData eventData){
-        referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().clip = referenciaPuzzle.GetComponent<CrearPuzzle>().sonidoCogerTuberia;
-		referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().Play(0);
+		if(referenciaPuzzle.GetComponent<CrearPuzzle>().GetpuzzleInteractuable() == true){
+			//Coge el padre y lo pone como ultima prioridad para ser renderizado el ultimo y asi la tuberia no queda detras del fondo
+			transform.parent.transform.SetAsLastSibling();
+			if(GetComponent<TipoTuberia>().GetpuedeMoverse() == true){
+				referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().clip = referenciaPuzzle.GetComponent<CrearPuzzle>().sonidoCogerTuberia;
+				referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().Play(0);
+				transform.GetChild(1).GetComponent<Image> ().rectTransform.localScale = new Vector2(escalaAlCogerTuberia, escalaAlCogerTuberia);
+			}else if(transform.GetChild(2).gameObject.active == true){//No entra la tuberia del inicio ni la de final porque por defecto la losa esta desactivada
+				//Ejecuta el sonido una vez 
+				if(GetComponent<Animator>().enabled == false){
+					referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().clip = referenciaPuzzle.GetComponent<CrearPuzzle>().sonidoDestaparTuberia;
+					referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().Play(0);
+				}
+				GetComponent<Animator>().enabled = true;
+			}
+		}
     }
 
 	public void OnPointerUp(PointerEventData eventData){
-		referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().clip = referenciaPuzzle.GetComponent<CrearPuzzle>().sonidoSoltarTuberia;
-		referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().Play(0);
+		if(GetComponent<TipoTuberia>().GetpuedeMoverse() == true && referenciaPuzzle.GetComponent<CrearPuzzle>().GetpuzzleInteractuable() == true){
+			referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().clip = referenciaPuzzle.GetComponent<CrearPuzzle>().sonidoSoltarTuberia;
+			referenciaPuzzle.GetComponent<CrearPuzzle>().GetfuenteAudio().Play(0);
+			transform.GetChild(1).GetComponent<Image> ().rectTransform.localScale = new Vector2(1.0f, 1.0f);
+		}
 	}
 
 	public void OnDrag(PointerEventData eventData){
-		if(GetComponent<TipoTuberia>().GetpuedeMoverse() == true){
+		if(GetComponent<TipoTuberia>().GetpuedeMoverse() == true && referenciaPuzzle.GetComponent<CrearPuzzle>().GetpuzzleInteractuable() == true){
 			transform.position = Input.mousePosition;
 			//Coge el padre y lo pone como ultima prioridad para ser renderizado el ultimo y asi la tuberia no queda detras del fondo
 			transform.parent.transform.SetAsLastSibling();
@@ -55,6 +74,14 @@ public class ArrastrarSoltarTuberia : MonoBehaviour, IDragHandler, IEndDragHandl
 	void OnTriggerExit2D(Collider2D other){
 		if(colision.isTrigger == true)
 			obejtoColisionado = null;
+	}
+
+	public void EstableceTuberiaDestapada(){
+		transform.GetChild(2).gameObject.active = false;
+		if(GetComponent<TipoTuberia>().GettipoTuberia() != EnumTuberias.Tuberia.hueco){//Para evitar que los huecos se muevan
+			GetComponent<TipoTuberia>().SetpuedeMoverse(true);
+		}
+		GetComponent<Animator>().enabled = false;
 	}
 
 	/**

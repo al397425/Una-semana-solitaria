@@ -503,6 +503,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5086625211636054993, guid: c4ffaa38effa1e946afb5e5803df999c, type: 3}
+      propertyPath: alto
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086625211636054993, guid: c4ffaa38effa1e946afb5e5803df999c, type: 3}
+      propertyPath: ancho
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086625211636054993, guid: c4ffaa38effa1e946afb5e5803df999c, type: 3}
+      propertyPath: filaPuntoFinal
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086625211636054993, guid: c4ffaa38effa1e946afb5e5803df999c, type: 3}
+      propertyPath: numeroDeHuecos
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5086625211636054994, guid: c4ffaa38effa1e946afb5e5803df999c, type: 3}
       propertyPath: m_Name
       value: ActivadorPuzzleTuberias
