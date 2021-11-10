@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_9 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5120789024170047525, guid: 1a835a675ff265d419daf62d9de3f082, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     - target: {fileID: 5120789024170047547, guid: 1a835a675ff265d419daf62d9de3f082, type: 3}
       propertyPath: m_RootOrder
       value: 67
@@ -197,6 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &13926977
 Rigidbody2D:
   serializedVersion: 4
@@ -235,6 +240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &20001354
 Rigidbody2D:
   serializedVersion: 4
@@ -266,6 +272,10 @@ PrefabInstance:
     - target: {fileID: 1630000765706897988, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
       propertyPath: m_Name
       value: piedras_14 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630000765706897988, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 1630000765706897990, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
       propertyPath: m_RootOrder
@@ -323,6 +333,10 @@ PrefabInstance:
     - target: {fileID: 679123965374735096, guid: 28e0e6eecad95794180cfcaea785dcd4, type: 3}
       propertyPath: m_Name
       value: piedras_1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 679123965374735096, guid: 28e0e6eecad95794180cfcaea785dcd4, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 679123965374735102, guid: 28e0e6eecad95794180cfcaea785dcd4, type: 3}
       propertyPath: m_RootOrder
@@ -387,6 +401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &77647435
 Rigidbody2D:
   serializedVersion: 4
@@ -425,6 +440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &80602219
 Rigidbody2D:
   serializedVersion: 4
@@ -463,6 +479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &80694410
 Rigidbody2D:
   serializedVersion: 4
@@ -494,6 +511,10 @@ PrefabInstance:
     - target: {fileID: 7348658453036452612, guid: 6a720f40e8933df409ee7ba02fad5357, type: 3}
       propertyPath: m_Name
       value: piedras_12 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7348658453036452612, guid: 6a720f40e8933df409ee7ba02fad5357, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 7348658453036452614, guid: 6a720f40e8933df409ee7ba02fad5357, type: 3}
       propertyPath: m_RootOrder
@@ -558,6 +579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &102166781
 Rigidbody2D:
   serializedVersion: 4
@@ -596,6 +618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &110656984
 Rigidbody2D:
   serializedVersion: 4
@@ -634,6 +657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &145654049
 Rigidbody2D:
   serializedVersion: 4
@@ -665,6 +689,10 @@ PrefabInstance:
     - target: {fileID: 8359697856963663840, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
       propertyPath: m_Name
       value: piedras_4 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8359697856963663840, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 8359697856963663842, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
       propertyPath: m_RootOrder
@@ -729,6 +757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &202021257
 Rigidbody2D:
   serializedVersion: 4
@@ -767,6 +796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &225638869
 Rigidbody2D:
   serializedVersion: 4
@@ -805,6 +835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &254646776
 Rigidbody2D:
   serializedVersion: 4
@@ -843,6 +874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &264215393
 Rigidbody2D:
   serializedVersion: 4
@@ -927,8 +959,78 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_5 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2972582515205193078, guid: 3972dbad5df4d1947a2f7a8ccb0331b7, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3972dbad5df4d1947a2f7a8ccb0331b7, type: 3}
+--- !u!1 &277056208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 277056211}
+  - component: {fileID: 277056210}
+  - component: {fileID: 277056209}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &277056209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277056208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &277056210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277056208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &277056211
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277056208}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 99
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &280547359 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1630000765706897988, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
@@ -946,6 +1048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &280547362
 Rigidbody2D:
   serializedVersion: 4
@@ -984,6 +1087,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &289406628
 Rigidbody2D:
   serializedVersion: 4
@@ -1022,6 +1126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &289778133
 Rigidbody2D:
   serializedVersion: 4
@@ -1060,6 +1165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &298996587
 Rigidbody2D:
   serializedVersion: 4
@@ -1098,6 +1204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &310720302
 Rigidbody2D:
   serializedVersion: 4
@@ -1136,6 +1243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &312017721
 Rigidbody2D:
   serializedVersion: 4
@@ -1167,6 +1275,10 @@ PrefabInstance:
     - target: {fileID: 1111457370444877457, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
       propertyPath: m_Name
       value: piedras_13 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1111457370444877457, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 1111457370444877459, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
       propertyPath: m_RootOrder
@@ -1281,6 +1393,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_5 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2972582515205193078, guid: 3972dbad5df4d1947a2f7a8ccb0331b7, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3972dbad5df4d1947a2f7a8ccb0331b7, type: 3}
 --- !u!1001 &328989196
@@ -1350,6 +1466,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_5 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2972582515205193078, guid: 3972dbad5df4d1947a2f7a8ccb0331b7, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3972dbad5df4d1947a2f7a8ccb0331b7, type: 3}
 --- !u!1 &336852919 stripped
@@ -1369,6 +1489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &336852922
 Rigidbody2D:
   serializedVersion: 4
@@ -1400,6 +1521,10 @@ PrefabInstance:
     - target: {fileID: 1630000765706897988, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
       propertyPath: m_Name
       value: piedras_14 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630000765706897988, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 1630000765706897990, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
       propertyPath: m_RootOrder
@@ -1502,6 +1627,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5782626734093426137, guid: add19b1072783e74d9b292585188232e, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: add19b1072783e74d9b292585188232e, type: 3}
 --- !u!1001 &352240488
@@ -1514,6 +1643,10 @@ PrefabInstance:
     - target: {fileID: 4733582939485610480, guid: 36a158d7d5e606d45a61c68439f6161a, type: 3}
       propertyPath: m_Name
       value: piedras_6 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4733582939485610480, guid: 36a158d7d5e606d45a61c68439f6161a, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 4733582939485610482, guid: 36a158d7d5e606d45a61c68439f6161a, type: 3}
       propertyPath: m_RootOrder
@@ -1590,6 +1723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &354299757
 Rigidbody2D:
   serializedVersion: 4
@@ -1621,6 +1755,10 @@ PrefabInstance:
     - target: {fileID: 6311055090396545049, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
       propertyPath: m_Name
       value: piedras_11 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6311055090396545049, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 6311055090396545055, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
       propertyPath: m_RootOrder
@@ -1727,6 +1865,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7556406148017481839, guid: d75c9c3ff7be09a458f7dd9a622e45f5, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c9c3ff7be09a458f7dd9a622e45f5, type: 3}
 --- !u!1 &408452680 stripped
@@ -1746,6 +1888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &408452683
 Rigidbody2D:
   serializedVersion: 4
@@ -1767,6 +1910,120 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!1 &414622398
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 414622402}
+  - component: {fileID: 414622401}
+  - component: {fileID: 414622400}
+  - component: {fileID: 414622399}
+  - component: {fileID: 414622403}
+  m_Layer: 5
+  m_Name: Puntos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &414622399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414622398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &414622400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414622398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &414622401
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414622398}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &414622402
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414622398}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 640134728}
+  m_Father: {fileID: 0}
+  m_RootOrder: 98
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &414622403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414622398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 444649cf76bec8c4981ba99504a37915, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puntos: 0
 --- !u!1 &415704563 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7348658453036452612, guid: 6a720f40e8933df409ee7ba02fad5357, type: 3}
@@ -1784,6 +2041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &415704566
 Rigidbody2D:
   serializedVersion: 4
@@ -1822,6 +2080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &431279127
 Rigidbody2D:
   serializedVersion: 4
@@ -1860,6 +2119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &435563449
 Rigidbody2D:
   serializedVersion: 4
@@ -1898,6 +2158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &440501643
 Rigidbody2D:
   serializedVersion: 4
@@ -1974,6 +2235,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_7 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3680066109552153990, guid: 3348ec554ee10504186b37db9f5180dc, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3348ec554ee10504186b37db9f5180dc, type: 3}
 --- !u!1001 &455303423
@@ -2031,6 +2296,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7556406148017481839, guid: d75c9c3ff7be09a458f7dd9a622e45f5, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c9c3ff7be09a458f7dd9a622e45f5, type: 3}
 --- !u!1 &497964256 stripped
@@ -2050,6 +2319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &497964259
 Rigidbody2D:
   serializedVersion: 4
@@ -2171,6 +2441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &522483031
 Rigidbody2D:
   serializedVersion: 4
@@ -2209,6 +2480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &553264848
 Rigidbody2D:
   serializedVersion: 4
@@ -2247,6 +2519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &553417997
 Rigidbody2D:
   serializedVersion: 4
@@ -2323,6 +2596,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_0 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6974958048307946691, guid: c9cb6c828a978094b8ff57bdfdc2f6ab, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9cb6c828a978094b8ff57bdfdc2f6ab, type: 3}
 --- !u!1001 &586227987
@@ -2335,6 +2612,10 @@ PrefabInstance:
     - target: {fileID: 4733582939485610480, guid: 36a158d7d5e606d45a61c68439f6161a, type: 3}
       propertyPath: m_Name
       value: piedras_6 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4733582939485610480, guid: 36a158d7d5e606d45a61c68439f6161a, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 4733582939485610482, guid: 36a158d7d5e606d45a61c68439f6161a, type: 3}
       propertyPath: m_RootOrder
@@ -2449,6 +2730,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_8 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6724575305289038298, guid: 2cc057f62d05fd045b9891993f594bd0, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cc057f62d05fd045b9891993f594bd0, type: 3}
 --- !u!1 &614139214 stripped
@@ -2468,6 +2753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &614139217
 Rigidbody2D:
   serializedVersion: 4
@@ -2489,6 +2775,85 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!1 &640134727
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 640134728}
+  - component: {fileID: 640134730}
+  - component: {fileID: 640134729}
+  m_Layer: 5
+  m_Name: Score
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &640134728
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640134727}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 414622402}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -294.32794, y: 167.72504}
+  m_SizeDelta: {x: 104.6971, y: 29.1403}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &640134729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640134727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 18
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Puntos: 0'
+--- !u!222 &640134730
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640134727}
+  m_CullTransparentMesh: 1
 --- !u!1 &642236824 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7556406148017481839, guid: d75c9c3ff7be09a458f7dd9a622e45f5, type: 3}
@@ -2506,6 +2871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &642236827
 Rigidbody2D:
   serializedVersion: 4
@@ -2594,6 +2960,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_8 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6724575305289038298, guid: 2cc057f62d05fd045b9891993f594bd0, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cc057f62d05fd045b9891993f594bd0, type: 3}
 --- !u!1001 &658464975
@@ -2606,6 +2976,10 @@ PrefabInstance:
     - target: {fileID: 1111457370444877457, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
       propertyPath: m_Name
       value: piedras_13 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1111457370444877457, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 1111457370444877459, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
       propertyPath: m_RootOrder
@@ -2670,6 +3044,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &658842594
 Rigidbody2D:
   serializedVersion: 4
@@ -2701,6 +3076,10 @@ PrefabInstance:
     - target: {fileID: 6311055090396545049, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
       propertyPath: m_Name
       value: piedras_11 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6311055090396545049, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 6311055090396545055, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
       propertyPath: m_RootOrder
@@ -2765,6 +3144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &679151841
 Rigidbody2D:
   serializedVersion: 4
@@ -2803,6 +3183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &682684474
 Rigidbody2D:
   serializedVersion: 4
@@ -2834,6 +3215,10 @@ PrefabInstance:
     - target: {fileID: 2178486012521837573, guid: c95c281129842cd45abdfb8cbee0359e, type: 3}
       propertyPath: m_Name
       value: piedras_16 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2178486012521837573, guid: c95c281129842cd45abdfb8cbee0359e, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 2178486012521837579, guid: c95c281129842cd45abdfb8cbee0359e, type: 3}
       propertyPath: m_RootOrder
@@ -2898,6 +3283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &711514092
 Rigidbody2D:
   serializedVersion: 4
@@ -2936,6 +3322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &718270052
 Rigidbody2D:
   serializedVersion: 4
@@ -2974,6 +3361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &735438196
 Rigidbody2D:
   serializedVersion: 4
@@ -3012,6 +3400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &736365417
 Rigidbody2D:
   serializedVersion: 4
@@ -3100,6 +3489,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_8 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6724575305289038298, guid: 2cc057f62d05fd045b9891993f594bd0, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cc057f62d05fd045b9891993f594bd0, type: 3}
 --- !u!1001 &745554802
@@ -3112,6 +3505,10 @@ PrefabInstance:
     - target: {fileID: 8359697856963663840, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
       propertyPath: m_Name
       value: piedras_4 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8359697856963663840, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 8359697856963663842, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
       propertyPath: m_RootOrder
@@ -3176,6 +3573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &759908488
 Rigidbody2D:
   serializedVersion: 4
@@ -3207,6 +3605,10 @@ PrefabInstance:
     - target: {fileID: 1111457370444877457, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
       propertyPath: m_Name
       value: piedras_13 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1111457370444877457, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 1111457370444877459, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
       propertyPath: m_RootOrder
@@ -3273,6 +3675,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_14 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1630000765706897988, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     - target: {fileID: 1630000765706897990, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
       propertyPath: m_RootOrder
       value: 38
@@ -3329,6 +3735,10 @@ PrefabInstance:
     - target: {fileID: 1630000765706897988, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
       propertyPath: m_Name
       value: piedras_14 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630000765706897988, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 1630000765706897990, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
       propertyPath: m_RootOrder
@@ -3393,6 +3803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &864842391
 Rigidbody2D:
   serializedVersion: 4
@@ -3431,6 +3842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &871843259
 Rigidbody2D:
   serializedVersion: 4
@@ -3469,6 +3881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &881127388
 Rigidbody2D:
   serializedVersion: 4
@@ -3507,6 +3920,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &899584058
 Rigidbody2D:
   serializedVersion: 4
@@ -3583,6 +3997,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_7 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3680066109552153990, guid: 3348ec554ee10504186b37db9f5180dc, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3348ec554ee10504186b37db9f5180dc, type: 3}
 --- !u!1 &936800492 stripped
@@ -3602,6 +4020,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &936800495
 Rigidbody2D:
   serializedVersion: 4
@@ -3690,6 +4109,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_8 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6724575305289038298, guid: 2cc057f62d05fd045b9891993f594bd0, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cc057f62d05fd045b9891993f594bd0, type: 3}
 --- !u!1001 &945319677
@@ -3747,6 +4170,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_7 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3680066109552153990, guid: 3348ec554ee10504186b37db9f5180dc, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3348ec554ee10504186b37db9f5180dc, type: 3}
 --- !u!1 &982099624 stripped
@@ -3766,6 +4193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &982099627
 Rigidbody2D:
   serializedVersion: 4
@@ -3842,6 +4270,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_3 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5782626734093426137, guid: add19b1072783e74d9b292585188232e, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: add19b1072783e74d9b292585188232e, type: 3}
 --- !u!1001 &1015288055
@@ -3854,6 +4286,10 @@ PrefabInstance:
     - target: {fileID: 2178486012521837573, guid: c95c281129842cd45abdfb8cbee0359e, type: 3}
       propertyPath: m_Name
       value: piedras_16 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2178486012521837573, guid: c95c281129842cd45abdfb8cbee0359e, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 2178486012521837579, guid: c95c281129842cd45abdfb8cbee0359e, type: 3}
       propertyPath: m_RootOrder
@@ -3918,6 +4354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1016919545
 Rigidbody2D:
   serializedVersion: 4
@@ -3994,6 +4431,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_7 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3680066109552153990, guid: 3348ec554ee10504186b37db9f5180dc, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3348ec554ee10504186b37db9f5180dc, type: 3}
 --- !u!1 &1075955173 stripped
@@ -4013,6 +4454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1075955176
 Rigidbody2D:
   serializedVersion: 4
@@ -4051,6 +4493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1101765534
 Rigidbody2D:
   serializedVersion: 4
@@ -4082,6 +4525,10 @@ PrefabInstance:
     - target: {fileID: 5120789024170047525, guid: 1a835a675ff265d419daf62d9de3f082, type: 3}
       propertyPath: m_Name
       value: piedras_9 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5120789024170047525, guid: 1a835a675ff265d419daf62d9de3f082, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 5120789024170047547, guid: 1a835a675ff265d419daf62d9de3f082, type: 3}
       propertyPath: m_RootOrder
@@ -4208,6 +4655,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_8 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6724575305289038298, guid: 2cc057f62d05fd045b9891993f594bd0, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cc057f62d05fd045b9891993f594bd0, type: 3}
 --- !u!1 &1112363027 stripped
@@ -4227,6 +4678,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1112363030
 Rigidbody2D:
   serializedVersion: 4
@@ -4258,6 +4710,10 @@ PrefabInstance:
     - target: {fileID: 5120789024170047525, guid: 1a835a675ff265d419daf62d9de3f082, type: 3}
       propertyPath: m_Name
       value: piedras_9 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5120789024170047525, guid: 1a835a675ff265d419daf62d9de3f082, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 5120789024170047547, guid: 1a835a675ff265d419daf62d9de3f082, type: 3}
       propertyPath: m_RootOrder
@@ -4334,6 +4790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1117222387
 Rigidbody2D:
   serializedVersion: 4
@@ -4372,6 +4829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1121978730
 Rigidbody2D:
   serializedVersion: 4
@@ -4403,6 +4861,10 @@ PrefabInstance:
     - target: {fileID: 8359697856963663840, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
       propertyPath: m_Name
       value: piedras_4 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8359697856963663840, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 8359697856963663842, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
       propertyPath: m_RootOrder
@@ -4468,6 +4930,10 @@ PrefabInstance:
     - target: {fileID: 7348658453036452612, guid: 6a720f40e8933df409ee7ba02fad5357, type: 3}
       propertyPath: m_Name
       value: piedras_12 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7348658453036452612, guid: 6a720f40e8933df409ee7ba02fad5357, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 7348658453036452614, guid: 6a720f40e8933df409ee7ba02fad5357, type: 3}
       propertyPath: m_RootOrder
@@ -4544,6 +5010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1129459471
 Rigidbody2D:
   serializedVersion: 4
@@ -4582,6 +5049,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1147557659
 Rigidbody2D:
   serializedVersion: 4
@@ -4666,6 +5134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_8 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6724575305289038298, guid: 2cc057f62d05fd045b9891993f594bd0, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cc057f62d05fd045b9891993f594bd0, type: 3}
 --- !u!1 &1157251287 stripped
@@ -4685,6 +5157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1157251290
 Rigidbody2D:
   serializedVersion: 4
@@ -4765,6 +5238,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6974958048307946691, guid: c9cb6c828a978094b8ff57bdfdc2f6ab, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9cb6c828a978094b8ff57bdfdc2f6ab, type: 3}
 --- !u!1 &1188556849 stripped
@@ -4784,6 +5261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1188556852
 Rigidbody2D:
   serializedVersion: 4
@@ -4822,6 +5300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1193502109
 Rigidbody2D:
   serializedVersion: 4
@@ -4853,6 +5332,10 @@ PrefabInstance:
     - target: {fileID: 1111457370444877457, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
       propertyPath: m_Name
       value: piedras_13 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1111457370444877457, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 1111457370444877459, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
       propertyPath: m_RootOrder
@@ -4925,6 +5408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1202308878
 Rigidbody2D:
   serializedVersion: 4
@@ -4956,6 +5440,10 @@ PrefabInstance:
     - target: {fileID: 8359697856963663840, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
       propertyPath: m_Name
       value: piedras_4 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8359697856963663840, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 8359697856963663842, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
       propertyPath: m_RootOrder
@@ -5013,6 +5501,10 @@ PrefabInstance:
     - target: {fileID: 8359697856963663840, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
       propertyPath: m_Name
       value: piedras_4 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8359697856963663840, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 8359697856963663842, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
       propertyPath: m_RootOrder
@@ -5085,6 +5577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1258440976
 Rigidbody2D:
   serializedVersion: 4
@@ -5123,6 +5616,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1271691185
 Rigidbody2D:
   serializedVersion: 4
@@ -5281,6 +5775,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_0 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6974958048307946691, guid: c9cb6c828a978094b8ff57bdfdc2f6ab, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9cb6c828a978094b8ff57bdfdc2f6ab, type: 3}
 --- !u!1001 &1284776174
@@ -5293,6 +5791,10 @@ PrefabInstance:
     - target: {fileID: 7348658453036452612, guid: 6a720f40e8933df409ee7ba02fad5357, type: 3}
       propertyPath: m_Name
       value: piedras_12 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7348658453036452612, guid: 6a720f40e8933df409ee7ba02fad5357, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 7348658453036452614, guid: 6a720f40e8933df409ee7ba02fad5357, type: 3}
       propertyPath: m_RootOrder
@@ -5351,6 +5853,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_16 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2178486012521837573, guid: c95c281129842cd45abdfb8cbee0359e, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     - target: {fileID: 2178486012521837579, guid: c95c281129842cd45abdfb8cbee0359e, type: 3}
       propertyPath: m_RootOrder
       value: 36
@@ -5408,6 +5914,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_14 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1630000765706897988, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     - target: {fileID: 1630000765706897990, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
       propertyPath: m_RootOrder
       value: 84
@@ -5464,6 +5974,10 @@ PrefabInstance:
     - target: {fileID: 1111457370444877457, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
       propertyPath: m_Name
       value: piedras_13 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1111457370444877457, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 1111457370444877459, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
       propertyPath: m_RootOrder
@@ -5536,6 +6050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1333023630
 Rigidbody2D:
   serializedVersion: 4
@@ -5567,6 +6082,10 @@ PrefabInstance:
     - target: {fileID: 5120789024170047525, guid: 1a835a675ff265d419daf62d9de3f082, type: 3}
       propertyPath: m_Name
       value: piedras_9 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5120789024170047525, guid: 1a835a675ff265d419daf62d9de3f082, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 5120789024170047547, guid: 1a835a675ff265d419daf62d9de3f082, type: 3}
       propertyPath: m_RootOrder
@@ -5643,6 +6162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1352555736
 Rigidbody2D:
   serializedVersion: 4
@@ -5674,6 +6194,10 @@ PrefabInstance:
     - target: {fileID: 8359697856963663840, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
       propertyPath: m_Name
       value: piedras_4 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8359697856963663840, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 8359697856963663842, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
       propertyPath: m_RootOrder
@@ -5834,6 +6358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1367930977
 Rigidbody2D:
   serializedVersion: 4
@@ -5872,6 +6397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1368282722
 Rigidbody2D:
   serializedVersion: 4
@@ -5903,6 +6429,10 @@ PrefabInstance:
     - target: {fileID: 6311055090396545049, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
       propertyPath: m_Name
       value: piedras_11 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6311055090396545049, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 6311055090396545055, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
       propertyPath: m_RootOrder
@@ -5967,6 +6497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1399517818
 Rigidbody2D:
   serializedVersion: 4
@@ -6005,6 +6536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1405061361
 Rigidbody2D:
   serializedVersion: 4
@@ -6043,6 +6575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1417413176
 Rigidbody2D:
   serializedVersion: 4
@@ -6081,6 +6614,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1418197308
 Rigidbody2D:
   serializedVersion: 4
@@ -6119,6 +6653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1425109600
 Rigidbody2D:
   serializedVersion: 4
@@ -6150,6 +6685,10 @@ PrefabInstance:
     - target: {fileID: 6311055090396545049, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
       propertyPath: m_Name
       value: piedras_11 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6311055090396545049, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 6311055090396545055, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
       propertyPath: m_RootOrder
@@ -6208,6 +6747,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_11 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6311055090396545049, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     - target: {fileID: 6311055090396545055, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
       propertyPath: m_RootOrder
       value: 79
@@ -6265,6 +6808,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_11 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6311055090396545049, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     - target: {fileID: 6311055090396545055, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
       propertyPath: m_RootOrder
       value: 70
@@ -6321,6 +6868,10 @@ PrefabInstance:
     - target: {fileID: 2178486012521837573, guid: c95c281129842cd45abdfb8cbee0359e, type: 3}
       propertyPath: m_Name
       value: piedras_16 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2178486012521837573, guid: c95c281129842cd45abdfb8cbee0359e, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 2178486012521837579, guid: c95c281129842cd45abdfb8cbee0359e, type: 3}
       propertyPath: m_RootOrder
@@ -6423,6 +6974,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5782626734093426137, guid: add19b1072783e74d9b292585188232e, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: add19b1072783e74d9b292585188232e, type: 3}
 --- !u!1001 &1498498954
@@ -6435,6 +6990,10 @@ PrefabInstance:
     - target: {fileID: 1111457370444877457, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
       propertyPath: m_Name
       value: piedras_13 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1111457370444877457, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 1111457370444877459, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
       propertyPath: m_RootOrder
@@ -6500,6 +7059,10 @@ PrefabInstance:
     - target: {fileID: 8359697856963663840, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
       propertyPath: m_Name
       value: piedras_4 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8359697856963663840, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 8359697856963663842, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
       propertyPath: m_RootOrder
@@ -6610,6 +7173,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_5 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2972582515205193078, guid: 3972dbad5df4d1947a2f7a8ccb0331b7, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3972dbad5df4d1947a2f7a8ccb0331b7, type: 3}
 --- !u!1 &1517228781 stripped
@@ -6629,6 +7196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1517228784
 Rigidbody2D:
   serializedVersion: 4
@@ -6660,6 +7228,10 @@ PrefabInstance:
     - target: {fileID: 5120789024170047525, guid: 1a835a675ff265d419daf62d9de3f082, type: 3}
       propertyPath: m_Name
       value: piedras_9 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5120789024170047525, guid: 1a835a675ff265d419daf62d9de3f082, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 5120789024170047547, guid: 1a835a675ff265d419daf62d9de3f082, type: 3}
       propertyPath: m_RootOrder
@@ -6724,6 +7296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1520137163
 Rigidbody2D:
   serializedVersion: 4
@@ -6762,6 +7335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1539154747
 Rigidbody2D:
   serializedVersion: 4
@@ -6800,6 +7374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1547539328
 Rigidbody2D:
   serializedVersion: 4
@@ -6831,6 +7406,10 @@ PrefabInstance:
     - target: {fileID: 8359697856963663840, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
       propertyPath: m_Name
       value: piedras_4 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8359697856963663840, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 8359697856963663842, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
       propertyPath: m_RootOrder
@@ -6895,6 +7474,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1563518267
 Rigidbody2D:
   serializedVersion: 4
@@ -6926,6 +7506,10 @@ PrefabInstance:
     - target: {fileID: 8359697856963663840, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
       propertyPath: m_Name
       value: piedras_4 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8359697856963663840, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 8359697856963663842, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
       propertyPath: m_RootOrder
@@ -6990,6 +7574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1568676849
 Rigidbody2D:
   serializedVersion: 4
@@ -7028,6 +7613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1574955829
 Rigidbody2D:
   serializedVersion: 4
@@ -7059,6 +7645,10 @@ PrefabInstance:
     - target: {fileID: 1630000765706897988, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
       propertyPath: m_Name
       value: piedras_14 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630000765706897988, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 1630000765706897990, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
       propertyPath: m_RootOrder
@@ -7161,6 +7751,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7556406148017481839, guid: d75c9c3ff7be09a458f7dd9a622e45f5, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c9c3ff7be09a458f7dd9a622e45f5, type: 3}
 --- !u!1001 &1629371192
@@ -7173,6 +7767,10 @@ PrefabInstance:
     - target: {fileID: 679123965374735096, guid: 28e0e6eecad95794180cfcaea785dcd4, type: 3}
       propertyPath: m_Name
       value: piedras_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 679123965374735096, guid: 28e0e6eecad95794180cfcaea785dcd4, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 679123965374735102, guid: 28e0e6eecad95794180cfcaea785dcd4, type: 3}
       propertyPath: m_RootOrder
@@ -7287,6 +7885,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_8 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6724575305289038298, guid: 2cc057f62d05fd045b9891993f594bd0, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cc057f62d05fd045b9891993f594bd0, type: 3}
 --- !u!1 &1649387654 stripped
@@ -7306,6 +7908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1649387657
 Rigidbody2D:
   serializedVersion: 4
@@ -7344,6 +7947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1712377064
 Rigidbody2D:
   serializedVersion: 4
@@ -7382,6 +7986,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1715578485
 Rigidbody2D:
   serializedVersion: 4
@@ -7458,6 +8063,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_7 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3680066109552153990, guid: 3348ec554ee10504186b37db9f5180dc, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3348ec554ee10504186b37db9f5180dc, type: 3}
 --- !u!1001 &1741524902
@@ -7470,6 +8079,10 @@ PrefabInstance:
     - target: {fileID: 679123965374735096, guid: 28e0e6eecad95794180cfcaea785dcd4, type: 3}
       propertyPath: m_Name
       value: piedras_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 679123965374735096, guid: 28e0e6eecad95794180cfcaea785dcd4, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 679123965374735102, guid: 28e0e6eecad95794180cfcaea785dcd4, type: 3}
       propertyPath: m_RootOrder
@@ -7534,6 +8147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1744154991
 Rigidbody2D:
   serializedVersion: 4
@@ -7572,6 +8186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1774830345
 Rigidbody2D:
   serializedVersion: 4
@@ -7610,6 +8225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1777051228
 Rigidbody2D:
   serializedVersion: 4
@@ -7648,6 +8264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1782355490
 Rigidbody2D:
   serializedVersion: 4
@@ -7686,6 +8303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1788696727
 Rigidbody2D:
   serializedVersion: 4
@@ -7774,6 +8392,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_8 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6724575305289038298, guid: 2cc057f62d05fd045b9891993f594bd0, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cc057f62d05fd045b9891993f594bd0, type: 3}
 --- !u!1001 &1793823629
@@ -7786,6 +8408,10 @@ PrefabInstance:
     - target: {fileID: 1630000765706897988, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
       propertyPath: m_Name
       value: piedras_14 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630000765706897988, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 1630000765706897990, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
       propertyPath: m_RootOrder
@@ -7844,6 +8470,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_16 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2178486012521837573, guid: c95c281129842cd45abdfb8cbee0359e, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     - target: {fileID: 2178486012521837579, guid: c95c281129842cd45abdfb8cbee0359e, type: 3}
       propertyPath: m_RootOrder
       value: 43
@@ -7900,6 +8530,10 @@ PrefabInstance:
     - target: {fileID: 4733582939485610480, guid: 36a158d7d5e606d45a61c68439f6161a, type: 3}
       propertyPath: m_Name
       value: piedras_6 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4733582939485610480, guid: 36a158d7d5e606d45a61c68439f6161a, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 4733582939485610482, guid: 36a158d7d5e606d45a61c68439f6161a, type: 3}
       propertyPath: m_RootOrder
@@ -7976,6 +8610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1864375862
 Rigidbody2D:
   serializedVersion: 4
@@ -8064,6 +8699,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_8 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6724575305289038298, guid: 2cc057f62d05fd045b9891993f594bd0, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cc057f62d05fd045b9891993f594bd0, type: 3}
 --- !u!1 &1925747361 stripped
@@ -8083,6 +8722,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1925747364
 Rigidbody2D:
   serializedVersion: 4
@@ -8114,6 +8754,10 @@ PrefabInstance:
     - target: {fileID: 8359697856963663840, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
       propertyPath: m_Name
       value: piedras_4 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8359697856963663840, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 8359697856963663842, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
       propertyPath: m_RootOrder
@@ -8172,6 +8816,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_6 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4733582939485610480, guid: 36a158d7d5e606d45a61c68439f6161a, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     - target: {fileID: 4733582939485610482, guid: 36a158d7d5e606d45a61c68439f6161a, type: 3}
       propertyPath: m_RootOrder
       value: 71
@@ -8228,6 +8876,10 @@ PrefabInstance:
     - target: {fileID: 7348658453036452612, guid: 6a720f40e8933df409ee7ba02fad5357, type: 3}
       propertyPath: m_Name
       value: piedras_12 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7348658453036452612, guid: 6a720f40e8933df409ee7ba02fad5357, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 7348658453036452614, guid: 6a720f40e8933df409ee7ba02fad5357, type: 3}
       propertyPath: m_RootOrder
@@ -8292,6 +8944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1943803146
 Rigidbody2D:
   serializedVersion: 4
@@ -8376,6 +9029,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_5 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2972582515205193078, guid: 3972dbad5df4d1947a2f7a8ccb0331b7, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3972dbad5df4d1947a2f7a8ccb0331b7, type: 3}
 --- !u!1 &1963487251 stripped
@@ -8395,6 +9052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1963487254
 Rigidbody2D:
   serializedVersion: 4
@@ -8433,6 +9091,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &1972372313
 Rigidbody2D:
   serializedVersion: 4
@@ -8471,6 +9130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &2005226455
 Rigidbody2D:
   serializedVersion: 4
@@ -8509,6 +9169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &2016730842
 Rigidbody2D:
   serializedVersion: 4
@@ -8540,6 +9201,10 @@ PrefabInstance:
     - target: {fileID: 679123965374735096, guid: 28e0e6eecad95794180cfcaea785dcd4, type: 3}
       propertyPath: m_Name
       value: piedras_1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 679123965374735096, guid: 28e0e6eecad95794180cfcaea785dcd4, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 679123965374735102, guid: 28e0e6eecad95794180cfcaea785dcd4, type: 3}
       propertyPath: m_RootOrder
@@ -8604,6 +9269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &2044914556
 Rigidbody2D:
   serializedVersion: 4
@@ -8635,6 +9301,10 @@ PrefabInstance:
     - target: {fileID: 8359697856963663840, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
       propertyPath: m_Name
       value: piedras_4 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8359697856963663840, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 8359697856963663842, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
       propertyPath: m_RootOrder
@@ -8699,6 +9369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &2074925251
 Rigidbody2D:
   serializedVersion: 4
@@ -8737,6 +9408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &2083641425
 Rigidbody2D:
   serializedVersion: 4
@@ -8775,6 +9447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &2092365243
 Rigidbody2D:
   serializedVersion: 4
@@ -8851,6 +9524,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_3 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5782626734093426137, guid: add19b1072783e74d9b292585188232e, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: add19b1072783e74d9b292585188232e, type: 3}
 --- !u!1 &2113428287 stripped
@@ -8870,6 +9547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b6899b991c6a41a3c0eb50633d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 414622398}
 --- !u!50 &2113428290
 Rigidbody2D:
   serializedVersion: 4
@@ -8901,6 +9579,10 @@ PrefabInstance:
     - target: {fileID: 679123965374735096, guid: 28e0e6eecad95794180cfcaea785dcd4, type: 3}
       propertyPath: m_Name
       value: piedras_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 679123965374735096, guid: 28e0e6eecad95794180cfcaea785dcd4, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 679123965374735102, guid: 28e0e6eecad95794180cfcaea785dcd4, type: 3}
       propertyPath: m_RootOrder
@@ -8959,6 +9641,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_13
       objectReference: {fileID: 0}
+    - target: {fileID: 1111457370444877457, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     - target: {fileID: 1111457370444877459, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -9016,6 +9702,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_14
       objectReference: {fileID: 0}
+    - target: {fileID: 1630000765706897988, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     - target: {fileID: 1630000765706897990, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -9072,6 +9762,10 @@ PrefabInstance:
     - target: {fileID: 2178486012521837573, guid: c95c281129842cd45abdfb8cbee0359e, type: 3}
       propertyPath: m_Name
       value: piedras_16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2178486012521837573, guid: c95c281129842cd45abdfb8cbee0359e, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 2178486012521837579, guid: c95c281129842cd45abdfb8cbee0359e, type: 3}
       propertyPath: m_RootOrder
@@ -9186,6 +9880,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_5
       objectReference: {fileID: 0}
+    - target: {fileID: 2972582515205193078, guid: 3972dbad5df4d1947a2f7a8ccb0331b7, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3972dbad5df4d1947a2f7a8ccb0331b7, type: 3}
 --- !u!1001 &3680066108567102903
@@ -9243,6 +9941,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_7
       objectReference: {fileID: 0}
+    - target: {fileID: 3680066109552153990, guid: 3348ec554ee10504186b37db9f5180dc, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3348ec554ee10504186b37db9f5180dc, type: 3}
 --- !u!1001 &4733582939233476433
@@ -9255,6 +9957,10 @@ PrefabInstance:
     - target: {fileID: 4733582939485610480, guid: 36a158d7d5e606d45a61c68439f6161a, type: 3}
       propertyPath: m_Name
       value: piedras_6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4733582939485610480, guid: 36a158d7d5e606d45a61c68439f6161a, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 4733582939485610482, guid: 36a158d7d5e606d45a61c68439f6161a, type: 3}
       propertyPath: m_RootOrder
@@ -9324,6 +10030,10 @@ PrefabInstance:
     - target: {fileID: 5120789024170047525, guid: 1a835a675ff265d419daf62d9de3f082, type: 3}
       propertyPath: m_Name
       value: piedras_9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5120789024170047525, guid: 1a835a675ff265d419daf62d9de3f082, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 5120789024170047547, guid: 1a835a675ff265d419daf62d9de3f082, type: 3}
       propertyPath: m_RootOrder
@@ -9438,6 +10148,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_3
       objectReference: {fileID: 0}
+    - target: {fileID: 5782626734093426137, guid: add19b1072783e74d9b292585188232e, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: add19b1072783e74d9b292585188232e, type: 3}
 --- !u!1001 &6311055089830225515
@@ -9450,6 +10164,10 @@ PrefabInstance:
     - target: {fileID: 6311055090396545049, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
       propertyPath: m_Name
       value: piedras_11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6311055090396545049, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 6311055090396545055, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
       propertyPath: m_RootOrder
@@ -9564,6 +10282,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_8
       objectReference: {fileID: 0}
+    - target: {fileID: 6724575305289038298, guid: 2cc057f62d05fd045b9891993f594bd0, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cc057f62d05fd045b9891993f594bd0, type: 3}
 --- !u!1001 &7348658453384233857
@@ -9576,6 +10298,10 @@ PrefabInstance:
     - target: {fileID: 7348658453036452612, guid: 6a720f40e8933df409ee7ba02fad5357, type: 3}
       propertyPath: m_Name
       value: piedras_12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7348658453036452612, guid: 6a720f40e8933df409ee7ba02fad5357, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 7348658453036452614, guid: 6a720f40e8933df409ee7ba02fad5357, type: 3}
       propertyPath: m_RootOrder
@@ -9678,6 +10404,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedras_2
       objectReference: {fileID: 0}
+    - target: {fileID: 7556406148017481839, guid: d75c9c3ff7be09a458f7dd9a622e45f5, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c9c3ff7be09a458f7dd9a622e45f5, type: 3}
 --- !u!1001 &8359697856260633017
@@ -9690,6 +10420,10 @@ PrefabInstance:
     - target: {fileID: 8359697856963663840, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
       propertyPath: m_Name
       value: piedras_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8359697856963663840, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
+      propertyPath: m_TagString
+      value: Piedras
       objectReference: {fileID: 0}
     - target: {fileID: 8359697856963663842, guid: 367983e5fb4537c43ad9e8647b1f7f55, type: 3}
       propertyPath: m_RootOrder
