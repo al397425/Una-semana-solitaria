@@ -8,10 +8,10 @@ public class FlyMovement : MonoBehaviour
     Vector2 fly;
     // Vector2 target;
     // bool moving;
-    Vector2 nextPos;
+    Vector3 nextPos;
     void Start(){
-        fly = new Vector2(Random.Range(-9f, 9f), Random.Range(-3f, 5f));
-        nextPos = new Vector2(Random.Range(-9f, 9f), Random.Range(-3f, 5f));
+        fly = new Vector3(Random.Range(-9f, 9f), Random.Range(-3f, 5f), 0);
+        nextPos = new Vector3(Random.Range(-9f, 9f), Random.Range(-3f, 5f), 0);
     }
 
     // Update is called once per frame
@@ -21,10 +21,10 @@ public class FlyMovement : MonoBehaviour
         Debug.Log("Next pos: " + nextPos);
         float step = speed * Time.deltaTime;
         if(transform.position.x != nextPos.x && transform.position.y != nextPos.y){
-            transform.position = Vector2.MoveTowards(transform.position, nextPos, step);
+            transform.position = Vector3.MoveTowards(transform.position, nextPos, step);
         }
         else {
-            nextPos = new Vector2(Random.Range(-9f, 9f), Random.Range(-3f, 5f));
+            nextPos = new Vector3(Random.Range(-9f, 9f), Random.Range(-3f, 5f), 0);
         }
         // if (Input.GetMouseButtonDown(0)){
         //     // target = new Vector2(lastClickedPos.x, lastClickedPos.y);
