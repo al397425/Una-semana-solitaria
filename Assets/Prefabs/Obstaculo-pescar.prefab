@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3219140573773970578}
   - component: {fileID: 3219140573773970579}
   - component: {fileID: 3219140573773970580}
+  - component: {fileID: 2326668583267358533}
   m_Layer: 0
   m_Name: Obstaculo-pescar
   m_TagString: Untagged
@@ -26,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3219140573773970577}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.45, y: -2.93, z: 0}
-  m_LocalScale: {x: 0.29061776, y: 0.29061776, z: 0.29061776}
+  m_LocalPosition: {x: -8.8393, y: -4.3193, z: 0}
+  m_LocalScale: {x: 0.14589012, y: 0.14589012, z: 0.14589012}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -104,3 +105,29 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &2326668583267358533
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3219140573773970577}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.008397102, y: 0.047878146}
+  m_SpriteTilingProperty:
+    border: {x: 5.73, y: 6.5699997, z: 5.83, w: 6.3799996}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 19.2, y: 19.2}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.5597143, y: 6.1576633}
+  m_EdgeRadius: 0
