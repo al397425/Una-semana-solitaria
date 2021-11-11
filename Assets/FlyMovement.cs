@@ -14,6 +14,7 @@ public class FlyMovement : MonoBehaviour
         nextPos = new Vector3(Random.Range(-9f, 9f), Random.Range(-3f, 5f), 0);
     }
 
+
     // Update is called once per frame
     void Update()
     {
@@ -22,20 +23,11 @@ public class FlyMovement : MonoBehaviour
         float step = speed * Time.deltaTime;
         if(transform.position.x != nextPos.x && transform.position.y != nextPos.y){
             transform.position = Vector3.MoveTowards(transform.position, nextPos, step);
+            transform.eulerAngles = new Vector3(transform.rotation.x, transform.rotation.y, Mathf.Atan2(fly.y - nextPos.y, fly.x - nextPos.x));
         }
         else {
             nextPos = new Vector3(Random.Range(-9f, 9f), Random.Range(-3f, 5f), 0);
+            fly = nextPos;
         }
-        // if (Input.GetMouseButtonDown(0)){
-        //     // target = new Vector2(lastClickedPos.x, lastClickedPos.y);
-        //     moving = true;
-        // }
-        // if(moving && (Vector2)transform.position != lastClickedPos){
-        //     float step = speed * Time.deltaTime;
-        //     transform.position = Vector2.MoveTowards(transform.position, lastClickedPos, step);
-        // }
-        // else{
-        //     moving = false;
-        // }
     }
 }
