@@ -1,0 +1,660 @@
+fileFormatVersion: 2
+guid: a7444e32bc6dd5f42981f6e6395ee788
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1066976077051641798
+    second: minerales_0
+  - first:
+      213: 3347285080794161247
+    second: minerales_1
+  - first:
+      213: 8018347857680358393
+    second: minerales_2
+  - first:
+      213: 5433625479414938247
+    second: minerales_3
+  - first:
+      213: -8188908673089633017
+    second: minerales_4
+  - first:
+      213: 1521393532559653963
+    second: minerales_5
+  - first:
+      213: 8467677809612312855
+    second: minerales_6
+  - first:
+      213: -4103812276244790135
+    second: minerales_7
+  - first:
+      213: -4512381875328488478
+    second: minerales_8
+  - first:
+      213: 8189159290135276231
+    second: minerales_9
+  - first:
+      213: -68017408826269130
+    second: minerales_10
+  - first:
+      213: -3973548145570355918
+    second: minerales_11
+  - first:
+      213: 6854861072489765578
+    second: minerales_12
+  - first:
+      213: -7328768896983183561
+    second: minerales_13
+  - first:
+      213: 5140262488683110409
+    second: minerales_14
+  - first:
+      213: -2377617597937940827
+    second: minerales_15
+  - first:
+      213: -2940027127668752916
+    second: minerales_16
+  - first:
+      213: 6390424291894984431
+    second: minerales_17
+  - first:
+      213: -8988789946776252454
+    second: minerales_18
+  - first:
+      213: 6048204963974089319
+    second: minerales_19
+  - first:
+      213: -184987108710931596
+    second: minerales_20
+  - first:
+      213: 8044527926604342154
+    second: minerales_21
+  - first:
+      213: 7312066383411331761
+    second: minerales_22
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 203
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: minerales_0
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1399
+        width: 203
+        height: 518
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cfb088c619aece00800000000000000
+      internalID: 1066976077051641798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minerales_1
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 1684
+        width: 226
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5063badb02f37e20800000000000000
+      internalID: 3347285080794161247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minerales_2
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 1335
+        width: 210
+        height: 488
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb5d8eb4e4e64f60800000000000000
+      internalID: 8018347857680358393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minerales_3
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 1482
+        width: 220
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78af90fb59d186b40800000000000000
+      internalID: 5433625479414938247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minerales_4
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 1632
+        width: 247
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7058062d2f62b5e80800000000000000
+      internalID: -8188908673089633017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minerales_5
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1133
+        width: 212
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c7bcf6b531d1510800000000000000
+      internalID: 1521393532559653963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minerales_6
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 912
+        width: 216
+        height: 557
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 711566aaa1c338570800000000000000
+      internalID: 8467677809612312855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minerales_7
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 1463
+        width: 91
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984ca894a745c07c0800000000000000
+      internalID: -4103812276244790135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minerales_8
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 1167
+        width: 90
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eb622e879cc061c0800000000000000
+      internalID: -4512381875328488478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minerales_9
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 860
+        width: 204
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca6a918cfcb5a170800000000000000
+      internalID: 8189159290135276231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minerales_10
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 618
+        width: 277
+        height: 586
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6322e5ce68a5e0ff0800000000000000
+      internalID: -68017408826269130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minerales_11
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 1053
+        width: 219
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 235ed5da30f1bd8c0800000000000000
+      internalID: -3973548145570355918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minerales_12
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 454
+        width: 220
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acad76aa3db512f50800000000000000
+      internalID: 6854861072489765578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minerales_13
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 827
+        width: 106
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73fc266848bfa4a90800000000000000
+      internalID: -7328768896983183561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minerales_14
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 585
+        width: 268
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 900e83acf71e55740800000000000000
+      internalID: 5140262488683110409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minerales_15
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 470
+        width: 189
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6013f4461010fd0800000000000000
+      internalID: -2377617597937940827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minerales_16
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 542
+        width: 78
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cedba4187ece237d0800000000000000
+      internalID: -2940027127668752916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minerales_17
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 615
+        width: 148
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee7d6a19095fa850800000000000000
+      internalID: 6390424291894984431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minerales_18
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 200
+        width: 112
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf8cc50b27614380800000000000000
+      internalID: -8988789946776252454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minerales_19
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 183
+        width: 167
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a0e66be5a8fe350800000000000000
+      internalID: 6048204963974089319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minerales_20
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 189
+        width: 283
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4732249643bce6df0800000000000000
+      internalID: -184987108710931596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minerales_21
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 199
+        width: 201
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8326fa0787e3af60800000000000000
+      internalID: 8044527926604342154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minerales_22
+      rect:
+        serializedVersion: 2
+        x: 1561
+        y: 182
+        width: 234
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b2ce4d72ada97560800000000000000
+      internalID: 7312066383411331761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 453e9c287299ce94499e5d8c711d6452
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
