@@ -127,3 +127,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  TiempoAparicionMoscas: 2
+  mosca: {fileID: 6242925493381680440, guid: e57ac8d2b6d2bf24082d8e4f5031883b, type: 3}

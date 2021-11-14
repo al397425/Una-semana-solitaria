@@ -10,6 +10,7 @@ public class FlyMovement : MonoBehaviour
     // bool moving;
     Vector3 nextPos;
     public Quaternion startQuaternion;
+    
     void Start(){
         fly = new Vector3(Random.Range(-9f, 9f), Random.Range(-3f, 5f), 0);
         nextPos = new Vector3(Random.Range(-9f, 9f), Random.Range(-3f, 5f), 0);
@@ -45,6 +46,7 @@ public class FlyMovement : MonoBehaviour
             // Debug.Log("Rotacion: "+ AnguloMosca);
             // Debug.Log("Next pos: " + nextPos);
         }
+        
     }
     public void snapRotation(){
         transform.rotation = startQuaternion;

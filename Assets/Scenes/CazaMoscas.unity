@@ -508,6 +508,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6734756490187053048, guid: 3287dbdd259470c4fb105592c6bca1f8, type: 3}
+      propertyPath: TiempoAparicionMoscas
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6734756490187053050, guid: 3287dbdd259470c4fb105592c6bca1f8, type: 3}
       propertyPath: m_RootOrder
       value: 3

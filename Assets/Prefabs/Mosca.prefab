@@ -111,4 +111,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   startQuaternion: {x: 0, y: 0, z: 0, w: 0}
+  TiempoAparicionMoscas: 5
+  mosca: {fileID: 6242925493381680440}
   AnguloMosca: 0
