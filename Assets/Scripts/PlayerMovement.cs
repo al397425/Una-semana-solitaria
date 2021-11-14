@@ -17,10 +17,10 @@ public class PlayerMovement : MonoBehaviour
         float step = speed * Time.deltaTime;
         transform.position = Vector2.MoveTowards(transform.position, lastMovedPos, step);
     }
-    void OnTriggerEnter(Collider matamoscas){
+    void OnTriggerStay(Collider matamoscas){
         Debug.Log("Esta tocando el matamoscas");
-        if(matamoscas.tag == "Matamoscas" && Input.GetMouseButtonDown(0)){
-            Destroy(this);
+        if(Input.GetMouseButtonDown(0)){
+            Destroy(matamoscas.gameObject);
         }
     }
 }

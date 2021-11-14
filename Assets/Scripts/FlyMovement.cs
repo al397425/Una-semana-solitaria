@@ -52,16 +52,16 @@ public class FlyMovement : MonoBehaviour
     void FixedUpdate(){
         
     }
-    void OnTriggerStay(Collider matamoscas){
-        Debug.Log("Esta tocando el matamoscas");
-        if(Input.GetMouseButtonDown(0)){
-            Destroy(this);
-        }
-    }
-    void OnTriggerEnter(Collider matamoscas){
-        Debug.Log("Esta tocando el matamoscas");
-        if(matamoscas.tag == "Matamoscas"){
-            Destroy(this);
-        }
-    }
+    // void OnTriggerStay(Collider matamoscas){
+    //     Debug.Log("Esta tocando el matamoscas");
+    //     if(Input.GetMouseButtonDown(0)){
+    //         Destroy(matamoscas.gameObject);
+    //     }
+    // }
+    // void OnTriggerEnter(Collider matamoscas){
+    //     Debug.Log("Esta tocando el matamoscas");
+    //     if(matamoscas.tag == "Matamoscas"){
+    //         Destroy(this);
+    //     }
+    // }
 }
