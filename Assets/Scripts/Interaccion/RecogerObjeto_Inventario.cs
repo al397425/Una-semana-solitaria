@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class RecogerObjeto_Inventario : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	//Tecla de interaccion
+	public KeyCode teclaDeInteraccion = KeyCode.Space;
+	
+	void Awake(){
+		GetComponent<MostrarCuadroInteraccion>().EstableceTextoCuandro(teclaDeInteraccion.ToString());
+	}
+	
+	void OnTriggerStay2D(Collider2D other){
+		if (Input.GetKeyDown(teclaDeInteraccion) && other.tag == "Player"){
+			other.gameObject.GetComponent<Inventario>().AgregarObjeto(gameObject);
+			Destroy(gameObject);
+		}
+	}
 }
