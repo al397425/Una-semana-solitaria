@@ -19,6 +19,7 @@ public class MostrarCuadroInteraccion : MonoBehaviour
     void OnTriggerStay2D(Collider2D other){
 		if (other.tag == "Player"){
 			interfazInteraccion.GetComponent<Animator>().SetFloat("VelocidadAnimacion", 1);
+			transform.Find("Borde").gameObject.GetComponent<SpriteRenderer>().enabled = true;
 		}
 	}
 	
@@ -26,6 +27,7 @@ public class MostrarCuadroInteraccion : MonoBehaviour
 		if (other.tag == "Player"){
 			//Activa el outline y la animacion de aparecer con que tecla aparece
 			interfazInteraccion.GetComponent<Animator>().SetFloat("VelocidadAnimacion", -1);
+			transform.Find("Borde").gameObject.GetComponent<SpriteRenderer>().enabled = false;
 		}
 	}
 }
