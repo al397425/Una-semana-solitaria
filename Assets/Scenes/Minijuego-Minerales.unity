@@ -811,6 +811,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra 9 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
 --- !u!1001 &154164260
@@ -996,6 +1000,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra 10 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3434951612384577329, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     - target: {fileID: 3758331504239431939, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_Camera
       value: 
@@ -1113,6 +1121,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra 10 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3434951612384577329, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     - target: {fileID: 3758331504239431939, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_Camera
       value: 
@@ -1967,6 +1979,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra 9 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
 --- !u!1001 &351187934
@@ -3030,6 +3046,10 @@ PrefabInstance:
       propertyPath: m_RenderMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6754280986497724611, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     - target: {fileID: 7158706298345562453, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_SizeDelta.x
       value: 42.1
@@ -3048,7 +3068,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -3059,6 +3079,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1800004149}
     - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1800004153}
+    - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
@@ -3067,11 +3091,23 @@ PrefabInstance:
       value: ImageChange
       objectReference: {fileID: 0}
     - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnMouseDown
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: ChangeImage, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: PuntosMinRojos, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3390,6 +3426,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra 9 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
 --- !u!1001 &630116483
@@ -3836,6 +3876,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra 9 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
 --- !u!1 &679151838 stripped
@@ -4978,6 +5022,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra 9 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
 --- !u!1001 &862631515
@@ -5379,6 +5427,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra 9 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
 --- !u!1001 &1015918793
@@ -6638,6 +6690,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra 9 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
 --- !u!1 &1273565034
@@ -7688,6 +7744,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra 10 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3434951612384577329, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     - target: {fileID: 3758331504239431939, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_Camera
       value: 
@@ -8328,6 +8388,10 @@ PrefabInstance:
       propertyPath: m_RenderMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6754280986497724611, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     - target: {fileID: 7158706298345562453, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_SizeDelta.x
       value: 35.01
@@ -8346,7 +8410,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -8357,6 +8421,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1714069813}
     - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1714069817}
+    - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
@@ -8365,11 +8433,23 @@ PrefabInstance:
       value: ImageChange
       objectReference: {fileID: 0}
     - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnMouseDown
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: ChangeImage, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: PuntosMinRojos, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -8786,6 +8866,10 @@ PrefabInstance:
       propertyPath: m_RenderMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6754280986497724611, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     - target: {fileID: 7158706298345562453, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_SizeDelta.x
       value: 52.14
@@ -8804,7 +8888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -8815,6 +8899,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2145432760}
     - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2145432764}
+    - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
@@ -8823,11 +8911,23 @@ PrefabInstance:
       value: ImageChange
       objectReference: {fileID: 0}
     - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnMouseDown
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: ChangeImage, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: PuntosMinRojos, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -8841,6 +8941,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1128dc8aa732e6a438bd3cfcdc435e18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1714069817 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6754280986497724611, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+  m_PrefabInstance: {fileID: 1583187279}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b4e28f20c9de1446a1139ce66b620c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1715578482 stripped
@@ -9114,6 +9225,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra 9 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
 --- !u!1001 &1793823629
@@ -9186,6 +9301,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1128dc8aa732e6a438bd3cfcdc435e18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1800004153 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6754280986497724611, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+  m_PrefabInstance: {fileID: 522159646}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b4e28f20c9de1446a1139ce66b620c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1814219218 stripped
@@ -9447,6 +9573,10 @@ PrefabInstance:
       propertyPath: m_RenderMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6754280986497724611, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     - target: {fileID: 7158706298345562453, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_SizeDelta.x
       value: 41.09
@@ -9465,7 +9595,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -9476,6 +9606,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1996139004}
     - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1996139008}
+    - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
@@ -9484,11 +9618,23 @@ PrefabInstance:
       value: ImageChange
       objectReference: {fileID: 0}
     - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnMouseDown
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: ChangeImage, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: PuntosMinRojos, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303139421609493497, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -10002,6 +10148,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1128dc8aa732e6a438bd3cfcdc435e18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1996139008 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6754280986497724611, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+  m_PrefabInstance: {fileID: 1826235024}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b4e28f20c9de1446a1139ce66b620c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1996598061
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10185,6 +10342,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra 10 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3434951612384577329, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     - target: {fileID: 3758331504239431939, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_Camera
       value: 
@@ -10302,6 +10463,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra 10 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3434951612384577329, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     - target: {fileID: 3758331504239431939, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_Camera
       value: 
@@ -10507,6 +10672,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra 9 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
 --- !u!114 &2145432760 stripped
@@ -10518,6 +10687,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1128dc8aa732e6a438bd3cfcdc435e18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2145432764 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6754280986497724611, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+  m_PrefabInstance: {fileID: 1705584889}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b4e28f20c9de1446a1139ce66b620c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &491260305949240032
@@ -11008,6 +11188,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra 10
       objectReference: {fileID: 0}
+    - target: {fileID: 3434951612384577329, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     - target: {fileID: 3758331504239431939, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_Camera
       value: 
@@ -11213,6 +11397,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra 9
       objectReference: {fileID: 0}
+    - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
 --- !u!1001 &5120789025470312651

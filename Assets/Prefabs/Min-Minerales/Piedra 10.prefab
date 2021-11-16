@@ -113,6 +113,7 @@ GameObject:
   - component: {fileID: 5597990940041486462}
   - component: {fileID: 9089703570917158140}
   - component: {fileID: 6552537448793546987}
+  - component: {fileID: 3434951612384577329}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -220,3 +221,28 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 3434951612384577329}
+          m_TargetAssemblyTypeName: PuntosMinRojos, Assembly-CSharp
+          m_MethodName: OnMouseDown
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &3434951612384577329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3446912249091130355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 797f47f73bac3dd45955ed629f1e94e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 0}
