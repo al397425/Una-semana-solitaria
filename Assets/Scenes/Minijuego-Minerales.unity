@@ -590,6 +590,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 493129708209431897, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     - target: {fileID: 733305931353425631, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -676,7 +680,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3243030200428724655, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Name
-      value: Piedra 8 (4)
+      value: Piedra Amarilla 2 (4)
       objectReference: {fileID: 0}
     - target: {fileID: 6905320161979315253, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Camera
@@ -2758,12 +2762,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 944895445337128669, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: m_Name
-      value: Piedra 7 (4)
+      value: Piedra Verde 2 (4)
       objectReference: {fileID: 0}
     - target: {fileID: 5412896174443357452, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 7143652373374374188, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     - target: {fileID: 9198360999976226271, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: m_SizeDelta.x
       value: 43.07
@@ -3615,12 +3623,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 944895445337128669, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: m_Name
-      value: Piedra 7 (1)
+      value: Piedra Verde 2 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 5412896174443357452, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 7143652373374374188, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     - target: {fileID: 9198360999976226271, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: m_SizeDelta.x
       value: 35.86
@@ -4690,12 +4702,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 944895445337128669, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: m_Name
-      value: Piedra 7 (3)
+      value: Piedra Verde 2(3)
       objectReference: {fileID: 0}
     - target: {fileID: 5412896174443357452, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 7143652373374374188, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     - target: {fileID: 9198360999976226271, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: m_SizeDelta.x
       value: 43.57
@@ -5863,12 +5879,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 944895445337128669, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: m_Name
-      value: Piedra 7 (2)
+      value: Piedra Verde 2 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 5412896174443357452, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 7143652373374374188, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     - target: {fileID: 9198360999976226271, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: m_SizeDelta.x
       value: 35.69
@@ -6230,6 +6250,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 493129708209431897, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     - target: {fileID: 733305931353425631, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -6316,7 +6340,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3243030200428724655, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Name
-      value: Piedra 8 (2)
+      value: Piedra Amarilla 2 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 6905320161979315253, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Camera
@@ -7305,6 +7329,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 493129708209431897, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     - target: {fileID: 733305931353425631, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -7391,7 +7419,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3243030200428724655, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Name
-      value: Piedra 8 (3)
+      value: Piedra Amarilla 2 (3)
       objectReference: {fileID: 0}
     - target: {fileID: 6905320161979315253, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Camera
@@ -7652,6 +7680,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 493129708209431897, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     - target: {fileID: 733305931353425631, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -7738,7 +7770,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3243030200428724655, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Name
-      value: Piedra 8 (5)
+      value: Piedra Amarilla 2 (5)
       objectReference: {fileID: 0}
     - target: {fileID: 6905320161979315253, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Camera
@@ -10409,6 +10441,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 493129708209431897, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     - target: {fileID: 733305931353425631, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -10495,7 +10531,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3243030200428724655, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Name
-      value: Piedra 8 (1)
+      value: Piedra Amarilla 2 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 6905320161979315253, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Camera
@@ -11075,6 +11111,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 493129708209431897, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     - target: {fileID: 733305931353425631, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -11161,7 +11201,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3243030200428724655, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Name
-      value: Piedra 8
+      value: Piedra Amarilla 2
       objectReference: {fileID: 0}
     - target: {fileID: 6905320161979315253, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Camera
@@ -12057,12 +12097,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 944895445337128669, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: m_Name
-      value: Piedra 7
+      value: Piedra Verde 2
       objectReference: {fileID: 0}
     - target: {fileID: 5412896174443357452, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 7143652373374374188, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
+      propertyPath: ObjPuntos
+      value: 
+      objectReference: {fileID: 414622398}
     - target: {fileID: 9198360999976226271, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: m_SizeDelta.x
       value: 28.98
