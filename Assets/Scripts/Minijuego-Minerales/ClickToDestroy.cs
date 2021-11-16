@@ -8,7 +8,6 @@ public class ClickToDestroy : MonoBehaviour
 {
     public GameObject ObjPuntos;
     
-
     public void OnMouseDown()
     {
         ObjPuntos.GetComponent<Puntos>().puntos += 1;

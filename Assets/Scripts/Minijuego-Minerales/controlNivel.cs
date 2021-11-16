@@ -9,4 +9,8 @@ public class controlNivel : MonoBehaviour
         SceneManager.LoadScene("Minijuego-Minerales");
     }
 
+    public void SeguirJugando(){
+        SceneManager.LoadScene("Level1");//Cambiar escena para seguir jugando
+    }
+
 }
