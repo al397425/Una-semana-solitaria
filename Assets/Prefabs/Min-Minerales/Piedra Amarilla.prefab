@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1549958749157741012}
   - component: {fileID: 1549958749157741013}
   - component: {fileID: 1549958749157741014}
+  - component: {fileID: 1644753585127782973}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -106,6 +107,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1644753585127782973}
+          m_TargetAssemblyTypeName: PuntosMinAmarillo, Assembly-CSharp
+          m_MethodName: OnMouseDown
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &1549958749157741014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,6 +133,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   oldImage: {fileID: 1549958749157741012}
   newImage: {fileID: 5433625479414938247, guid: a7444e32bc6dd5f42981f6e6395ee788, type: 3}
+--- !u!114 &1644753585127782973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549958749157741016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72c3bf7ce4d953441b2502e807be0333, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 0}
 --- !u!1 &1549958750190705165
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,7 +159,7 @@ GameObject:
   - component: {fileID: 1549958750190705163}
   - component: {fileID: 1549958750190705164}
   m_Layer: 5
-  m_Name: Piedra 4
+  m_Name: Piedra Amarilla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
