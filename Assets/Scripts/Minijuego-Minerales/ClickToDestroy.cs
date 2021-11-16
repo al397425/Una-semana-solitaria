@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class ClickToDestroy : MonoBehaviour
@@ -12,6 +13,10 @@ public class ClickToDestroy : MonoBehaviour
     {
         ObjPuntos.GetComponent<Puntos>().puntos += 1;
         Destroy(gameObject);
+
+       
     }
+
+    
 
 }

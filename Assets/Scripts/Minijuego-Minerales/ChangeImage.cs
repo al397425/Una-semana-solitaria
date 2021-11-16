@@ -7,8 +7,11 @@ public class ChangeImage : MonoBehaviour
 {
   public Image oldImage;
   public Sprite newImage;
+  
 
   public void ImageChange(){
       oldImage.sprite = newImage;
+
+       
   }
 }
