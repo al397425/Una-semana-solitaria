@@ -23,6 +23,12 @@ public class EmpezarMinijuego : MonoBehaviour
 	
 	bool activo = false;
 	
+	GameObject interfazNoDisponeObjeto;
+	
+	void Awake(){
+		interfazNoDisponeObjeto = transform.Find("InterfazNoTieneObjeto").gameObject;
+	}
+	
     void OnTriggerStay2D(Collider2D other){
 		if (activo == false && Input.GetKeyDown(teclaDeInteraccion) && other.tag == "Player"){	
 			if((nombreObjetoRequerido == "" || other.gameObject.GetComponent<Inventario>().BuscarEliminarObjeto(nombreObjetoRequerido))){
@@ -33,9 +39,17 @@ public class EmpezarMinijuego : MonoBehaviour
 					Instantiate(objetoMinijuego, new Vector2(0,0), Quaternion.identity);
 				}
 			}else{
-				Debug.Log("TEXTO NO ENCONTRADO");
+				interfazNoDisponeObjeto.GetComponent<Animator>().SetFloat("VelocidadAnimacion", 1);
+				interfazNoDisponeObjeto.GetComponent<Animator>().Play("ObjetoNoEncontrado");
 			}
 		}
 	}
 	
+	void OnTriggerExit2D(Collider2D other){
+		if (other.tag == "Player"){
+			//Desactiva la interfaz que indica que no dispone de objeto
+			interfazNoDisponeObjeto.GetComponent<Animator>().SetFloat("VelocidadAnimacion", -1);
+			interfazNoDisponeObjeto.GetComponent<Animator>().Play("ObjetoNoEncontrado");
+		}
+	}
 }
