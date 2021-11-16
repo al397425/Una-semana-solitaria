@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6347001704427186013}
   - component: {fileID: 6347001704427186012}
   - component: {fileID: 6347001704427186015}
+  - component: {fileID: 8153246375621636220}
   - component: {fileID: 6347001704427186014}
   m_Layer: 5
   m_Name: Image
@@ -91,6 +92,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   oldImage: {fileID: 6347001704427186012}
   newImage: {fileID: -4512381875328488478, guid: a7444e32bc6dd5f42981f6e6395ee788, type: 3}
+--- !u!114 &8153246375621636220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6347001704427185984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beaa849cd366d664cbc1fbe577e7c5a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjPuntos: {fileID: 0}
 --- !u!114 &6347001704427186014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,7 +121,31 @@ MonoBehaviour:
   - eventID: 4
     callback:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 8153246375621636220}
+          m_TargetAssemblyTypeName: PuntosMinAzulCla, Assembly-CSharp
+          m_MethodName: OnMouseDown
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 6347001704427186015}
+          m_TargetAssemblyTypeName: ChangeImage, Assembly-CSharp
+          m_MethodName: ImageChange
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &6347001705502171008
 GameObject:
   m_ObjectHideFlags: 0
@@ -121,7 +159,7 @@ GameObject:
   - component: {fileID: 6347001705502171038}
   - component: {fileID: 6347001705502171009}
   m_Layer: 5
-  m_Name: Piedra 6
+  m_Name: Piedra Azul Claro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
