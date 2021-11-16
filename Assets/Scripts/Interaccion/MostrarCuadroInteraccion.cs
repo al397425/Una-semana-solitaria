@@ -6,7 +6,6 @@ using TMPro;
 public class MostrarCuadroInteraccion : MonoBehaviour
 {
  	GameObject interfazInteraccion;
-	public TextMeshProUGUI textDisplay;
 	
 	void Awake(){
 		interfazInteraccion = transform.Find("InterfazInteraccion").gameObject;

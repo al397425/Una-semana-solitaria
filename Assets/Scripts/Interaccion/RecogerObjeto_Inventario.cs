@@ -13,7 +13,7 @@ public class RecogerObjeto_Inventario : MonoBehaviour
 	
 	void OnTriggerStay2D(Collider2D other){
 		if (Input.GetKeyDown(teclaDeInteraccion) && other.tag == "Player"){
-			other.gameObject.GetComponent<Inventario>().AgregarObjeto(gameObject);
+			other.gameObject.GetComponent<Inventario>().AgregarObjeto(gameObject.name, gameObject.GetComponent<SpriteRenderer>().sprite);
 			Destroy(gameObject);
 		}
 	}
