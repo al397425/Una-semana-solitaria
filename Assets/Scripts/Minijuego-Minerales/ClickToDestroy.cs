@@ -6,9 +6,9 @@ using UnityEngine;
 public class ClickToDestroy : MonoBehaviour
 {
     public GameObject ObjPuntos;
+    
 
-
-    void OnMouseDown()
+    public void OnMouseDown()
     {
         ObjPuntos.GetComponent<Puntos>().puntos += 10;
         Destroy(gameObject);
