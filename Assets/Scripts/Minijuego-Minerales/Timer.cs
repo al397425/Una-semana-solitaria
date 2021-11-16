@@ -9,9 +9,11 @@ public class Timer : MonoBehaviour
     public Text tiempoText;
     public float tiempo = 0.0f;
     public GameObject Reiniciar;
+    public GameObject ReiniciarTXT;
 
      public void Start(){
         Reiniciar.gameObject.SetActive(false);
+        ReiniciarTXT.gameObject.SetActive(false);
     }
     
     public void Update(){
@@ -21,7 +23,7 @@ public class Timer : MonoBehaviour
         if (tiempo <= 0){
             Destroy(gameObject);
             Reiniciar.gameObject.SetActive(true);
-        
+            ReiniciarTXT.gameObject.SetActive(true);
         }
 
     }
