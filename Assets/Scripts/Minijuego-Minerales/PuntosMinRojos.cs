@@ -1,21 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-
-public class ClickToDestroy : MonoBehaviour
+public class PuntosMinRojos : MonoBehaviour
 {
     public GameObject ObjPuntos;
     
+
     public void OnMouseDown()
     {
-        ObjPuntos.GetComponent<Puntos>().puntos += 1;
-        Destroy(gameObject);
-
-       
+        ObjPuntos.GetComponent<Puntos>().puntos += 4;
     }
 
-    
 
 }
