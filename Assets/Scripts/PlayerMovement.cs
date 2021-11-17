@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
     public int MoscasEnPantalla = 9;
-    int Moscas;
+    public int CazarXMoscas = 5;
     public float speed = 10f;
+    public Text tiempoTranscurrido;
+    int MoscasCazadas;
+    int Moscas;
     Vector2 lastMovedPos;
     // Vector2 target;
     bool moving;
@@ -19,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
         TiempoReinicio = 0.0f;
         rotacionInicial = transform.rotation;
         Moscas = 1;
+        MoscasCazadas = 0;
         //Cursor.visible = false;
     }
 
@@ -31,17 +36,19 @@ public class PlayerMovement : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, lastMovedPos, step);
     }
     void OnTriggerEnter(Collider matamoscas){
-        Debug.Log("Esta tocando el matamoscas");
+        // Debug.Log("Esta tocando el matamoscas");
         if(Input.GetMouseButtonDown(0)){
             Destroy(matamoscas.gameObject);
             Moscas -= 1;
+            MoscasCazadas += 1;
         }
     }
     void OnTriggerStay(Collider matamoscas){
-        Debug.Log("Esta tocando el matamoscas");
+        // Debug.Log("Esta tocando el matamoscas");
         if(Input.GetMouseButtonDown(0)){
             Destroy(matamoscas.gameObject);
             Moscas -= 1;
+            MoscasCazadas += 1;
         }
     }
     void FixedUpdate(){
@@ -53,9 +60,10 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("Aparición mosca");
             TiempoReinicio = 0.0f;
         }
-        // if(Moscas == 0){
-        //     // Cambiar a siguente escena
-        // }
+        if(MoscasCazadas >= CazarXMoscas && tiempoTranscurrido.text != "Segundos restantes: 0"){
+            Debug.Log("¡Felicidades, has cazado 5 moscas (o incluso mas :D)!");
+            // Cambiar a siguente escena
+        }
         TiempoReinicio += Time.deltaTime;
     }
 }

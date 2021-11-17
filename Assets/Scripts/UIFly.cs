@@ -7,7 +7,7 @@ public class UIFly : MonoBehaviour
 {
     public float TiempoLimiteSegundos = 20f;
     public Text texto;
-    float tiempoTranscurrido;
+    public float tiempoTranscurrido;
     // Start is called before the first frame update
     void Start()
     {
