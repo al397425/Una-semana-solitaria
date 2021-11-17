@@ -187,3 +187,212 @@ Received Import Request.
 Start importing Assets/Art/BarraDeVida.jpg using Guid(137c113a743769e42819276c3ff21600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e09f95506957560d0505111424d2c37') in 0.026765 seconds 
   Import took 0.030018 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 2747.105348 seconds.
+  path: Assets/Art/Placeholders
+  artifactKey: Guid(503eee855b52d0c49b0aedd013e27769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Placeholders using Guid(503eee855b52d0c49b0aedd013e27769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd6139c1b788822c5f83d74d3a4b63ee') in 0.007082 seconds 
+  Import took 0.010899 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007200 seconds.
+  path: Assets/Art/Placeholders
+  artifactKey: Guid(503eee855b52d0c49b0aedd013e27769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Placeholders using Guid(503eee855b52d0c49b0aedd013e27769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd6139c1b788822c5f83d74d3a4b63ee') in 0.002728 seconds 
+  Import took 0.006565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.417974 seconds.
+  path: Assets/Art/PlaceholderTuberias
+  artifactKey: Guid(871a0b9ff37e16545bf9474841cfdc59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/PlaceholderTuberias using Guid(871a0b9ff37e16545bf9474841cfdc59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7629a764aab0cbf908be54d3f3db6b74') in 0.008376 seconds 
+  Import took 0.013263 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.230005 seconds.
+  path: Assets/Art/FebreroSeparado.png
+  artifactKey: Guid(20aa7df0119fab847bbc3eecf88799ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/FebreroSeparado.png using Guid(20aa7df0119fab847bbc3eecf88799ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb541a7d46ab3a4057791c76d89f7ae7') in 0.044702 seconds 
+  Import took 0.048333 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 64.586816 seconds.
+  path: Assets/Art/FebreroSeparado.png
+  artifactKey: Guid(20aa7df0119fab847bbc3eecf88799ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/FebreroSeparado.png using Guid(20aa7df0119fab847bbc3eecf88799ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2310c19e65d6595645725bca0ffdb9d') in 0.018622 seconds 
+  Import took 0.023749 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003363 seconds.
+  path: Assets/Art/FebreroSeparado.png
+  artifactKey: Guid(20aa7df0119fab847bbc3eecf88799ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/FebreroSeparado.png using Guid(20aa7df0119fab847bbc3eecf88799ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2310c19e65d6595645725bca0ffdb9d') in 0.022119 seconds 
+  Import took 0.026374 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 679.228850 seconds.
+  path: Assets/Art/FebreroSeparado.png
+  artifactKey: Guid(20aa7df0119fab847bbc3eecf88799ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/FebreroSeparado.png using Guid(20aa7df0119fab847bbc3eecf88799ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eebabe450cc3c6c95d60ecf62850bef9') in 0.025977 seconds 
+  Import took 0.031616 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.138241 seconds.
+  path: Assets/ActivadorPuzzleTuberias.prefab
+  artifactKey: Guid(c4ffaa38effa1e946afb5e5803df999c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ActivadorPuzzleTuberias.prefab using Guid(c4ffaa38effa1e946afb5e5803df999c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16925fabc9ad4ca33fbf9bf379a481d6') in 0.085896 seconds 
+  Import took 0.090440 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Coin.prefab
+  artifactKey: Guid(c3f8e98ab93a01b44936f20dae87f3aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Coin.prefab using Guid(c3f8e98ab93a01b44936f20dae87f3aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a3e3a081f6e4d08a4eef5892845d1bf') in 0.020352 seconds 
+  Import took 0.024254 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Slot.prefab
+  artifactKey: Guid(d056c8b859fa7464ca1f56a75037e669) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Slot.prefab using Guid(d056c8b859fa7464ca1f56a75037e669) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df5bfda1390cb6eb9a4bd1bc4ff5e69e') in 0.010903 seconds 
+  Import took 0.014350 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Tuberia.prefab
+  artifactKey: Guid(0045cdac563dca241990c0f778208dd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tuberia.prefab using Guid(0045cdac563dca241990c0f778208dd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7123d662735b62ec5c808a063c8673d') in 0.016872 seconds 
+  Import took 0.021351 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/PantallaVictoria.prefab
+  artifactKey: Guid(e19d0cd08a1e4ba439481cd823a26d10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PantallaVictoria.prefab using Guid(e19d0cd08a1e4ba439481cd823a26d10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd0b0a688ddd838d64b9be3d5e6f8e9b') in 0.010715 seconds 
+  Import took 0.014606 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Stone.prefab
+  artifactKey: Guid(ebe26ffd150c7f046855de50e2b2d826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stone.prefab using Guid(ebe26ffd150c7f046855de50e2b2d826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '556394f72f091157fe989b3cd944b16e') in 0.016430 seconds 
+  Import took 0.028916 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/PantallaDerrota.prefab
+  artifactKey: Guid(862629b1210d21a48a8eadc9fd5e516d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PantallaDerrota.prefab using Guid(862629b1210d21a48a8eadc9fd5e516d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f2e67a8a26c1d1334f6cdf60df33b7c') in 0.022780 seconds 
+  Import took 0.027414 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/PuzzleTuberias.prefab
+  artifactKey: Guid(d3cff1440c89e444daf80c1dfc8a5c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PuzzleTuberias.prefab using Guid(d3cff1440c89e444daf80c1dfc8a5c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd3e4f372fb1b0f5fc20486a33f7ef5c') in 0.020884 seconds 
+  Import took 0.024447 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/happy_adveture.mp3
+  artifactKey: Guid(60dabe4962185024b9beb94647b87de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/happy_adveture.mp3 using Guid(60dabe4962185024b9beb94647b87de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95b35263f0c61775dc67fbf8ef642202') in 0.124073 seconds 
+  Import took 0.127453 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/SistemaDialogos.prefab
+  artifactKey: Guid(6738af0b12939894fbaae1f9f8eb5a6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SistemaDialogos.prefab using Guid(6738af0b12939894fbaae1f9f8eb5a6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c7fa7f1ab12c88a77b42e065f314fcc') in 0.075236 seconds 
+  Import took 0.079125 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.076269 seconds.
+  path: Assets/Scenes/EscenaCarlos.unity
+  artifactKey: Guid(f23ddd1d47a0f2e42817b265c1b43a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/EscenaCarlos.unity using Guid(f23ddd1d47a0f2e42817b265c1b43a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e2e4d3bdfeff551c0ed74ed9f7b0d42') in 0.008951 seconds 
+  Import took 0.012565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.592869 seconds.
+  path: Assets/Scenes/SistemaDialogos.unity
+  artifactKey: Guid(3315715c1c51e4149b44ba6833831862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SistemaDialogos.unity using Guid(3315715c1c51e4149b44ba6833831862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcb3b192e19d5b4f3acaf9adad26cda0') in 0.009460 seconds 
+  Import took 0.012946 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.618742 seconds.
+  path: Assets/Scenes/Minijuego-Minerales.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Minijuego-Minerales.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9334e8d6cd56ceafa08763abc9f9c36e') in 0.008585 seconds 
+  Import took 0.014102 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.748096 seconds.
+  path: Assets/Scenes/Minijuego-Minerales 1.unity
+  artifactKey: Guid(fa12ea704de428f44836d1b68bdab9a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Minijuego-Minerales 1.unity using Guid(fa12ea704de428f44836d1b68bdab9a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '496586881b1a7d0e75a5802eeca1c1c5') in 0.009190 seconds 
+  Import took 0.012514 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.754900 seconds.
+  path: Assets/Scenes/MinijuegoObstaculos.unity
+  artifactKey: Guid(011aae6e9f6a73846ad473f1ffc5759d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MinijuegoObstaculos.unity using Guid(011aae6e9f6a73846ad473f1ffc5759d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e23a8921870ca185248b49a704c5228c') in 0.008658 seconds 
+  Import took 0.012752 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.867147 seconds.
+  path: Assets/Scenes/EscenaCarlos 1.unity
+  artifactKey: Guid(57041995ef421bd42a1edc9a5df38f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/EscenaCarlos 1.unity using Guid(57041995ef421bd42a1edc9a5df38f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39c595477771b4f0be22ba99d6a8da4a') in 0.010396 seconds 
+  Import took 0.015105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 274.669110 seconds.
+  path: Assets/Art/FebreroSeparado.png
+  artifactKey: Guid(20aa7df0119fab847bbc3eecf88799ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/FebreroSeparado.png using Guid(20aa7df0119fab847bbc3eecf88799ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05775ebf5621e44c3e1ce9e2a9a85da3') in 0.029203 seconds 
+  Import took 0.033926 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.198167 seconds.
+  path: Assets/Art/FebreroSeparado.png
+  artifactKey: Guid(20aa7df0119fab847bbc3eecf88799ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/FebreroSeparado.png using Guid(20aa7df0119fab847bbc3eecf88799ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9094933ff152ab7da8cc8371fd436980') in 0.029945 seconds 
+  Import took 0.033717 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 815.754804 seconds.
+  path: Assets/Art/FebreroSeparado.png
+  artifactKey: Guid(20aa7df0119fab847bbc3eecf88799ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/FebreroSeparado.png using Guid(20aa7df0119fab847bbc3eecf88799ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f750282d293b127a56fee1b1047f142b') in 0.028317 seconds 
+  Import took 0.037110 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
