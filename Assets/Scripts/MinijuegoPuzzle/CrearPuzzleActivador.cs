@@ -27,22 +27,41 @@ public class CrearPuzzleActivador : MonoBehaviour
 	//Evento a llamar
 	public UnityEvent eventoAlPerderElMinijuego;
 
+	//Nombre del objeto a buscar, si es nulo se activara el minijuego igualmente
+	public string nombreObjetoRequerido;
 
-	
+	GameObject interfazNoDisponeObjeto;
 	GameObject puzzle;
 	bool puzzleActivado = false; 
 	bool resuelto = false;
 	
+	void Awake(){
+		interfazNoDisponeObjeto = transform.Find("InterfazNoTieneObjeto").gameObject;
+	}
+	
 	void OnTriggerStay2D(Collider2D other){
 		if (Input.GetKeyDown(teclaDeInteraccion) && puzzleActivado == false && resuelto == false)
         {
-			puzzleActivado = true;
-			if(eventoAlEmpezarElMinijuego != null){
-				eventoAlEmpezarElMinijuego.Invoke();
+			if((nombreObjetoRequerido == "" || other.gameObject.GetComponent<Inventario>().BuscarEliminarObjeto(nombreObjetoRequerido))){
+				puzzleActivado = true;
+				if(eventoAlEmpezarElMinijuego != null){
+					eventoAlEmpezarElMinijuego.Invoke();
+				}
+				
+				puzzle = (GameObject)Instantiate(puzzleTuberia, new Vector2(0,0), Quaternion.identity);
+				puzzle.GetComponent<CrearPuzzle>().iniciarMinijuego(ancho, alto, filaPuntoInicio, filaPuntoFinal, delayFlujoTuberia, gameObject, numeroDeHuecos);
+			}else{
+				interfazNoDisponeObjeto.GetComponent<Animator>().SetFloat("VelocidadAnimacion", 1);
+				interfazNoDisponeObjeto.GetComponent<Animator>().Play("ObjetoNoEncontrado");
 			}
-			
-			puzzle = (GameObject)Instantiate(puzzleTuberia, new Vector2(0,0), Quaternion.identity);
-			puzzle.GetComponent<CrearPuzzle>().iniciarMinijuego(ancho, alto, filaPuntoInicio, filaPuntoFinal, delayFlujoTuberia, gameObject, numeroDeHuecos);
+		}
+	}
+	
+	void OnTriggerExit2D(Collider2D other){
+		if (other.tag == "Player"){
+			//Desactiva la interfaz que indica que no dispone de objeto
+			interfazNoDisponeObjeto.GetComponent<Animator>().SetFloat("VelocidadAnimacion", -1);
+			interfazNoDisponeObjeto.GetComponent<Animator>().Play("ObjetoNoEncontrado");
 		}
 	}
 	
