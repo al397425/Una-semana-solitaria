@@ -53,6 +53,9 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("Aparición mosca");
             TiempoReinicio = 0.0f;
         }
+        // if(Moscas == 0){
+        //     // Cambiar a siguente escena
+        // }
         TiempoReinicio += Time.deltaTime;
     }
 }
