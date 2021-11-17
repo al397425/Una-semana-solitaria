@@ -9,6 +9,7 @@ public class FlyMovement : MonoBehaviour
     // Vector2 target;
     // bool moving;
     Vector3 nextPos;
+    Vector3 diff;
     public Quaternion startQuaternion;
     
     void Start(){
@@ -36,8 +37,14 @@ public class FlyMovement : MonoBehaviour
 
         }
         else {
+            diff = nextPos - transform.position;
             nextPos = new Vector3(Random.Range(-9f, 9f), Random.Range(-3f, 5f), 0);
-            AnguloMosca = Mathf.Atan2(nextPos.y - fly.y, nextPos.x - fly.x) * Mathf.Rad2Deg;
+            diff.Normalize();
+            Debug.Log(diff);
+            float rot_z = Mathf.Atan2(diff.y,diff.x);
+            transform.rotation = Quaternion.Euler(0f,0f, rot_z+90);
+            
+            // AnguloMosca = Mathf.Atan2(nextPos.y - fly.y, nextPos.x - fly.x) * Mathf.Rad2Deg;
             fly = nextPos;
             transform.Rotate(Vector3.forward * AnguloMosca);
             // transform.Rotate(0.0F, 0.0F, AnguloMosca);

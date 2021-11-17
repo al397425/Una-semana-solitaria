@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public int MoscasEnPantalla = 9;
+    int Moscas;
     public float speed = 10f;
     Vector2 lastMovedPos;
     // Vector2 target;
@@ -16,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
     void Start(){
         TiempoReinicio = 0.0f;
         rotacionInicial = transform.rotation;
+        Moscas = 1;
+        //Cursor.visible = false;
     }
 
     // Update is called once per frame
@@ -26,17 +30,26 @@ public class PlayerMovement : MonoBehaviour
         float step = speed * Time.deltaTime;
         transform.position = Vector2.MoveTowards(transform.position, lastMovedPos, step);
     }
+    void OnTriggerEnter(Collider matamoscas){
+        Debug.Log("Esta tocando el matamoscas");
+        if(Input.GetMouseButtonDown(0)){
+            Destroy(matamoscas.gameObject);
+            Moscas -= 1;
+        }
+    }
     void OnTriggerStay(Collider matamoscas){
         Debug.Log("Esta tocando el matamoscas");
         if(Input.GetMouseButtonDown(0)){
             Destroy(matamoscas.gameObject);
+            Moscas -= 1;
         }
     }
     void FixedUpdate(){
         // Debug.Log("Tiempo: " + TiempoAparicionMoscas);
-        if(TiempoReinicio >= TiempoAparicionMoscas){
+        if(TiempoReinicio >= TiempoAparicionMoscas && MoscasEnPantalla > Moscas){
             puntoAparicion = new Vector3(Random.Range(-30, 30), Random.Range(-30, 30), 1);
             Instantiate(mosca, puntoAparicion, rotacionInicial);
+            Moscas += 1;
             Debug.Log("Aparición mosca");
             TiempoReinicio = 0.0f;
         }
