@@ -516,6 +516,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3252780414124138250, guid: c390b801db8f4154fb3269e18d707b8a, type: 3}
+      propertyPath: descripcion
+      value: Un objeto con forma de ancla, se usa para pescar
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252780414124138250, guid: c390b801db8f4154fb3269e18d707b8a, type: 3}
+      propertyPath: objetoInterfaz
+      value: 
+      objectReference: {fileID: 7567973684758574869, guid: d96bc8b1033733d449b87ff4097c94ac, type: 3}
     - target: {fileID: 3252780414124138255, guid: c390b801db8f4154fb3269e18d707b8a, type: 3}
       propertyPath: m_RootOrder
       value: 2
