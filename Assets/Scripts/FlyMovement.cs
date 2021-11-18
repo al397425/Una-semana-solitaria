@@ -41,8 +41,10 @@ public class FlyMovement : MonoBehaviour
             nextPos = new Vector3(Random.Range(-9f, 9f), Random.Range(-3f, 5f), 0);
             diff.Normalize();
             Debug.Log(diff);
-            float rot_z = Mathf.Atan2(diff.y,diff.x);
-            transform.rotation = Quaternion.Euler(0f,0f, rot_z+90);
+            float vectA = Mathf.Sqrt(fly.x*fly.x + fly.y*fly.y);
+            float vectB = Mathf.Sqrt(nextPos.x*nextPos.x + nextPos.y*nextPos.y);
+            float rot_z = (180 / Mathf.PI) * Mathf.Cos(fly.x * nextPos.x + fly.y * nextPos.y);
+            transform.rotation = Quaternion.Euler(0f,0f, rot_z-90);
             
             // AnguloMosca = Mathf.Atan2(nextPos.y - fly.y, nextPos.x - fly.x) * Mathf.Rad2Deg;
             fly = nextPos;
