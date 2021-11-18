@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EscenaCarlos.unity
     guid: f23ddd1d47a0f2e42817b265c1b43a82
+  - enabled: 1
+    path: Assets/Scenes/CazaMoscas.unity
+    guid: fa87561c38ee6234cab37defb2738615
   m_configObjects: {}

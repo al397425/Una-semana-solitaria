@@ -408,7 +408,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1848519195}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.55, y: 2.01, z: 0}
+  m_LocalPosition: {x: 0.271, y: 1.927, z: 0}
   m_LocalScale: {x: 10.8367405, y: 10.8367405, z: 10.8367405}
   m_Children: []
   m_Father: {fileID: 0}
@@ -516,6 +516,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5086625211636054993, guid: c4ffaa38effa1e946afb5e5803df999c, type: 3}
+      propertyPath: alto
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086625211636054993, guid: c4ffaa38effa1e946afb5e5803df999c, type: 3}
+      propertyPath: ancho
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086625211636054993, guid: c4ffaa38effa1e946afb5e5803df999c, type: 3}
+      propertyPath: filaPuntoFinal
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086625211636054993, guid: c4ffaa38effa1e946afb5e5803df999c, type: 3}
+      propertyPath: numeroDeHuecos
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086625211636054993, guid: c4ffaa38effa1e946afb5e5803df999c, type: 3}
+      propertyPath: delayFlujoTuberia
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086625211636054993, guid: c4ffaa38effa1e946afb5e5803df999c, type: 3}
+      propertyPath: nombreObjetoRequerido
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5086625211636054994, guid: c4ffaa38effa1e946afb5e5803df999c, type: 3}
       propertyPath: m_Name
       value: ActivadorPuzzleTuberias
