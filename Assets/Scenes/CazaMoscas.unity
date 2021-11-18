@@ -711,6 +711,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6734756490187053048, guid: 3287dbdd259470c4fb105592c6bca1f8, type: 3}
+      propertyPath: MoscasEnPantalla
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6734756490187053048, guid: 3287dbdd259470c4fb105592c6bca1f8, type: 3}
       propertyPath: tiempoTranscurrido
       value: 
       objectReference: {fileID: 1843772017}
