@@ -11,4 +11,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 898d9530e2a9aed48bf6396f1e7be1b2
+  - enabled: 1
+    path: Assets/Scenes/Pantallainicio.unity
+    guid: a2308e877f478dc47aff7194c093ff22
+  - enabled: 1
+    path: Assets/Scenes/MinijuegoObstaculos.unity
+    guid: 011aae6e9f6a73846ad473f1ffc5759d
+  - enabled: 1
+    path: Assets/Scenes/MinijuegoTuberias.unity
+    guid: f8b047d3711a2c54cb79fc806872f96a
+  - enabled: 1
+    path: Assets/Scenes/EscenaCarlos 1.unity
+    guid: 57041995ef421bd42a1edc9a5df38f36
+  - enabled: 1
+    path: Assets/Scenes/EscenaCarlos.unity
+    guid: f23ddd1d47a0f2e42817b265c1b43a82
   m_configObjects: {}
