@@ -12,6 +12,7 @@ public class MinijuegoObstaculos : MonoBehaviour
     public int maxHealth = 7;
     public int points = 0;
     public float timeInvincible = 2.0f;
+    public Animator animator;
     
     //public int health {  get { return currentHealth; }}
     int currentHealth;
@@ -26,6 +27,7 @@ public class MinijuegoObstaculos : MonoBehaviour
     {
         IJ = false;
         currentHealth = maxHealth;
+        animator.SetBool("Correr", true);
     }
 
     // Update is called once per frame
@@ -64,6 +66,7 @@ public class MinijuegoObstaculos : MonoBehaviour
         {
             GetComponent<Rigidbody2D> ().velocity = new Vector3 (speed,jumpforce,0);
             IJ = true;
+            animator.SetBool("Saltando", true);
             
         }
     }
@@ -81,12 +84,14 @@ public class MinijuegoObstaculos : MonoBehaviour
             if(Coll.gameObject.tag=="tuberias")
             {
                 IJ = false;
-            
+                animator.SetBool("Saltando", false);
+
             }
 
             if(Coll.gameObject.tag=="Finish")
             {
                 IJ = false;
+                animator.SetBool("Saltando", false);
                 //muere
                 currentHealth = currentHealth-1;
                 Debug.Log(currentHealth);

@@ -28,19 +28,20 @@ public class TipoTuberia : MonoBehaviour
 
 	Image.FillMethod metodoRellenoImagenFluido;
 
-	bool puedeMoverse = true;
+	bool puedeMoverse = false;
 	bool llenoAgua = false;
 	bool empezarAnimacion = false;
 	
 	float delayFlujo =5.0f;
+	
+
 
     // Start is called before the first frame update
     void Awake()
     {
-        //!!!!!!!! PROVISIONAL !!!!!!!!!!!!!!!!!!!
+        //Genera la tuberia
 			int indice = Random.Range(0, 6);
 			EstablecerTipoTuberia(tiposTuberia[indice].tipoDeTuberia);
-		//-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!
     }
 
     // Update is called once per frame
@@ -104,22 +105,29 @@ public class TipoTuberia : MonoBehaviour
 	 * despues obtiene el sentido de la siguiente tuberia a la que se dirije el fluido(en este punto implica que la tuberia tiene algun sentido de direccion) si tiene una orientacion hacia el contrario de donde se dirige el fluido se cambia la orientacion de este a vertical.
 	 * en el caso de las tuberias bidireccionales no se realiza ninguna comprobacion simplemente se deja los indices como estan.
 	**/
-	public IEnumerator ActivarTuberia(GameObject [,]matrizSlots, int columnaActual, int filaActual, int desplazamientoHorizontal, int desplazamientoVertical, EnumTuberias.Tuberia orientacion, GameObject refPuzzle){
+	public IEnumerator ActivarTuberia(GameObject [,]matrizSlots, int columnaActual, int filaActual, int desplazamientoHorizontal, int desplazamientoVertical, EnumTuberias.Tuberia orientacion, GameObject refPuzzle, GameObject tablero){
 		bool final = false;
 		if(tipoTuberia == EnumTuberias.Tuberia.fin){
 			Debug.Log("Ganastes");
 			final = true;
 			refPuzzle.GetComponent<CrearPuzzleActivador>().Setresuelto(true);
 			refPuzzle.GetComponent<CrearPuzzleActivador>().eventoAlGanarElMinijuego.Invoke();
-			if(refPuzzle.GetComponent<CrearPuzzle>().pantallaVictoria){
-				Instantiate(refPuzzle.GetComponent<CrearPuzzle>().pantallaVictoria, new Vector2(0,0), Quaternion.identity);
+			if(refPuzzle.GetComponent<CrearPuzzleActivador>().puzzleTuberia.GetComponent<CrearPuzzle>().pantallaVictoria != null){
+				GameObject pantallaVictoria = Instantiate(refPuzzle.GetComponent<CrearPuzzleActivador>().puzzleTuberia.GetComponent<CrearPuzzle>().pantallaVictoria, new Vector2(0,0), Quaternion.identity);
+				pantallaVictoria.GetComponent<ReferenciaPuzzle>().SetRefTablero(tablero);
 			}
+			Time.timeScale = 1.0f;
 			yield break;
 		}
 		llenoAgua = true;
 		puedeMoverse = false;
 		
-		
+		//Si choca con una tuberia tapada o un hueco en el tablero
+		if(gameObject.transform.GetChild(2).gameObject.active == true || tipoTuberia == EnumTuberias.Tuberia.hueco){
+			mostrarPantallaDerrota(refPuzzle, tablero);
+			final = true;
+			yield break;
+		}
 
 		//Dirige el flujo del fluido
 		int x = 0;
@@ -184,14 +192,9 @@ public class TipoTuberia : MonoBehaviour
 			//cuando sea una tuberia bidireccional
 			//Tambien detecta si el flujo a salido del tablero,
 			if(matrizSlots[columnaActual+desplazamientoHorizontal,filaActual] == null || (desplazamientoHorizontal == 1 && (sentidoHorizontal == EnumTuberias.Sentido.derecha || sentidoHorizontal == EnumTuberias.Sentido.bidireccional) && matrizSlots[columnaActual+desplazamientoHorizontal,filaActual].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().sentidoHorizontal == EnumTuberias.Sentido.derecha) || (desplazamientoHorizontal == -1 && (sentidoHorizontal == EnumTuberias.Sentido.izquierda || sentidoHorizontal == EnumTuberias.Sentido.bidireccional) && matrizSlots[columnaActual+desplazamientoHorizontal,filaActual].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().sentidoHorizontal == EnumTuberias.Sentido.izquierda)){
-                Debug.Log("FIN DEL JUEGO HAS PERDIDO H");
-				refPuzzle.GetComponent<CrearPuzzleActivador>().eventoAlPerderElMinijuego.Invoke();
-				empezarAnimacion = false;
-				gameObject.transform.GetChild(0).GetComponent<Image> ().fillAmount = 0;
-				if(refPuzzle.GetComponent<CrearPuzzle>().pantallaDerrota){
-					Instantiate(refPuzzle.GetComponent<CrearPuzzle>().pantallaDerrota, new Vector2(0,0), Quaternion.identity);
-				}
-                final = true;
+                mostrarPantallaDerrota(refPuzzle, tablero);
+				final = true;
+				yield break;
             }
 			
 			if(final == false){
@@ -265,14 +268,9 @@ public class TipoTuberia : MonoBehaviour
 			//cuando sea una tuberia bidireccional
 			//Tambien detecta si el flujo a salido del tablero
 			if(filaActual+desplazamientoVertical < 0 || filaActual+desplazamientoVertical >= matrizSlots.GetLength(1) || (desplazamientoVertical == -1 && (sentidoVertical == EnumTuberias.Sentido.arriba || sentidoVertical == EnumTuberias.Sentido.bidireccional) && matrizSlots[columnaActual,filaActual+desplazamientoVertical].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().sentidoVertical == EnumTuberias.Sentido.arriba) || (desplazamientoVertical == 1 && (sentidoVertical == EnumTuberias.Sentido.abajo || sentidoVertical == EnumTuberias.Sentido.bidireccional) && matrizSlots[columnaActual,filaActual+desplazamientoVertical].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().sentidoVertical == EnumTuberias.Sentido.abajo)){
-                Debug.Log("FIN DEL JUEGO HAS PERDIDO V");
-				refPuzzle.GetComponent<CrearPuzzleActivador>().eventoAlPerderElMinijuego.Invoke();
-				empezarAnimacion = false;
-				gameObject.transform.GetChild(0).GetComponent<Image> ().fillAmount = 0;
-				if(refPuzzle.GetComponent<CrearPuzzle>().pantallaDerrota){
-					Instantiate(refPuzzle.GetComponent<CrearPuzzle>().pantallaDerrota, new Vector2(0,0), Quaternion.identity);
-				}
-                final = true;
+               mostrarPantallaDerrota(refPuzzle, tablero);
+			   final = true;
+			   yield break;
             }
 
 			if(final == false){
@@ -290,8 +288,22 @@ public class TipoTuberia : MonoBehaviour
 		}
 
 		if(final == false){
-			StartCoroutine(matrizSlots[columnaActual+desplazamientoHorizontal,filaActual+desplazamientoVertical].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().ActivarTuberia(matrizSlots, columnaActual+desplazamientoHorizontal, filaActual+desplazamientoVertical, desplazamientoHorizontal, desplazamientoVertical, orientacion, refPuzzle));
+			StartCoroutine(matrizSlots[columnaActual+desplazamientoHorizontal,filaActual+desplazamientoVertical].transform.GetChild(0).gameObject.GetComponent<TipoTuberia>().ActivarTuberia(matrizSlots, columnaActual+desplazamientoHorizontal, filaActual+desplazamientoVertical, desplazamientoHorizontal, desplazamientoVertical, orientacion, refPuzzle, tablero));
 		}
+	}
+
+	void mostrarPantallaDerrota(GameObject refPuzzle, GameObject tablero){
+ 		Debug.Log("FIN DEL JUEGO HAS PERDIDO V");
+		refPuzzle.GetComponent<CrearPuzzleActivador>().eventoAlPerderElMinijuego.Invoke();
+		empezarAnimacion = false;
+		gameObject.transform.GetChild(0).GetComponent<Image> ().fillAmount = 0;
+		
+		if(refPuzzle.GetComponent<CrearPuzzleActivador>().puzzleTuberia.GetComponent<CrearPuzzle>().pantallaDerrota != null){
+			GameObject pantallaDerrota = Instantiate(refPuzzle.GetComponent<CrearPuzzleActivador>().puzzleTuberia.GetComponent<CrearPuzzle>().pantallaDerrota, new Vector2(0,0), Quaternion.identity);
+			pantallaDerrota.GetComponent<ReferenciaPuzzle>().SetRefTablero(tablero);
+			pantallaDerrota.GetComponent<ReferenciaPuzzle>().SetRefActivador(refPuzzle);
+		}
+		Time.timeScale = 1.0f;
 	}
 	
 	/**
@@ -320,6 +332,13 @@ public class TipoTuberia : MonoBehaviour
 	**/
 	public float GetdelayFlujo(){
 		return delayFlujo;
+	}
+
+	/**
+	 * Obtiene el tipo de tuberia
+	**/
+	public EnumTuberias.Tuberia GettipoTuberia(){
+		return tipoTuberia;
 	}
 }
 
