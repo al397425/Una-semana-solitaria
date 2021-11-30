@@ -14,7 +14,7 @@ public class SistemaDialogos : MonoBehaviour
 	//Idiomas
 	public Idioma idiomaActual = Idioma.Espaniol;
 	//CSV de los dialogos
-	public TextAsset ficheroDialogos;
+	//public TextAsset ficheroDialogos;
 	//Texto de la ui que se modificara
 	public TextMeshProUGUI textoUI;
 	//Tecla de interaccion
@@ -26,6 +26,9 @@ public class SistemaDialogos : MonoBehaviour
 	public Image referenciaRetratoDialogoJugador;
 	//
 	public AudioSource sonidoDelTexto;
+	
+	//CSV de los dialogos
+	public string directorioArchivoDialogos = "/Dialogos/dialogos prueba.csv";
 
 	int indiceDialogoNPC, indiceDialogoJugador;
 
@@ -53,8 +56,8 @@ public class SistemaDialogos : MonoBehaviour
 		indiceDialogoJugador = 0;
 		referenciaSpriteNPC= retratoNPC;
 		eventoTerminarDialogo = eventoAlTerminarDialogo;
-			
-		using(var reader = new StreamReader(@AssetDatabase.GetAssetPath(ficheroDialogos)))
+			Debug.Log(Application.dataPath);
+		using(var reader = new StreamReader(@Application.dataPath+directorioArchivoDialogos))
 		{
 			var line = reader.ReadLine();
 			while (!reader.EndOfStream)
