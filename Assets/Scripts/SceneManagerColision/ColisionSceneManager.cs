@@ -33,5 +33,10 @@ public class ColisionSceneManager : MonoBehaviour
             {
                 SceneManager.LoadScene("Secuencia8");
             }
+
+            if(Coll.gameObject.tag=="Player" && gameObject.name.Contains("FlechaObstaculos"))
+            {
+                SceneManager.LoadScene("MinijuegoObstaculos");
+            }
     }
 }

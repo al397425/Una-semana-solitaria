@@ -34,9 +34,9 @@ public class MinijuegoObstaculos : MonoBehaviour
     void Update()
     {
         transform.position += new Vector3 ((speed-1.5f)*Time.deltaTime,0,0);
-        if(points>=10)
+        if(points>=8)
         {
-            SceneManager.LoadScene("Level1");
+            SceneManager.LoadScene("FinalDemo");
         }
         /*float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
