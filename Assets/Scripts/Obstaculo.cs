@@ -15,6 +15,18 @@ public class Obstaculo : MonoBehaviour
     void Update()
     {
         transform.position -= new Vector3 (speed*random*Time.deltaTime,0,0);
+
     }
 
+    void OnCollisionEnter2D(Collision2D Coll)
+    {
+        
+            //gana puntos   
+            if(Coll.gameObject.tag=="Player" && gameObject.name.Contains("Coin"))
+            {
+                //points = points+1;
+                Destroy(gameObject);
+            }
+            
+    }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -63,6 +64,7 @@ public class PlayerMovement : MonoBehaviour
         if(MoscasCazadas >= CazarXMoscas && tiempoTranscurrido.text != "Segundos restantes: 0"){
             Debug.Log("¡Felicidades, has cazado 5 moscas (o incluso mas :D)!");
             // Cambiar a siguente escena
+            SceneManager.LoadScene("Secuencia1SinDialogo");
         }
         TiempoReinicio += Time.deltaTime;
     }
