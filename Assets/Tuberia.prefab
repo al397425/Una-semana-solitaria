@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f875dc318d7b0db43b1081a6fce5c59d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9f6e516e56d3504468a348bea0fec99e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -350,56 +350,56 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tiposTuberia:
   - tipoDeTuberia: 0
-    imagenTuberia: {fileID: 21300000, guid: bff03c6d557dac049884edbc32abf9ff, type: 3}
-    imagenFluidoTuberia: {fileID: 21300000, guid: b9ab31b77279d7146b37e60bd073e7d8, type: 3}
+    imagenTuberia: {fileID: 21300000, guid: 9b3510dab04e62643a04e2fdb43138ab, type: 3}
+    imagenFluidoTuberia: {fileID: 21300000, guid: 473d399ab60f86545a842e57e2e005bf, type: 3}
     sentidoHorizontal: 0
     sentidoVertical: 5
     metodoRellenoImagenFluido: 1
   - tipoDeTuberia: 1
-    imagenTuberia: {fileID: 21300000, guid: bd8b320f09253414e99659025f027458, type: 3}
-    imagenFluidoTuberia: {fileID: 21300000, guid: a087def2e8dc6724288784d1b79cefe5, type: 3}
+    imagenTuberia: {fileID: 21300000, guid: a70acbb03a3c98e41b62f196fd9158eb, type: 3}
+    imagenFluidoTuberia: {fileID: 21300000, guid: 526ca4da58da31446a9ee3bb6bfe25f1, type: 3}
     sentidoHorizontal: 5
     sentidoVertical: 0
     metodoRellenoImagenFluido: 0
   - tipoDeTuberia: 2
-    imagenTuberia: {fileID: 21300000, guid: 134171102ad21774cb62b1cc2647348d, type: 3}
-    imagenFluidoTuberia: {fileID: 21300000, guid: 1d457bfdd2a5d504fbea1dfc73176f4b, type: 3}
+    imagenTuberia: {fileID: 21300000, guid: 6ecec3bf259a7214599e2ce0bc71a2cd, type: 3}
+    imagenFluidoTuberia: {fileID: 21300000, guid: a1153dfd6c108534797430417af684ac, type: 3}
     sentidoHorizontal: 3
     sentidoVertical: 2
     metodoRellenoImagenFluido: 2
   - tipoDeTuberia: 3
-    imagenTuberia: {fileID: 21300000, guid: 5f90f406a90bf0140ae3173762407fe0, type: 3}
-    imagenFluidoTuberia: {fileID: 21300000, guid: 77455f6b766f3574caf801c051665347, type: 3}
+    imagenTuberia: {fileID: 21300000, guid: f49c6e1f79357e640a03b6d9d6e682d8, type: 3}
+    imagenFluidoTuberia: {fileID: 21300000, guid: 8f1cec0af50bcfc41bec2ed728636fc1, type: 3}
     sentidoHorizontal: 3
     sentidoVertical: 1
     metodoRellenoImagenFluido: 2
   - tipoDeTuberia: 4
-    imagenTuberia: {fileID: 21300000, guid: b4c03705ecfaee1479b996331e38bf50, type: 3}
-    imagenFluidoTuberia: {fileID: 21300000, guid: b3037c7d29b3b874a83dda3b23d1a152, type: 3}
+    imagenTuberia: {fileID: 21300000, guid: b533f0882801a1a46b70d9d727796279, type: 3}
+    imagenFluidoTuberia: {fileID: 21300000, guid: f52782127c1e280408d339ca33e09e8f, type: 3}
     sentidoHorizontal: 4
     sentidoVertical: 2
     metodoRellenoImagenFluido: 2
   - tipoDeTuberia: 5
-    imagenTuberia: {fileID: 21300000, guid: 4f07e8977826b4a4ab62f063d827b7a0, type: 3}
-    imagenFluidoTuberia: {fileID: 21300000, guid: 61021949412e57e409ca550a05afe8f7, type: 3}
+    imagenTuberia: {fileID: 21300000, guid: d7f44a676a0bf4642a7075c180c0f71e, type: 3}
+    imagenFluidoTuberia: {fileID: 21300000, guid: a70638bdf88417142a886f005f1b549b, type: 3}
     sentidoHorizontal: 4
     sentidoVertical: 1
     metodoRellenoImagenFluido: 2
   - tipoDeTuberia: 6
-    imagenTuberia: {fileID: 21300000, guid: 144a4bd14627084439556c655877be78, type: 3}
-    imagenFluidoTuberia: {fileID: 21300000, guid: a087def2e8dc6724288784d1b79cefe5, type: 3}
+    imagenTuberia: {fileID: 21300000, guid: dabc48891d0326f428cacef2abfd791a, type: 3}
+    imagenFluidoTuberia: {fileID: 21300000, guid: 526ca4da58da31446a9ee3bb6bfe25f1, type: 3}
     sentidoHorizontal: 4
     sentidoVertical: 0
     metodoRellenoImagenFluido: 0
   - tipoDeTuberia: 7
-    imagenTuberia: {fileID: 21300000, guid: 5100b0e2f0410664a9c94c6b51e86829, type: 3}
-    imagenFluidoTuberia: {fileID: 21300000, guid: a087def2e8dc6724288784d1b79cefe5, type: 3}
+    imagenTuberia: {fileID: 21300000, guid: 45eab86e0bfeab3439440bc75f5dde1e, type: 3}
+    imagenFluidoTuberia: {fileID: 21300000, guid: 526ca4da58da31446a9ee3bb6bfe25f1, type: 3}
     sentidoHorizontal: 3
     sentidoVertical: 0
     metodoRellenoImagenFluido: 0
   - tipoDeTuberia: 8
-    imagenTuberia: {fileID: 21300000, guid: 19a8184d7c1c1ec458744fb9e81aed3d, type: 3}
-    imagenFluidoTuberia: {fileID: 21300000, guid: 19a8184d7c1c1ec458744fb9e81aed3d, type: 3}
+    imagenTuberia: {fileID: 21300000, guid: 32626e953364a93439901bdc62ef3448, type: 3}
+    imagenFluidoTuberia: {fileID: 21300000, guid: 32626e953364a93439901bdc62ef3448, type: 3}
     sentidoHorizontal: 0
     sentidoVertical: 0
     metodoRellenoImagenFluido: 0

@@ -24,7 +24,7 @@ public class SistemaDialogosActivador : MonoBehaviour
 	bool conversacionOpcionalAcabada = false; 
 	
 	void OnTriggerStay2D(Collider2D other){
-		if (Input.GetKeyDown(sistemaDialogos.teclaDeInteraccion) && sistemaDialogos.GetcomenzarConversacion() == true)
+		if ((activador == true || Input.GetKeyDown(sistemaDialogos.teclaDeInteraccion)) && sistemaDialogos.GetcomenzarConversacion() == true && sistemaDialogos.GetReactivarConversacion() == true)
         {
 			if(eventoAlEmpezarDialogo != null){
 				eventoAlEmpezarDialogo.Invoke();
@@ -44,26 +44,6 @@ public class SistemaDialogosActivador : MonoBehaviour
 				conversacionOpcionalAcabada = false;
 			
 		}
-
-		if (activador == true && sistemaDialogos.GetcomenzarConversacion() == true)
-		{
-			if(eventoAlEmpezarDialogo != null){
-				eventoAlEmpezarDialogo.Invoke();
-			}
-			
-			if(conversacionPrincipalAcabada == false){
-				sistemaDialogos.gameObject.SetActive(true);
-				sistemaDialogos.ObtenerListaDeDialogos(numeroDialgoParaActivar,retratorDelDialogo,eventoAlTerminarDialogo);
-				conversacionPrincipalAcabada = true;
-			}else if(conversaccionOpcional == true && conversacionOpcionalAcabada == false){
-				sistemaDialogos.gameObject.SetActive(true);
-				sistemaDialogos.ObtenerListaDeDialogos(numeroDialgoOpcionalParaActivar,retratorDelDialogo,eventoAlTerminarDialogo);
-				conversacionOpcionalAcabada = true;
-			}
-			
-			if(conversaccionOpcionalSeRepite == true)
-				conversacionOpcionalAcabada = false;
-			
-		}
+		
 	}
 }

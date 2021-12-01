@@ -359,7 +359,7 @@ Transform:
   m_LocalScale: {x: 0.34153247, y: 0.925111, z: 0.62129945}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &418467123
 PrefabInstance:
@@ -525,7 +525,7 @@ Transform:
   m_LocalScale: {x: 0.19108333, y: 0.25244573, z: 0.4128502}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &596494290
 MonoBehaviour:
@@ -725,7 +725,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!4 &798114129 stripped
 Transform:
@@ -969,7 +969,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &963194226
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1151,7 +1151,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3511441449521884693, guid: 6a18a8840bdcf90458c7e6abb348e8a8, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3511441449521884693, guid: 6a18a8840bdcf90458c7e6abb348e8a8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1196,6 +1196,10 @@ PrefabInstance:
     - target: {fileID: 3511441449521884695, guid: 6a18a8840bdcf90458c7e6abb348e8a8, type: 3}
       propertyPath: m_Name
       value: InstruccionesMinijuego
+      objectReference: {fileID: 0}
+    - target: {fileID: 3511441449521884695, guid: 6a18a8840bdcf90458c7e6abb348e8a8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a18a8840bdcf90458c7e6abb348e8a8, type: 3}
@@ -1398,7 +1402,7 @@ Transform:
   m_LocalScale: {x: 0.06415078, y: 0.06415078, z: 0.06415078}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1461964392
 GameObject:
@@ -1442,7 +1446,7 @@ Transform:
   - {fileID: 2116042037}
   - {fileID: 2081164338}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1575398454
 PrefabInstance:

@@ -200,16 +200,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3465022778116536087}
-        m_TargetAssemblyTypeName: ReferenciaPuzzle, Assembly-CSharp
-        m_MethodName: DestruirElPuzzle
-        m_Mode: 2
+      - m_Target: {fileID: 3388146980120246732}
+        m_TargetAssemblyTypeName: SceneManagerObs, Assembly-CSharp
+        m_MethodName: ChangeSceneTemp
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 5587369410229825271}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Secuencia7
           m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &4049342425490984119
@@ -302,6 +302,7 @@ GameObject:
   - component: {fileID: 5587369410229825272}
   - component: {fileID: 3465022778116536087}
   - component: {fileID: 7367646428547480510}
+  - component: {fileID: 3388146980120246732}
   m_Layer: 0
   m_Name: PantallaVictoria
   m_TagString: Untagged
@@ -355,6 +356,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3388146980120246732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5587369410229825271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e499e5d17046bf74993732497943aa0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5587369411362524360
 GameObject:
   m_ObjectHideFlags: 0

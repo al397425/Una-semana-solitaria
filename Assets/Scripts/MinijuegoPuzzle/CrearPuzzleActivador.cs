@@ -40,7 +40,7 @@ public class CrearPuzzleActivador : MonoBehaviour
 	}
 	
 	void OnTriggerStay2D(Collider2D other){
-		if (Input.GetKeyDown(teclaDeInteraccion) && puzzleActivado == false && resuelto == false)
+		if ((Input.GetKeyDown(teclaDeInteraccion) || teclaDeInteraccion == KeyCode.None) && puzzleActivado == false && resuelto == false)
         {
 			if((nombreObjetoRequerido == "" || other.gameObject.GetComponent<Inventario>().BuscarEliminarObjeto(nombreObjetoRequerido))){
 				puzzleActivado = true;
