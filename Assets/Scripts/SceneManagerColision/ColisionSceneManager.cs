@@ -16,9 +16,9 @@ public class ColisionSceneManager : MonoBehaviour
             {
                 SceneManager.LoadScene("level1");
             }
-            if(Coll.gameObject.tag=="Player" && gameObject.name.Contains("ColliderPanaderia"))
+             if(Coll.gameObject.tag=="Player-pescar" && gameObject.name.Contains("ColliderFin"))
             {
-                //SceneManager.LoadScene("Panaderia");
+                SceneManager.LoadScene("level3");
             }
             if(Coll.gameObject.tag=="Player" && gameObject.name.Contains("ColliderBar"))
             {
@@ -29,6 +29,12 @@ public class ColisionSceneManager : MonoBehaviour
             {
                 SceneManager.LoadScene("Secuencia4");
             }
+
+            if(Coll.gameObject.tag=="Player" && gameObject.name.Contains("FlechaS5"))
+            {
+                SceneManager.LoadScene("Secuencia5");
+            }
+
             if(Coll.gameObject.tag=="Player" && gameObject.name.Contains("FlechaCama2"))
             {
                 SceneManager.LoadScene("Secuencia8");

@@ -10,10 +10,11 @@ public class MinijuegoObstaculos : MonoBehaviour
     public float jumpforce = 5.0f;
     public GameObject CanvasObject;
     public int maxHealth = 7;
-    public int points = 0;
+    int points = 0;
+    public int pointsMax = 8;
     public float timeInvincible = 2.0f;
     public Animator animator;
-    
+    AudioSource audioDataJump;
     //public int health {  get { return currentHealth; }}
     int currentHealth;
     bool isInvincible;
@@ -27,6 +28,7 @@ public class MinijuegoObstaculos : MonoBehaviour
     {
         IJ = false;
         currentHealth = maxHealth;
+        audioDataJump = GetComponent<AudioSource>();
         animator.SetBool("Correr", true);
     }
 
@@ -34,7 +36,7 @@ public class MinijuegoObstaculos : MonoBehaviour
     void Update()
     {
         transform.position += new Vector3 ((speed-1.5f)*Time.deltaTime,0,0);
-        if(points>=8)
+        if(points>=pointsMax)
         {
             SceneManager.LoadScene("FinalDemo");
         }
@@ -64,7 +66,8 @@ public class MinijuegoObstaculos : MonoBehaviour
 
         if(Input.GetKey(KeyCode.Space) && IJ==false)
         {
-            GetComponent<Rigidbody2D> ().velocity = new Vector3 (speed,jumpforce,0);
+            GetComponent<Rigidbody2D> ().velocity = new Vector3 (0.3f,jumpforce,0);
+            audioDataJump.Play(0);
             IJ = true;
             animator.SetBool("Saltando", true);
             
@@ -79,6 +82,7 @@ public class MinijuegoObstaculos : MonoBehaviour
             if(Coll.gameObject.tag=="GameController")
             {
                 points = points+1;
+                
             }
             //evitar saltar en el aire
             if(Coll.gameObject.tag=="tuberias")
