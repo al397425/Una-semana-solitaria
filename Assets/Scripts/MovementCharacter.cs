@@ -16,11 +16,11 @@ public class MovementCharacter : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)) 
+       /* if (Input.GetMouseButtonDown(0)) 
         {
             SetTargetPosition();
         }
-
+*/
         if(isMoving)
         {
             Move();

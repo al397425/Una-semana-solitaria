@@ -227,6 +227,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SistemaDialogos
       objectReference: {fileID: 0}
+    - target: {fileID: 2743842663252036171, guid: 6738af0b12939894fbaae1f9f8eb5a6a, type: 3}
+      propertyPath: idiomaActual
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2743842663252036172, guid: 6738af0b12939894fbaae1f9f8eb5a6a, type: 3}
       propertyPath: m_RootOrder
       value: 1
