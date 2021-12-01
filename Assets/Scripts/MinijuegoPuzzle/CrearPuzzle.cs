@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class CrearPuzzle : MonoBehaviour
 {
 	
+	public float espaciHorizontalEntreTuberias = 40;
+	public float espaciVerticalEntreTuberias = 40;
+	
 	//Huecos de las tuberias
 	public GameObject SlotTuberia;
 	//Tuberias
@@ -52,8 +55,8 @@ public class CrearPuzzle : MonoBehaviour
 		float posx=0,posy=0;
 		
 		Image imagen = SlotTuberia.GetComponent<Image> ();
-		float anchoImagen=imagen.sprite.rect.width;
-		float altoImagen=imagen.sprite.rect.height;
+		float anchoImagen= espaciHorizontalEntreTuberias;
+		float altoImagen=espaciVerticalEntreTuberias;
 		
 		posy = altoImagen;
 		

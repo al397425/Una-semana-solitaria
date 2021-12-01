@@ -31,6 +31,9 @@ public class SistemaDialogos : MonoBehaviour
 	public string directorioArchivoDialogos = "/Dialogos/dialogos prueba.csv";
 
 	int indiceDialogoNPC, indiceDialogoJugador;
+	
+	//Tecla de interaccion
+	public KeyCode teclaAvanzarDialogo = KeyCode.Space;
 
 	bool hablaNPC=true;
 	bool comenzarConversacion = true;
@@ -44,13 +47,34 @@ public class SistemaDialogos : MonoBehaviour
 	
 	UnityEvent eventoTerminarDialogo;
 	
+	bool reactivaConversacion = true;
+	
 
 	
 	Color32 colorBlanco = new Color32(255,255,255,255);
 	Color32 colorGris = new Color32(100,100,100,255);
 	
+	
+	void FixedUpdate(){
+		if(Input.GetKeyDown(teclaAvanzarDialogo) && comenzarConversacion == false){
+			AvanzarDialogo();
+		}
+	}
+	
+	public bool GetReactivarConversacion(){
+		return reactivaConversacion;
+	}
+	
+	IEnumerator reactivarConversacion(){
+		
+		 yield return new WaitForSeconds(0.1f);
+		 gameObject.SetActive(false);
+		reactivaConversacion = true;
+	}
+	
 	//Obtiene la lista de dialogos usada durante la conversacion y hace las asignaciones de los parametro del NPC
 	public void ObtenerListaDeDialogos(int personaje, Sprite retratoNPC, UnityEvent eventoAlTerminarDialogo){
+		reactivaConversacion = false;
 		comenzarConversacion = false;
 		indiceDialogoNPC = 0;
 		indiceDialogoJugador = 0;
@@ -147,7 +171,8 @@ public class SistemaDialogos : MonoBehaviour
 			dialogosNPC.Clear();
 			dialogosPersonaje.Clear();
 			comenzarConversacion = true;
-			gameObject.SetActive(false);
+			
+			StartCoroutine(reactivarConversacion());
 		}
 	}
 	

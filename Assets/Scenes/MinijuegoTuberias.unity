@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -216,7 +216,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
-
 --- !u!1 &216978834
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,8 +341,13 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1309844384 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3511441449521884695, guid: 6a18a8840bdcf90458c7e6abb348e8a8, type: 3}
+  m_PrefabInstance: {fileID: 1626354202}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1600776576
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,6 +421,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3511441449147329785, guid: 6a18a8840bdcf90458c7e6abb348e8a8, type: 3}
+      propertyPath: m_text
+      value: "\t\xB7 Intenta llevar el flujo del agua desde la salida verde a la\n\tentrada
+        roja.\n\n\t\xB7 Pulsa click-izquierdo en las losas para destaparlas.\n\n\t\xB7
+        Arrastra las tuberias para construir un camino antes de\n\tque se desborde
+        el agua.\n\n\t\xB7 Ten cuidado con los huecos sin tuberias, no puedes colocar\n\tninguna
+        ah\xED."
+      objectReference: {fileID: 0}
     - target: {fileID: 3511441449521884693, guid: 6a18a8840bdcf90458c7e6abb348e8a8, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -724,11 +736,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5086625211636054993, guid: c4ffaa38effa1e946afb5e5803df999c, type: 3}
       propertyPath: alto
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5086625211636054993, guid: c4ffaa38effa1e946afb5e5803df999c, type: 3}
       propertyPath: ancho
-      value: 9
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5086625211636054993, guid: c4ffaa38effa1e946afb5e5803df999c, type: 3}
       propertyPath: filaPuntoFinal
@@ -736,11 +748,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5086625211636054993, guid: c4ffaa38effa1e946afb5e5803df999c, type: 3}
       propertyPath: numeroDeHuecos
-      value: 20
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5086625211636054993, guid: c4ffaa38effa1e946afb5e5803df999c, type: 3}
       propertyPath: delayFlujoTuberia
-      value: 3
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086625211636054993, guid: c4ffaa38effa1e946afb5e5803df999c, type: 3}
+      propertyPath: teclaDeInteraccion
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5086625211636054993, guid: c4ffaa38effa1e946afb5e5803df999c, type: 3}
       propertyPath: nombreObjetoRequerido
@@ -773,7 +789,7 @@ PrefabInstance:
     - target: {fileID: 5086625211636054993, guid: c4ffaa38effa1e946afb5e5803df999c, type: 3}
       propertyPath: eventoAlEmpezarElMinijuego.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 1255756164}
+      objectReference: {fileID: 1309844384}
     - target: {fileID: 5086625211636054993, guid: c4ffaa38effa1e946afb5e5803df999c, type: 3}
       propertyPath: eventoAlEmpezarElMinijuego.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
