@@ -7,12 +7,15 @@ public class MovementCharacter : MonoBehaviour
     public float speed = 0.2f;
     private Vector3 targetPosition;
     private bool isMoving = false;
-
+	Animator animator;
     Rigidbody2D rigidbody2d;
+	SpriteRenderer sr;
     
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
+		animator = GetComponent<Animator>();
+		sr = GetComponent<SpriteRenderer>();
     }
     void Update()
     {
@@ -41,14 +44,31 @@ public class MovementCharacter : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
             if(transform.position == targetPosition)
             {
+
                 isMoving = false;
             }
         }
+		
+
     }
-    void FixedUpdate()
-    {
+
+	
+    void FixedUpdate(){
        float horizontal = Input.GetAxis("Horizontal");
        float vertical = Input.GetAxis("Vertical");
+	   
+		if(horizontal == 0.0f && vertical  == 0.0f ){
+			animator.SetBool("Correr", false);
+	   }else{
+		   animator.SetBool("Correr", true);
+	   }
+	   
+	   if(horizontal == 1){
+		   sr.flipX = true;
+	   }else if(horizontal == -1){
+		   sr.flipX = false;
+	   }
+	   
        Vector2 position = rigidbody2d.position;
        position.x = position.x + 5.0f * horizontal * Time.deltaTime;
        position.y = position.y + 5.0f * vertical * Time.deltaTime;
