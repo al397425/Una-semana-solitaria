@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5086625211636054993}
   - component: {fileID: 5086625211636054996}
   - component: {fileID: 742895501}
+  - component: {fileID: 7624056051837371672}
   m_Layer: 0
   m_Name: ActivadorPuzzleTuberias
   m_TagString: Untagged
@@ -146,7 +147,19 @@ MonoBehaviour:
   delayFlujoTuberia: 5
   eventoAlEmpezarElMinijuego:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7624056051837371672}
+        m_TargetAssemblyTypeName: ActivadorDesactivadorObjetos, Assembly-CSharp
+        m_MethodName: ActivarObjeto
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   eventoAlGanarElMinijuego:
     m_PersistentCalls:
       m_Calls: []
@@ -185,6 +198,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7d4569c8008c504bb58b99770be0214, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7624056051837371672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5086625211636054994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f8ed54bae6372642a2f29a2e956b384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &5086625211606161055
