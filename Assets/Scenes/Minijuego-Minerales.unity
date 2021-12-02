@@ -283,11 +283,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1630000765706897990, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.95
+      value: 5.18
       objectReference: {fileID: 0}
     - target: {fileID: 1630000765706897990, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.61
+      value: 1.84
       objectReference: {fileID: 0}
     - target: {fileID: 1630000765706897990, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -362,6 +362,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 8490499616420823104, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490499616420823105, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8490499616420823107, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -551,11 +559,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7348658453036452614, guid: 6a720f40e8933df409ee7ba02fad5357, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.7000003
+      value: 2.91
       objectReference: {fileID: 0}
     - target: {fileID: 7348658453036452614, guid: 6a720f40e8933df409ee7ba02fad5357, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.76
+      value: -4.05
       objectReference: {fileID: 0}
     - target: {fileID: 7348658453036452614, guid: 6a720f40e8933df409ee7ba02fad5357, type: 3}
       propertyPath: m_LocalPosition.z
@@ -686,6 +694,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1197579734855479390, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3243030200428724655, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Name
       value: Piedra Amarilla 2 (4)
@@ -702,6 +714,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 6905320161979315253, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7518679092105806573, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_SizeDelta.x
       value: 41.96
@@ -755,6 +771,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 3731261515174765088, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3731261515174765089, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -843,6 +863,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra Roja 2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3731261515174765095, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: ObjPuntos
       value: 
@@ -878,16 +902,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8490499616273909313, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -35.3
+      value: -24
       objectReference: {fileID: 0}
     - target: {fileID: 8490499616273909313, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -76.11
+      value: -87
       objectReference: {fileID: 0}
     - target: {fileID: 8490499616420823104, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 8490499616420823104, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490499616420823105, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8490499616420823107, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1034,11 +1066,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1031309913765114144, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -23.7
+      value: -88
       objectReference: {fileID: 0}
     - target: {fileID: 1031309913765114144, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -40.4
+      value: -173
       objectReference: {fileID: 0}
     - target: {fileID: 3316040060390100583, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_Name
@@ -1052,6 +1084,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 3758331504239431939, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3948707787397385190, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1136,6 +1172,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7043846832285273722, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9089703570917158140, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: Tiempo
       value: 
@@ -1181,6 +1221,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 3758331504239431939, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3948707787397385190, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1264,6 +1308,10 @@ PrefabInstance:
     - target: {fileID: 3948707787397385190, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043846832285273722, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9089703570917158140, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: Tiempo
@@ -1351,8 +1399,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259046054}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.025, y: 0.006, z: 0}
-  m_LocalScale: {x: 2.335179, y: 2.506912, z: 1}
+  m_LocalPosition: {x: 0.0582, y: 0.006, z: 0}
+  m_LocalScale: {x: 2.3988845, y: 2.506912, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 105
@@ -1464,6 +1512,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra Verde (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8716062837787213054, guid: e983e41a306d0ab48b9d2430584c28d7, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8716062838892478604, guid: e983e41a306d0ab48b9d2430584c28d7, type: 3}
       propertyPath: Tiempo
       value: 
@@ -1482,11 +1534,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8716062838892478605, guid: e983e41a306d0ab48b9d2430584c28d7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 301
+      value: 273
       objectReference: {fileID: 0}
     - target: {fileID: 8716062838892478605, guid: e983e41a306d0ab48b9d2430584c28d7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 15.98
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e983e41a306d0ab48b9d2430584c28d7, type: 3}
@@ -1722,7 +1774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1996,6 +2048,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 8490499616420823104, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490499616420823105, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8490499616420823107, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2103,11 +2163,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6347001704427185985, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 26.985
+      value: -36
       objectReference: {fileID: 0}
     - target: {fileID: 6347001704427185985, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 27
+      value: 48
       objectReference: {fileID: 0}
     - target: {fileID: 6347001704427186014, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
@@ -2249,10 +2309,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6347001705502171038, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6347001705502171039, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 6347001705502171039, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8153246375621636220, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
       propertyPath: ObjPuntos
       value: 
@@ -2366,6 +2434,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 3731261515174765088, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3731261515174765089, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2454,6 +2526,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra Roja 2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 3731261515174765095, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: ObjPuntos
       value: 
@@ -2499,6 +2575,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 8490499616420823104, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490499616420823105, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8490499616420823107, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2653,11 +2737,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6311055090396545055, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.25
+      value: 5.6
       objectReference: {fileID: 0}
     - target: {fileID: 6311055090396545055, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.58
+      value: 3.56
       objectReference: {fileID: 0}
     - target: {fileID: 6311055090396545055, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2714,7 +2798,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6347001704427185985, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -107.28
+      value: -121
       objectReference: {fileID: 0}
     - target: {fileID: 6347001704427186014, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
@@ -2856,10 +2940,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6347001705502171038, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6347001705502171039, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 6347001705502171039, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8153246375621636220, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
       propertyPath: ObjPuntos
       value: 
@@ -2926,7 +3018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -3333,6 +3425,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra Verde 2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1383578304451121512, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2377371451168730420, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: Tiempo
       value: 
@@ -3345,6 +3441,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 5412896174443357452, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7143652373374374188, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: ObjPuntos
       value: 
@@ -3359,11 +3459,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9198360999976226271, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -91
+      value: -144
       objectReference: {fileID: 0}
     - target: {fileID: 9198360999976226271, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 101
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
@@ -3401,6 +3501,10 @@ PrefabInstance:
     - target: {fileID: 491260306498858668, guid: 870722bbb2d277a4685d44ebbff1113a, type: 3}
       propertyPath: m_Name
       value: Piedra Azul Oscuro 2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 491260306498858670, guid: 870722bbb2d277a4685d44ebbff1113a, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 491260306498858671, guid: 870722bbb2d277a4685d44ebbff1113a, type: 3}
       propertyPath: m_Camera
@@ -3725,6 +3829,10 @@ PrefabInstance:
       propertyPath: m_RenderMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6531543704362888359, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6754280986497724611, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: ObjPuntos
       value: 
@@ -3739,11 +3847,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7158706298345562453, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -164
+      value: -159
       objectReference: {fileID: 0}
     - target: {fileID: 7158706298345562453, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 142
+      value: 145
       objectReference: {fileID: 0}
     - target: {fileID: 7175708675946464186, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: Tiempo
@@ -4109,11 +4217,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 491260306138651984, guid: 870722bbb2d277a4685d44ebbff1113a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -85
+      value: -73
       objectReference: {fileID: 0}
     - target: {fileID: 491260306138651984, guid: 870722bbb2d277a4685d44ebbff1113a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -61
+      value: -66
       objectReference: {fileID: 0}
     - target: {fileID: 491260306138651985, guid: 870722bbb2d277a4685d44ebbff1113a, type: 3}
       propertyPath: Tiempo
@@ -4126,6 +4234,10 @@ PrefabInstance:
     - target: {fileID: 491260306498858668, guid: 870722bbb2d277a4685d44ebbff1113a, type: 3}
       propertyPath: m_Name
       value: Piedra Azul Oscuro 2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 491260306498858670, guid: 870722bbb2d277a4685d44ebbff1113a, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 491260306498858671, guid: 870722bbb2d277a4685d44ebbff1113a, type: 3}
       propertyPath: m_Camera
@@ -4455,11 +4567,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3731261514481732542, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 280.68
+      value: 227
       objectReference: {fileID: 0}
     - target: {fileID: 3731261514481732542, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 51.34
+      value: 46
       objectReference: {fileID: 0}
     - target: {fileID: 3731261514481732543, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: Tiempo
@@ -4473,6 +4585,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 3731261515174765088, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3731261515174765089, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -4560,6 +4676,10 @@ PrefabInstance:
     - target: {fileID: 3731261515174765093, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: m_Name
       value: Piedra Roja 2 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731261515174765095, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: ObjPuntos
@@ -4744,6 +4864,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra Verde 2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1383578304451121512, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2377371451168730420, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: Tiempo
       value: 
@@ -4756,6 +4880,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 5412896174443357452, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7143652373374374188, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: ObjPuntos
       value: 
@@ -5007,11 +5135,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3731261514481732542, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -197
+      value: -218
       objectReference: {fileID: 0}
     - target: {fileID: 3731261514481732542, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 58
+      value: 54
       objectReference: {fileID: 0}
     - target: {fileID: 3731261514481732543, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: Tiempo
@@ -5025,6 +5153,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 3731261515174765088, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3731261515174765089, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -5113,6 +5245,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra Roja 2(1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3731261515174765095, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: ObjPuntos
       value: 
@@ -5183,11 +5319,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1549958749157741015, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -182
+      value: -181.1
       objectReference: {fileID: 0}
     - target: {fileID: 1549958749157741015, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 99.71
+      value: 68.2
       objectReference: {fileID: 0}
     - target: {fileID: 1549958750190705161, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
       propertyPath: m_Pivot.x
@@ -5277,6 +5413,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 1549958750190705162, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549958750190705163, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1549958750190705165, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
       propertyPath: m_Name
       value: Piedra Amarilla (1)
@@ -5560,6 +5704,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 1549958750190705162, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549958750190705163, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1549958750190705165, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
       propertyPath: m_Name
       value: Piedra Amarilla (3)
@@ -5609,6 +5761,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 8490499616420823104, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490499616420823105, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8490499616420823107, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -5728,11 +5888,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1111457370444877459, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.2
+      value: 6.35
       objectReference: {fileID: 0}
     - target: {fileID: 1111457370444877459, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.67
+      value: 1.92
       objectReference: {fileID: 0}
     - target: {fileID: 1111457370444877459, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5863,6 +6023,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra Verde 2(3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1383578304451121512, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2377371451168730420, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: Tiempo
       value: 
@@ -5875,6 +6039,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 5412896174443357452, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7143652373374374188, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: ObjPuntos
       value: 
@@ -5922,11 +6090,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1549958749157741015, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 285
+      value: 308.5
       objectReference: {fileID: 0}
     - target: {fileID: 1549958749157741015, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 139
+      value: 146.2
       objectReference: {fileID: 0}
     - target: {fileID: 1549958750190705161, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
       propertyPath: m_Pivot.x
@@ -6016,6 +6184,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 1549958750190705162, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549958750190705163, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1549958750190705165, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
       propertyPath: m_Name
       value: Piedra Amarilla (4)
@@ -6126,6 +6302,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 8490499616420823104, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490499616420823105, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8490499616420823107, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -6251,6 +6435,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 3731261515174765088, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731261515174765088, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: m_PixelPerfect
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3731261515174765089, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -6339,6 +6531,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra Roja 2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3731261515174765095, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: ObjPuntos
       value: 
@@ -6366,7 +6562,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1630000765706897990, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.5600002
+      value: 3.08
       objectReference: {fileID: 0}
     - target: {fileID: 1630000765706897990, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6647,10 +6843,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6347001705502171038, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6347001705502171039, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 6347001705502171039, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8153246375621636220, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
       propertyPath: ObjPuntos
       value: 
@@ -6764,11 +6968,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3731261514481732542, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -29.2
+      value: -22.62
       objectReference: {fileID: 0}
     - target: {fileID: 3731261514481732542, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 46.6
+      value: -42
       objectReference: {fileID: 0}
     - target: {fileID: 3731261514481732543, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: Tiempo
@@ -6782,6 +6986,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 3731261515174765088, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3731261515174765089, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -6869,6 +7077,10 @@ PrefabInstance:
     - target: {fileID: 3731261515174765093, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: m_Name
       value: Piedra Roja 2(5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731261515174765095, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: ObjPuntos
@@ -7175,6 +7387,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra Verde 2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1383578304451121512, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2377371451168730420, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: Tiempo
       value: 
@@ -7187,6 +7403,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 5412896174443357452, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7143652373374374188, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: ObjPuntos
       value: 
@@ -7201,11 +7421,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9198360999976226271, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -283.6
+      value: -253
       objectReference: {fileID: 0}
     - target: {fileID: 9198360999976226271, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 138.1
+      value: 144
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
@@ -7722,6 +7942,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1197579734855479390, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3243030200428724655, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Name
       value: Piedra Amarilla 2 (2)
@@ -7738,6 +7962,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 6905320161979315253, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7518679092105806573, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_SizeDelta.x
       value: 44.06
@@ -7748,11 +7976,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7518679092105806573, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 82.4
+      value: 113
       objectReference: {fileID: 0}
     - target: {fileID: 7518679092105806573, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 34.2
+      value: 47
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
@@ -7863,6 +8091,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra Verde (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8716062837787213054, guid: e983e41a306d0ab48b9d2430584c28d7, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8716062838892478604, guid: e983e41a306d0ab48b9d2430584c28d7, type: 3}
       propertyPath: Tiempo
       value: 
@@ -7893,11 +8125,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8716062838892478605, guid: e983e41a306d0ab48b9d2430584c28d7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -135
+      value: -193
       objectReference: {fileID: 0}
     - target: {fileID: 8716062838892478605, guid: e983e41a306d0ab48b9d2430584c28d7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 103.34
+      value: 106
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e983e41a306d0ab48b9d2430584c28d7, type: 3}
@@ -8104,16 +8336,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8490499616273909313, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 196.98
+      value: 164
       objectReference: {fileID: 0}
     - target: {fileID: 8490499616273909313, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 136.73
+      value: 130
       objectReference: {fileID: 0}
     - target: {fileID: 8490499616420823104, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 8490499616420823104, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490499616420823105, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8490499616420823107, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -8358,6 +8598,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 3731261515174765088, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3731261515174765089, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -8446,6 +8690,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra Roja 2 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3731261515174765095, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: ObjPuntos
       value: 
@@ -8528,8 +8776,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1273565034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0031, y: 0.0069, z: 0}
-  m_LocalScale: {x: 2.3321302, y: 2.494949, z: 1}
+  m_LocalPosition: {x: 0.0252, y: 0.0069, z: 0}
+  m_LocalScale: {x: 2.4040363, y: 2.494949, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 35
@@ -8758,10 +9006,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6347001705502171038, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6347001705502171039, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 6347001705502171039, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8153246375621636220, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
       propertyPath: ObjPuntos
       value: 
@@ -8800,11 +9056,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1630000765706897990, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.43
+      value: -7.76
       objectReference: {fileID: 0}
     - target: {fileID: 1630000765706897990, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.3
+      value: -2.25
       objectReference: {fileID: 0}
     - target: {fileID: 1630000765706897990, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8869,11 +9125,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1111457370444877459, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.83
+      value: 7.71
       objectReference: {fileID: 0}
     - target: {fileID: 1111457370444877459, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.9700003
+      value: 0.49
       objectReference: {fileID: 0}
     - target: {fileID: 1111457370444877459, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9004,6 +9260,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1197579734855479390, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3243030200428724655, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Name
       value: Piedra Amarilla 2 (3)
@@ -9020,6 +9280,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 6905320161979315253, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7518679092105806573, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_SizeDelta.x
       value: 36
@@ -9030,11 +9294,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7518679092105806573, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 23.1
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 7518679092105806573, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -131.4
+      value: -147
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
@@ -9255,7 +9519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -9328,11 +9592,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6311055090396545055, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.8400002
+      value: 2.81
       objectReference: {fileID: 0}
     - target: {fileID: 6311055090396545055, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.5900002
+      value: -2.88
       objectReference: {fileID: 0}
     - target: {fileID: 6311055090396545055, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9463,6 +9727,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1197579734855479390, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3243030200428724655, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Name
       value: Piedra Amarilla 2 (5)
@@ -9479,6 +9747,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 6905320161979315253, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7518679092105806573, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_SizeDelta.x
       value: 41.69
@@ -9489,11 +9761,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7518679092105806573, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -125.8
+      value: -247
       objectReference: {fileID: 0}
     - target: {fileID: 7518679092105806573, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 24.6
+      value: -137
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
@@ -9678,11 +9950,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6311055090396545055, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.05
+      value: -1.95
       objectReference: {fileID: 0}
     - target: {fileID: 6311055090396545055, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.56
+      value: 2.31
       objectReference: {fileID: 0}
     - target: {fileID: 6311055090396545055, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9735,11 +10007,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1031309913765114144, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 144
+      value: 106
       objectReference: {fileID: 0}
     - target: {fileID: 1031309913765114144, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 149
+      value: 146
       objectReference: {fileID: 0}
     - target: {fileID: 3316040060390100583, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_Name
@@ -9753,6 +10025,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 3758331504239431939, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3948707787397385190, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -9836,6 +10112,10 @@ PrefabInstance:
     - target: {fileID: 3948707787397385190, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043846832285273722, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9089703570917158140, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: Tiempo
@@ -9929,11 +10209,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6311055090396545055, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.53
+      value: 6.76
       objectReference: {fileID: 0}
     - target: {fileID: 6311055090396545055, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.33
+      value: -0.15
       objectReference: {fileID: 0}
     - target: {fileID: 6311055090396545055, guid: f58a009c8313c7242a34a4cc403ef542, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9990,7 +10270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1111457370444877459, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5656
+      value: 0.53975207
       objectReference: {fileID: 0}
     - target: {fileID: 1111457370444877459, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
       propertyPath: m_LocalScale.y
@@ -9998,11 +10278,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1111457370444877459, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.83
+      value: 4.97
       objectReference: {fileID: 0}
     - target: {fileID: 1111457370444877459, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.9700003
+      value: -2.47
       objectReference: {fileID: 0}
     - target: {fileID: 1111457370444877459, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10098,11 +10378,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5120789024170047547, guid: 1a835a675ff265d419daf62d9de3f082, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.1
+      value: -6.13
       objectReference: {fileID: 0}
     - target: {fileID: 5120789024170047547, guid: 1a835a675ff265d419daf62d9de3f082, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.32
+      value: -3.72
       objectReference: {fileID: 0}
     - target: {fileID: 5120789024170047547, guid: 1a835a675ff265d419daf62d9de3f082, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10216,6 +10496,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 8490499616420823104, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490499616420823105, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8490499616420823107, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -10407,6 +10695,10 @@ PrefabInstance:
       objectReference: {fileID: 519420031}
     - target: {fileID: 5997699294801304569, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6531543704362888359, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+      propertyPath: m_UiScaleMode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6754280986497724611, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
@@ -10605,6 +10897,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 8490499616420823104, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490499616420823105, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8490499616420823107, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -10806,6 +11106,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 1549958750190705162, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549958750190705163, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1549958750190705165, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
       propertyPath: m_Name
       value: Piedra Amarilla (2)
@@ -10919,6 +11227,10 @@ PrefabInstance:
       propertyPath: m_RenderMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6531543704362888359, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6754280986497724611, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: ObjPuntos
       value: 
@@ -10933,11 +11245,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7158706298345562453, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -136.93
+      value: -347
       objectReference: {fileID: 0}
     - target: {fileID: 7158706298345562453, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 64.32
+      value: -40
       objectReference: {fileID: 0}
     - target: {fileID: 7175708675946464186, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: Tiempo
@@ -11083,16 +11395,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8490499616273909313, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 128
+      value: 42.4
       objectReference: {fileID: 0}
     - target: {fileID: 8490499616273909313, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 49.3
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 8490499616420823104, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 8490499616420823104, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490499616420823105, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8490499616420823107, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -11275,6 +11595,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 3731261515174765088, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3731261515174765089, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -11363,6 +11687,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra Roja 2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3731261515174765095, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: ObjPuntos
       value: 
@@ -11390,11 +11718,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1630000765706897990, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.16
+      value: -4.51
       objectReference: {fileID: 0}
     - target: {fileID: 1630000765706897990, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.23
+      value: -3.31
       objectReference: {fileID: 0}
     - target: {fileID: 1630000765706897990, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11480,11 +11808,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6347001704427185985, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 161
+      value: 179
       objectReference: {fileID: 0}
     - target: {fileID: 6347001704427185985, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 111
+      value: 83
       objectReference: {fileID: 0}
     - target: {fileID: 6347001704427186014, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
@@ -11626,10 +11954,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6347001705502171038, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6347001705502171039, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 6347001705502171039, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8153246375621636220, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
       propertyPath: ObjPuntos
       value: 
@@ -11881,6 +12217,10 @@ PrefabInstance:
       objectReference: {fileID: 519420031}
     - target: {fileID: 5997699294801304569, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6531543704362888359, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+      propertyPath: m_UiScaleMode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6754280986497724611, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
@@ -12146,6 +12486,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra Verde(3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8716062837787213054, guid: e983e41a306d0ab48b9d2430584c28d7, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8716062838892478604, guid: e983e41a306d0ab48b9d2430584c28d7, type: 3}
       propertyPath: Tiempo
       value: 
@@ -12201,16 +12545,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8490499616273909313, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -123.7
+      value: -158.7
       objectReference: {fileID: 0}
     - target: {fileID: 8490499616273909313, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -16.1
+      value: -23.4
       objectReference: {fileID: 0}
     - target: {fileID: 8490499616420823104, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 8490499616420823104, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490499616420823105, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8490499616420823107, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -12308,6 +12660,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3511441448372943899, guid: 6a18a8840bdcf90458c7e6abb348e8a8, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3511441448372943899, guid: 6a18a8840bdcf90458c7e6abb348e8a8, type: 3}
+      propertyPath: m_ScreenMatchMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3511441449147329785, guid: 6a18a8840bdcf90458c7e6abb348e8a8, type: 3}
       propertyPath: m_text
       value: "\t\xB7 Trata de conseguir el m\xE1ximo numero de minerales \n\tposible.\n\n\t\xB7Pulsa
@@ -12384,11 +12744,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7348658453036452614, guid: 6a720f40e8933df409ee7ba02fad5357, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.6834629
+      value: 3.24
       objectReference: {fileID: 0}
     - target: {fileID: 7348658453036452614, guid: 6a720f40e8933df409ee7ba02fad5357, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.171557
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 7348658453036452614, guid: 6a720f40e8933df409ee7ba02fad5357, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12570,6 +12930,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra Verde(2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8716062837787213054, guid: e983e41a306d0ab48b9d2430584c28d7, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8716062838892478604, guid: e983e41a306d0ab48b9d2430584c28d7, type: 3}
       propertyPath: Tiempo
       value: 
@@ -12588,11 +12952,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8716062838892478605, guid: e983e41a306d0ab48b9d2430584c28d7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 243.67
+      value: 208
       objectReference: {fileID: 0}
     - target: {fileID: 8716062838892478605, guid: e983e41a306d0ab48b9d2430584c28d7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 122
+      value: 127
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e983e41a306d0ab48b9d2430584c28d7, type: 3}
@@ -12713,6 +13077,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1197579734855479390, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3243030200428724655, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Name
       value: Piedra Amarilla 2 (1)
@@ -12729,6 +13097,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 6905320161979315253, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7518679092105806573, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_SizeDelta.x
       value: 38.85
@@ -12739,11 +13111,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7518679092105806573, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 220.8
+      value: 223
       objectReference: {fileID: 0}
     - target: {fileID: 7518679092105806573, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -153.11
+      value: -176
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
@@ -12821,6 +13193,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 3758331504239431939, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3948707787397385190, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -12905,6 +13281,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7043846832285273722, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9089703570917158140, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: Tiempo
       value: 
@@ -12932,11 +13312,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1031309913765114144, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -13
+      value: -16.125
       objectReference: {fileID: 0}
     - target: {fileID: 1031309913765114144, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -145.1
+      value: -165
       objectReference: {fileID: 0}
     - target: {fileID: 3316040060390100583, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_Name
@@ -12950,6 +13330,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 3758331504239431939, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3948707787397385190, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -13034,6 +13418,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7043846832285273722, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9089703570917158140, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: Tiempo
       value: 
@@ -13061,11 +13449,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3731261514481732542, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 220.83
+      value: 214
       objectReference: {fileID: 0}
     - target: {fileID: 3731261514481732542, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -30.38
+      value: -19.445
       objectReference: {fileID: 0}
     - target: {fileID: 3731261514481732543, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: Tiempo
@@ -13079,6 +13467,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 3731261515174765088, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3731261515174765089, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -13167,6 +13559,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra Roja 2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3731261515174765095, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: ObjPuntos
       value: 
@@ -13221,7 +13617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -13313,7 +13709,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 491260306138651984, guid: 870722bbb2d277a4685d44ebbff1113a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 169
+      value: 266
       objectReference: {fileID: 0}
     - target: {fileID: 491260306138651984, guid: 870722bbb2d277a4685d44ebbff1113a, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -13330,6 +13726,10 @@ PrefabInstance:
     - target: {fileID: 491260306498858668, guid: 870722bbb2d277a4685d44ebbff1113a, type: 3}
       propertyPath: m_Name
       value: Piedra Azul Oscuro 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 491260306498858670, guid: 870722bbb2d277a4685d44ebbff1113a, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 491260306498858671, guid: 870722bbb2d277a4685d44ebbff1113a, type: 3}
       propertyPath: m_Camera
@@ -13524,6 +13924,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1197579734855479390, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3243030200428724655, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Name
       value: Piedra Amarilla 2
@@ -13540,6 +13944,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 6905320161979315253, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7518679092105806573, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_SizeDelta.x
       value: 37.61
@@ -13550,11 +13958,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7518679092105806573, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 205
+      value: 204
       objectReference: {fileID: 0}
     - target: {fileID: 7518679092105806573, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -122.33
+      value: -60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
@@ -13579,11 +13987,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1111457370444877459, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.1
+      value: -6.74
       objectReference: {fileID: 0}
     - target: {fileID: 1111457370444877459, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.68
+      value: 3.19
       objectReference: {fileID: 0}
     - target: {fileID: 1111457370444877459, guid: b6bdfc8f10d8d5741b87cee8ae6bee36, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13722,6 +14130,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 1549958750190705162, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549958750190705163, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1549958750190705165, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
       propertyPath: m_Name
       value: Piedra Amarilla
@@ -13802,7 +14218,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1031309913765114144, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 25.23
+      value: 23.05
       objectReference: {fileID: 0}
     - target: {fileID: 1031309913765114144, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_SizeDelta.y
@@ -13810,11 +14226,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1031309913765114144, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -195
+      value: -160
       objectReference: {fileID: 0}
     - target: {fileID: 1031309913765114144, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -136
+      value: -176
       objectReference: {fileID: 0}
     - target: {fileID: 3316040060390100583, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_Name
@@ -13828,6 +14244,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 3758331504239431939, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3948707787397385190, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -13912,6 +14332,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7043846832285273722, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9089703570917158140, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: Tiempo
       value: 
@@ -13939,11 +14363,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3731261514481732542, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -172.59
+      value: -290
       objectReference: {fileID: 0}
     - target: {fileID: 3731261514481732542, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -32.18
+      value: -99
       objectReference: {fileID: 0}
     - target: {fileID: 3731261514481732543, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: Tiempo
@@ -13957,6 +14381,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 3731261515174765088, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3731261515174765089, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -14044,6 +14472,10 @@ PrefabInstance:
     - target: {fileID: 3731261515174765093, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: m_Name
       value: Piedra Roja 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731261515174765095, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
       propertyPath: ObjPuntos
@@ -14202,11 +14634,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6347001704427185985, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -281
+      value: -288
       objectReference: {fileID: 0}
     - target: {fileID: 6347001704427185985, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -21
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6347001704427186014, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
@@ -14348,10 +14780,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6347001705502171038, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6347001705502171039, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 6347001705502171039, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8153246375621636220, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
       propertyPath: ObjPuntos
       value: 
@@ -14464,6 +14904,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedra Verde 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1383578304451121512, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2377371451168730420, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: Tiempo
       value: 
@@ -14476,6 +14920,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 5412896174443357452, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7143652373374374188, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: ObjPuntos
       value: 
@@ -14490,11 +14938,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9198360999976226271, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 7.1
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 9198360999976226271, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 62.1
+      value: 70
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
@@ -14592,12 +15040,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8490499616273909313, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 139
+      value: 143
       objectReference: {fileID: 0}
     - target: {fileID: 8490499616420823104, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 8490499616420823104, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490499616420823105, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490499616420823105, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8490499616420823107, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -14632,6 +15092,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8490499616420823107, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490499616420823107, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490499616420823107, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490499616420823107, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8490499616420823107, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
