@@ -10,7 +10,7 @@ public class controlNivel : MonoBehaviour
     }
 
     public void SeguirJugando(){
-        SceneManager.LoadScene("Level1");//Cambiar escena para seguir jugando
+        SceneManager.LoadScene("FinalDemo");//Cambiar escena para seguir jugando
     }
 
 }
