@@ -28,7 +28,7 @@ public class SistemaDialogos : MonoBehaviour
 	public AudioSource sonidoDelTexto;
 	
 	//CSV de los dialogos
-	public string directorioArchivoDialogos = "/Dialogos/dialogos prueba.csv";
+	public string nombreArchivoDialogos = "dialogos prueba.csv";
 
 	int indiceDialogoNPC, indiceDialogoJugador;
 	
@@ -81,7 +81,7 @@ public class SistemaDialogos : MonoBehaviour
 		referenciaSpriteNPC= retratoNPC;
 		eventoTerminarDialogo = eventoAlTerminarDialogo;
 			Debug.Log(Application.dataPath);
-		using(var reader = new StreamReader(@Application.dataPath+directorioArchivoDialogos))
+		using(var reader = new StreamReader( Path.Combine(Application.streamingAssetsPath, nombreArchivoDialogos)))
 		{
 			var line = reader.ReadLine();
 			while (!reader.EndOfStream)

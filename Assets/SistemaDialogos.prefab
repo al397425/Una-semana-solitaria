@@ -573,7 +573,7 @@ MonoBehaviour:
   referenciaRetratoDialogoNPC: {fileID: 6390200800175527187}
   referenciaRetratoDialogoJugador: {fileID: 633975106212353896}
   sonidoDelTexto: {fileID: 88767695}
-  directorioArchivoDialogos: /Dialogos/dialogos prueba.csv
+  directorioArchivoDialogos: dialogos prueba.csv
   teclaAvanzarDialogo: 32
 --- !u!82 &88767695
 AudioSource:
