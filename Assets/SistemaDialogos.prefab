@@ -454,7 +454,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4e638d2a77415c84497508767947aa82, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -475,7 +475,7 @@ MonoBehaviour:
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
   m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
+  m_overrideHtmlColors: 1
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
@@ -518,7 +518,7 @@ MonoBehaviour:
   m_margin: {x: 48.691895, y: 10.86647, z: 41.678467, w: 10.866486}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &2743842663252036170
@@ -567,13 +567,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idiomaActual: 1
-  ficheroDialogos: {fileID: 4900000, guid: 9264d7c1d6c7ca54da6b78b4e70aa1d3, type: 3}
   textoUI: {fileID: 2743842663196544822}
   teclaDeInteraccion: 32
   tiempoPorCaracter: 0.02
   referenciaRetratoDialogoNPC: {fileID: 6390200800175527187}
   referenciaRetratoDialogoJugador: {fileID: 633975106212353896}
   sonidoDelTexto: {fileID: 88767695}
+  directorioArchivoDialogos: /Dialogos/dialogos prueba.csv
+  teclaAvanzarDialogo: 32
 --- !u!82 &88767695
 AudioSource:
   m_ObjectHideFlags: 0
