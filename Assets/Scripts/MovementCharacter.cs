@@ -58,9 +58,9 @@ public class MovementCharacter : MonoBehaviour
        float vertical = Input.GetAxis("Vertical");
 	   
 		if(horizontal == 0.0f && vertical  == 0.0f ){
-			animator.SetBool("Correr", false);
+			animator.SetBool("Andando", false);
 	   }else{
-		   animator.SetBool("Correr", true);
+		   animator.SetBool("Andando", true);
 	   }
 	   
 	   if(horizontal == 1){
