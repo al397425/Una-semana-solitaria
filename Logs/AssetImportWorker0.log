@@ -15,7 +15,7 @@ C:/Users/al394511/Documents/GitHub/Una-semana-solitaria
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62567
+53211
 Successfully changed project path to: C:/Users/al394511/Documents/GitHub/Una-semana-solitaria
 C:/Users/al394511/Documents/GitHub/Una-semana-solitaria
 Using Asset Import Pipeline V2.
@@ -23,7 +23,7 @@ Unable to join player connection multicast group.
 
 Unable to join player connection alternative multicast group.
 
-Refreshing native plugins compatible for Editor in 34.89 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 34.55 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.14f1 (d0d1bb862f9d)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/Resources/UnitySubsystems
@@ -39,39 +39,39 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56108
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56012
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002339 seconds.
+Registered in 0.002331 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 33.31 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 33.27 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.064 seconds
+- Completed reload, in  1.078 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1064ms)
-		BeginReloadAssembly (69ms)
+	ReloadAssembly (1079ms)
+		BeginReloadAssembly (49ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (398ms)
-			LoadAssemblies (64ms)
+		EndReloadAssembly (370ms)
+			LoadAssemblies (47ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (160ms)
+			SetupTypeCache (137ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (29ms)
+			RebuildScriptCaches (28ms)
 			SetupLoadedEditorAssemblies (143ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (33ms)
 				BeforeProcessingInitializeOnLoad (6ms)
-				ProcessInitializeOnLoadAttributes (74ms)
+				ProcessInitializeOnLoadAttributes (73ms)
 				ProcessInitializeOnLoadMethodAttributes (25ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -79,37 +79,37 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002668 seconds.
+Registered in 0.002754 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.43 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.951 seconds
+- Completed reload, in  0.945 seconds
 Domain Reload Profiling:
-	ReloadAssembly (951ms)
-		BeginReloadAssembly (131ms)
+	ReloadAssembly (945ms)
+		BeginReloadAssembly (130ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (766ms)
-			LoadAssemblies (80ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (760ms)
+			LoadAssemblies (85ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (272ms)
+			SetupTypeCache (271ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (283ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (274ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (51ms)
-				ProcessInitializeOnLoadAttributes (214ms)
+				BeforeProcessingInitializeOnLoad (52ms)
+				ProcessInitializeOnLoadAttributes (204ms)
 				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (6ms)
@@ -117,14 +117,14 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.39 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.41 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1956 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 90.8 MB.
-System memory in use after: 90.9 MB.
+System memory in use before: 91.1 MB.
+System memory in use after: 91.2 MB.
 
-Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2390.
-Total: 2.595000 ms (FindLiveObjects: 0.173900 ms CreateObjectMapping: 0.072600 ms MarkObjects: 2.250500 ms  DeleteObjects: 0.097200 ms)
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2392.
+Total: 2.340400 ms (FindLiveObjects: 0.193100 ms CreateObjectMapping: 0.078100 ms MarkObjects: 1.990500 ms  DeleteObjects: 0.077600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -138,789 +138,161 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Coin.prefab
-  artifactKey: Guid(c3f8e98ab93a01b44936f20dae87f3aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Coin.prefab using Guid(c3f8e98ab93a01b44936f20dae87f3aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b81898d37573fb24a12d3a69e418fe5d') in 0.113730 seconds 
-  Import took 0.116742 seconds .
+  path: Assets/Minijuego Minerales/piedras.png
+  artifactKey: Guid(4957bfebc508d5c428a0ba3d49bf8fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Minijuego Minerales/piedras.png using Guid(4957bfebc508d5c428a0ba3d49bf8fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bd21677fa3fd8a1c51519dfa51f821b') in 0.167217 seconds 
+  Import took 0.170085 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000323 seconds.
-  path: Assets/Slot.prefab
-  artifactKey: Guid(d056c8b859fa7464ca1f56a75037e669) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Slot.prefab using Guid(d056c8b859fa7464ca1f56a75037e669) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '526f0dd23d8245c064512641b62fc145') in 0.015715 seconds 
-  Import took 0.019856 seconds .
+  Time since last request: 0.000332 seconds.
+  path: Assets/Minijuego Minerales/paredFondo.png
+  artifactKey: Guid(d7328e9d505c4f2499de5f71b42ac340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Minijuego Minerales/paredFondo.png using Guid(d7328e9d505c4f2499de5f71b42ac340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b66d108dcd58da4d734aaaf750da9b5') in 0.025290 seconds 
+  Import took 0.029358 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000419 seconds.
-  path: Assets/Tuberia.prefab
-  artifactKey: Guid(0045cdac563dca241990c0f778208dd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tuberia.prefab using Guid(0045cdac563dca241990c0f778208dd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8540ec5c0f34aec01cbbe79b3de154b2') in 0.018168 seconds 
-  Import took 0.024047 seconds .
+  Time since last request: 0.000220 seconds.
+  path: Assets/Minijuego Minerales/pared.png
+  artifactKey: Guid(9312172f30b6ec84d84b4e788baadbe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Minijuego Minerales/pared.png using Guid(9312172f30b6ec84d84b4e788baadbe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32593ee7c716202465d3caee0b470bf1') in 0.019354 seconds 
+  Import took 0.023599 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000412 seconds.
-  path: Assets/PantallaVictoria.prefab
-  artifactKey: Guid(e19d0cd08a1e4ba439481cd823a26d10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PantallaVictoria.prefab using Guid(e19d0cd08a1e4ba439481cd823a26d10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dff11a560d44fef8f1d6ed34218bb4bb') in 0.022123 seconds 
-  Import took 0.026554 seconds .
+  Time since last request: 0.000126 seconds.
+  path: Assets/Minijuego Minerales/pico.png
+  artifactKey: Guid(b54aa82dc918ee749836f9db0a8664cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Minijuego Minerales/pico.png using Guid(b54aa82dc918ee749836f9db0a8664cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4151464d02c91e097f222f55909a56da') in 0.016096 seconds 
+  Import took 0.023599 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000385 seconds.
-  path: Assets/Stone.prefab
-  artifactKey: Guid(ebe26ffd150c7f046855de50e2b2d826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stone.prefab using Guid(ebe26ffd150c7f046855de50e2b2d826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '556394f72f091157fe989b3cd944b16e') in 0.014476 seconds 
-  Import took 0.018140 seconds .
+  Time since last request: 0.000414 seconds.
+  path: Assets/Minijuego Minerales/minerales.png
+  artifactKey: Guid(a7444e32bc6dd5f42981f6e6395ee788) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Minijuego Minerales/minerales.png using Guid(a7444e32bc6dd5f42981f6e6395ee788) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb32ec40fbc2775dacde25f98d059cbe') in 0.121280 seconds 
+  Import took 0.125275 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/PantallaDerrota.prefab
-  artifactKey: Guid(862629b1210d21a48a8eadc9fd5e516d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PantallaDerrota.prefab using Guid(862629b1210d21a48a8eadc9fd5e516d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f2e67a8a26c1d1334f6cdf60df33b7c') in 0.026077 seconds 
-  Import took 0.030524 seconds .
+  Time since last request: 3.323679 seconds.
+  path: Assets/Personajes/boceto_panadero_2.png
+  artifactKey: Guid(419c7a102271f3e418a0092cf5c9356e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personajes/boceto_panadero_2.png using Guid(419c7a102271f3e418a0092cf5c9356e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75c9f4369a04062bbcf526c2704ead63') in 0.015527 seconds 
+  Import took 0.019763 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000203 seconds.
-  path: Assets/PuzzleTuberias.prefab
-  artifactKey: Guid(d3cff1440c89e444daf80c1dfc8a5c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PuzzleTuberias.prefab using Guid(d3cff1440c89e444daf80c1dfc8a5c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89b986544b480dedc48ac8e29fcedcdb') in 0.019004 seconds 
-  Import took 0.023519 seconds .
+  Time since last request: 0.000248 seconds.
+  path: Assets/Personajes/BocetoFebrero2.png
+  artifactKey: Guid(f4ea33b6d08950b40a3611fe99e8e5df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personajes/BocetoFebrero2.png using Guid(f4ea33b6d08950b40a3611fe99e8e5df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72a9f13b0373d48d0c1eeb910e381499') in 0.020013 seconds 
+  Import took 0.024321 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000148 seconds.
-  path: Assets/ActivadorPuzzleTuberias.prefab
-  artifactKey: Guid(c4ffaa38effa1e946afb5e5803df999c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ActivadorPuzzleTuberias.prefab using Guid(c4ffaa38effa1e946afb5e5803df999c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31646dddff93b50ffb3461907e2d1c14') in 0.089493 seconds 
-  Import took 0.092892 seconds .
+  Time since last request: 0.000431 seconds.
+  path: Assets/Personajes/ConchiV2.png
+  artifactKey: Guid(bdc96018cd041dd43a1e0dc16b70f339) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personajes/ConchiV2.png using Guid(bdc96018cd041dd43a1e0dc16b70f339) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74598277484642b3fa97c8e93f611a0f') in 0.027284 seconds 
+  Import took 0.031090 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000216 seconds.
-  path: Assets/happy_adveture.mp3
-  artifactKey: Guid(60dabe4962185024b9beb94647b87de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/happy_adveture.mp3 using Guid(60dabe4962185024b9beb94647b87de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95b35263f0c61775dc67fbf8ef642202') in 0.028535 seconds 
-  Import took 0.031413 seconds .
+  Time since last request: 0.000342 seconds.
+  path: Assets/Personajes/BocetoNiñaSinNariz.png
+  artifactKey: Guid(35ba2d693dad8e34a9c255255bd3b2c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personajes/BocetoNiñaSinNariz.png using Guid(35ba2d693dad8e34a9c255255bd3b2c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '872a2e8e5741612dd192c10b41773593') in 0.017762 seconds 
+  Import took 0.023408 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000200 seconds.
-  path: Assets/SistemaDialogos.prefab
-  artifactKey: Guid(6738af0b12939894fbaae1f9f8eb5a6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SistemaDialogos.prefab using Guid(6738af0b12939894fbaae1f9f8eb5a6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec423c2f34f18f8bc7e4d0b5e5e4f01e') in 0.032596 seconds 
-  Import took 0.035571 seconds .
+  Time since last request: 0.000649 seconds.
+  path: Assets/Personajes/BocetoElectricista.png
+  artifactKey: Guid(af5354664bf4c5540b81e80177eeba47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personajes/BocetoElectricista.png using Guid(af5354664bf4c5540b81e80177eeba47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f383b77b6c2e6435c728b2c7b799d64d') in 0.018321 seconds 
+  Import took 0.024059 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.707186 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(7ba3b4541867d6f4cb2a362292a8e3c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(7ba3b4541867d6f4cb2a362292a8e3c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48b4efda5ff3e7f0dc34ca134d585004') in 0.005634 seconds 
-  Import took 0.008820 seconds .
+  Time since last request: 0.000256 seconds.
+  path: Assets/Personajes/BocetoNiñaGemela2SinNariz.png
+  artifactKey: Guid(68a5252e3310bad4e871c62746e49cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personajes/BocetoNiñaGemela2SinNariz.png using Guid(68a5252e3310bad4e871c62746e49cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1258d995dc8e0ae3667736913038ff26') in 0.019099 seconds 
+  Import took 0.023998 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.006517 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(7ba3b4541867d6f4cb2a362292a8e3c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(7ba3b4541867d6f4cb2a362292a8e3c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48b4efda5ff3e7f0dc34ca134d585004') in 0.002965 seconds 
-  Import took 0.007193 seconds .
+  Time since last request: 0.000325 seconds.
+  path: Assets/Personajes/PescadorBoceto.png
+  artifactKey: Guid(84fe919b9f680f44f933c1488ddde3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personajes/PescadorBoceto.png using Guid(84fe919b9f680f44f933c1488ddde3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fa67c42457c91187b27fbad41c4f871') in 0.021185 seconds 
+  Import took 0.024494 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.651250 seconds.
-  path: Assets/Scenes/Minijuego-Minerales.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Minijuego-Minerales.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b361cd7311177c0a57794371e1fb5183') in 0.007946 seconds 
-  Import took 0.012318 seconds .
+  Time since last request: 0.000151 seconds.
+  path: Assets/Personajes/BocetoFontanero.png
+  artifactKey: Guid(87e3f2717bf1bbd47806d42493b42343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personajes/BocetoFontanero.png using Guid(87e3f2717bf1bbd47806d42493b42343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a158e5a1795539497c97c511c82dc232') in 0.022494 seconds 
+  Import took 0.025718 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 289.576734 seconds.
-  path: Assets/Scenes/MinijuegoTuberias.unity
-  artifactKey: Guid(f8b047d3711a2c54cb79fc806872f96a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MinijuegoTuberias.unity using Guid(f8b047d3711a2c54cb79fc806872f96a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd93db2539b8a95e612b3bb12cccbdd43') in 0.008649 seconds 
-  Import took 0.013389 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.686191 seconds.
-  path: Assets/Scenes/FinalDemo.unity
-  artifactKey: Guid(face867175d52ca4298df3dc995d05dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FinalDemo.unity using Guid(face867175d52ca4298df3dc995d05dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bfda152556603a5edc9e19f5e78527a') in 0.014328 seconds 
-  Import took 0.021550 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.235439 seconds.
-  path: Assets/Scenes/EscenaCarlos.unity
-  artifactKey: Guid(f23ddd1d47a0f2e42817b265c1b43a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/EscenaCarlos.unity using Guid(f23ddd1d47a0f2e42817b265c1b43a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b39a27d706112ede889410c380398ec6') in 0.010310 seconds 
-  Import took 0.015107 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 23.308144 seconds.
-  path: Assets/Scenes/Interaccion.unity
-  artifactKey: Guid(fcd8f7adaeb3b3a4891c89d47ab3cec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Interaccion.unity using Guid(fcd8f7adaeb3b3a4891c89d47ab3cec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3a9dde032a300cd9509b8393ae8915b') in 0.009209 seconds 
-  Import took 0.012920 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.133816 seconds.
-  path: Assets/Scenes/Level1.unity
-  artifactKey: Guid(898d9530e2a9aed48bf6396f1e7be1b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level1.unity using Guid(898d9530e2a9aed48bf6396f1e7be1b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e79a759eb1cf506423945783d000804c') in 0.009386 seconds 
-  Import took 0.012875 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 259.003519 seconds.
-  path: Assets/Scenes/Pantallainicio.unity
-  artifactKey: Guid(a2308e877f478dc47aff7194c093ff22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Pantallainicio.unity using Guid(a2308e877f478dc47aff7194c093ff22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d295bb02a30ef1b5ac7e9141e881836') in 0.010048 seconds 
-  Import took 0.013654 seconds .
+  Time since last request: 0.000201 seconds.
+  path: Assets/Personajes/BocetoMinero.png
+  artifactKey: Guid(54d4e21c373a0084193590c9b16c2af6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personajes/BocetoMinero.png using Guid(54d4e21c373a0084193590c9b16c2af6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8505d771ba18d75d0e4902254e50f447') in 0.017932 seconds 
+  Import took 0.023238 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002357 seconds.
+Registered in 0.002785 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.078 seconds
+- Completed reload, in  0.857 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1079ms)
-		BeginReloadAssembly (102ms)
+	ReloadAssembly (858ms)
+		BeginReloadAssembly (104ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (725ms)
-			LoadAssemblies (120ms)
+		EndReloadAssembly (698ms)
+			LoadAssemblies (81ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (247ms)
+			SetupTypeCache (250ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (239ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (43ms)
-				ProcessInitializeOnLoadAttributes (182ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1933 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.3 MB.
-System memory in use after: 92.4 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2403.
-Total: 2.240100 ms (FindLiveObjects: 0.188300 ms CreateObjectMapping: 0.072000 ms MarkObjects: 1.919900 ms  DeleteObjects: 0.058800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 22.717991 seconds.
-  path: Assets/Scenes/NIveles
-  artifactKey: Guid(129a05383cb39d648b55b15baf92fcce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/NIveles using Guid(129a05383cb39d648b55b15baf92fcce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a0a219406d5110b554fb0b0ff20ebc5') in 0.011630 seconds 
-  Import took 0.014717 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.109674 seconds.
-  path: Assets/Scenes/NIveles/Secuencia1Moscas.unity
-  artifactKey: Guid(e92bdb058d4df2b438a6005c5df4a74f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/NIveles/Secuencia1Moscas.unity using Guid(e92bdb058d4df2b438a6005c5df4a74f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6442495c3220a6cc9007a0f3c69fb6c5') in 0.015631 seconds 
-  Import took 0.018687 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009286 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.87 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.546 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2547ms)
-		BeginReloadAssembly (290ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (14ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (99ms)
-		EndReloadAssembly (2102ms)
-			LoadAssemblies (257ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (750ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (112ms)
-			SetupLoadedEditorAssemblies (728ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (16ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (128ms)
-				ProcessInitializeOnLoadAttributes (559ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (25ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1933 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.3 MB.
-System memory in use after: 92.4 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2405.
-Total: 5.986500 ms (FindLiveObjects: 0.636500 ms CreateObjectMapping: 1.280600 ms MarkObjects: 3.886200 ms  DeleteObjects: 0.176100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 150.861027 seconds.
-  path: Assets/Scenes/Minijuego-Minerales.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Minijuego-Minerales.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2aaf87ce62147bd4cbcbfc3d2ac31b7') in 0.014409 seconds 
-  Import took 0.017572 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002635 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.919 seconds
-Domain Reload Profiling:
-	ReloadAssembly (920ms)
-		BeginReloadAssembly (106ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (756ms)
-			LoadAssemblies (78ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (264ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (262ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (246ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
 				BeforeProcessingInitializeOnLoad (46ms)
-				ProcessInitializeOnLoadAttributes (202ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.41 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1933 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.4 MB.
-System memory in use after: 92.5 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2407.
-Total: 2.053600 ms (FindLiveObjects: 0.203800 ms CreateObjectMapping: 0.066400 ms MarkObjects: 1.752200 ms  DeleteObjects: 0.030200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 320.040909 seconds.
-  path: Assets/Scenes/MinijuegoObstaculos.unity
-  artifactKey: Guid(011aae6e9f6a73846ad473f1ffc5759d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MinijuegoObstaculos.unity using Guid(011aae6e9f6a73846ad473f1ffc5759d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af327f0d6ed776aea713ade1c7d2e282') in 0.017179 seconds 
-  Import took 0.020858 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 24.254041 seconds.
-  path: Assets/Prefabs
-  artifactKey: Guid(ca33c341d6b4b99429a1f4f22ce49877) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs using Guid(ca33c341d6b4b99429a1f4f22ce49877) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbd110554b2c2cd14f7c4f019f5e7a9e') in 0.008105 seconds 
-  Import took 0.012632 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.034000 seconds.
-  path: Assets/Prefabs/FebreroSeparado.prefab
-  artifactKey: Guid(40f2c42f3408f5d4b8fe0609ea14e866) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/FebreroSeparado.prefab using Guid(40f2c42f3408f5d4b8fe0609ea14e866) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8288f6e8bcde822676d1d14e87d23a7f') in 0.066919 seconds 
-  Import took 0.071590 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000213 seconds.
-  path: Assets/Prefabs/Obstaculo-pescar.prefab
-  artifactKey: Guid(3beea12d1a9fae54eae37821be3b5c42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Obstaculo-pescar.prefab using Guid(3beea12d1a9fae54eae37821be3b5c42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14b259664cb26d90edc1a83a4f936074') in 0.034918 seconds 
-  Import took 0.039225 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000224 seconds.
-  path: Assets/Prefabs/Mosca.prefab
-  artifactKey: Guid(e57ac8d2b6d2bf24082d8e4f5031883b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Mosca.prefab using Guid(e57ac8d2b6d2bf24082d8e4f5031883b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e639eec9376811a0b8a0f3cc92e7b7f7') in 0.034172 seconds 
-  Import took 0.038308 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000360 seconds.
-  path: Assets/Prefabs/Matamoscas.prefab
-  artifactKey: Guid(3287dbdd259470c4fb105592c6bca1f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Matamoscas.prefab using Guid(3287dbdd259470c4fb105592c6bca1f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c271405243b03fffa48a3fadc0a9ff6') in 0.029354 seconds 
-  Import took 0.033522 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000421 seconds.
-  path: Assets/Prefabs/InstruccionesMinijuego.prefab
-  artifactKey: Guid(6a18a8840bdcf90458c7e6abb348e8a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/InstruccionesMinijuego.prefab using Guid(6a18a8840bdcf90458c7e6abb348e8a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6727a6aae22b617b9d1b09e3735db39') in 0.078049 seconds 
-  Import took 0.081883 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.532488 seconds.
-  path: Assets/Prefabs/Min-Minerales
-  artifactKey: Guid(b298cee3afef13742a782e1769ef0fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales using Guid(b298cee3afef13742a782e1769ef0fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f18b40550e573d22541b8a4accaa2f1') in 0.010029 seconds 
-  Import took 0.013430 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.602174 seconds.
-  path: Assets/Prefabs/Min-Minerales/Piedra Amarilla 2.prefab
-  artifactKey: Guid(059c557f6159bf64fa4cf8a640fb0763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/Piedra Amarilla 2.prefab using Guid(059c557f6159bf64fa4cf8a640fb0763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2881f09be85850871418f0c4a4466240') in 0.013789 seconds 
-  Import took 0.017981 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000295 seconds.
-  path: Assets/Prefabs/Min-Minerales/Piedra Azul Oscuro.prefab
-  artifactKey: Guid(077d16e233396c542ac70401c5be2edc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/Piedra Azul Oscuro.prefab using Guid(077d16e233396c542ac70401c5be2edc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe9c56eed8f084c7fff8e41232f43fbd') in 0.008898 seconds 
-  Import took 0.011897 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000172 seconds.
-  path: Assets/Prefabs/Min-Minerales/piedras_12.prefab
-  artifactKey: Guid(6a720f40e8933df409ee7ba02fad5357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/piedras_12.prefab using Guid(6a720f40e8933df409ee7ba02fad5357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd72716f8d9274aa01c95c73523ceafbe') in 0.035477 seconds 
-  Import took 0.041194 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000468 seconds.
-  path: Assets/Prefabs/Min-Minerales/Piedra Azul Oscuro 2.prefab
-  artifactKey: Guid(870722bbb2d277a4685d44ebbff1113a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/Piedra Azul Oscuro 2.prefab using Guid(870722bbb2d277a4685d44ebbff1113a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c6426e13d3d7e91a544478d28739fdb') in 0.012431 seconds 
-  Import took 0.015710 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000328 seconds.
-  path: Assets/Prefabs/Min-Minerales/piedras_9.prefab
-  artifactKey: Guid(1a835a675ff265d419daf62d9de3f082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/piedras_9.prefab using Guid(1a835a675ff265d419daf62d9de3f082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30995c84ddb68214f3ffe17cf77882d2') in 0.030973 seconds 
-  Import took 0.035169 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000183 seconds.
-  path: Assets/Prefabs/Min-Minerales/Piedra Amarilla.prefab
-  artifactKey: Guid(8d85ec69aa3048d4eafaaa2687d44413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/Piedra Amarilla.prefab using Guid(8d85ec69aa3048d4eafaaa2687d44413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c261e9a865a0ae7c7151581711485d9c') in 0.011594 seconds 
-  Import took 0.020460 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000232 seconds.
-  path: Assets/Prefabs/Min-Minerales/piedras_11.prefab
-  artifactKey: Guid(f58a009c8313c7242a34a4cc403ef542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/piedras_11.prefab using Guid(f58a009c8313c7242a34a4cc403ef542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5ce68ba0fa8c6d422a6492db7a70229') in 0.035629 seconds 
-  Import took 0.040285 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/Prefabs/Min-Minerales/Piedra Roja.prefab
-  artifactKey: Guid(01b5f676affed154eadc212b09c03dca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/Piedra Roja.prefab using Guid(01b5f676affed154eadc212b09c03dca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '626488ef3974a172eb7173e4e491fe40') in 0.011460 seconds 
-  Import took 0.015638 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000200 seconds.
-  path: Assets/Prefabs/Min-Minerales/Piedra Verde 2.prefab
-  artifactKey: Guid(a619bde607aacf94f911d9bd2cfb742e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/Piedra Verde 2.prefab using Guid(a619bde607aacf94f911d9bd2cfb742e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41c3d168927b3e6bff7e55923bff4ece') in 0.016172 seconds 
-  Import took 0.020341 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/Prefabs/Min-Minerales/Piedra Azul Claro.prefab
-  artifactKey: Guid(04afb9d32120ad24ea36f9df21073039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/Piedra Azul Claro.prefab using Guid(04afb9d32120ad24ea36f9df21073039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fa212308288c05b38f60932caad2443') in 0.016486 seconds 
-  Import took 0.021815 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000130 seconds.
-  path: Assets/Prefabs/Min-Minerales/piedras_14.prefab
-  artifactKey: Guid(5ff2a8ad057087940b4c2d193d521ef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/piedras_14.prefab using Guid(5ff2a8ad057087940b4c2d193d521ef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e29197e6a895c8b5e954e9bdf782d8a9') in 0.030042 seconds 
-  Import took 0.033770 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000183 seconds.
-  path: Assets/Prefabs/Min-Minerales/piedras_13.prefab
-  artifactKey: Guid(b6bdfc8f10d8d5741b87cee8ae6bee36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/piedras_13.prefab using Guid(b6bdfc8f10d8d5741b87cee8ae6bee36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10ee6aac4a4079c2bda4ec5a4334012d') in 0.027367 seconds 
-  Import took 0.033032 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000066 seconds.
-  path: Assets/Prefabs/Min-Minerales/Piedra Verde.prefab
-  artifactKey: Guid(e983e41a306d0ab48b9d2430584c28d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/Piedra Verde.prefab using Guid(e983e41a306d0ab48b9d2430584c28d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2b51db96127e2d19a98c9cb894fd806') in 0.012105 seconds 
-  Import took 0.018147 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000394 seconds.
-  path: Assets/Prefabs/Min-Minerales/Piedras Rosa.prefab
-  artifactKey: Guid(14571102faf470a45a5ba15811c93b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/Piedras Rosa.prefab using Guid(14571102faf470a45a5ba15811c93b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da48d0953134df10d89b7576d01b3bdf') in 0.012265 seconds 
-  Import took 0.018051 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000181 seconds.
-  path: Assets/Prefabs/Min-Minerales/Piedra Roja 2.prefab
-  artifactKey: Guid(3815b9fe442a5e445829ae66e531e1d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/Piedra Roja 2.prefab using Guid(3815b9fe442a5e445829ae66e531e1d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd31d2a382bab2dd3b4bc14e9228b1c73') in 0.014638 seconds 
-  Import took 0.018980 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.772997 seconds.
-  path: Assets/Prefabs/Min-Minerales/Piedra Amarilla 2.prefab
-  artifactKey: Guid(059c557f6159bf64fa4cf8a640fb0763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/Piedra Amarilla 2.prefab using Guid(059c557f6159bf64fa4cf8a640fb0763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acd0872a24cd889daa174e4f689b1d97') in 0.012937 seconds 
-  Import took 0.019029 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.546906 seconds.
-  path: Assets/Prefabs/Min-Minerales/Piedra Amarilla.prefab
-  artifactKey: Guid(8d85ec69aa3048d4eafaaa2687d44413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/Piedra Amarilla.prefab using Guid(8d85ec69aa3048d4eafaaa2687d44413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edbbd0d0950dd365bda14a73eb37141f') in 0.012009 seconds 
-  Import took 0.017328 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.285020 seconds.
-  path: Assets/Prefabs/Min-Minerales/Piedra Azul Claro.prefab
-  artifactKey: Guid(04afb9d32120ad24ea36f9df21073039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/Piedra Azul Claro.prefab using Guid(04afb9d32120ad24ea36f9df21073039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b37f07e541417129b463748d82d36e4') in 0.012971 seconds 
-  Import took 0.018679 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.050305 seconds.
-  path: Assets/Prefabs/Min-Minerales/Piedra Azul Oscuro.prefab
-  artifactKey: Guid(077d16e233396c542ac70401c5be2edc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/Piedra Azul Oscuro.prefab using Guid(077d16e233396c542ac70401c5be2edc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ebcf357b297e8bf52a71db2140f578c') in 0.013154 seconds 
-  Import took 0.018668 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.779430 seconds.
-  path: Assets/Prefabs/Min-Minerales/Piedra Roja 2.prefab
-  artifactKey: Guid(3815b9fe442a5e445829ae66e531e1d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/Piedra Roja 2.prefab using Guid(3815b9fe442a5e445829ae66e531e1d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c3d0e2341a5cc9d20de7c7122f676d7') in 0.012007 seconds 
-  Import took 0.018310 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.472544 seconds.
-  path: Assets/Prefabs/Min-Minerales/Piedra Amarilla 2.prefab
-  artifactKey: Guid(059c557f6159bf64fa4cf8a640fb0763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/Piedra Amarilla 2.prefab using Guid(059c557f6159bf64fa4cf8a640fb0763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edba109bc1b03f821d4e90aa7f0fe75c') in 0.012944 seconds 
-  Import took 0.018006 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 461.254095 seconds.
-  path: Assets/Prefabs/Min-Minerales/Piedra Verde 2.prefab
-  artifactKey: Guid(a619bde607aacf94f911d9bd2cfb742e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/Piedra Verde 2.prefab using Guid(a619bde607aacf94f911d9bd2cfb742e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c7379499c143f37302745cc73977fb1') in 0.011388 seconds 
-  Import took 0.016692 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.544958 seconds.
-  path: Assets/Prefabs/Min-Minerales/Piedras Rosa.prefab
-  artifactKey: Guid(14571102faf470a45a5ba15811c93b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/Piedras Rosa.prefab using Guid(14571102faf470a45a5ba15811c93b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44b1534da6fc027c98a612dcf334858c') in 0.010562 seconds 
-  Import took 0.015377 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002491 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.42 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.862 seconds
-Domain Reload Profiling:
-	ReloadAssembly (863ms)
-		BeginReloadAssembly (111ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (698ms)
-			LoadAssemblies (76ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (242ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (246ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (48ms)
-				ProcessInitializeOnLoadAttributes (183ms)
+				ProcessInitializeOnLoadAttributes (185ms)
 				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.40 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1933 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.4 MB.
-System memory in use after: 92.5 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2410.
-Total: 2.207500 ms (FindLiveObjects: 0.155600 ms CreateObjectMapping: 0.055000 ms MarkObjects: 1.957500 ms  DeleteObjects: 0.038500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1182.352790 seconds.
-  path: Assets/Prefabs/Min-Minerales/Piedra Amarilla.prefab
-  artifactKey: Guid(8d85ec69aa3048d4eafaaa2687d44413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/Piedra Amarilla.prefab using Guid(8d85ec69aa3048d4eafaaa2687d44413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9593bd2784346f2b5de6eebc2eb091f') in 0.049920 seconds 
-  Import took 0.054925 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000803 seconds.
-  path: Assets/Prefabs/Min-Minerales/Piedra Amarilla.prefab
-  artifactKey: Guid(8d85ec69aa3048d4eafaaa2687d44413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/Piedra Amarilla.prefab using Guid(8d85ec69aa3048d4eafaaa2687d44413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9593bd2784346f2b5de6eebc2eb091f') in 0.005372 seconds 
-  Import took 0.009165 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.831995 seconds.
-  path: Assets/Prefabs/Min-Minerales/Piedra Amarilla.prefab
-  artifactKey: Guid(8d85ec69aa3048d4eafaaa2687d44413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/Piedra Amarilla.prefab using Guid(8d85ec69aa3048d4eafaaa2687d44413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20791b259eaa0d029d8d982d103347d8') in 0.011505 seconds 
-  Import took 0.015784 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.688799 seconds.
-  path: Assets/Prefabs/Min-Minerales/Piedra Azul Claro.prefab
-  artifactKey: Guid(04afb9d32120ad24ea36f9df21073039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/Piedra Azul Claro.prefab using Guid(04afb9d32120ad24ea36f9df21073039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e10a33af1fe009c2c77babbae1c22b24') in 0.010771 seconds 
-  Import took 0.015381 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.539011 seconds.
-  path: Assets/Prefabs/Min-Minerales/Piedra Azul Oscuro 2.prefab
-  artifactKey: Guid(870722bbb2d277a4685d44ebbff1113a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/Piedra Azul Oscuro 2.prefab using Guid(870722bbb2d277a4685d44ebbff1113a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c05a7ed01e7ff3a97698fc2098d2e4b7') in 0.013289 seconds 
-  Import took 0.019219 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.538684 seconds.
-  path: Assets/Prefabs/Min-Minerales/Piedra Azul Oscuro.prefab
-  artifactKey: Guid(077d16e233396c542ac70401c5be2edc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/Piedra Azul Oscuro.prefab using Guid(077d16e233396c542ac70401c5be2edc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d0d9e2315c7f84b8f4dcef6b81fbf70') in 0.011027 seconds 
-  Import took 0.015307 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.286418 seconds.
-  path: Assets/Prefabs/Min-Minerales/Piedra Roja 2.prefab
-  artifactKey: Guid(3815b9fe442a5e445829ae66e531e1d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/Piedra Roja 2.prefab using Guid(3815b9fe442a5e445829ae66e531e1d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97ecf06d6403aa43336418427fd1d3f5') in 0.011414 seconds 
-  Import took 0.015332 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.846410 seconds.
-  path: Assets/Prefabs/Min-Minerales/Piedra Roja.prefab
-  artifactKey: Guid(01b5f676affed154eadc212b09c03dca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/Piedra Roja.prefab using Guid(01b5f676affed154eadc212b09c03dca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1144c4bcf132f7a609d5160411728821') in 0.013699 seconds 
-  Import took 0.020018 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.360304 seconds.
-  path: Assets/Prefabs/Min-Minerales/Piedra Verde 2.prefab
-  artifactKey: Guid(a619bde607aacf94f911d9bd2cfb742e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/Piedra Verde 2.prefab using Guid(a619bde607aacf94f911d9bd2cfb742e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77c67a051b1b5eb07b0c991cffeb71b8') in 0.014440 seconds 
-  Import took 0.019160 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.200321 seconds.
-  path: Assets/Prefabs/Min-Minerales/Piedra Verde.prefab
-  artifactKey: Guid(e983e41a306d0ab48b9d2430584c28d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/Piedra Verde.prefab using Guid(e983e41a306d0ab48b9d2430584c28d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1aca5f3cc3f0737f0ee0af3a9bec65e') in 0.010623 seconds 
-  Import took 0.015254 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.022125 seconds.
-  path: Assets/Prefabs/Min-Minerales/Piedras Rosa.prefab
-  artifactKey: Guid(14571102faf470a45a5ba15811c93b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Min-Minerales/Piedras Rosa.prefab using Guid(14571102faf470a45a5ba15811c93b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '110fdf25037e0417f3f51256fa2aea88') in 0.010464 seconds 
-  Import took 0.014997 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002378 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.39 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.831 seconds
-Domain Reload Profiling:
-	ReloadAssembly (832ms)
-		BeginReloadAssembly (93ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (30ms)
-		EndReloadAssembly (685ms)
-			LoadAssemblies (75ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (243ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (243ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (44ms)
-				ProcessInitializeOnLoadAttributes (185ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.40 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1933 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.4 MB.
+System memory in use before: 92.5 MB.
 System memory in use after: 92.6 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2412.
-Total: 2.222000 ms (FindLiveObjects: 0.176200 ms CreateObjectMapping: 0.140800 ms MarkObjects: 1.853000 ms  DeleteObjects: 0.051000 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2473.
+Total: 2.280500 ms (FindLiveObjects: 0.174100 ms CreateObjectMapping: 0.066600 ms MarkObjects: 2.022700 ms  DeleteObjects: 0.015900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
