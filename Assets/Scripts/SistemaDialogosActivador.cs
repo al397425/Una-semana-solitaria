@@ -22,20 +22,31 @@ public class SistemaDialogosActivador : MonoBehaviour
 	
 	bool conversacionPrincipalAcabada = false; 
 	bool conversacionOpcionalAcabada = false; 
+
+	bool activarDialogo = false;
 	
+void Update(){
+	if(Input.GetKeyDown(sistemaDialogos.teclaDeInteraccion) && sistemaDialogos.GetReactivarConversacion() == true){
+		activarDialogo = true;
+	}
+}
+
 	void OnTriggerStay2D(Collider2D other){
-		if ((activador == true || Input.GetKeyDown(sistemaDialogos.teclaDeInteraccion)) && sistemaDialogos.GetcomenzarConversacion() == true && sistemaDialogos.GetReactivarConversacion() == true)
+		if ((activador == true || activarDialogo == true) && sistemaDialogos.GetcomenzarConversacion() == true && sistemaDialogos.GetReactivarConversacion() == true && conversacionOpcionalAcabada == false)
         {
+			activarDialogo = false;
 			if(eventoAlEmpezarDialogo != null){
 				eventoAlEmpezarDialogo.Invoke();
 			}
 			
 			if(conversacionPrincipalAcabada == false){
 				sistemaDialogos.gameObject.SetActive(true);
+				gameObject.transform.GetChild(0).gameObject.SetActive(true);
 				sistemaDialogos.ObtenerListaDeDialogos(numeroDialgoParaActivar,retratorDelDialogo,eventoAlTerminarDialogo);
 				conversacionPrincipalAcabada = true;
 			}else if(conversaccionOpcional == true && conversacionOpcionalAcabada == false){
 				sistemaDialogos.gameObject.SetActive(true);
+				gameObject.transform.GetChild(0).gameObject.SetActive(true);
 				sistemaDialogos.ObtenerListaDeDialogos(numeroDialgoOpcionalParaActivar,retratorDelDialogo,eventoAlTerminarDialogo);
 				conversacionOpcionalAcabada = true;
 			}

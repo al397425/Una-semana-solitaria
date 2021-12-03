@@ -55,7 +55,7 @@ public class SistemaDialogos : MonoBehaviour
 	Color32 colorGris = new Color32(100,100,100,255);
 	
 	
-	void FixedUpdate(){
+	void Update(){
 		if(Input.GetKeyDown(teclaAvanzarDialogo) && comenzarConversacion == false){
 			AvanzarDialogo();
 		}
@@ -66,14 +66,20 @@ public class SistemaDialogos : MonoBehaviour
 	}
 	
 	IEnumerator reactivarConversacion(){
-		
-		 yield return new WaitForSeconds(0.1f);
-		 gameObject.SetActive(false);
+		//Reactiva el movimiento del jugador
+		gameObject.transform.GetChild(0).gameObject.SetActive(false);
+		StopCoroutine(corrutinaActual);
+		yield return new WaitForSeconds(0.5f);
+		//Reactiva el sistema de dialogos
+		gameObject.transform.GetChild(0).gameObject.SetActive(true);
 		reactivaConversacion = true;
+		gameObject.SetActive(false);
 	}
 	
 	//Obtiene la lista de dialogos usada durante la conversacion y hace las asignaciones de los parametro del NPC
 	public void ObtenerListaDeDialogos(int personaje, Sprite retratoNPC, UnityEvent eventoAlTerminarDialogo){
+		bool finObtencionDialogos = false;
+
 		reactivaConversacion = false;
 		comenzarConversacion = false;
 		indiceDialogoNPC = 0;
@@ -84,7 +90,7 @@ public class SistemaDialogos : MonoBehaviour
 		using(var reader = new StreamReader( Path.Combine(Application.streamingAssetsPath, nombreArchivoDialogos)))
 		{
 			var line = reader.ReadLine();
-			while (!reader.EndOfStream)
+			while (!reader.EndOfStream && finObtencionDialogos == false)
 			{
 				line = reader.ReadLine();
 				var values = line.Split(';');
@@ -93,6 +99,8 @@ public class SistemaDialogos : MonoBehaviour
 						if((values[(personaje*6)] !="" || values[(personaje*6) + 3] != "")){
 							dialogosNPC.Add(values[(personaje*6)]);
 							dialogosPersonaje.Add(values[(personaje*6) + 3]);
+						}else{
+							finObtencionDialogos = true;
 						}
 					break;
 					
@@ -100,6 +108,8 @@ public class SistemaDialogos : MonoBehaviour
 						if(values[(personaje*6) + 1] !="" || values[(personaje*6) + 4] != ""){
 							dialogosNPC.Add(values[(personaje*6) + 1]);
 							dialogosPersonaje.Add(values[(personaje*6) + 4]);
+						}else{
+							finObtencionDialogos = true;
 						}
 					break;
 					
@@ -107,6 +117,8 @@ public class SistemaDialogos : MonoBehaviour
 						if(values[(personaje*6) + 2] !="" || values[(personaje*6) + 5] != ""){
 							dialogosNPC.Add(values[(personaje*6) + 2]);
 							dialogosPersonaje.Add(values[(personaje*6) + 5]);
+						}else{
+							finObtencionDialogos = true;
 						}
 					break;
 				}
