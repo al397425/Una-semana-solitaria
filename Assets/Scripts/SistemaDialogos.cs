@@ -17,6 +17,9 @@ public class SistemaDialogos : MonoBehaviour
 	//public TextAsset ficheroDialogos;
 	//Texto de la ui que se modificara
 	public TextMeshProUGUI textoUI;
+	//Texto del nombre del npc que se modificara
+	public TextMeshProUGUI textoNombreUI;
+
 	//Tecla de interaccion
 	public KeyCode teclaDeInteraccion;
 	//Tiempo de animacion
@@ -29,6 +32,10 @@ public class SistemaDialogos : MonoBehaviour
 	
 	//CSV de los dialogos
 	public string nombreArchivoDialogos = "dialogos prueba.csv";
+
+	public string nombreProtagonista = "F.García";
+
+	string nombreNpc;
 
 	int indiceDialogoNPC, indiceDialogoJugador;
 	
@@ -92,8 +99,10 @@ public class SistemaDialogos : MonoBehaviour
 	}
 	
 	//Obtiene la lista de dialogos usada durante la conversacion y hace las asignaciones de los parametro del NPC
-	public void ObtenerListaDeDialogos(int personaje, Sprite retratoNPC, UnityEvent eventoAlTerminarDialogo, GameObject refJugador, GameObject refNpc){
+	public void ObtenerListaDeDialogos(int personaje, Sprite retratoNPC, UnityEvent eventoAlTerminarDialogo, GameObject refJugador, GameObject refNpc, string nomNPC = "npc"){
 		bool finObtencionDialogos = false;
+
+		nombreNpc = nomNPC;
 
 		reactivaConversacion = false;
 		comenzarConversacion = false;
@@ -165,6 +174,7 @@ public class SistemaDialogos : MonoBehaviour
 	public void AvanzarDialogo(){
 		if((indiceDialogoNPC < dialogosNPC.Count && dialogosNPC[indiceDialogoNPC]!="") || (indiceDialogoJugador < dialogosPersonaje.Count && dialogosPersonaje[indiceDialogoJugador] != "")){
 			if(dialogosNPC[indiceDialogoNPC]==""){
+				textoNombreUI.text = nombreProtagonista;
 				referenciaRetratoDialogoJugador.color = colorBlanco;
 				referenciaRetratoDialogoNPC.color = colorGris;
 				if(corrutinaActual != null)
@@ -175,6 +185,7 @@ public class SistemaDialogos : MonoBehaviour
 				indiceDialogoNPC++;
 				hablaNPC = false;
 			}else if(dialogosPersonaje[indiceDialogoJugador]==""){
+				textoNombreUI.text = nombreNpc;
 				referenciaRetratoDialogoJugador.color = colorGris;
 				referenciaRetratoDialogoNPC.color = colorBlanco;
 				if(corrutinaActual != null)
@@ -186,6 +197,7 @@ public class SistemaDialogos : MonoBehaviour
 				hablaNPC = true;
 			}else{
 				if(hablaNPC){
+					textoNombreUI.text = nombreNpc;
 					referenciaRetratoDialogoJugador.color = colorGris;
 					referenciaRetratoDialogoNPC.color = colorBlanco;
 					if(corrutinaActual != null)
@@ -194,6 +206,7 @@ public class SistemaDialogos : MonoBehaviour
 					StartCoroutine(corrutinaActual);
 					hablaNPC = false;
 				}else{
+					textoNombreUI.text = nombreProtagonista;
 					referenciaRetratoDialogoJugador.color = colorBlanco;
 					referenciaRetratoDialogoNPC.color = colorGris;
 					if(corrutinaActual != null)

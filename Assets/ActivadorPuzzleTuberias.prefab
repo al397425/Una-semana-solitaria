@@ -369,6 +369,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Borde
       objectReference: {fileID: 0}
+    - target: {fileID: 8397543149037936126, guid: dfbbafe3d994b484f8397982b7fc4cb4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfbbafe3d994b484f8397982b7fc4cb4, type: 3}
 --- !u!4 &3611116893916072548 stripped

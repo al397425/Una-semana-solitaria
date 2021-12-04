@@ -15,10 +15,14 @@ public class SistemaDialogosActivador : MonoBehaviour
 	public bool conversaccionOpcional = true;
 	public bool conversaccionOpcionalSeRepite = false; 	
 	public int numeroDialgoOpcionalParaActivar;
+	//Nombre del npc
+	public string nombreNPC = "Npc";
 	//Evento a llamar
 	public UnityEvent eventoAlEmpezarDialogo;
 	//Evento a llamar
 	public UnityEvent eventoAlTerminarDialogo;
+
+
 	
 	bool conversacionPrincipalAcabada = false; 
 	bool conversacionOpcionalAcabada = false; 
@@ -32,12 +36,13 @@ void Update(){
 		activarDialogo = true;
 	}
 }
-
-void OnTriggerExit2D(Collider2D other){
-			if(other.tag == "Player"){
+	
+	//Para evitar darle al espacio y despues al colisionar sin pulsar nada se active
+	void OnTriggerExit2D(Collider2D other){
+		if(other.tag == "Player"){
 			dentroTrigger = false;
 		}
-}
+	}
 
 	void OnTriggerStay2D(Collider2D other){
 		
@@ -55,12 +60,12 @@ void OnTriggerExit2D(Collider2D other){
 			if(conversacionPrincipalAcabada == false){
 				sistemaDialogos.gameObject.SetActive(true);
 				gameObject.transform.GetChild(0).gameObject.SetActive(true);
-				sistemaDialogos.ObtenerListaDeDialogos(numeroDialgoParaActivar,retratorDelDialogo,eventoAlTerminarDialogo, other.gameObject, gameObject);
+				sistemaDialogos.ObtenerListaDeDialogos(numeroDialgoParaActivar,retratorDelDialogo,eventoAlTerminarDialogo, other.gameObject, gameObject, nombreNPC);
 				conversacionPrincipalAcabada = true;
 			}else if(conversaccionOpcional == true && conversacionOpcionalAcabada == false){
 				sistemaDialogos.gameObject.SetActive(true);
 				gameObject.transform.GetChild(0).gameObject.SetActive(true);
-				sistemaDialogos.ObtenerListaDeDialogos(numeroDialgoOpcionalParaActivar,retratorDelDialogo,eventoAlTerminarDialogo, other.gameObject, gameObject);
+				sistemaDialogos.ObtenerListaDeDialogos(numeroDialgoOpcionalParaActivar,retratorDelDialogo,eventoAlTerminarDialogo, other.gameObject, gameObject, nombreNPC);
 				conversacionOpcionalAcabada = true;
 			}
 			

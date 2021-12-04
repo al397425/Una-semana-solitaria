@@ -24,23 +24,37 @@ public class EmpezarMinijuego : MonoBehaviour
 	bool activo = false;
 	
 	GameObject interfazNoDisponeObjeto;
+
+	bool dentroTrigger = false;
+	bool minijuegoActivado = false;
 	
 	void Awake(){
 		interfazNoDisponeObjeto = transform.Find("InterfazNoTieneObjeto").gameObject;
 	}
 	
+	void Update(){
+		if(dentroTrigger == true && Input.GetKeyDown(teclaDeInteraccion)){
+			minijuegoActivado = true;
+		}
+	}
+
     void OnTriggerStay2D(Collider2D other){
-		if (activo == false && Input.GetKeyDown(teclaDeInteraccion) && other.tag == "Player"){	
-			if((nombreObjetoRequerido == "" || other.gameObject.GetComponent<Inventario>().BuscarEliminarObjeto(nombreObjetoRequerido))){
-				activo = true;
-				if(minijuegoEnOtraEscena == true){
-					SceneManager.LoadScene(nombreDelMapa);
+		if(other.tag == "Player"){
+			
+			dentroTrigger = true;
+			if (activo == false && minijuegoActivado == true){	
+				if((nombreObjetoRequerido == "" || other.gameObject.GetComponent<Inventario>().BuscarEliminarObjeto(nombreObjetoRequerido))){
+					activo = true;
+					if(minijuegoEnOtraEscena == true){
+						SceneManager.LoadScene(nombreDelMapa);
+					}else{
+						Instantiate(objetoMinijuego, new Vector2(0,0), Quaternion.identity);
+					}
 				}else{
-					Instantiate(objetoMinijuego, new Vector2(0,0), Quaternion.identity);
+					minijuegoActivado = false;
+					interfazNoDisponeObjeto.GetComponent<Animator>().SetFloat("VelocidadAnimacion", 1);
+					interfazNoDisponeObjeto.GetComponent<Animator>().Play("ObjetoNoEncontrado");
 				}
-			}else{
-				interfazNoDisponeObjeto.GetComponent<Animator>().SetFloat("VelocidadAnimacion", 1);
-				interfazNoDisponeObjeto.GetComponent<Animator>().Play("ObjetoNoEncontrado");
 			}
 		}
 	}
@@ -50,6 +64,8 @@ public class EmpezarMinijuego : MonoBehaviour
 			//Desactiva la interfaz que indica que no dispone de objeto
 			interfazNoDisponeObjeto.GetComponent<Animator>().SetFloat("VelocidadAnimacion", -1);
 			interfazNoDisponeObjeto.GetComponent<Animator>().Play("ObjetoNoEncontrado");
+			//Para evitar darle al espacio y despues al colisionar sin pulsar nada se active
+			dentroTrigger = false;
 		}
 	}
 }
