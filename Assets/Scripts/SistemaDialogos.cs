@@ -49,11 +49,19 @@ public class SistemaDialogos : MonoBehaviour
 	
 	bool reactivaConversacion = true;
 	
+	Animator anim;
+
+	GameObject jugador;
 
 	
 	Color32 colorBlanco = new Color32(255,255,255,255);
 	Color32 colorGris = new Color32(100,100,100,255);
+
+	GameObject npc;
 	
+	void Awake(){
+		anim = GetComponent<Animator>();
+	}
 	
 	void Update(){
 		if(Input.GetKeyDown(teclaAvanzarDialogo) && comenzarConversacion == false){
@@ -69,6 +77,13 @@ public class SistemaDialogos : MonoBehaviour
 		//Reactiva el movimiento del jugador
 		gameObject.transform.GetChild(0).gameObject.SetActive(false);
 		StopCoroutine(corrutinaActual);
+		jugador.GetComponent<MovementCharacter>().enabled = true;
+		jugador.GetComponent<Animator>().enabled = true;
+		if(npc.GetComponent<SistemaDialogosActivador>().GetconversacionOpcionalAcabada() == true || (npc.GetComponent<SistemaDialogosActivador>().conversaccionOpcional == false && npc.GetComponent<SistemaDialogosActivador>().GetconversacionPrincipalAcabada() == true)){
+			//Ejecuta animacion para quitar cuadro
+			npc.GetComponent<MostrarCuadroInteraccion>().EjecutarAnimacion("CuadroInteraccion",-1.0f,1.0f);
+			npc.GetComponent<MostrarCuadroInteraccion>().SetcuadroDesactivado(true);
+		}
 		yield return new WaitForSeconds(0.5f);
 		//Reactiva el sistema de dialogos
 		gameObject.transform.GetChild(0).gameObject.SetActive(true);
@@ -77,7 +92,7 @@ public class SistemaDialogos : MonoBehaviour
 	}
 	
 	//Obtiene la lista de dialogos usada durante la conversacion y hace las asignaciones de los parametro del NPC
-	public void ObtenerListaDeDialogos(int personaje, Sprite retratoNPC, UnityEvent eventoAlTerminarDialogo){
+	public void ObtenerListaDeDialogos(int personaje, Sprite retratoNPC, UnityEvent eventoAlTerminarDialogo, GameObject refJugador, GameObject refNpc){
 		bool finObtencionDialogos = false;
 
 		reactivaConversacion = false;
@@ -86,7 +101,17 @@ public class SistemaDialogos : MonoBehaviour
 		indiceDialogoJugador = 0;
 		referenciaSpriteNPC= retratoNPC;
 		eventoTerminarDialogo = eventoAlTerminarDialogo;
+
+		transform.Find("Canvas/NPC").gameObject.GetComponent<Image>().sprite = referenciaSpriteNPC;
+
+		npc = refNpc;
 			Debug.Log(Application.dataPath);
+
+		jugador = refJugador;
+		jugador.GetComponent<MovementCharacter>().enabled = false;
+		jugador.GetComponent<Animator>().enabled = false;
+
+		textoUI.text = "";	
 		using(var reader = new StreamReader( Path.Combine(Application.streamingAssetsPath, nombreArchivoDialogos)))
 		{
 			var line = reader.ReadLine();
@@ -127,10 +152,15 @@ public class SistemaDialogos : MonoBehaviour
 		
 
 		
-		//Lo llama una vez para iniciar el dialogo
-		AvanzarDialogo();
+		//Lo llama una vez para iniciar la animacion que ejecutara el dialogo
+		EjecutarAnimacion("IntroduccionDialogo");
+		//AvanzarDialogo();
 	}
 	
+	public void EjecutarAnimacion(string nombre){
+		anim.Play(nombre, 0, 0.0f);
+	}
+
 	//Avanza en el dialogo
 	public void AvanzarDialogo(){
 		if((indiceDialogoNPC < dialogosNPC.Count && dialogosNPC[indiceDialogoNPC]!="") || (indiceDialogoJugador < dialogosPersonaje.Count && dialogosPersonaje[indiceDialogoJugador] != "")){

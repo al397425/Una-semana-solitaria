@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CazaMoscas.unity
     guid: fa87561c38ee6234cab37defb2738615
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 9f8ac052fce6b0946a454a8572aecbdc
   m_configObjects: {}
