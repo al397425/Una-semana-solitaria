@@ -29,12 +29,19 @@ public class EmpezarMinijuego : MonoBehaviour
 	bool minijuegoActivado = false;
 	
 	void Awake(){
-		interfazNoDisponeObjeto = transform.Find("InterfazNoTieneObjeto").gameObject;
+		
 	}
 	
 	void Update(){
 		if(dentroTrigger == true && Input.GetKeyDown(teclaDeInteraccion)){
 			minijuegoActivado = true;
+		}
+	}
+
+	void OnTriggerEnter2D(Collider2D other){
+		if(other.tag == "Player" && interfazNoDisponeObjeto == null){
+			interfazNoDisponeObjeto = other.gameObject.transform.Find("InterfazNoTieneObjeto").gameObject;
+			Debug.Log("dwdw");
 		}
 	}
 
@@ -53,7 +60,7 @@ public class EmpezarMinijuego : MonoBehaviour
 				}else{
 					minijuegoActivado = false;
 					interfazNoDisponeObjeto.GetComponent<Animator>().SetFloat("VelocidadAnimacion", 1);
-					interfazNoDisponeObjeto.GetComponent<Animator>().Play("ObjetoNoEncontrado");
+					interfazNoDisponeObjeto.GetComponent<Animator>().Play("ObjetoNoEncontrado",0,0.0f);
 				}
 			}
 		}
@@ -61,11 +68,17 @@ public class EmpezarMinijuego : MonoBehaviour
 	
 	void OnTriggerExit2D(Collider2D other){
 		if (other.tag == "Player"){
-			//Desactiva la interfaz que indica que no dispone de objeto
-			interfazNoDisponeObjeto.GetComponent<Animator>().SetFloat("VelocidadAnimacion", -1);
-			interfazNoDisponeObjeto.GetComponent<Animator>().Play("ObjetoNoEncontrado");
 			//Para evitar darle al espacio y despues al colisionar sin pulsar nada se active
 			dentroTrigger = false;
+
+			StartCoroutine(DesactivarCuadroObjetoRequerido());
 		}
+	}
+
+	IEnumerator DesactivarCuadroObjetoRequerido(){
+		yield return new WaitForSeconds(2.0f);
+		//Desactiva la interfaz que indica que no dispone de objeto
+		interfazNoDisponeObjeto.GetComponent<Animator>().SetFloat("VelocidadAnimacion", -1);
+		interfazNoDisponeObjeto.GetComponent<Animator>().Play("ObjetoNoEncontrado",0,1.0f);
 	}
 }

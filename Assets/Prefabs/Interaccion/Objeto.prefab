@@ -335,6 +335,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: InterfazInteraccion
       objectReference: {fileID: 0}
+    - target: {fileID: 4499502805360305654, guid: d34dfca0db8f02e4a98d6d3031e55f07, type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d34dfca0db8f02e4a98d6d3031e55f07, type: 3}
 --- !u!1 &3252780414076078142 stripped
