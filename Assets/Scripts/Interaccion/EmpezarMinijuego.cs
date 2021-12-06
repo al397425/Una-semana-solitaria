@@ -27,6 +27,7 @@ public class EmpezarMinijuego : MonoBehaviour
 
 	bool dentroTrigger = false;
 	bool minijuegoActivado = false;
+	bool mostratCuadroFaltaObjeto = false;
 	
 	void Awake(){
 		
@@ -41,7 +42,6 @@ public class EmpezarMinijuego : MonoBehaviour
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.tag == "Player" && interfazNoDisponeObjeto == null){
 			interfazNoDisponeObjeto = other.gameObject.transform.Find("InterfazNoTieneObjeto").gameObject;
-			Debug.Log("dwdw");
 		}
 	}
 
@@ -59,6 +59,7 @@ public class EmpezarMinijuego : MonoBehaviour
 					}
 				}else{
 					minijuegoActivado = false;
+					mostratCuadroFaltaObjeto = true;
 					interfazNoDisponeObjeto.GetComponent<Animator>().SetFloat("VelocidadAnimacion", 1);
 					interfazNoDisponeObjeto.GetComponent<Animator>().Play("ObjetoNoEncontrado",0,0.0f);
 				}
@@ -70,8 +71,10 @@ public class EmpezarMinijuego : MonoBehaviour
 		if (other.tag == "Player"){
 			//Para evitar darle al espacio y despues al colisionar sin pulsar nada se active
 			dentroTrigger = false;
-
-			StartCoroutine(DesactivarCuadroObjetoRequerido());
+			if(mostratCuadroFaltaObjeto == true){
+				mostratCuadroFaltaObjeto = false;
+				StartCoroutine(DesactivarCuadroObjetoRequerido());
+			}
 		}
 	}
 

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 104382008}
   - component: {fileID: 104382009}
+  - component: {fileID: 308181189930793128}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -50,7 +51,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 5242e041e41cb4d4e864fa4a73aa6a7d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -82,6 +83,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &308181189930793128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104382007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fd1e764bd48ab1419e94e287eafe791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorGeneral: {r: 1, g: 1, b: 1, a: 1}
+  texturaBase: {fileID: 2800000, guid: cf1299b3179195b40a8ac6e7b70460f4, type: 3}
+  texturaNormalmap: {fileID: 0}
 --- !u!114 &1344197681
 MonoBehaviour:
   m_ObjectHideFlags: 0

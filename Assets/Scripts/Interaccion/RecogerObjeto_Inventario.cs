@@ -19,7 +19,7 @@ public class RecogerObjeto_Inventario : MonoBehaviour
 	bool dentroTrigger = false;
 
 	void Awake(){
-		GetComponent<MostrarCuadroInteraccion>().EstableceTextoCuandro(teclaDeInteraccion.ToString());
+		//GetComponent<MostrarCuadroInteraccion>().EstableceTextoCuandro(teclaDeInteraccion.ToString());
 	}
 
 	void Update(){

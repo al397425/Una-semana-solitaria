@@ -675,6 +675,7 @@ GameObject:
   - component: {fileID: 155261332909437284}
   - component: {fileID: 1826678407}
   - component: {fileID: 26467246}
+  - component: {fileID: 3606722907687165021}
   m_Layer: 0
   m_Name: FebreroSeparado
   m_TagString: Player
@@ -722,7 +723,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 5242e041e41cb4d4e864fa4a73aa6a7d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -906,6 +907,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cdda44f72de2a6419b8921532d7618e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3606722907687165021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7262962292069985919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fd1e764bd48ab1419e94e287eafe791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorGeneral: {r: 1, g: 1, b: 1, a: 1}
+  texturaBase: {fileID: 2800000, guid: 20aa7df0119fab847bbc3eecf88799ba, type: 3}
+  texturaNormalmap: {fileID: 2800000, guid: 0cd2c0b1fbdf1a64d874d8b493fb77b1, type: 3}
 --- !u!1 &7262962292434069554
 GameObject:
   m_ObjectHideFlags: 0
@@ -1138,7 +1154,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1760385448404809649, guid: e40d94c2efd045c49aec16dbf1f5e090, type: 3}
       propertyPath: m_fontSize
-      value: 0.26
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 1760385448404809649, guid: e40d94c2efd045c49aec16dbf1f5e090, type: 3}
       propertyPath: m_margin.x
@@ -1162,11 +1178,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1760385448404809649, guid: e40d94c2efd045c49aec16dbf1f5e090, type: 3}
       propertyPath: m_fontSizeBase
-      value: 0.26
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 1760385448404809649, guid: e40d94c2efd045c49aec16dbf1f5e090, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 16777471
+      value: 1184371
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760385448421424541, guid: e40d94c2efd045c49aec16dbf1f5e090, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -0.4228
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760385448421424541, guid: e40d94c2efd045c49aec16dbf1f5e090, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 1760385448421424542, guid: e40d94c2efd045c49aec16dbf1f5e090, type: 3}
       propertyPath: m_Sprite
