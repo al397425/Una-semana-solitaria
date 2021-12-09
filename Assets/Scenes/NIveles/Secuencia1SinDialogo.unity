@@ -638,7 +638,7 @@ MonoBehaviour:
   retratorDelDialogo: {fileID: 0}
   sistemaDialogos: {fileID: 679045136}
   numeroDialgoParaActivar: 0
-  activador: 1
+  activador: 0
   conversaccionOpcional: 0
   conversaccionOpcionalSeRepite: 0
   numeroDialgoOpcionalParaActivar: 1
@@ -686,6 +686,10 @@ PrefabInstance:
     - target: {fileID: 2743842663252036170, guid: 6738af0b12939894fbaae1f9f8eb5a6a, type: 3}
       propertyPath: m_Name
       value: SistemaDialogos
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743842663252036170, guid: 6738af0b12939894fbaae1f9f8eb5a6a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2743842663252036171, guid: 6738af0b12939894fbaae1f9f8eb5a6a, type: 3}
       propertyPath: idiomaActual
