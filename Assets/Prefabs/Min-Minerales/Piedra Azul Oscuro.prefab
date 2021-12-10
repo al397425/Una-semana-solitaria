@@ -192,8 +192,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   oldImage: {fileID: 5597990940041486462}
   newImage: {fileID: 7312066383411331761, guid: a7444e32bc6dd5f42981f6e6395ee788, type: 3}
-  Reiniciar: {fileID: 1549958750190705165, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
-  Tiempo: {fileID: 0}
 --- !u!114 &6552537448793546987
 MonoBehaviour:
   m_ObjectHideFlags: 0

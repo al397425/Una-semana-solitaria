@@ -38,7 +38,7 @@ public class MinijuegoObstaculos : MonoBehaviour
         transform.position += new Vector3 ((speed-1.5f)*Time.deltaTime,0,0);
         if(points>=pointsMax)
         {
-            SceneManager.LoadScene("FinalDemo");
+            SceneManager.LoadScene("Minijuego-Minerales");
         }
         /*float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
