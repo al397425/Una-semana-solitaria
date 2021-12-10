@@ -24,32 +24,64 @@ public class EmpezarMinijuego : MonoBehaviour
 	bool activo = false;
 	
 	GameObject interfazNoDisponeObjeto;
+
+	bool dentroTrigger = false;
+	bool minijuegoActivado = false;
+	bool mostratCuadroFaltaObjeto = false;
 	
 	void Awake(){
-		interfazNoDisponeObjeto = transform.Find("InterfazNoTieneObjeto").gameObject;
+		
 	}
 	
+	void Update(){
+		if(dentroTrigger == true && Input.GetKeyDown(teclaDeInteraccion)){
+			minijuegoActivado = true;
+		}
+	}
+
+	void OnTriggerEnter2D(Collider2D other){
+		if(other.tag == "Player" && interfazNoDisponeObjeto == null){
+			interfazNoDisponeObjeto = other.gameObject.transform.Find("InterfazNoTieneObjeto").gameObject;
+		}
+	}
+
     void OnTriggerStay2D(Collider2D other){
-		if (activo == false && Input.GetKeyDown(teclaDeInteraccion) && other.tag == "Player"){	
-			if((nombreObjetoRequerido == "" || other.gameObject.GetComponent<Inventario>().BuscarEliminarObjeto(nombreObjetoRequerido))){
-				activo = true;
-				if(minijuegoEnOtraEscena == true){
-					SceneManager.LoadScene(nombreDelMapa);
+		if(other.tag == "Player"){
+			
+			dentroTrigger = true;
+			if (activo == false && minijuegoActivado == true){	
+				if((nombreObjetoRequerido == "" || other.gameObject.GetComponent<Inventario>().BuscarEliminarObjeto(nombreObjetoRequerido))){
+					activo = true;
+					if(minijuegoEnOtraEscena == true){
+						SceneManager.LoadScene(nombreDelMapa);
+					}else{
+						Instantiate(objetoMinijuego, new Vector2(0,0), Quaternion.identity);
+					}
 				}else{
-					Instantiate(objetoMinijuego, new Vector2(0,0), Quaternion.identity);
+					minijuegoActivado = false;
+					mostratCuadroFaltaObjeto = true;
+					interfazNoDisponeObjeto.GetComponent<Animator>().SetFloat("VelocidadAnimacion", 1);
+					interfazNoDisponeObjeto.GetComponent<Animator>().Play("ObjetoNoEncontrado",0,0.0f);
 				}
-			}else{
-				interfazNoDisponeObjeto.GetComponent<Animator>().SetFloat("VelocidadAnimacion", 1);
-				interfazNoDisponeObjeto.GetComponent<Animator>().Play("ObjetoNoEncontrado");
 			}
 		}
 	}
 	
 	void OnTriggerExit2D(Collider2D other){
 		if (other.tag == "Player"){
-			//Desactiva la interfaz que indica que no dispone de objeto
-			interfazNoDisponeObjeto.GetComponent<Animator>().SetFloat("VelocidadAnimacion", -1);
-			interfazNoDisponeObjeto.GetComponent<Animator>().Play("ObjetoNoEncontrado");
+			//Para evitar darle al espacio y despues al colisionar sin pulsar nada se active
+			dentroTrigger = false;
+			if(mostratCuadroFaltaObjeto == true){
+				mostratCuadroFaltaObjeto = false;
+				StartCoroutine(DesactivarCuadroObjetoRequerido());
+			}
 		}
+	}
+
+	IEnumerator DesactivarCuadroObjetoRequerido(){
+		yield return new WaitForSeconds(2.0f);
+		//Desactiva la interfaz que indica que no dispone de objeto
+		interfazNoDisponeObjeto.GetComponent<Animator>().SetFloat("VelocidadAnimacion", -1);
+		interfazNoDisponeObjeto.GetComponent<Animator>().Play("ObjetoNoEncontrado",0,1.0f);
 	}
 }

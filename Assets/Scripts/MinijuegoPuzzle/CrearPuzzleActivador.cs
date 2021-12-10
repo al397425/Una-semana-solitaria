@@ -35,34 +35,57 @@ public class CrearPuzzleActivador : MonoBehaviour
 	bool puzzleActivado = false; 
 	bool resuelto = false;
 	
-	void Awake(){
-		interfazNoDisponeObjeto = transform.Find("InterfazNoTieneObjeto").gameObject;
+	bool dentroTrigger = false;
+	bool minijuegoActivado = false;
+
+	void Update(){
+		if(dentroTrigger == true && (Input.GetKeyDown(teclaDeInteraccion) || teclaDeInteraccion == KeyCode.None)){
+			minijuegoActivado = true;
+		}
 	}
 	
+	void OnTriggerEnter2D(Collider2D other){
+		if(other.tag == "Player" && interfazNoDisponeObjeto == null){
+			interfazNoDisponeObjeto = other.gameObject.transform.Find("InterfazNoTieneObjeto").gameObject;
+		}
+	}
+
 	void OnTriggerStay2D(Collider2D other){
-		if ((Input.GetKeyDown(teclaDeInteraccion) || teclaDeInteraccion == KeyCode.None) && puzzleActivado == false && resuelto == false)
-        {
-			if((nombreObjetoRequerido == "" || other.gameObject.GetComponent<Inventario>().BuscarEliminarObjeto(nombreObjetoRequerido))){
-				puzzleActivado = true;
-				if(eventoAlEmpezarElMinijuego != null){
-					eventoAlEmpezarElMinijuego.Invoke();
+		if(other.tag == "Player"){
+			
+				dentroTrigger = true;
+			if (minijuegoActivado == true && puzzleActivado == false && resuelto == false)
+			{
+				if((nombreObjetoRequerido == "" || other.gameObject.GetComponent<Inventario>().BuscarEliminarObjeto(nombreObjetoRequerido))){
+					puzzleActivado = true;
+					if(eventoAlEmpezarElMinijuego != null){
+						eventoAlEmpezarElMinijuego.Invoke();
+					}
+					
+					puzzle = (GameObject)Instantiate(puzzleTuberia, new Vector2(0,0), Quaternion.identity);
+					puzzle.GetComponent<CrearPuzzle>().iniciarMinijuego(ancho, alto, filaPuntoInicio, filaPuntoFinal, delayFlujoTuberia, gameObject, numeroDeHuecos);
+				}else{
+					interfazNoDisponeObjeto.GetComponent<Animator>().SetFloat("VelocidadAnimacion", 1);
+					interfazNoDisponeObjeto.GetComponent<Animator>().Play("ObjetoNoEncontrado",0,0.0f);
 				}
-				
-				puzzle = (GameObject)Instantiate(puzzleTuberia, new Vector2(0,0), Quaternion.identity);
-				puzzle.GetComponent<CrearPuzzle>().iniciarMinijuego(ancho, alto, filaPuntoInicio, filaPuntoFinal, delayFlujoTuberia, gameObject, numeroDeHuecos);
-			}else{
-				interfazNoDisponeObjeto.GetComponent<Animator>().SetFloat("VelocidadAnimacion", 1);
-				interfazNoDisponeObjeto.GetComponent<Animator>().Play("ObjetoNoEncontrado");
 			}
 		}
 	}
 	
 	void OnTriggerExit2D(Collider2D other){
 		if (other.tag == "Player"){
-			//Desactiva la interfaz que indica que no dispone de objeto
-			interfazNoDisponeObjeto.GetComponent<Animator>().SetFloat("VelocidadAnimacion", -1);
-			interfazNoDisponeObjeto.GetComponent<Animator>().Play("ObjetoNoEncontrado");
+			//Para evitar darle al espacio y despues al colisionar sin pulsar nada se active
+			dentroTrigger = false;
+
+			StartCoroutine(DesactivarCuadroObjetoRequerido());
 		}
+	}
+
+	IEnumerator DesactivarCuadroObjetoRequerido(){
+		yield return new WaitForSeconds(2.0f);
+		//Desactiva la interfaz que indica que no dispone de objeto
+		interfazNoDisponeObjeto.GetComponent<Animator>().SetFloat("VelocidadAnimacion", -1);
+		interfazNoDisponeObjeto.GetComponent<Animator>().Play("ObjetoNoEncontrado",0,1.0f);
 	}
 	
 	public bool Getresuelto(){
