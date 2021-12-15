@@ -10,20 +10,17 @@ public class MovementCharacter : MonoBehaviour
 	Animator animator;
     Rigidbody2D rigidbody2d;
 	SpriteRenderer sr;
-    float scale = 0.01f;
+    float scale = 0.4f;
+    Vector3 scalechar;
     void Start()
     {
+        scalechar = transform.localScale;
         rigidbody2d = GetComponent<Rigidbody2D>();
 		animator = GetComponent<Animator>();
 		sr = GetComponent<SpriteRenderer>();
     }
     void Update()
     {
-       /* if (Input.GetMouseButtonDown(0)) 
-        {
-            SetTargetPosition();
-        }
-*/
         if(isMoving)
         {
             Move();
@@ -36,7 +33,6 @@ public class MovementCharacter : MonoBehaviour
         }
         void Move()
         {
-            //transform.rotation = Quaternion.LookRotation(Vector3.forward, targetPosition);
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
             if(transform.position == targetPosition)
             {
@@ -64,13 +60,15 @@ public class MovementCharacter : MonoBehaviour
        Vector2 position = rigidbody2d.position;
        position.x = position.x + 5.0f * horizontal * Time.deltaTime;
        position.y = position.y + 5.0f * vertical * Time.deltaTime;
-       if(Input.GetKeyDown(KeyCode.UpArrow)&& scale < 0.5){
-           scale += 0.1f;
-       transform.localScale = new Vector2(scale, scale);
+       if(Input.GetKey("down") && (transform.localScale.x < 0.48) && transform.localScale.y < 0.48) {
+           Debug.Log("Abajo");
+           scale += 0.005f;
+       transform.localScale = new Vector3(Mathf.Abs(scale), Mathf.Abs(scale),Mathf.Abs(scale));
        }
-       if(Input.GetKeyDown(KeyCode.DownArrow) && scale > 0.3){
-           scale -= 0.1f;
-       transform.localScale = new Vector2(scale, scale);
+        if(Input.GetKey("up") && (transform.localScale.x > 0.348) && (transform.localScale.y > 0.348) ){
+            Debug.Log("Ariba");
+           scale = scale - 0.005f;
+       transform.localScale = new Vector3(Mathf.Abs(scale), Mathf.Abs(scale), Mathf.Abs(scale));
        }
        rigidbody2d.MovePosition(position);
     }
