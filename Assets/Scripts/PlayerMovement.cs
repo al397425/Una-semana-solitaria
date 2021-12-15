@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public AudioSource audioDataCoin;
     public int MoscasEnPantalla = 9;
     public int CazarXMoscas = 5;
     public float speed = 10f;
@@ -42,6 +43,8 @@ public class PlayerMovement : MonoBehaviour
             Destroy(matamoscas.gameObject);
             Moscas -= 1;
             MoscasCazadas += 1;
+            if (!audioDataCoin.isPlaying)
+                audioDataCoin.Play(0);
         }
     }
     void OnTriggerStay(Collider matamoscas){
@@ -50,6 +53,8 @@ public class PlayerMovement : MonoBehaviour
             Destroy(matamoscas.gameObject);
             Moscas -= 1;
             MoscasCazadas += 1;
+            if (!audioDataCoin.isPlaying)
+                audioDataCoin.Play(0);
         }
     }
     void FixedUpdate(){
