@@ -19,10 +19,20 @@ public class Obstaculo : MonoBehaviour
 
     }
 
-    void OnCollisionEnter2D(Collision2D Coll)
+    void OnCollisionEnter2D(Collision2D Coll){
+        //gana puntos   
+            if(Coll.gameObject.tag=="Player" && gameObject.name.Contains("Stone"))
+            {
+                
+				if(!audioDataCoin.isPlaying)
+					audioDataCoin.Play(0);
+                
+            }
+    }
+    void OnTriggerEnter2D(Collider2D Coll)
     {
         
-            //gana puntos   
+               
             if(Coll.gameObject.tag=="Player" && gameObject.name.Contains("Coin"))
             {
                 //points = points+1;
