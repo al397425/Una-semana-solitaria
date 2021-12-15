@@ -5,6 +5,7 @@ using UnityEngine;
 public class Collisions : MonoBehaviour
 {
     public AudioSource audioDataCoin;
+    public GameObject CanvasObject;
     private void OnTriggerEnter2D(Collider2D col)
     {
         switch (col.tag)
@@ -13,6 +14,7 @@ public class Collisions : MonoBehaviour
                 if (!audioDataCoin.isPlaying)
                     audioDataCoin.Play(0);
                 this.gameObject.SetActive(false);
+                CanvasObject.SetActive(true);
                 break;
         }
         
