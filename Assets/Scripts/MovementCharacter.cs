@@ -10,7 +10,7 @@ public class MovementCharacter : MonoBehaviour
 	Animator animator;
     Rigidbody2D rigidbody2d;
 	SpriteRenderer sr;
-    
+    float scale = 0.01f;
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
@@ -28,32 +28,24 @@ public class MovementCharacter : MonoBehaviour
         {
             Move();
         }
-
         void SetTargetPosition()
         {
             targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             targetPosition.z = transform.position.z;
-            
-
             isMoving = true;
         }
-
         void Move()
         {
             //transform.rotation = Quaternion.LookRotation(Vector3.forward, targetPosition);
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
             if(transform.position == targetPosition)
             {
-
                 isMoving = false;
             }
         }
-		
-
     }
-
-	
     void FixedUpdate(){
+        
        float horizontal = Input.GetAxis("Horizontal");
        float vertical = Input.GetAxis("Vertical");
 	   
@@ -63,15 +55,23 @@ public class MovementCharacter : MonoBehaviour
 		   animator.SetBool("Andando", true);
 	   }
 	   
-	   if(horizontal == 1){
+	   if(horizontal > 0){
 		   sr.flipX = true;
-	   }else if(horizontal == -1){
+	   }else if(horizontal < 0){
 		   sr.flipX = false;
 	   }
 	   
        Vector2 position = rigidbody2d.position;
        position.x = position.x + 5.0f * horizontal * Time.deltaTime;
        position.y = position.y + 5.0f * vertical * Time.deltaTime;
+       if(Input.GetKeyDown(KeyCode.UpArrow)&& scale < 0.5){
+           scale += 0.1f;
+       transform.localScale = new Vector2(scale, scale);
+       }
+       if(Input.GetKeyDown(KeyCode.DownArrow) && scale > 0.3){
+           scale -= 0.1f;
+       transform.localScale = new Vector2(scale, scale);
+       }
        rigidbody2d.MovePosition(position);
     }
 }

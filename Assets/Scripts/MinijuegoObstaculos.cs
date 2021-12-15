@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MinijuegoObstaculos : MonoBehaviour
 {
 
-    public float speed = 3.0f;
+    public float speed = 3.15f;
     public float jumpforce = 5.0f;
     public GameObject CanvasObject;
     public int maxHealth = 7;
@@ -19,7 +20,8 @@ public class MinijuegoObstaculos : MonoBehaviour
     int currentHealth;
     bool isInvincible;
     float invincibleTimer;
-    
+    public Image imagelife;
+    public Image coinBar;
     Rigidbody2D rigidbody2d;
     public bool IJ;
     //Rigidbody2D rigidbody2d;
@@ -73,17 +75,37 @@ public class MinijuegoObstaculos : MonoBehaviour
             
         }
     }
-
-    void OnCollisionEnter2D(Collision2D Coll)
+    /*void OnTriggerEnter2D(Collider2D End)
     {
-        if(currentHealth >= 0)
+        if(End.gameObject.name.Contains("LimiteDeNivel"))
             {
-            //gana puntos   
+                Debug.Log("EndLevel");
+                transform.position += new Vector3(-5.0f, 0.65f, 0.0f);
+                
+            }
+    }*/
+    void OnTriggerEnter2D(Collider2D Coll)
+    {
+     //gana puntos   
             if(Coll.gameObject.tag=="GameController")
             {
                 points = points+1;
+                coinBar.fillAmount += 0.1f;
+            }
+    }
+    void OnCollisionEnter2D(Collision2D Coll)
+    {
+
+        if(currentHealth >= 0)
+            {
+            if(Coll.gameObject.name.Contains("LimiteDeNivel"))
+            {
+                Debug.Log("EndLevel");
+                transform.position = new Vector3(-5.0f, 0.65f, 0.0f);
                 
             }
+
+           
             //evitar saltar en el aire
             if(Coll.gameObject.tag=="tuberias")
             {
@@ -94,6 +116,7 @@ public class MinijuegoObstaculos : MonoBehaviour
 
             if(Coll.gameObject.tag=="Finish")
             {
+                imagelife.fillAmount -= 0.2f;
                 IJ = false;
                 animator.SetBool("Saltando", false);
                 //muere
@@ -113,20 +136,6 @@ public class MinijuegoObstaculos : MonoBehaviour
         IJ = true;
     }
 }
-    public void ChangeHealth(int amount)
-    {
-        if (amount < 0)
-        {
-            if (isInvincible)
-                return;
-            
-            isInvincible = true;
-            invincibleTimer = timeInvincible;
-        }
-        
-        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-        
-        Debug.Log(currentHealth + "/" + maxHealth);
-    }
+    
 }
 

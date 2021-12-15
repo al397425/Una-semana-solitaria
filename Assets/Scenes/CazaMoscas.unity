@@ -1116,8 +1116,24 @@ PrefabInstance:
         el tiempo.\n\n\t\xB7 Pulsa click-izquierdo sobre ellas para aplastarlas."
       objectReference: {fileID: 0}
     - target: {fileID: 3511441449147329785, guid: 6a18a8840bdcf90458c7e6abb348e8a8, type: 3}
+      propertyPath: m_fontSize
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 3511441449147329785, guid: 6a18a8840bdcf90458c7e6abb348e8a8, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 3511441449147329785, guid: 6a18a8840bdcf90458c7e6abb348e8a8, type: 3}
       propertyPath: m_VerticalAlignment
       value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 3511441449325695355, guid: 6a18a8840bdcf90458c7e6abb348e8a8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 3511441449325695355, guid: 6a18a8840bdcf90458c7e6abb348e8a8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 3511441449521884693, guid: 6a18a8840bdcf90458c7e6abb348e8a8, type: 3}
       propertyPath: m_RootOrder
