@@ -576,6 +576,7 @@ MonoBehaviour:
   referenciaRetratoDialogoNPC: {fileID: 6390200800175527187}
   referenciaRetratoDialogoJugador: {fileID: 633975106212353896}
   sonidoDelTexto: {fileID: 88767695}
+  retratoJugador: {fileID: 21300000, guid: 156d748f34fffa0458add72047b6dbf9, type: 3}
   nombreArchivoDialogos: dialogos prueba.csv
   nombreProtagonista: "F.Garc\xEDa"
   teclaAvanzarDialogo: 32
@@ -729,7 +730,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 211, y: -24.2293}
-  m_SizeDelta: {x: 379.9487, y: 724.7619}
+  m_SizeDelta: {x: 221.12, y: 379.4062}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1733443199765682222
 CanvasRenderer:
@@ -759,7 +760,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: db84ae80f71f8454e8b4108a6bab1050, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 156d748f34fffa0458add72047b6dbf9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -937,7 +938,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -244, y: -0.000005722}
+  m_AnchoredPosition: {x: -244, y: -24}
   m_SizeDelta: {x: 221.12, y: 379.4062}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2800156661298732831

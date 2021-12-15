@@ -30,6 +30,8 @@ public class SistemaDialogos : MonoBehaviour
 	//
 	public AudioSource sonidoDelTexto;
 	
+	public Sprite retratoJugador;
+
 	//CSV de los dialogos
 	public string nombreArchivoDialogos = "dialogos prueba.csv";
 
@@ -66,6 +68,11 @@ public class SistemaDialogos : MonoBehaviour
 
 	GameObject npc;
 	
+	//Para las conversaciones en las que el jugador no participa
+	string nombreNPCSustituto;
+	Sprite reatroNPCSustituto;
+
+
 	void Awake(){
 		anim = GetComponent<Animator>();
 	}
@@ -99,10 +106,13 @@ public class SistemaDialogos : MonoBehaviour
 	}
 	
 	//Obtiene la lista de dialogos usada durante la conversacion y hace las asignaciones de los parametro del NPC
-	public void ObtenerListaDeDialogos(int personaje, Sprite retratoNPC, UnityEvent eventoAlTerminarDialogo, GameObject refJugador, GameObject refNpc, string nomNPC = "npc"){
+	public void ObtenerListaDeDialogos(int personaje, Sprite retratoNPC, UnityEvent eventoAlTerminarDialogo, GameObject refJugador, GameObject refNpc, string nomNPC, string nomNPCSustituto, Sprite retratoNPCSustituo){
 		bool finObtencionDialogos = false;
 
 		nombreNpc = nomNPC;
+
+		nombreNPCSustituto = nomNPCSustituto;
+		reatroNPCSustituto = retratoNPCSustituo;
 
 		reactivaConversacion = false;
 		comenzarConversacion = false;
@@ -119,6 +129,14 @@ public class SistemaDialogos : MonoBehaviour
 		jugador = refJugador;
 		jugador.GetComponent<MovementCharacter>().enabled = false;
 		jugador.GetComponent<Animator>().enabled = false;
+
+		if(nombreNPCSustituto == ""){
+			textoNombreUI.text = nombreProtagonista;
+			referenciaRetratoDialogoJugador.sprite = retratoJugador;
+		}else{
+			textoNombreUI.text = nombreNPCSustituto;
+			referenciaRetratoDialogoJugador.sprite = reatroNPCSustituto;
+		}
 
 		textoUI.text = "";	
 		using(var reader = new StreamReader( Path.Combine(Application.streamingAssetsPath, nombreArchivoDialogos)))
@@ -174,7 +192,14 @@ public class SistemaDialogos : MonoBehaviour
 	public void AvanzarDialogo(){
 		if((indiceDialogoNPC < dialogosNPC.Count && dialogosNPC[indiceDialogoNPC]!="") || (indiceDialogoJugador < dialogosPersonaje.Count && dialogosPersonaje[indiceDialogoJugador] != "")){
 			if(dialogosNPC[indiceDialogoNPC]==""){
-				textoNombreUI.text = nombreProtagonista;
+				if(nombreNPCSustituto == ""){
+					textoNombreUI.text = nombreProtagonista;
+					referenciaRetratoDialogoJugador.sprite = retratoJugador;
+				}else{
+					textoNombreUI.text = nombreNPCSustituto;
+					referenciaRetratoDialogoJugador.sprite = reatroNPCSustituto;
+				}
+
 				referenciaRetratoDialogoJugador.color = colorBlanco;
 				referenciaRetratoDialogoNPC.color = colorGris;
 				if(corrutinaActual != null)
@@ -206,7 +231,13 @@ public class SistemaDialogos : MonoBehaviour
 					StartCoroutine(corrutinaActual);
 					hablaNPC = false;
 				}else{
-					textoNombreUI.text = nombreProtagonista;
+					if(nombreNPCSustituto == ""){
+						textoNombreUI.text = nombreProtagonista;
+						referenciaRetratoDialogoJugador.sprite = retratoJugador;
+					}else{
+						textoNombreUI.text = nombreNPCSustituto;
+						referenciaRetratoDialogoJugador.sprite = reatroNPCSustituto;
+					}	
 					referenciaRetratoDialogoJugador.color = colorBlanco;
 					referenciaRetratoDialogoNPC.color = colorGris;
 					if(corrutinaActual != null)

@@ -22,6 +22,11 @@ public class SistemaDialogosActivador : MonoBehaviour
 	//Evento a llamar
 	public UnityEvent eventoAlTerminarDialogo;
 
+	//Para las conversaciones que no interviene o no van dirigidas al jugador
+	public string nombreNPCSustituto="";
+
+	public Sprite retratoNPCSustituto;
+
 
 	
 	bool conversacionPrincipalAcabada = false; 
@@ -60,12 +65,12 @@ void Update(){
 			if(conversacionPrincipalAcabada == false){
 				sistemaDialogos.gameObject.SetActive(true);
 				gameObject.transform.GetChild(0).gameObject.SetActive(true);
-				sistemaDialogos.ObtenerListaDeDialogos(numeroDialgoParaActivar,retratorDelDialogo,eventoAlTerminarDialogo, other.gameObject, gameObject, nombreNPC);
+				sistemaDialogos.ObtenerListaDeDialogos(numeroDialgoParaActivar,retratorDelDialogo,eventoAlTerminarDialogo, other.gameObject, gameObject, nombreNPC, nombreNPCSustituto, retratoNPCSustituto);
 				conversacionPrincipalAcabada = true;
 			}else if(conversaccionOpcional == true && conversacionOpcionalAcabada == false){
 				sistemaDialogos.gameObject.SetActive(true);
 				gameObject.transform.GetChild(0).gameObject.SetActive(true);
-				sistemaDialogos.ObtenerListaDeDialogos(numeroDialgoOpcionalParaActivar,retratorDelDialogo,eventoAlTerminarDialogo, other.gameObject, gameObject, nombreNPC);
+				sistemaDialogos.ObtenerListaDeDialogos(numeroDialgoOpcionalParaActivar,retratorDelDialogo,eventoAlTerminarDialogo, other.gameObject, gameObject, nombreNPC, nombreNPCSustituto, retratoNPCSustituto);
 				conversacionOpcionalAcabada = true;
 			}
 			
