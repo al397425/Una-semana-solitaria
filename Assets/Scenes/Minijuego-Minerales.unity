@@ -202,6 +202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &13926977
 Rigidbody2D:
   serializedVersion: 4
@@ -241,6 +242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &20001354
 Rigidbody2D:
   serializedVersion: 4
@@ -334,6 +336,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 5147650298490634214, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 8490499616273909312, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: Tiempo
       value: 
@@ -478,6 +484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &77647435
 Rigidbody2D:
   serializedVersion: 4
@@ -517,6 +524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &80602219
 Rigidbody2D:
   serializedVersion: 4
@@ -610,6 +618,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 493129708209431897, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 733305931353425631, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -871,6 +883,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
 --- !u!1001 &154164260
@@ -884,6 +900,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 5147650298490634214, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 8490499616273909312, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: Tiempo
       value: 
@@ -1028,6 +1048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &202021257
 Rigidbody2D:
   serializedVersion: 4
@@ -1080,6 +1101,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 3434951612384577329, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 3758331504239431939, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_Camera
       value: 
@@ -1186,6 +1211,133 @@ PrefabInstance:
       objectReference: {fileID: 1821505617}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
+--- !u!1 &213528660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 213528662}
+  - component: {fileID: 213528661}
+  m_Layer: 0
+  m_Name: AudioSource3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &213528661
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213528660}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 56f1724246fbc1f4981c3f3b3813de9a, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &213528662
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213528660}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.4025176, y: 0.47292793, z: -426.443}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 114
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &224233637
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1217,6 +1369,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 3434951612384577329, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 3758331504239431939, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_Camera
       value: 
@@ -1416,6 +1572,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 1983676601344433152, guid: e983e41a306d0ab48b9d2430584c28d7, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 8716062837787213048, guid: e983e41a306d0ab48b9d2430584c28d7, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1705,6 +1865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &280547362
 Rigidbody2D:
   serializedVersion: 4
@@ -1845,6 +2006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &312017721
 Rigidbody2D:
   serializedVersion: 4
@@ -2020,6 +2182,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 5147650298490634214, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 8490499616273909312, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: Tiempo
       value: 
@@ -2325,6 +2491,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 8153246375621636220, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
 --- !u!114 &339725775 stripped
@@ -2534,6 +2704,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
 --- !u!1001 &351187934
@@ -2547,6 +2721,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 5147650298490634214, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 8490499616273909312, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: Tiempo
       value: 
@@ -2691,6 +2869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &354299757
 Rigidbody2D:
   serializedVersion: 4
@@ -2956,6 +3135,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 8153246375621636220, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
 --- !u!114 &411378245 stripped
@@ -3113,7 +3296,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5f8a837f6010cfa4fb5040cf7eddc9ef, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.073
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -3229,6 +3412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &415704566
 Rigidbody2D:
   serializedVersion: 4
@@ -3268,6 +3452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &431279127
 Rigidbody2D:
   serializedVersion: 4
@@ -3307,6 +3492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &435563449
 Rigidbody2D:
   serializedVersion: 4
@@ -3447,6 +3633,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 7143652373374374188, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 9198360999976226271, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: m_SizeDelta.x
       value: 43.07
@@ -3600,6 +3790,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 8435893861471017262, guid: 870722bbb2d277a4685d44ebbff1113a, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 870722bbb2d277a4685d44ebbff1113a, type: 3}
 --- !u!1 &497964256 stripped
@@ -3620,6 +3814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &497964259
 Rigidbody2D:
   serializedVersion: 4
@@ -3835,6 +4030,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 6754280986497724611, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 7158706298345562453, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_SizeDelta.x
       value: 42.1
@@ -3923,6 +4122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &553264848
 Rigidbody2D:
   serializedVersion: 4
@@ -3962,6 +4162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &553417997
 Rigidbody2D:
   serializedVersion: 4
@@ -4333,6 +4534,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 8435893861471017262, guid: 870722bbb2d277a4685d44ebbff1113a, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 870722bbb2d277a4685d44ebbff1113a, type: 3}
 --- !u!1 &610340509
@@ -4683,6 +4888,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
 --- !u!1 &628734777
@@ -4886,6 +5095,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 7143652373374374188, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 9198360999976226271, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: m_SizeDelta.x
       value: 35.86
@@ -5251,6 +5464,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
 --- !u!1 &679151838 stripped
@@ -5271,6 +5488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &679151841
 Rigidbody2D:
   serializedVersion: 4
@@ -5427,6 +5645,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 1644753585127782973, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
 --- !u!1 &711514089 stripped
@@ -5447,6 +5669,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &711514092
 Rigidbody2D:
   serializedVersion: 4
@@ -5486,6 +5709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &735438196
 Rigidbody2D:
   serializedVersion: 4
@@ -5570,6 +5794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &759908488
 Rigidbody2D:
   serializedVersion: 4
@@ -5718,6 +5943,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 1644753585127782973, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
 --- !u!1001 &762201889
@@ -5731,6 +5960,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 5147650298490634214, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 8490499616273909312, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: Tiempo
       value: 
@@ -6045,6 +6278,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 7143652373374374188, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 9198360999976226271, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: m_SizeDelta.x
       value: 43.57
@@ -6198,6 +6435,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 1644753585127782973, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
 --- !u!1001 &785616382
@@ -6272,6 +6513,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 5147650298490634214, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 8490499616273909312, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: Tiempo
       value: 
@@ -6537,6 +6782,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
 --- !u!1001 &862631515
@@ -6618,6 +6867,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &871843259
 Rigidbody2D:
   serializedVersion: 4
@@ -6657,6 +6907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &881127388
 Rigidbody2D:
   serializedVersion: 4
@@ -6857,6 +7108,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 8153246375621636220, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
 --- !u!114 &898002744 stripped
@@ -7084,6 +7339,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
 --- !u!1001 &1015918793
@@ -7243,7 +7502,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8716062838892478605, guid: e983e41a306d0ab48b9d2430584c28d7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -288.99994
+      value: -289
       objectReference: {fileID: 0}
     - target: {fileID: 8716062838892478605, guid: e983e41a306d0ab48b9d2430584c28d7, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -7269,6 +7528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &1016919545
 Rigidbody2D:
   serializedVersion: 4
@@ -7409,6 +7669,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 7143652373374374188, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 9198360999976226271, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: m_SizeDelta.x
       value: 35.69
@@ -7445,6 +7709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &1101765534
 Rigidbody2D:
   serializedVersion: 4
@@ -7639,6 +7904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &1112363030
 Rigidbody2D:
   serializedVersion: 4
@@ -7751,6 +8017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &1117222387
 Rigidbody2D:
   serializedVersion: 4
@@ -7856,6 +8123,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 493129708209431897, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 733305931353425631, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -7993,6 +8264,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 1983676601344433152, guid: e983e41a306d0ab48b9d2430584c28d7, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 8716062837787213048, guid: e983e41a306d0ab48b9d2430584c28d7, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -8316,6 +8591,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 5147650298490634214, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 8490499616273909312, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: Tiempo
       value: 
@@ -8540,6 +8819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &1202308878
 Rigidbody2D:
   serializedVersion: 4
@@ -8696,6 +8976,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
 --- !u!1 &1273565034
@@ -9020,6 +9304,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 8153246375621636220, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
 --- !u!114 &1299720384 stripped
@@ -9174,6 +9462,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 493129708209431897, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 733305931353425631, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -9641,6 +9933,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 493129708209431897, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 733305931353425631, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -9767,6 +10063,133 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
+--- !u!1 &1390230601
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1390230603}
+  - component: {fileID: 1390230602}
+  m_Layer: 0
+  m_Name: AudioSource2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1390230602
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390230601}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 10f63e46e21c0544db02671e54d909a5, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1390230603
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390230601}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.4025176, y: 0.47292793, z: -426.443}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 113
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1399517815 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1630000765706897988, guid: 5ff2a8ad057087940b4c2d193d521ef0, type: 3}
@@ -9785,6 +10208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &1399517818
 Rigidbody2D:
   serializedVersion: 4
@@ -9824,6 +10248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &1405061361
 Rigidbody2D:
   serializedVersion: 4
@@ -9925,7 +10350,7 @@ Transform:
   m_LocalScale: {x: 0.8824407, y: 0.87171715, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 113
+  m_RootOrder: 115
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1433758769
 PrefabInstance:
@@ -10019,6 +10444,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 3434951612384577329, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 3758331504239431939, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_Camera
       value: 
@@ -10334,6 +10763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &1517228784
 Rigidbody2D:
   serializedVersion: 4
@@ -10434,6 +10864,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &1568676849
 Rigidbody2D:
   serializedVersion: 4
@@ -10466,6 +10897,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 5147650298490634214, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 8490499616273909312, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: Tiempo
       value: 
@@ -10703,6 +11138,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 6754280986497724611, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 7158706298345562453, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_SizeDelta.x
       value: 35.01
@@ -10867,6 +11306,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 5147650298490634214, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 8490499616273909312, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: Tiempo
       value: 
@@ -11120,6 +11563,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 1644753585127782973, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
 --- !u!1001 &1705584889
@@ -11233,6 +11680,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 6754280986497724611, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 7158706298345562453, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_SizeDelta.x
       value: 52.14
@@ -11343,6 +11794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &1715578485
 Rigidbody2D:
   serializedVersion: 4
@@ -11375,6 +11827,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 5147650298490634214, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 8490499616273909312, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: Tiempo
       value: 
@@ -11693,6 +12149,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
 --- !u!1001 &1793823629
@@ -11968,6 +12428,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 8153246375621636220, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
 --- !u!114 &1820283959 stripped
@@ -12225,6 +12689,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 6754280986497724611, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 7158706298345562453, guid: 01b5f676affed154eadc212b09c03dca, type: 3}
       propertyPath: m_SizeDelta.x
       value: 41.09
@@ -12356,6 +12824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &1925747364
 Rigidbody2D:
   serializedVersion: 4
@@ -12388,6 +12857,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 1983676601344433152, guid: e983e41a306d0ab48b9d2430584c28d7, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 8716062837787213048, guid: e983e41a306d0ab48b9d2430584c28d7, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -12525,6 +12998,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 5147650298490634214, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 8490499616273909312, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: Tiempo
       value: 
@@ -12800,6 +13277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &1943803146
 Rigidbody2D:
   serializedVersion: 4
@@ -12832,6 +13310,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 1983676601344433152, guid: e983e41a306d0ab48b9d2430584c28d7, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 8716062837787213048, guid: e983e41a306d0ab48b9d2430584c28d7, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -12991,6 +13473,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 493129708209431897, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 733305931353425631, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -13135,6 +13621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjPuntos: {fileID: 414622398}
+  audioDataCoin: {fileID: 1390230602}
 --- !u!50 &2016730842
 Rigidbody2D:
   serializedVersion: 4
@@ -13187,6 +13674,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 3434951612384577329, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 3758331504239431939, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_Camera
       value: 
@@ -13324,6 +13815,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 3434951612384577329, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 3758331504239431939, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_Camera
       value: 
@@ -13565,6 +14060,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
 --- !u!1 &2133327967
@@ -13825,6 +14324,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 8435893861471017262, guid: 870722bbb2d277a4685d44ebbff1113a, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 870722bbb2d277a4685d44ebbff1113a, type: 3}
 --- !u!1001 &592299381661347436
@@ -13838,6 +14341,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 493129708209431897, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 733305931353425631, guid: 059c557f6159bf64fa4cf8a640fb0763, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -14144,6 +14651,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 1644753585127782973, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d85ec69aa3048d4eafaaa2687d44413, type: 3}
 --- !u!1001 &1630000764327532773
@@ -14238,6 +14749,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 3434951612384577329, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 3758331504239431939, guid: 077d16e233396c542ac70401c5be2edc, type: 3}
       propertyPath: m_Camera
       value: 
@@ -14479,6 +14994,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 5992917140128039596, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3815b9fe442a5e445829ae66e531e1d3, type: 3}
 --- !u!1001 &5120789025470312651
@@ -14794,6 +15313,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 8153246375621636220, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04afb9d32120ad24ea36f9df21073039, type: 3}
 --- !u!114 &6347001705469265487 stripped
@@ -14926,6 +15449,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 7143652373374374188, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 9198360999976226271, guid: a619bde607aacf94f911d9bd2cfb742e, type: 3}
       propertyPath: m_SizeDelta.x
       value: 28.98
@@ -15016,6 +15543,10 @@ PrefabInstance:
       propertyPath: ObjPuntos
       value: 
       objectReference: {fileID: 414622398}
+    - target: {fileID: 5147650298490634214, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
+      propertyPath: audioDataCoin
+      value: 
+      objectReference: {fileID: 213528661}
     - target: {fileID: 8490499616273909312, guid: 14571102faf470a45a5ba15811c93b5d, type: 3}
       propertyPath: Tiempo
       value: 
