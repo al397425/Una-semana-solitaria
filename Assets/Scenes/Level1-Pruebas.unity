@@ -209,7 +209,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.478
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -13895,7 +13895,7 @@ PrefabInstance:
     - target: {fileID: 7418952138576169604, guid: d256cb77eb3aee4409dce0921f8d69c0, type: 3}
       propertyPath: eventoAlEmpezarDialogo.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 8300000, guid: b4dd1ca593041db4298e25841a536414, type: 3}
+      objectReference: {fileID: 8300000, guid: fb7340db7b8a89644b93e21497779218, type: 3}
     - target: {fileID: 7418952138576169604, guid: d256cb77eb3aee4409dce0921f8d69c0, type: 3}
       propertyPath: eventoAlEmpezarDialogo.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
       value: 
@@ -14223,7 +14223,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 570645218502323745, guid: ee51fe148ca79464dba2690ae0362d2f, type: 3}
       propertyPath: estado
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 570645218502323745, guid: ee51fe148ca79464dba2690ae0362d2f, type: 3}
       propertyPath: m_Enabled
@@ -14235,7 +14235,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 570645218502323750, guid: ee51fe148ca79464dba2690ae0362d2f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee51fe148ca79464dba2690ae0362d2f, type: 3}
