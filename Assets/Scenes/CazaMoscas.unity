@@ -205,6 +205,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &187215275 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6242925493381680438, guid: e57ac8d2b6d2bf24082d8e4f5031883b, type: 3}
+  m_PrefabInstance: {fileID: 6242925492425557151}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &379018942
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,6 +311,7 @@ MonoBehaviour:
   TiempoLimiteSegundos: 40
   texto: {fileID: 1843772017}
   tiempoTranscurrido: 0
+  matamoscas: {fileID: 1188728354}
 --- !u!114 &380259766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -470,6 +476,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1188728354 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6734756490187053055, guid: 3287dbdd259470c4fb105592c6bca1f8, type: 3}
+  m_PrefabInstance: {fileID: 6734756490087044796}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1260021057
 GameObject:
   m_ObjectHideFlags: 0
@@ -697,9 +708,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6242925493381680439, guid: e57ac8d2b6d2bf24082d8e4f5031883b, type: 3}
+      propertyPath: newSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2cdb7e90fd08eaa4cba0cc3a13c094d1, type: 3}
+    - target: {fileID: 6242925493381680439, guid: e57ac8d2b6d2bf24082d8e4f5031883b, type: 3}
+      propertyPath: matamoscas
+      value: 
+      objectReference: {fileID: 1188728354}
+    - target: {fileID: 6242925493381680439, guid: e57ac8d2b6d2bf24082d8e4f5031883b, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 187215275}
     - target: {fileID: 6242925493381680440, guid: e57ac8d2b6d2bf24082d8e4f5031883b, type: 3}
       propertyPath: m_Name
       value: Mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 6242925493381680440, guid: e57ac8d2b6d2bf24082d8e4f5031883b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e57ac8d2b6d2bf24082d8e4f5031883b, type: 3}
@@ -722,6 +749,10 @@ PrefabInstance:
       propertyPath: TiempoAparicionMoscas
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 6734756490187053049, guid: 3287dbdd259470c4fb105592c6bca1f8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 96ab8d2a38d17b54ab69d2133a624862, type: 3}
     - target: {fileID: 6734756490187053050, guid: 3287dbdd259470c4fb105592c6bca1f8, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -769,6 +800,14 @@ PrefabInstance:
     - target: {fileID: 6734756490187053050, guid: 3287dbdd259470c4fb105592c6bca1f8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6734756490187053051, guid: 3287dbdd259470c4fb105592c6bca1f8, type: 3}
+      propertyPath: m_Size.y
+      value: 3.044591
+      objectReference: {fileID: 0}
+    - target: {fileID: 6734756490187053051, guid: 3287dbdd259470c4fb105592c6bca1f8, type: 3}
+      propertyPath: m_Center.y
+      value: 1.8527048
       objectReference: {fileID: 0}
     - target: {fileID: 6734756490187053055, guid: 3287dbdd259470c4fb105592c6bca1f8, type: 3}
       propertyPath: m_Name

@@ -8,6 +8,7 @@ public class UIFly : MonoBehaviour
     public float TiempoLimiteSegundos = 20f;
     public Text texto;
     public float tiempoTranscurrido;
+    public GameObject matamoscas;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,11 +20,11 @@ public class UIFly : MonoBehaviour
     void Update()
     {
         if(tiempoTranscurrido > TiempoLimiteSegundos){
-            Debug.Log("Fin del juego ¡Has perdido!");
+            texto.text = string.Format("Segundos restantes: {0:F0}\nFin del juego ¡Has perdido!", TiempoLimiteSegundos - tiempoTranscurrido);
         }
         else{
             tiempoTranscurrido += Time.deltaTime;
-            texto.text = string.Format("Segundos restantes: {0:F0}", TiempoLimiteSegundos - tiempoTranscurrido);
+            texto.text = string.Format("Segundos restantes: {0:F0}\nMoscas cazadas: {1:F0}", TiempoLimiteSegundos - tiempoTranscurrido, matamoscas.GetComponent<PlayerMovement>().MoscasCazadas);
         }
     }
 }
