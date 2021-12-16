@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7163475852105145538}
   m_Layer: 0
   m_Name: Mosca
-  m_TagString: Untagged
+  m_TagString: Fly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,7 +111,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  isDead: 0
   startQuaternion: {x: 0, y: 0, z: 0, w: 0}
+  spriteRenderer: {fileID: 6734756490187053049, guid: 3287dbdd259470c4fb105592c6bca1f8, type: 3}
+  newSprite: {fileID: 21300000, guid: 2cdb7e90fd08eaa4cba0cc3a13c094d1, type: 3}
+  TiempoMoscaCazada: 2
+  matamoscas: {fileID: 6734756490187053055, guid: 3287dbdd259470c4fb105592c6bca1f8, type: 3}
   AnguloMosca: 0
 --- !u!95 &7163475852105145538
 Animator:

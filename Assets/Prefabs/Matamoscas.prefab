@@ -126,6 +126,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a088aaa8337dda4484baaae5c690a83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MoscasEnPantalla: 9
+  CazarXMoscas: 5
   speed: 10
-  TiempoAparicionMoscas: 2
+  tiempoTranscurrido: {fileID: 0}
   mosca: {fileID: 6242925493381680440, guid: e57ac8d2b6d2bf24082d8e4f5031883b, type: 3}
+  TiempoMoscaCazada: 2
+  FlyDead: 1
+  TiempoAparicionMoscas: 2
