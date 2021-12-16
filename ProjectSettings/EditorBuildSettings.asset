@@ -15,6 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/CazaMoscas.unity
     guid: fa87561c38ee6234cab37defb2738615
   - enabled: 1
+    path: Assets/Scenes/IntroLogo.unity
+    guid: 4d625f5422caecf4fb94cdfc66b422bc
+  - enabled: 1
+    path: Assets/Scenes/Scene1.unity
+    guid: d5751ec3a92c62b43ab47f5e2b62a68e
+  - enabled: 1
     path: Assets/Scenes/Level1-Pruebas.unity
     guid: 898d9530e2a9aed48bf6396f1e7be1b2
   - enabled: 1

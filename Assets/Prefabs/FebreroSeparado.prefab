@@ -676,6 +676,7 @@ GameObject:
   - component: {fileID: 1826678407}
   - component: {fileID: 26467246}
   - component: {fileID: 3606722907687165021}
+  - component: {fileID: 1310117985793772631}
   m_Layer: 0
   m_Name: FebreroSeparado
   m_TagString: Player
@@ -785,8 +786,8 @@ MonoBehaviour:
   - {fileID: 7262962292757226343}
   - {fileID: 7262962291073197246}
   m_Bounds:
-    m_Center: {x: 1.0207963, y: -0.91815567, z: 0}
-    m_Extent: {x: 2.6992044, y: 6.472971, z: 0}
+    m_Center: {x: 1.0207963, y: -0.91815615, z: 0}
+    m_Extent: {x: 2.6992044, y: 6.4729705, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!114 &7262962292069985917
@@ -922,6 +923,18 @@ MonoBehaviour:
   colorGeneral: {r: 1, g: 1, b: 1, a: 1}
   texturaBase: {fileID: 2800000, guid: 20aa7df0119fab847bbc3eecf88799ba, type: 3}
   texturaNormalmap: {fileID: 2800000, guid: 0cd2c0b1fbdf1a64d874d8b493fb77b1, type: 3}
+--- !u!114 &1310117985793772631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7262962292069985919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b9a71345d6023e42bac27510cc3e109, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7262962292434069554
 GameObject:
   m_ObjectHideFlags: 0

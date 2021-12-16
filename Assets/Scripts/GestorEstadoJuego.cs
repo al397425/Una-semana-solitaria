@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+ using Cinemachine;
 
 public class GestorEstadoJuego : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class GestorEstadoJuego : MonoBehaviour
     GestorSecuencias gs;
     public GameObject jugador;
     public GameObject postMinijuegoTuberias;
+    public PolygonCollider2D confinadorCamaraTuberias;//Provisional
+    public CinemachineConfiner  camaraCineMachine;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +36,7 @@ public class GestorEstadoJuego : MonoBehaviour
                 gs.EstablecerSecuenciaDirecto(6, true);
                 //Establece la posicion del jugador fuera de la casa de conchi
                 jugador.transform.position = postMinijuegoTuberias.transform.position;
+                camaraCineMachine.m_BoundingShape2D = confinadorCamaraTuberias;
             break;
 
             

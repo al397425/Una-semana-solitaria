@@ -177,6 +177,35 @@ public class SistemaDialogos : MonoBehaviour
 			}
 		}
 		
+		for(int i = 0; i<dialogosNPC.Count; i++)
+			Debug.Log(dialogosNPC[i]);
+		for(int i = 0; i<dialogosNPC.Count; i++)
+			Debug.Log(dialogosPersonaje[i]);
+
+		if(dialogosNPC[indiceDialogoNPC]==""){
+			if(nombreNPCSustituto == ""){
+				textoNombreUI.text = nombreProtagonista;
+				referenciaRetratoDialogoJugador.sprite = retratoJugador;
+			}else{
+				textoNombreUI.text = nombreNPCSustituto;
+				referenciaRetratoDialogoJugador.sprite = reatroNPCSustituto;
+			}
+		}else if(dialogosPersonaje[indiceDialogoJugador]==""){
+			textoNombreUI.text = nombreNpc;
+		}else{
+			if(hablaNPC){
+				textoNombreUI.text = nombreNpc;
+			}else{
+				if(nombreNPCSustituto == ""){
+					textoNombreUI.text = nombreProtagonista;
+					referenciaRetratoDialogoJugador.sprite = retratoJugador;
+				}else{
+					textoNombreUI.text = nombreNPCSustituto;
+					referenciaRetratoDialogoJugador.sprite = reatroNPCSustituto;
+				}	
+			}
+		}
+
 
 		
 		//Lo llama una vez para iniciar la animacion que ejecutara el dialogo
@@ -192,6 +221,7 @@ public class SistemaDialogos : MonoBehaviour
 	public void AvanzarDialogo(){
 		if((indiceDialogoNPC < dialogosNPC.Count && dialogosNPC[indiceDialogoNPC]!="") || (indiceDialogoJugador < dialogosPersonaje.Count && dialogosPersonaje[indiceDialogoJugador] != "")){
 			if(dialogosNPC[indiceDialogoNPC]==""){
+				Debug.Log("NPC");
 				if(nombreNPCSustituto == ""){
 					textoNombreUI.text = nombreProtagonista;
 					referenciaRetratoDialogoJugador.sprite = retratoJugador;
@@ -210,6 +240,7 @@ public class SistemaDialogos : MonoBehaviour
 				indiceDialogoNPC++;
 				hablaNPC = false;
 			}else if(dialogosPersonaje[indiceDialogoJugador]==""){
+				Debug.Log("Jugador");
 				textoNombreUI.text = nombreNpc;
 				referenciaRetratoDialogoJugador.color = colorGris;
 				referenciaRetratoDialogoNPC.color = colorBlanco;

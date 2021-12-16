@@ -94,4 +94,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nuevaPosicionJugador: {fileID: 0}
   objetoTransicion: {fileID: 0}
+  confinadorCamara: {fileID: 0}
+  camaraCineMachine: {fileID: 0}
   delay: 0.5
