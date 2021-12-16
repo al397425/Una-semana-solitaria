@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public AudioSource audioDataCoin;
     public int MoscasEnPantalla = 9;
     public int CazarXMoscas = 5;
     public float speed = 10f;
@@ -74,6 +76,8 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine(MoscaParada(collider));
             Moscas -= 1;
             MoscasCazadas += 1;
+            if (!audioDataCoin.isPlaying)
+                audioDataCoin.Play(0);
         }
     }
     void FixedUpdate(){
@@ -89,6 +93,7 @@ public class PlayerMovement : MonoBehaviour
 
             Debug.Log("¡Felicidades, has cazado 5 moscas (o incluso mas :D)!");
             // Cambiar a siguente escena
+            SceneManager.LoadScene("Secuencia1Moscas");
         }
 
         if(Input.GetMouseButton(0) && CurrentTimeHeld < TimeHeld && !Locked){
