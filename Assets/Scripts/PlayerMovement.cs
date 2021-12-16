@@ -82,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
             puntoAparicion = new Vector3(Random.Range(-30, 30), Random.Range(-30, 30), 1);
             Instantiate(mosca, puntoAparicion, rotacionInicial);
             Moscas += 1;
-            Debug.Log("Aparición mosca");
+            // Debug.Log("Aparición mosca");
             TiempoReinicio = 0.0f;
         }
         if(MoscasCazadas >= CazarXMoscas && tiempoTranscurrido.text != "Segundos restantes: 0"){
