@@ -8,13 +8,17 @@ public class ClickToDestroy : MonoBehaviour
 {
     public GameObject ObjPuntos;
     public AudioSource audioDataCoin;
+    private bool minado = false;
 
     public void OnMouseDown()
-    {
-        ObjPuntos.GetComponent<Puntos>().puntos += 1;
-        if (!audioDataCoin.isPlaying)
-            audioDataCoin.Play(0);
-        Destroy(gameObject);
+    {   if (minado == false)
+        {
+            ObjPuntos.GetComponent<Puntos>().puntos += 1;
+            if (!audioDataCoin.isPlaying)
+                audioDataCoin.Play(0);
+            Destroy(gameObject);
+            minado = true;
+        }
 
        
     }
