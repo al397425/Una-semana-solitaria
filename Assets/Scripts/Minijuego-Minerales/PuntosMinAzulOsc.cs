@@ -7,13 +7,18 @@ public class PuntosMinAzulOsc : MonoBehaviour
 
     public GameObject ObjPuntos;
     public AudioSource audioDataCoin;
+    private bool minado = false;
 
 
     public void OnMouseDown()
     {
-        if (!audioDataCoin.isPlaying)
-            audioDataCoin.Play(0);
-        ObjPuntos.GetComponent<Puntos>().puntos += 6;
+        if (minado == false)
+        {
+            if (!audioDataCoin.isPlaying)
+                audioDataCoin.Play(0);
+            ObjPuntos.GetComponent<Puntos>().puntos += 6;
+            minado = true;
+        }
     }
 
 }
